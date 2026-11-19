@@ -1,0 +1,2 @@
+# Descriptive replay tested with Python 3.12.10 and NumPy 2.2.6.
+numpy==2.2.6

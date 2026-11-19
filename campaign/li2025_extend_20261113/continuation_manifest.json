@@ -1,0 +1,157 @@
+{
+  "schema": "li2025_extend/v2",
+  "cases": [
+    {
+      "name": "interface_r1_seg4",
+      "parent_case": "interface_r1_seg3",
+      "parent_job_id": "8568711",
+      "parent_workdir_remote": "/public/home/temp/projects/sulfoacetic-vib/saa-vib-v1/li2025_extend_20261111/interface_r1_seg3",
+      "cp2k_project": "interface_r1",
+      "box_class": "interface",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "segment": {
+        "start_step": 30000,
+        "steps": 10000,
+        "expected_first_step": 30001,
+        "expected_end_step": 40000,
+        "parent_md_step_last": 30000,
+        "segment_time_range_fs": [
+          30000,
+          40000
+        ],
+        "cumulative_step_range": [
+          1,
+          40000
+        ]
+      },
+      "outputs": {
+        "output": "interface_r1_seg4.out",
+        "trajectory": "interface_r1-pos-1.xyz",
+        "energy": "interface_r1-1.ener",
+        "restart": "interface_r1-1.restart"
+      },
+      "metad_files": {
+        "hills": "HILLS_interface_r1",
+        "colvar": "COLVAR_interface_r1"
+      },
+      "metad_baseline": {
+        "hills_rows": 1000,
+        "hills_last_time_fs": 29999.99757877053,
+        "colvar_rows": 3000,
+        "colvar_last_time_fs": 29999.997579
+      },
+      "parent_evidence": {
+        "local_source": "results/li2025_autofollow/20261113T213847+0800/li2025_extend_20261111/interface_r1_seg3",
+        "remote_sha_check_path": "results/li2025_autofollow/20261113T213847+0800/EARLY_SOURCE_SHA_CHECK.json",
+        "remote_sha_check_sha256": "96dd6c396baf68c5c039eeebec160f8d967c014a392b1edcade07799c2299368",
+        "technical_checks_path": "results/li2025_autofollow/20261113T213847+0800/continuation_validation/PARENT_CHECKS.json",
+        "technical_checks_sha256": "f26910bdaa1c108e980ebaa3e8753399ec420119235472285a1b76e7bd5d619b",
+        "source_files_sha256": {
+          "COLVAR_interface_r1": "dba52069538da7a4255868392462af9b3418e782654f4aef0d036b763d128fac",
+          "HILLS_interface_r1": "614324678172d3b5b83b0d0e9ac948a1a393714a11df8d491b2181dbed10cb08",
+          "PLUMED.OUT": "c9a21f6b3d08cf1e3d87dfb2baded187750deeb56ad142ea16504a42a2a3547e",
+          "interface_r1-1.ener": "85524103a2a7ab6f08aa1eae7c64d4f99e78c56cdc6d1aa985c360ece5cd4d4b",
+          "interface_r1-1.restart": "4bbe6b66c052054f167773d7b2ae86463ad243a6a1f577019ac9b60d1a6d15a1",
+          "interface_r1-1_20500.restart": "522c31bba1f75e2ed91d84c1e8b8ac69682b0f6067f6d9be89cafee8317fe7bf",
+          "interface_r1-1_21000.restart": "998a1a68fe2fa9e484f3b3e7c6b4a95cbaac940d741dd2445657cc1345beda7e",
+          "interface_r1-1_21500.restart": "7cbb4d94daa6cdd9937f4603706f54dff004955420c3fe31c9b7bc32289a5543",
+          "interface_r1-1_22000.restart": "c0cd83d81d9b377c45d14e5818ed1fd5337f933408728ca02220d7f48ba0cf54",
+          "interface_r1-1_22500.restart": "4d49b9acd6982e1b6c53650bc11a5965e613626408e4770193f24c89c54afee6",
+          "interface_r1-1_23000.restart": "f9136bf1387a4901471c498ebc6000666e284ba85e94a6dada372bf6ab62c934",
+          "interface_r1-1_23500.restart": "7d7fb61b107e94ae83285b53d29a7a22d57cb1d2320dfb5de605064a311b15bd",
+          "interface_r1-1_24000.restart": "c494f124e91acf6f266739281f455b3b6a2c8a8df71be9e0ea1977acea7027e0",
+          "interface_r1-1_24500.restart": "76bc8bf1ebd68faf592b01d862ed1cc7f800ea9ba7f8602b4f344946d4d44999",
+          "interface_r1-1_25000.restart": "b52be7c54307acb5f41000973579e7d5c6f491f2c0544a686409b548514fc3f2",
+          "interface_r1-1_25500.restart": "e3ec03870b89f4ee79445d8ba8abd601290479a0aad36ae550b7f6936435c0ae",
+          "interface_r1-1_26000.restart": "34a9541b7bd7a1d1e2077785b1ee65923a641ebbcfd4a3a89db119358a39fd40",
+          "interface_r1-1_26500.restart": "90faddada47efd034906335b41e5dc9395b640ec225301fec5b8ef35908ed30b",
+          "interface_r1-1_27000.restart": "34c2e967bbb03a440e6d3ada514b6829041fb353530d037e0aec6a0e87816fe3",
+          "interface_r1-1_27500.restart": "c716aec6af68c627b34bc5c1d4c18ce236fc9f677bf9a9a57feaa5df8e55140a",
+          "interface_r1-1_28000.restart": "a979adbd1c4a47e31aafb598cf281561b02e5d10c769bff756b4ad7d68718b2e",
+          "interface_r1-1_28500.restart": "1878af899393da1ef692d3c5a34f67bfb6623bd280fa4f84d9e2753adfbf118d",
+          "interface_r1-1_29000.restart": "f72451aab66a527e1f83db4b1b3f5c594f737701fe7592ba0f1abe32510fedce",
+          "interface_r1-1_29500.restart": "99765dcbd288362fe4029f5be9b99c13978df8970493362caf09bf95b5028ee0",
+          "interface_r1-1_30000.restart": "8ff72a15bb09772b7f15c3b9469d9650e224304a53a6c8a9bd169c35b8aa7c7b",
+          "interface_r1-pos-1.xyz": "509a2783a8fd2b49588fb16a3744c146837dc9c20bb6b87374b79666c84f7278",
+          "interface_r1.plumed": "6f4c152b8ccee8e8d29df69d61966fc6e69aac2e0ae015829e01606d4064ec93",
+          "interface_r1.xyz": "d130d72b8da2d57944d542685680c9757285083bc3a1626c3f870f67d102d34e",
+          "interface_r1_seg3.inp": "22121f48608ad71157b8dff5e090a75c278b4dc6232c1d8aae7c77dfe8a3ef8f",
+          "interface_r1_seg3.out": "5eaeb23326406e9061eeca35fea450d402aa505327b68b7d1eb399d26be438e6",
+          "interface_r1_seg3.runner.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "interface_r1_seg3_parent.restart": "38e7e438f1f2d3a9a1a42b8e272b32626b8294e78f6514627f11b71f25227770",
+          "parent_run_record.json": "0ed66b1518a68ab166fc30361918bba4d0a6c2fa988faa4a8aebe2205f6da9b6",
+          "run_record.json": "3e92b1831527e422796eddff1eace01ee445afb745dca2397913476fbaf1f217"
+        },
+        "technical_checks_status": "PASS"
+      },
+      "technical_policy": {
+        "plumed_time_fs_per_step": 0.999999919292351,
+        "plumed_time_tolerance_fs": 2e-06,
+        "trajectory_first_step": 30010,
+        "trajectory_frames": 1000,
+        "md_steps": 10000,
+        "energy_rows": 10000,
+        "scf_converged": 10001,
+        "scf_failed": 0,
+        "hills_new_rows": 333,
+        "colvar_new_rows": 1000
+      },
+      "stage": [
+        {
+          "role": "new_input",
+          "source": "interface_r1_seg4.inp",
+          "target": "interface_r1_seg4.inp",
+          "sha256": "1cbd7771262b627699cee7065c85ced2f8b14e4ca593484901479afb5c89114d"
+        },
+        {
+          "role": "new_xyz",
+          "source": "interface_r1.xyz",
+          "target": "interface_r1.xyz",
+          "sha256": "d130d72b8da2d57944d542685680c9757285083bc3a1626c3f870f67d102d34e"
+        },
+        {
+          "role": "parent_restart",
+          "source": "interface_r1-1_30000.restart",
+          "target": "interface_r1_seg4_parent.restart",
+          "sha256": "8ff72a15bb09772b7f15c3b9469d9650e224304a53a6c8a9bd169c35b8aa7c7b"
+        },
+        {
+          "role": "parent_plumed",
+          "source": "interface_r1.plumed",
+          "target": "interface_r1.plumed",
+          "sha256": "6f4c152b8ccee8e8d29df69d61966fc6e69aac2e0ae015829e01606d4064ec93"
+        },
+        {
+          "role": "parent_hills",
+          "source": "HILLS_interface_r1",
+          "target": "HILLS_interface_r1",
+          "sha256": "614324678172d3b5b83b0d0e9ac948a1a393714a11df8d491b2181dbed10cb08"
+        },
+        {
+          "role": "parent_colvar",
+          "source": "COLVAR_interface_r1",
+          "target": "COLVAR_interface_r1",
+          "sha256": "dba52069538da7a4255868392462af9b3418e782654f4aef0d036b763d128fac"
+        },
+        {
+          "role": "parent_run_record",
+          "source": "run_record.json",
+          "target": "parent_run_record.json",
+          "sha256": "3e92b1831527e422796eddff1eace01ee445afb745dca2397913476fbaf1f217"
+        }
+      ]
+    }
+  ],
+  "dependencies": {
+    "frozen_run_cp2k.py": "c3d65060daafbe1076304f092f72c2e40e738aea9cb6f4cc63d8263298397d61",
+    "prepare.py": "9ae340dea196bf3568b789bc999499c9b4730931a1ef05e03cb682013c6efc7e",
+    "run_continuation.py": "45c0d17aa2868dcda1b691d8d53902c7c7f82db4c9dbc7ef78f9f0e3815f515c",
+    "run.slurm": "be888deaa6e146c9edb96bbde03342914e8a999e9d0152119ebf16828feac546"
+  },
+  "scope": "Ordinary biased metaD; unchanged science; no structural/FES verdict.",
+  "restart_policy": "Same as seg2/seg3: POS/VEL/COUNTERS only; CSVR parameters preserved, random state not restored; SCF_GUESS ATOMIC unchanged."
+}

@@ -1,0 +1,273 @@
+{
+  "schema": "li2025_direct_event_unbiased/v1",
+  "session": "li2025-direct-unbiased-validation",
+  "purpose": "First fully unbiased BOMD replicas started from the requested Li 2025 bulk event frame at 12270 fs (S-C = 1.778073 A, the minimum inside the 12220-12320 fs event window), harvested from the biased bulk_r1 metaD trajectory.",
+  "scope": {
+    "what_this_is": [
+      "Three independent unbiased NVT BOMD replicas (3 ps each) from one frozen event frame.",
+      "CP2K-generated Maxwell-Boltzmann velocities at 298.15 K, seeded per replica.",
+      "A stability/relaxation check after removing all PLUMED bias."
+    ],
+    "what_this_is_not": [
+      "NOT spontaneous formation: the starting frame came from a metaD trajectory.",
+      "NOT a free energy, PMF, barrier or rate.",
+      "NOT Li's three-replica statistics and not comparable to the five-distance CV.",
+      "NOT a geometry optimisation; the frame is used verbatim."
+    ],
+    "structure_conclusion_status": "Distance facts only; any C-S bonding claim must pass the three-layer gate in AGENTS.md section 7."
+  },
+  "source": {
+    "trajectory": "results/li2025_direct/bulk_r1_seg2_snapshot_20261108T2101/bulk_r1-pos-1.xyz",
+    "sha256": "e31361af8d3d102fc925056ab03e4cc3a054e893ac60900a671da6494dd76f6e",
+    "bytes": 7028840,
+    "frame": {
+      "step": 12270,
+      "time_fs": 12270.0,
+      "comment": " i =    12270, time =    12270.000, E =     -1735.1137526038",
+      "atom_count": 296,
+      "line_range_1based": [
+        67349,
+        67646
+      ],
+      "unique_match": true
+    },
+    "xyz": {
+      "path": "inputs/bulk_r1_event12270.xyz",
+      "sha256": "b43afadd52f4294d1918fe474c0ae0ec1255abbb2aaddfe25b4de7d77a55c2fd",
+      "bytes": 19382
+    },
+    "extraction": "atom lines copied verbatim from the trajectory; only a new comment line was written. No wrapping, rotation, translation or bond editing."
+  },
+  "geometry": {
+    "composition": {
+      "H": 194,
+      "O": 100,
+      "C": 1,
+      "S": 1
+    },
+    "min_atom_pair_distance_including_bonds_angstrom": 0.9333477155691124,
+    "min_atom_pair_including_bonds_1based": [
+      127,
+      129,
+      "H",
+      "O"
+    ],
+    "min_intermolecular_contact_angstrom": 1.478026014061588,
+    "min_intermolecular_contact_atoms_1based": [
+      268,
+      "H2O",
+      290,
+      "HCHO",
+      "H",
+      "O"
+    ],
+    "sc_distance_angstrom": 1.7780730053024296,
+    "co_distance_angstrom": 1.3875729370255319,
+    "ch_distances_angstrom": [
+      1.069856431132351,
+      1.2077968531268142
+    ],
+    "so_distances_angstrom": [
+      1.5111768869120967,
+      1.47186965026126,
+      1.5004810830395292
+    ]
+  },
+  "atom_order": "1-288 = 96 waters in H,H,O order; 289 C, 290 O, 291 H, 292 H (HCHO); 293 S, 294-296 O (SO3)",
+  "solute_indices_1based": {
+    "C": 289,
+    "O_carbonyl": 290,
+    "H_formyl_1": 291,
+    "H_formyl_2": 292,
+    "S": 293,
+    "O_sulfonate_1": 294,
+    "O_sulfonate_2": 295,
+    "O_sulfonate_3": 296
+  },
+  "event": {
+    "path": "results/li2025_direct/event_analysis/BULK_EVENT_12249_12299.json",
+    "sha256": "0b490cca71acc172e2e625e09b3f234069c837cd74234096b1cd44b0b1159659",
+    "window_time_fs": [
+      12220.0,
+      12320.0
+    ],
+    "sc_at_event_from_analysis_angstrom": 1.7780730053024296,
+    "event_window_min_sc_angstrom": 1.7780730053024296,
+    "note": "The 12270 fs frame is the event-window minimum and the frame requested for this validation. The trajectory reaches a slightly shorter S-C (1.7544 A at step 13320, 13320.0 fs); that frame is NOT used here.",
+    "trajectory_min_sc_angstrom": 1.7544179604630923,
+    "trajectory_min_sc_step": 13320,
+    "trajectory_min_sc_time_fs": 13320.0,
+    "requested_frame_is_global_min": false
+  },
+  "velocity_strategy": {
+    "source": "CP2K Maxwell-Boltzmann velocities at TEMPERATURE 298.15 K",
+    "reused_metad_velocities": false,
+    "how": "the event XYZ carries positions only; the input has no &EXT_RESTART and no &VELOCITY, so CP2K draws fresh velocities from &GLOBAL SEED",
+    "seeds": [
+      {
+        "case": "event_unbiased_s1",
+        "seed": 20261109
+      },
+      {
+        "case": "event_unbiased_s2",
+        "seed": 20261110
+      },
+      {
+        "case": "event_unbiased_s3",
+        "seed": 20261111
+      }
+    ]
+  },
+  "production": {
+    "engine": "CP2K 9.1 (cp2k.psmp, PLUMED build but no PLUMED input)",
+    "binary": "/public/home/temp/cp2k-9.1/exe/Linux-x86-64-gfortran-mkl-plumed/cp2k.psmp",
+    "functional": "BLYP",
+    "dispersion": "DFTD3(BJ), REFERENCE_FUNCTIONAL BLYP",
+    "basis": "DZVP-MOLOPT-SR-GTH / GTH-BLYP-q1,q6,q4,q6",
+    "cutoff_ry": 300,
+    "rel_cutoff_ry": 40,
+    "charge": -2,
+    "multiplicity": 1,
+    "ensemble": "NVT",
+    "thermostat": "CSVR",
+    "temperature_k": 298.15,
+    "timecon_fs": 100,
+    "timestep_fs": 1.0,
+    "steps": 3000,
+    "steps_fs": 3000,
+    "trajectory_every_fs": 10,
+    "restart_every_fs": 100,
+    "mpi_ranks": 64,
+    "memory": "32G",
+    "max_walltime_hours": 48,
+    "partition": "compute",
+    "removed_from_reference": "&FREE_ENERGY / &METADYN / USE_PLUMED / PLUMED_INPUT_FILE",
+    "assumptions": [
+      "3 ps is a first stability check, not a converged sampling window.",
+      "CSVR TIMECON 100 fs is unchanged from the production reference.",
+      "The three replicas may be submitted as slots become available; they are independent and need not start together."
+    ]
+  },
+  "cases": [
+    {
+      "name": "event_unbiased_s1",
+      "seed": 20261109,
+      "unbiased": true,
+      "cp2k_project": "bulk_r1_unbiased",
+      "box_angstrom": [
+        14.2296,
+        14.2296,
+        14.2296
+      ],
+      "sc_distance_angstrom": 1.7780730053024296,
+      "stage": [
+        {
+          "role": "new",
+          "source": "bulk_r1_event12270.xyz",
+          "target": "bulk_r1_event12270.xyz",
+          "sha256": "b43afadd52f4294d1918fe474c0ae0ec1255abbb2aaddfe25b4de7d77a55c2fd",
+          "bytes": 19382
+        },
+        {
+          "role": "new",
+          "source": "event_unbiased_s1.inp",
+          "target": "event_unbiased_s1.inp",
+          "sha256": "e49e893d06cc1a76e496ee8856d0ca4e42eb557aa81ee003157982fea28e8ae4",
+          "bytes": 1955
+        }
+      ],
+      "outputs": {
+        "output": "event_unbiased_s1.out",
+        "trajectory": "bulk_r1_unbiased-pos-1.xyz",
+        "energy": "bulk_r1_unbiased-1.ener",
+        "restart": "bulk_r1_unbiased-1.restart"
+      },
+      "steps": 3000,
+      "expected_frames": 301,
+      "fes": {
+        "status": "not_applicable",
+        "note": "unbiased BOMD; no metadynamics, no FES."
+      }
+    },
+    {
+      "name": "event_unbiased_s2",
+      "seed": 20261110,
+      "unbiased": true,
+      "cp2k_project": "bulk_r1_unbiased",
+      "box_angstrom": [
+        14.2296,
+        14.2296,
+        14.2296
+      ],
+      "sc_distance_angstrom": 1.7780730053024296,
+      "stage": [
+        {
+          "role": "new",
+          "source": "bulk_r1_event12270.xyz",
+          "target": "bulk_r1_event12270.xyz",
+          "sha256": "b43afadd52f4294d1918fe474c0ae0ec1255abbb2aaddfe25b4de7d77a55c2fd",
+          "bytes": 19382
+        },
+        {
+          "role": "new",
+          "source": "event_unbiased_s2.inp",
+          "target": "event_unbiased_s2.inp",
+          "sha256": "1ae6bbe7bc9c1a8551bcf4837fc4b87f04b3234677d930096675bcb1fc7f7941",
+          "bytes": 1955
+        }
+      ],
+      "outputs": {
+        "output": "event_unbiased_s2.out",
+        "trajectory": "bulk_r1_unbiased-pos-1.xyz",
+        "energy": "bulk_r1_unbiased-1.ener",
+        "restart": "bulk_r1_unbiased-1.restart"
+      },
+      "steps": 3000,
+      "expected_frames": 301,
+      "fes": {
+        "status": "not_applicable",
+        "note": "unbiased BOMD; no metadynamics, no FES."
+      }
+    },
+    {
+      "name": "event_unbiased_s3",
+      "seed": 20261111,
+      "unbiased": true,
+      "cp2k_project": "bulk_r1_unbiased",
+      "box_angstrom": [
+        14.2296,
+        14.2296,
+        14.2296
+      ],
+      "sc_distance_angstrom": 1.7780730053024296,
+      "stage": [
+        {
+          "role": "new",
+          "source": "bulk_r1_event12270.xyz",
+          "target": "bulk_r1_event12270.xyz",
+          "sha256": "b43afadd52f4294d1918fe474c0ae0ec1255abbb2aaddfe25b4de7d77a55c2fd",
+          "bytes": 19382
+        },
+        {
+          "role": "new",
+          "source": "event_unbiased_s3.inp",
+          "target": "event_unbiased_s3.inp",
+          "sha256": "2a1f9293345a696adee8224ea9401179206a15db56d7e9727ec9036eb15f5c7b",
+          "bytes": 1955
+        }
+      ],
+      "outputs": {
+        "output": "event_unbiased_s3.out",
+        "trajectory": "bulk_r1_unbiased-pos-1.xyz",
+        "energy": "bulk_r1_unbiased-1.ener",
+        "restart": "bulk_r1_unbiased-1.restart"
+      },
+      "steps": 3000,
+      "expected_frames": 301,
+      "fes": {
+        "status": "not_applicable",
+        "note": "unbiased BOMD; no metadynamics, no FES."
+      }
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "schema": "li2025_extend/v2",
+  "cases": [
+    {
+      "name": "interface_r1_seg5",
+      "parent_case": "interface_r1_seg4",
+      "parent_job_id": "8571154",
+      "parent_workdir_remote": "/public/home/temp/projects/sulfoacetic-vib/saa-vib-v1/li2025_extend_20261113/interface_r1_seg4",
+      "cp2k_project": "interface_r1",
+      "box_class": "interface",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "segment": {
+        "start_step": 40000,
+        "steps": 10000,
+        "expected_first_step": 40001,
+        "expected_end_step": 50000,
+        "parent_md_step_last": 40000,
+        "segment_time_range_fs": [
+          40000,
+          50000
+        ],
+        "cumulative_step_range": [
+          1,
+          50000
+        ]
+      },
+      "outputs": {
+        "output": "interface_r1_seg5.out",
+        "trajectory": "interface_r1-pos-1.xyz",
+        "energy": "interface_r1-1.ener",
+        "restart": "interface_r1-1.restart"
+      },
+      "metad_files": {
+        "hills": "HILLS_interface_r1",
+        "colvar": "COLVAR_interface_r1"
+      },
+      "metad_baseline": {
+        "hills_rows": 1333,
+        "hills_last_time_fs": 39989.99677250112,
+        "colvar_rows": 4000,
+        "colvar_last_time_fs": 39999.996772
+      },
+      "parent_evidence": {
+        "local_source": "results/li2025_autofollow/20261115T100111+0800/li2025_extend_20261113/interface_r1_seg4",
+        "remote_sha_check_path": "results/li2025_autofollow/20261115T100111+0800/RETRIEVAL_METADATA.json",
+        "remote_sha_check_sha256": "5f593c035c81ef63f55bba13840c620191445dd66553742e7506c964a4b2344e",
+        "technical_checks_path": "results/li2025_autofollow/20261115T100111+0800/continuation_validation/PARENT_CHECKS.json",
+        "technical_checks_sha256": "de2d34250e11c8cc80fe275b6b4416d092233bfeab43707ad1998d15d550c376",
+        "source_files_sha256": {
+          "CHECKS.json": "946a1d2aec84322f893248a13c24aa62328d6a81ddc9fe904ab5cdd76d3e6165",
+          "COLVAR_interface_r1": "694f064a93182ccb0c5577c4f3f8c71c0e98bede1d45729033b0ba1e6464200e",
+          "HILLS_interface_r1": "fde2f699ce00d99a914d78d03e47c860fc8f945e8b3f1274604b91701bc6c071",
+          "PLUMED.OUT": "2536354d1267a9c66e1556e39abc539e9092cf4fae18faa764df81e0084cfb1d",
+          "interface_r1-1.ener": "8afa9912f5e0b79083211783be285103db1a96547ca7f96a3b8697f78b719078",
+          "interface_r1-1.restart": "20c18edd5f5fdb2f4e641b47466caf7f8f5f9fca46ad7f6ebaffb0eb9c497941",
+          "interface_r1-1_30500.restart": "5b24ca633254602fcc1a222d8dd22534bb5a1de74de2285ccc4a85a88f711fd1",
+          "interface_r1-1_31000.restart": "3e7bb30c3201b04e24cd3eaf81be12df3cc80983c553f57f6fe13faa01a6373d",
+          "interface_r1-1_31500.restart": "a08348a630cf293a0c7226095006b3632d65694f884884891c2a4178a8f91c32",
+          "interface_r1-1_32000.restart": "20550063b73cd1c64e16a0f8e556f5d803b2636e64ae0953bcf32549fda80a96",
+          "interface_r1-1_32500.restart": "ea5d4eed5848ceb3676d51a1c38715006e6ba7a9d3b339d9924752c40e922ee0",
+          "interface_r1-1_33000.restart": "711f5d10f1c1df898d8af8348bc5863ffcb2e8f21e9a1225f11ed7ea38e03bca",
+          "interface_r1-1_33500.restart": "039b5dcc95012aa09cfe318fc5d5d7d6b8c86c485306f03f69e01495f677f8c2",
+          "interface_r1-1_34000.restart": "e679cd1ce7eba298555994f153ba888a0458285ffcfbb5a499e6423a9cab62ce",
+          "interface_r1-1_34500.restart": "ef389752c5f58e61d3b95dd5382f1bc579ae0c03585e19d4a588d63ffcfee217",
+          "interface_r1-1_35000.restart": "529fa8c6ec5e613d1f2d74b3409c5d811e52609c73e5d065ae96f19a77f32848",
+          "interface_r1-1_35500.restart": "92087c055e9c283daaf634cb12e38bec4b2b40d54e2cac6b9e12fe80e176265e",
+          "interface_r1-1_36000.restart": "221d119e27bb347ed6e9755dfe4d79206e1e7bb5fdfabe84342ca72aea871aa6",
+          "interface_r1-1_36500.restart": "d08b5e2deef618a81361defad514cd36a1d3a8823df6c804f82d4b9684a98593",
+          "interface_r1-1_37000.restart": "161af71d5bcc0df27a458170602a31472ebeeac6729377caf4c99f281d6a7595",
+          "interface_r1-1_37500.restart": "5fc7825a45aa1401894217dcca6e5d5632029fed11d15b3a559fa4d48c2b0244",
+          "interface_r1-1_38000.restart": "bf5fcf909960ffce80ba527c059cb7a8ba29c59b8ead58f00bae445a25951f4c",
+          "interface_r1-1_38500.restart": "f03679c803dd3209dce080c2996c29e727d87e04cee79565099e4b277237084a",
+          "interface_r1-1_39000.restart": "e3c33ebdb035905bd15c807fae89d65d691c97cca7cafaf5946f6d21f66536e5",
+          "interface_r1-1_39500.restart": "52b689d624f9e255bb35f3349996a21269e91e30e2f295708fc5f51c4bb90997",
+          "interface_r1-1_40000.restart": "321c097bd83cdeae62e09533e55a58543c2dbb762936ca69f4a4d43ad590eaf8",
+          "interface_r1-pos-1.xyz": "8dbeaf04ec31d08f3327e2ec0b1d3ccfd1b49db93ce943bbbbf0700bb2db5616",
+          "interface_r1.plumed": "6f4c152b8ccee8e8d29df69d61966fc6e69aac2e0ae015829e01606d4064ec93",
+          "interface_r1.xyz": "d130d72b8da2d57944d542685680c9757285083bc3a1626c3f870f67d102d34e",
+          "interface_r1_seg4.inp": "1cbd7771262b627699cee7065c85ced2f8b14e4ca593484901479afb5c89114d",
+          "interface_r1_seg4.out": "89ead29e5e365afd38406265a9ec105a92e256dc62dc768617ef532efd3f09d9",
+          "interface_r1_seg4.runner.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "interface_r1_seg4_parent.restart": "8ff72a15bb09772b7f15c3b9469d9650e224304a53a6c8a9bd169c35b8aa7c7b",
+          "parent_run_record.json": "3e92b1831527e422796eddff1eace01ee445afb745dca2397913476fbaf1f217",
+          "run_record.json": "0322aaa114d2508e92d91d4fd2b845da7a545c5bcb1400773ed5c7a079320fb8"
+        },
+        "formal_checks_sha256": "946a1d2aec84322f893248a13c24aa62328d6a81ddc9fe904ab5cdd76d3e6165",
+        "retrieval_evidence_sha256": {
+          "RETRIEVAL_METADATA.json": "5f593c035c81ef63f55bba13840c620191445dd66553742e7506c964a4b2344e",
+          "HASHES.json": "841c34ef210e1d8105397995c1fba417094a06dd33c0038ddc2e19a4774b6831",
+          "REMOTE_EVIDENCE.txt": "d3205beca13466874f5a5dc9c7d04b7e1abef8a65877c56e87b454486f618b94"
+        },
+        "technical_checks_status": "PASS"
+      },
+      "technical_policy": {
+        "plumed_time_fs_per_step": 0.999999919292351,
+        "plumed_time_tolerance_fs": 2e-06,
+        "trajectory_first_step": 40010,
+        "trajectory_frames": 1000,
+        "md_steps": 10000,
+        "energy_rows": 10000,
+        "scf_converged": 10001,
+        "scf_failed": 0,
+        "hills_new_rows": 333,
+        "colvar_new_rows": 1000
+      },
+      "stage": [
+        {
+          "role": "new_input",
+          "source": "interface_r1_seg5.inp",
+          "target": "interface_r1_seg5.inp",
+          "sha256": "80b5f4de440d9e9d1938f747e3de7063354d13b4ba403ed52308ef95726de55a"
+        },
+        {
+          "role": "new_xyz",
+          "source": "interface_r1.xyz",
+          "target": "interface_r1.xyz",
+          "sha256": "d130d72b8da2d57944d542685680c9757285083bc3a1626c3f870f67d102d34e"
+        },
+        {
+          "role": "parent_restart",
+          "source": "interface_r1-1_40000.restart",
+          "target": "interface_r1_seg5_parent.restart",
+          "sha256": "321c097bd83cdeae62e09533e55a58543c2dbb762936ca69f4a4d43ad590eaf8"
+        },
+        {
+          "role": "parent_plumed",
+          "source": "interface_r1.plumed",
+          "target": "interface_r1.plumed",
+          "sha256": "6f4c152b8ccee8e8d29df69d61966fc6e69aac2e0ae015829e01606d4064ec93"
+        },
+        {
+          "role": "parent_hills",
+          "source": "HILLS_interface_r1",
+          "target": "HILLS_interface_r1",
+          "sha256": "fde2f699ce00d99a914d78d03e47c860fc8f945e8b3f1274604b91701bc6c071"
+        },
+        {
+          "role": "parent_colvar",
+          "source": "COLVAR_interface_r1",
+          "target": "COLVAR_interface_r1",
+          "sha256": "694f064a93182ccb0c5577c4f3f8c71c0e98bede1d45729033b0ba1e6464200e"
+        },
+        {
+          "role": "parent_run_record",
+          "source": "run_record.json",
+          "target": "parent_run_record.json",
+          "sha256": "0322aaa114d2508e92d91d4fd2b845da7a545c5bcb1400773ed5c7a079320fb8"
+        }
+      ]
+    }
+  ],
+  "dependencies": {
+    "frozen_run_cp2k.py": "c3d65060daafbe1076304f092f72c2e40e738aea9cb6f4cc63d8263298397d61",
+    "prepare.py": "ce3023bc4cc5bceaa41ee285499302c239f7ead92672158d7aef7115b75bdb21",
+    "run_continuation.py": "d663c1ae8b771bbf6ea93321167d29128a6bc637117c6c40b1cee4b0344a4811",
+    "run.slurm": "53ed5a6caa1db10d1008dd06ec9c653dd73666e40d4ead0730d4720f7a8af3b5"
+  },
+  "scope": "Ordinary biased metaD; unchanged science; no structural/FES verdict.",
+  "stop_rule": "STOP at cumulative 50 ps; scientific review required before any further continuation.",
+  "restart_policy": "Same as seg2/seg3/seg4: POS/VEL/COUNTERS only; CSVR parameters preserved, random state not restored; SCF_GUESS ATOMIC unchanged."
+}

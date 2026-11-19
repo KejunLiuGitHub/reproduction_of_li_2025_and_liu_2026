@@ -1,0 +1,29 @@
+{
+  "tests": [
+    {
+      "test": "offline_extract",
+      "pass": true,
+      "output": "Extracted and verified 657 files from li2025-selected-data-2026-11-19.tar.gz."
+    },
+    {
+      "test": "verify_extracted_files",
+      "pass": true,
+      "output": "Verified 657 files."
+    },
+    {
+      "test": "reject_parent_escape",
+      "pass": true
+    },
+    {
+      "test": "reject_symlink_escape",
+      "pass": true
+    },
+    {
+      "test": "refuse_overwrite_changed_file",
+      "pass": true
+    }
+  ],
+  "status": "PASS",
+  "isolated_copy": true,
+  "CP2K_executed": false
+}

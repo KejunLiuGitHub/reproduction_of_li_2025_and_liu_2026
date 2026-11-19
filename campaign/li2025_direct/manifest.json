@@ -1,0 +1,317 @@
+{
+  "session": "li2025-direct-pathway3",
+  "purpose": "First production replicas of the Li 2025 pathway-3 (SO3^2- + HCHO) direct C-S addition, started from the published bulk and interface reactant snapshots.",
+  "scope": {
+    "what_this_is": [
+      "Two independent production workdirs (bulk_r1_fix1, interface_r1_fix1, 64 MPI ranks each).",
+      "R snapshots only; the TS and P blocks of Figure 6b are not exported.",
+      "Ordinary single-CV metaD on d(S-C), 10 ps initial segment per replica."
+    ],
+    "what_this_is_not": [
+      "NOT Li's three-replica free-energy statistics; this is replica 1 of 2 workdirs.",
+      "NOT a Liu 2026 five-distance-CV calculation and must not be compared with it.",
+      "No FES/PMF exists yet. HILLS/COLVAR appear only after a production job runs, and 10 ps at these heights is not a converged free-energy surface.",
+      "NOT the project's +2 K+ neutral model: this public snapshot has no counterions."
+    ],
+    "structure_conclusion_status": "No structural conclusion is drawn here. Any later C-S bonding claim must pass the three-layer gate in AGENTS.md section 7."
+  },
+  "source": {
+    "paper": "J. Li et al., Nature Communications 16, 5187 (2025)",
+    "doi": "10.1038/s41467-025-59712-3",
+    "zenodo_doi": "10.5281/zenodo.15253851",
+    "license": "CC BY 4.0",
+    "workbook": "results/li2025_zenodo/source-data.xlsx",
+    "workbook_md5": "53a0f1915b8f15fe1cd5d56742d16820",
+    "workbook_sha256": "f4e2bedc004f0abaf180f55e95bd2aa9f7ddc2aa86ef09a683fd2d5afe0a9992",
+    "sheet": "Figure 6b",
+    "rows": "2:297",
+    "atom_count_per_block": 296,
+    "blocks_exported": {
+      "R_bulk": {
+        "element": "A",
+        "xyz": "B:D",
+        "cell": "A2:D297"
+      },
+      "R_inter": {
+        "element": "P",
+        "xyz": "Q:S",
+        "cell": "P2:S297"
+      }
+    },
+    "extraction": "Element and xyz read per row from the block columns; nothing is wrapped, translated, rotated or reordered. Stored values are six-decimal literals (max |v-round(v,6)| = 1.8e-15), so %.6f is an exact reproduction."
+  },
+  "system": {
+    "stoichiometry": "96 H2O + SO3^2- + HCHO",
+    "composition": {
+      "H": 194,
+      "O": 100,
+      "C": 1,
+      "S": 1
+    },
+    "net_charge": -2,
+    "multiplicity": 1,
+    "counterions": "none (no K+ or Na+ in this public snapshot)",
+    "charge_model_note": "q = -2 periodic model. The two sulfonate charges are not compensated by counterions, so CP2K applies a homogeneous neutralizing background. This system is not the project's +2 K+ neutral model, and energies, densities or barriers from the two must not be merged or compared as if they were the same calculation.",
+    "atom_order": "1-288 = 96 waters in H,H,O order (O at 3,6,...,288); 289 C, 290 O, 291 H, 292 H (HCHO); 293 S, 294-296 O (SO3)",
+    "solute_indices_1based": {
+      "C": 289,
+      "O_carbonyl": 290,
+      "H_formyl_1": 291,
+      "H_formyl_2": 292,
+      "S": 293,
+      "O_sulfonate_1": 294,
+      "O_sulfonate_2": 295,
+      "O_sulfonate_3": 296
+    }
+  },
+  "production": {
+    "engine": "CP2K 9.1 (cp2k.psmp with PLUMED)",
+    "binary": "/public/home/temp/cp2k-9.1/exe/Linux-x86-64-gfortran-mkl-plumed/cp2k.psmp",
+    "plumed": "2.7.3 (shared build, /public/home/temp/apps/plumed-2.7.3-shared/lib)",
+    "functional": "BLYP",
+    "dispersion": "DFTD3(BJ) with REFERENCE_FUNCTIONAL BLYP (Becke-Johnson damping). Plain 'TYPE DFTD3' would silently mean zero damping; see docs/methods/mlp_plan.md lines 90-91.",
+    "basis": "DZVP-MOLOPT-SR-GTH",
+    "potentials": {
+      "H": "GTH-BLYP-q1",
+      "O": "GTH-BLYP-q6",
+      "C": "GTH-BLYP-q4",
+      "S": "GTH-BLYP-q6"
+    },
+    "cutoff_ry": 300,
+    "rel_cutoff_ry": 40,
+    "scf": {
+      "eps_scf": 1e-06,
+      "ot_minimizer": "DIIS",
+      "outer_scf": true
+    },
+    "ensemble": "NVT",
+    "thermostat": "CSVR",
+    "temperature_k": 298.15,
+    "timecon_fs": 100,
+    "timestep_fs": 1.0,
+    "steps_initial_segment": 10000,
+    "trajectory_every_fs": 10,
+    "restart_every_fs": 100,
+    "mpi_ranks": 64,
+    "memory": "32G",
+    "max_walltime_hours": 48,
+    "partition": "compute",
+    "mail_type": "END,FAIL",
+    "assumptions": [
+      "CSVR TIMECON = 100 fs is a project assumption; Li 2025 does not state it.",
+      "UPPER_WALLS AT = 4.0 A matches SI Table 3; KAPPA = 200 is a project assumption.",
+      "HEIGHT 1e-4 Ha (bulk) and 0.5e-4 Ha (interface), SIGMA = 0.1 A, PACE = 30 fs match the two pathway-3 rows in SI Table 3; both rows are printed as 3a, so the interface assignment of the 0.5e-4 Ha row follows the footnote scheme.",
+      "Our implementation uses ordinary fixed-height hills; the SI does not establish whether the published calculations used ordinary or well-tempered metaD.",
+      "1 Ha = 627.509 kcal/mol reproduces both requested HEIGHT literals.",
+      "Only the first 10 ps segment is defined here; continuation is a separate step."
+    ]
+  },
+  "fes": {
+    "status": "not_computed",
+    "note": "Nothing in this directory is a free-energy surface. HILLS/COLVAR are raw metaD output and would need convergence and replica analysis before any barrier is quoted."
+  },
+  "cases": [
+    {
+      "name": "bulk_r1",
+      "point": "R_bulk",
+      "environment": "bulk",
+      "xyz": "inputs/bulk_r1.xyz",
+      "inp": "inputs/bulk_r1.inp",
+      "plumed": "inputs/bulk_r1.plumed",
+      "xyz_sha256": "9c6a620ca200658ae3715afbb61cbdb3104136db1016d9536471759d68009485",
+      "inp_sha256": "bd8710eeb205b27fe6ad6476da5710f72e6cf5880d7f1196b5ed5b838a2e3c22",
+      "plumed_sha256": "586491e29aef192c564bb06691766d202a6fba517442df77db5b39d18aa1bbab",
+      "atom_count": 296,
+      "composition": {
+        "H": 194,
+        "O": 100,
+        "C": 1,
+        "S": 1
+      },
+      "box_angstrom": [
+        14.2296,
+        14.2296,
+        14.2296
+      ],
+      "sc_distance_angstrom": 3.3191247111402724,
+      "min_intermolecular_contact_angstrom": 1.4622515361065616,
+      "min_intermolecular_contact_atoms_1based": [
+        184,
+        "H2O",
+        273,
+        "H2O",
+        "H",
+        "O"
+      ],
+      "min_intermolecular_contact_metric": "minimum-image distance, intramolecular pairs excluded; hard gate at 1.20 A",
+      "min_atom_pair_distance_including_bonds_angstrom": 0.9032733169046899,
+      "min_atom_pair_including_bonds_1based": [
+        20,
+        21,
+        "H",
+        "O"
+      ],
+      "max_coordinate_excursion_angstrom": 1.273874000000001,
+      "solute_positions_angstrom_raw": {
+        "S": [
+          2.409372,
+          10.223759,
+          7.25959
+        ],
+        "C": [
+          5.094967,
+          8.81974,
+          8.613436
+        ],
+        "O_carbonyl": [
+          6.193916,
+          8.989654,
+          9.201285
+        ]
+      },
+      "metad": {
+        "cv": "d(S-C) single distance",
+        "sigma_angstrom": 0.1,
+        "pace_md_steps": 30,
+        "pace_fs_at_1fs_timestep": 30,
+        "print_stride_md_steps": 10,
+        "print_stride_fs_at_1fs_timestep": 10,
+        "height_ha": 0.0001,
+        "height_kcal_mol": 0.0627509,
+        "biasfactor": null,
+        "note": "ordinary metaD; no BIASFACTOR and no GRID/WT block. PLUMED PACE and PRINT STRIDE count MD steps, which equal fs here because TIMESTEP=1.0."
+      },
+      "wall": {
+        "type": "UPPER_WALLS",
+        "at_angstrom": 4.0,
+        "kappa_kcal_mol_angstrom2": 200.0,
+        "initial_margin_angstrom": 0.6808752888597276,
+        "initial_wall_energy_kcal_mol": 0.0,
+        "status": "AT = 4.0 A matches SI Table 3; KAPPA = 200 is a project assumption because the wall strength is not reported"
+      },
+      "cp2k": {
+        "charge": -2,
+        "multiplicity": 1,
+        "ensemble": "NVT",
+        "thermostat": "CSVR",
+        "temperature_k": 298.15,
+        "timecon_fs": 100,
+        "timestep_fs": 1.0,
+        "steps_initial_segment": 10000,
+        "trajectory_every_fs": 10,
+        "restart_every_fs": 100
+      },
+      "bulk_geometry": {
+        "water_density_g_cm3": 0.9967276840784537,
+        "water_oxygen_z_min_angstrom": 0.09246700000000097,
+        "water_oxygen_z_max_angstrom": 14.223674
+      }
+    },
+    {
+      "name": "interface_r1",
+      "point": "R_inter",
+      "environment": "interface",
+      "xyz": "inputs/interface_r1.xyz",
+      "inp": "inputs/interface_r1.inp",
+      "plumed": "inputs/interface_r1.plumed",
+      "xyz_sha256": "d130d72b8da2d57944d542685680c9757285083bc3a1626c3f870f67d102d34e",
+      "inp_sha256": "85d542188c304129bb9b5f6dd5ffc4b5b8556e20c3758b7b57d443f9b6aced0e",
+      "plumed_sha256": "ed27c27d03bcc28d30081c8758cd42c35bb48fe32b9015bb85cae175eac8d8b8",
+      "atom_count": 296,
+      "composition": {
+        "H": 194,
+        "O": 100,
+        "C": 1,
+        "S": 1
+      },
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "sc_distance_angstrom": 3.931725038239195,
+      "min_intermolecular_contact_angstrom": 1.5490048645333554,
+      "min_intermolecular_contact_atoms_1based": [
+        33,
+        "H2O",
+        230,
+        "H2O",
+        "O",
+        "H"
+      ],
+      "min_intermolecular_contact_metric": "minimum-image distance, intramolecular pairs excluded; hard gate at 1.20 A",
+      "min_atom_pair_distance_including_bonds_angstrom": 0.9205516239978069,
+      "min_atom_pair_including_bonds_1based": [
+        61,
+        63,
+        "H",
+        "O"
+      ],
+      "max_coordinate_excursion_angstrom": 1.2195509999999992,
+      "solute_positions_angstrom_raw": {
+        "S": [
+          6.613642,
+          11.081965,
+          8.494899
+        ],
+        "C": [
+          6.952732,
+          10.275081,
+          12.327968
+        ],
+        "O_carbonyl": [
+          8.050366,
+          9.670737,
+          12.530529
+        ]
+      },
+      "metad": {
+        "cv": "d(S-C) single distance",
+        "sigma_angstrom": 0.1,
+        "pace_md_steps": 30,
+        "pace_fs_at_1fs_timestep": 30,
+        "print_stride_md_steps": 10,
+        "print_stride_fs_at_1fs_timestep": 10,
+        "height_ha": 5e-05,
+        "height_kcal_mol": 0.03137545,
+        "biasfactor": null,
+        "note": "ordinary metaD; no BIASFACTOR and no GRID/WT block. PLUMED PACE and PRINT STRIDE count MD steps, which equal fs here because TIMESTEP=1.0."
+      },
+      "wall": {
+        "type": "UPPER_WALLS",
+        "at_angstrom": 4.0,
+        "kappa_kcal_mol_angstrom2": 200.0,
+        "initial_margin_angstrom": 0.06827496176080494,
+        "initial_wall_energy_kcal_mol": 0.0,
+        "status": "AT = 4.0 A matches SI Table 3; KAPPA = 200 is a project assumption because the wall strength is not reported"
+      },
+      "cp2k": {
+        "charge": -2,
+        "multiplicity": 1,
+        "ensemble": "NVT",
+        "thermostat": "CSVR",
+        "temperature_k": 298.15,
+        "timecon_fs": 100,
+        "timestep_fs": 1.0,
+        "steps_initial_segment": 10000,
+        "trajectory_every_fs": 10,
+        "restart_every_fs": 100
+      },
+      "interface_geometry": {
+        "water_oxygen_z_min_angstrom": 0.282067,
+        "water_oxygen_z_max_angstrom": 29.879067,
+        "largest_water_oxygen_gap_angstrom": 15.011753,
+        "film_thickness_angstrom": 14.988247,
+        "film_top_surface_z_angstrom": 13.810051,
+        "film_bottom_surface_z_angstrom": 28.821804,
+        "vacuum_gap_angstrom": 15.011753,
+        "solute_wrapped_z_angstrom": {
+          "S": 8.494899,
+          "C": 12.327968
+        },
+        "carbon_depth_below_top_surface_angstrom": 1.4820829999999994,
+        "water_density_g_cm3_in_film": 0.8515717339009062
+      }
+    }
+  ]
+}

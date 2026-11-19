@@ -1,0 +1,570 @@
+{
+  "schema": "li2025_branches/v1",
+  "cases": [
+    {
+      "name": "r_eq_metad_smoke",
+      "branch": "r_eq_metad",
+      "unbiased": false,
+      "prepared_under_bias": false,
+      "seed": 2026111201,
+      "steps": 20,
+      "cp2k_project": "r_eq_metad_smoke",
+      "expected_frames": 3,
+      "box_class": "interface",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "source": {
+        "trajectory": "results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq-pos-1.xyz",
+        "trajectory_sha256": "80eedcaaa7de00f6f0b04cee30162a6e0ce834d25d01f2c8fea8b507d8219d4d",
+        "frame_step": 5000,
+        "parent_job_id": "8568513",
+        "run_record": "results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/run_record.json",
+        "run_record_sha256": "dfaf71d41cd9e12aa28c9058f4f9a42b594ccdd0b07361a54f584966424e1695"
+      },
+      "sc_distance_angstrom": 3.4701160235510695,
+      "geometry": {
+        "composition": {
+          "H": 194,
+          "O": 100,
+          "C": 1,
+          "S": 1
+        },
+        "min_atom_pair_distance_including_bonds_angstrom": 0.9210750184743838,
+        "min_atom_pair_including_bonds_1based": [
+          143,
+          144,
+          "H",
+          "O"
+        ],
+        "min_intermolecular_contact_angstrom": 1.4835652951032001,
+        "min_intermolecular_contact_atoms_1based": [
+          102,
+          "H2O",
+          145,
+          "H2O",
+          "O",
+          "H"
+        ],
+        "sc_distance_angstrom": 3.4701160235510695,
+        "co_distance_angstrom": 1.280962379746805,
+        "ch_distances_angstrom": [
+          1.1414111044074722,
+          1.0690308927418726
+        ],
+        "so_distances_angstrom": [
+          1.6142060439342487,
+          1.5454649524310404,
+          1.5305430356653522
+        ]
+      },
+      "cp2k": {
+        "steps_initial_segment": 20,
+        "trajectory_every_fs": 10
+      },
+      "stage": [
+        {
+          "role": "new",
+          "source": "r_eq_metad.xyz",
+          "target": "r_eq_metad.xyz",
+          "sha256": "203ae51529db8274d44fce25972721bab2e23886f909cb26d4f4c628dbc9d52a",
+          "bytes": 19305
+        },
+        {
+          "role": "new",
+          "source": "r_eq_metad_smoke.plumed",
+          "target": "r_eq_metad_smoke.plumed",
+          "sha256": "195d3a77d89d6571767cc23af46e4e5cadbc3e72177914142d3d3eade75a6b6e",
+          "bytes": 518
+        },
+        {
+          "role": "new",
+          "source": "r_eq_metad_smoke.inp",
+          "target": "r_eq_metad_smoke.inp",
+          "sha256": "28ae111d9bc856268e9370ae6e067db1dc8ce8138e14c8cf1fc5eddccbc9a014",
+          "bytes": 2076
+        }
+      ],
+      "outputs": {
+        "output": "r_eq_metad_smoke.out",
+        "trajectory": "r_eq_metad_smoke-pos-1.xyz",
+        "energy": "r_eq_metad_smoke-1.ener",
+        "restart": "r_eq_metad_smoke-1.restart"
+      },
+      "metad_files": {
+        "hills": "HILLS_r_eq_metad_smoke",
+        "colvar": "COLVAR_r_eq_metad_smoke"
+      }
+    },
+    {
+      "name": "r_eq_metad",
+      "branch": "r_eq_metad",
+      "unbiased": false,
+      "prepared_under_bias": false,
+      "seed": 2026111201,
+      "steps": 10000,
+      "cp2k_project": "r_eq_metad",
+      "expected_frames": 1001,
+      "box_class": "interface",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "source": {
+        "trajectory": "results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq-pos-1.xyz",
+        "trajectory_sha256": "80eedcaaa7de00f6f0b04cee30162a6e0ce834d25d01f2c8fea8b507d8219d4d",
+        "frame_step": 5000,
+        "parent_job_id": "8568513",
+        "run_record": "results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/run_record.json",
+        "run_record_sha256": "dfaf71d41cd9e12aa28c9058f4f9a42b594ccdd0b07361a54f584966424e1695"
+      },
+      "sc_distance_angstrom": 3.4701160235510695,
+      "geometry": {
+        "composition": {
+          "H": 194,
+          "O": 100,
+          "C": 1,
+          "S": 1
+        },
+        "min_atom_pair_distance_including_bonds_angstrom": 0.9210750184743838,
+        "min_atom_pair_including_bonds_1based": [
+          143,
+          144,
+          "H",
+          "O"
+        ],
+        "min_intermolecular_contact_angstrom": 1.4835652951032001,
+        "min_intermolecular_contact_atoms_1based": [
+          102,
+          "H2O",
+          145,
+          "H2O",
+          "O",
+          "H"
+        ],
+        "sc_distance_angstrom": 3.4701160235510695,
+        "co_distance_angstrom": 1.280962379746805,
+        "ch_distances_angstrom": [
+          1.1414111044074722,
+          1.0690308927418726
+        ],
+        "so_distances_angstrom": [
+          1.6142060439342487,
+          1.5454649524310404,
+          1.5305430356653522
+        ]
+      },
+      "cp2k": {
+        "steps_initial_segment": 10000,
+        "trajectory_every_fs": 10
+      },
+      "stage": [
+        {
+          "role": "new",
+          "source": "r_eq_metad.xyz",
+          "target": "r_eq_metad.xyz",
+          "sha256": "203ae51529db8274d44fce25972721bab2e23886f909cb26d4f4c628dbc9d52a",
+          "bytes": 19305
+        },
+        {
+          "role": "new",
+          "source": "r_eq_metad.plumed",
+          "target": "r_eq_metad.plumed",
+          "sha256": "582d5fb73267f6582edff8aaa0b39f5081466693207fce57dfd137af63966340",
+          "bytes": 500
+        },
+        {
+          "role": "new",
+          "source": "r_eq_metad.inp",
+          "target": "r_eq_metad.inp",
+          "sha256": "42d17c04d0574771d650640588ba72ffa4c790164dddd61e678793572a3aa94e",
+          "bytes": 2067
+        }
+      ],
+      "outputs": {
+        "output": "r_eq_metad.out",
+        "trajectory": "r_eq_metad-pos-1.xyz",
+        "energy": "r_eq_metad-1.ener",
+        "restart": "r_eq_metad-1.restart"
+      },
+      "metad_files": {
+        "hills": "HILLS_r_eq_metad",
+        "colvar": "COLVAR_r_eq_metad"
+      }
+    },
+    {
+      "name": "p_iface_v2_smoke",
+      "branch": "p_iface_v2",
+      "unbiased": true,
+      "prepared_under_bias": false,
+      "seed": 2026111202,
+      "steps": 20,
+      "cp2k_project": "p_iface_v2_smoke",
+      "expected_frames": 3,
+      "box_class": "interface",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "source": {
+        "coordinate_file": "campaign/li2025_recovery_20261111/inputs/p_interface.xyz",
+        "coordinate_sha256": "b55dcc90758a0afe75e6e8ca49d85a01becaac105da6f7436f21c58bb7446fe2",
+        "label": "Public Figure 6b P_inter",
+        "workbook_range": "Z2:AC297",
+        "workbook_sha256": "f4e2bedc004f0abaf180f55e95bd2aa9f7ddc2aa86ef09a683fd2d5afe0a9992"
+      },
+      "sc_distance_angstrom": 2.074714787994484,
+      "geometry": {
+        "composition": {
+          "H": 194,
+          "O": 100,
+          "C": 1,
+          "S": 1
+        },
+        "min_atom_pair_distance_including_bonds_angstrom": 0.9047976127565769,
+        "min_atom_pair_including_bonds_1based": [
+          82,
+          84,
+          "H",
+          "O"
+        ],
+        "min_intermolecular_contact_angstrom": 1.5127423899606964,
+        "min_intermolecular_contact_atoms_1based": [
+          272,
+          "H2O",
+          290,
+          "HCHO",
+          "H",
+          "O"
+        ],
+        "sc_distance_angstrom": 2.074714787994484,
+        "co_distance_angstrom": 1.3137112296463789,
+        "ch_distances_angstrom": [
+          1.1197916355483273,
+          1.1171376787437615
+        ],
+        "so_distances_angstrom": [
+          1.5189882255060454,
+          1.5380763555376569,
+          1.496375171094803
+        ]
+      },
+      "cp2k": {
+        "steps_initial_segment": 20,
+        "trajectory_every_fs": 10
+      },
+      "stage": [
+        {
+          "role": "new",
+          "source": "p_iface_v2.xyz",
+          "target": "p_iface_v2.xyz",
+          "sha256": "b55dcc90758a0afe75e6e8ca49d85a01becaac105da6f7436f21c58bb7446fe2",
+          "bytes": 12489
+        },
+        {
+          "role": "new",
+          "source": "p_iface_v2_smoke.inp",
+          "target": "p_iface_v2_smoke.inp",
+          "sha256": "d6312dfda4b8e41d4309a01c86f5a562ea28c324168c79d5917818ee8d814d88",
+          "bytes": 1938
+        }
+      ],
+      "outputs": {
+        "output": "p_iface_v2_smoke.out",
+        "trajectory": "p_iface_v2_smoke-pos-1.xyz",
+        "energy": "p_iface_v2_smoke-1.ener",
+        "restart": "p_iface_v2_smoke-1.restart"
+      },
+      "metad_files": {
+        "hills": "HILLS_p_iface_v2_smoke",
+        "colvar": "COLVAR_p_iface_v2_smoke"
+      }
+    },
+    {
+      "name": "p_iface_v2",
+      "branch": "p_iface_v2",
+      "unbiased": true,
+      "prepared_under_bias": false,
+      "seed": 2026111202,
+      "steps": 5000,
+      "cp2k_project": "p_iface_v2",
+      "expected_frames": 501,
+      "box_class": "interface",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "source": {
+        "coordinate_file": "campaign/li2025_recovery_20261111/inputs/p_interface.xyz",
+        "coordinate_sha256": "b55dcc90758a0afe75e6e8ca49d85a01becaac105da6f7436f21c58bb7446fe2",
+        "label": "Public Figure 6b P_inter",
+        "workbook_range": "Z2:AC297",
+        "workbook_sha256": "f4e2bedc004f0abaf180f55e95bd2aa9f7ddc2aa86ef09a683fd2d5afe0a9992"
+      },
+      "sc_distance_angstrom": 2.074714787994484,
+      "geometry": {
+        "composition": {
+          "H": 194,
+          "O": 100,
+          "C": 1,
+          "S": 1
+        },
+        "min_atom_pair_distance_including_bonds_angstrom": 0.9047976127565769,
+        "min_atom_pair_including_bonds_1based": [
+          82,
+          84,
+          "H",
+          "O"
+        ],
+        "min_intermolecular_contact_angstrom": 1.5127423899606964,
+        "min_intermolecular_contact_atoms_1based": [
+          272,
+          "H2O",
+          290,
+          "HCHO",
+          "H",
+          "O"
+        ],
+        "sc_distance_angstrom": 2.074714787994484,
+        "co_distance_angstrom": 1.3137112296463789,
+        "ch_distances_angstrom": [
+          1.1197916355483273,
+          1.1171376787437615
+        ],
+        "so_distances_angstrom": [
+          1.5189882255060454,
+          1.5380763555376569,
+          1.496375171094803
+        ]
+      },
+      "cp2k": {
+        "steps_initial_segment": 5000,
+        "trajectory_every_fs": 10
+      },
+      "stage": [
+        {
+          "role": "new",
+          "source": "p_iface_v2.xyz",
+          "target": "p_iface_v2.xyz",
+          "sha256": "b55dcc90758a0afe75e6e8ca49d85a01becaac105da6f7436f21c58bb7446fe2",
+          "bytes": 12489
+        },
+        {
+          "role": "new",
+          "source": "p_iface_v2.inp",
+          "target": "p_iface_v2.inp",
+          "sha256": "9536573c2158025949f53c2b03d31a0c5b2ee7dca41b2a08542aed4b53766319",
+          "bytes": 1934
+        }
+      ],
+      "outputs": {
+        "output": "p_iface_v2.out",
+        "trajectory": "p_iface_v2-pos-1.xyz",
+        "energy": "p_iface_v2-1.ener",
+        "restart": "p_iface_v2-1.restart"
+      },
+      "metad_files": {
+        "hills": "HILLS_p_iface_v2",
+        "colvar": "COLVAR_p_iface_v2"
+      }
+    },
+    {
+      "name": "relax_v2_smoke",
+      "branch": "relax_v2",
+      "unbiased": true,
+      "prepared_under_bias": true,
+      "seed": 2026111202,
+      "steps": 20,
+      "cp2k_project": "relax_v2_smoke",
+      "expected_frames": 3,
+      "box_class": "interface",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "source": {
+        "trajectory": "results/li2025_autofollow/decision_20261112/li2025_solvation_20261111/relax/relax-pos-1.xyz",
+        "trajectory_sha256": "a8af5e72ccabeb6a4d0c7969417948681a342c42c1d87c011717ccb6f38b5671",
+        "frame_step": 2000,
+        "parent_job_id": "8568949",
+        "run_record": "results/li2025_autofollow/decision_20261112/li2025_solvation_20261111/relax/run_record.json",
+        "run_record_sha256": "89f731ea5fec06bf87c254d823680244ffcc47fcc041a5aa4efa3c4208d3ad87"
+      },
+      "sc_distance_angstrom": 1.9962995623064579,
+      "geometry": {
+        "composition": {
+          "H": 194,
+          "O": 100,
+          "C": 1,
+          "S": 1
+        },
+        "min_atom_pair_distance_including_bonds_angstrom": 0.9232301805929294,
+        "min_atom_pair_including_bonds_1based": [
+          200,
+          201,
+          "H",
+          "O"
+        ],
+        "min_intermolecular_contact_angstrom": 1.4940922608073035,
+        "min_intermolecular_contact_atoms_1based": [
+          19,
+          "H2O",
+          27,
+          "H2O",
+          "H",
+          "O"
+        ],
+        "sc_distance_angstrom": 1.9962995623064579,
+        "co_distance_angstrom": 1.2903398737513878,
+        "ch_distances_angstrom": [
+          1.0697492038285807,
+          1.0889230066855742
+        ],
+        "so_distances_angstrom": [
+          1.5355525235072398,
+          1.5227819714996553,
+          1.5420303960840114
+        ]
+      },
+      "cp2k": {
+        "steps_initial_segment": 20,
+        "trajectory_every_fs": 10
+      },
+      "stage": [
+        {
+          "role": "new",
+          "source": "relax_v2.xyz",
+          "target": "relax_v2.xyz",
+          "sha256": "dd269892c04e80299507a88a7e3857893426969a5c70931e7642804e850c2d01",
+          "bytes": 19305
+        },
+        {
+          "role": "new",
+          "source": "relax_v2_smoke.inp",
+          "target": "relax_v2_smoke.inp",
+          "sha256": "c28472db1efac44855da11dfd8bc7d6c7eb23a68b51e539f0a97ec69d09a7347",
+          "bytes": 1934
+        }
+      ],
+      "outputs": {
+        "output": "relax_v2_smoke.out",
+        "trajectory": "relax_v2_smoke-pos-1.xyz",
+        "energy": "relax_v2_smoke-1.ener",
+        "restart": "relax_v2_smoke-1.restart"
+      },
+      "metad_files": {
+        "hills": "HILLS_relax_v2_smoke",
+        "colvar": "COLVAR_relax_v2_smoke"
+      }
+    },
+    {
+      "name": "relax_v2",
+      "branch": "relax_v2",
+      "unbiased": true,
+      "prepared_under_bias": true,
+      "seed": 2026111202,
+      "steps": 5000,
+      "cp2k_project": "relax_v2",
+      "expected_frames": 501,
+      "box_class": "interface",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "source": {
+        "trajectory": "results/li2025_autofollow/decision_20261112/li2025_solvation_20261111/relax/relax-pos-1.xyz",
+        "trajectory_sha256": "a8af5e72ccabeb6a4d0c7969417948681a342c42c1d87c011717ccb6f38b5671",
+        "frame_step": 2000,
+        "parent_job_id": "8568949",
+        "run_record": "results/li2025_autofollow/decision_20261112/li2025_solvation_20261111/relax/run_record.json",
+        "run_record_sha256": "89f731ea5fec06bf87c254d823680244ffcc47fcc041a5aa4efa3c4208d3ad87"
+      },
+      "sc_distance_angstrom": 1.9962995623064579,
+      "geometry": {
+        "composition": {
+          "H": 194,
+          "O": 100,
+          "C": 1,
+          "S": 1
+        },
+        "min_atom_pair_distance_including_bonds_angstrom": 0.9232301805929294,
+        "min_atom_pair_including_bonds_1based": [
+          200,
+          201,
+          "H",
+          "O"
+        ],
+        "min_intermolecular_contact_angstrom": 1.4940922608073035,
+        "min_intermolecular_contact_atoms_1based": [
+          19,
+          "H2O",
+          27,
+          "H2O",
+          "H",
+          "O"
+        ],
+        "sc_distance_angstrom": 1.9962995623064579,
+        "co_distance_angstrom": 1.2903398737513878,
+        "ch_distances_angstrom": [
+          1.0697492038285807,
+          1.0889230066855742
+        ],
+        "so_distances_angstrom": [
+          1.5355525235072398,
+          1.5227819714996553,
+          1.5420303960840114
+        ]
+      },
+      "cp2k": {
+        "steps_initial_segment": 5000,
+        "trajectory_every_fs": 10
+      },
+      "stage": [
+        {
+          "role": "new",
+          "source": "relax_v2.xyz",
+          "target": "relax_v2.xyz",
+          "sha256": "dd269892c04e80299507a88a7e3857893426969a5c70931e7642804e850c2d01",
+          "bytes": 19305
+        },
+        {
+          "role": "new",
+          "source": "relax_v2.inp",
+          "target": "relax_v2.inp",
+          "sha256": "12f90b079e5de161de40dfe610a529156b3d1bce0c5aacb2d83d7a30a87fad86",
+          "bytes": 1930
+        }
+      ],
+      "outputs": {
+        "output": "relax_v2.out",
+        "trajectory": "relax_v2-pos-1.xyz",
+        "energy": "relax_v2-1.ener",
+        "restart": "relax_v2-1.restart"
+      },
+      "metad_files": {
+        "hills": "HILLS_relax_v2",
+        "colvar": "COLVAR_relax_v2"
+      }
+    }
+  ],
+  "dependencies": {
+    "frozen_analyze_event_unbiased.py": "8529ce9c63f694fd93f86ed0fbac292aff4bf77a612b4069b2d45bb7c96c01cd",
+    "frozen_prepare_event_unbiased.py": "e51dd85920a001a844093490082b788a2ebe5dcb80c1c73e6e77de9c5ff9dec8",
+    "frozen_run_cp2k.py": "c3d65060daafbe1076304f092f72c2e40e738aea9cb6f4cc63d8263298397d61",
+    "run_branch.py": "6aff34c24407e03b4ac20e1dcafe97b3c219c30f83209f9ec51a408f66c5bd3c",
+    "validate_stage.py": "eaef3bd40adf5a4e3370074be65024b79b3fa0584c2b84d046fe81998c8839c0",
+    "run.slurm": "e7d16a85cdab7d63226ef89541012cdb86c5d6ac402bdb626d34ee01e7f1a751"
+  },
+  "reference_input_sha256": "85d542188c304129bb9b5f6dd5ffc4b5b8556e20c3758b7b57d443f9b6aced0e",
+  "reference_plumed_sha256": "ed27c27d03bcc28d30081c8758cd42c35bb48fe32b9015bb85cae175eac8d8b8",
+  "velocity_policy": "Fresh CP2K velocities with recorded GLOBAL SEED; positions unedited; no EXT_RESTART",
+  "bias_history": "r_eq_metad starts a separate new bias history after unbiased 5 ps R preparation",
+  "interpretation": "Conditional retention and initialization sensitivity; descriptive geometry; human review PENDING"
+}

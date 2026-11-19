@@ -1,0 +1,366 @@
+{
+  "schema": "li2025_direct_interface_event_unbiased/v1",
+  "session": "li2025-direct-interface-unbiased",
+  "purpose": "Three fully unbiased BOMD replicas started from the single short-contact frame of the Li 2025 interface metaD run (step 10410, d(S-C) = 1.808134 A in the 15 x 15 x 30 A cell), harvested from the biased interface_r1 trajectory.",
+  "scope": {
+    "what_this_is": [
+      "Three independent unbiased NVT BOMD replicas (3 ps each) from one frozen interface event frame.",
+      "CP2K-generated Maxwell-Boltzmann velocities at 298.15 K, seeded per replica.",
+      "A stability/relaxation check of a short contact after removing all PLUMED bias."
+    ],
+    "what_this_is_not": [
+      "NOT spontaneous formation: the start frame came from a biased metaD trajectory.",
+      "NOT evidence that the contact is stable; the replicas test whether it survives without the bias.",
+      "NOT a free energy, PMF, barrier or rate.",
+      "NOT Li's three-replica statistics and not comparable to the five-distance CV.",
+      "NOT a geometry optimisation; the frame is used verbatim."
+    ],
+    "structure_conclusion_status": "Distance facts only; any C-S bonding claim must pass the three-layer gate in AGENTS.md section 7."
+  },
+  "source": {
+    "trajectory": "results/li2025_direct/interface_r1_seg2/interface_r1-pos-1.xyz",
+    "sha256": "2706160763bd11a15fa9c93ce9beaaf8176030f21cad2bfd352e525e4a013b1e",
+    "bytes": 19310000,
+    "frame": {
+      "step": 10410,
+      "time_fs": 10409.99916,
+      "time_fs_printed_in_trajectory": 10410.0,
+      "time_tolerance_fs": 0.01,
+      "match_rule": "MD step equals 10410 AND |time - 10409.999160| <= 0.010 fs; formatted time strings are never compared, because the XYZ comment prints three decimals while COLVAR prints six",
+      "comment": " i =    10410, time =    10410.000, E =     -1735.1365181164",
+      "atom_count": 296,
+      "line_range_1based": [
+        11921,
+        12218
+      ],
+      "unique_match": true
+    },
+    "xyz": {
+      "path": "inputs/interface_r1_event10410.xyz",
+      "sha256": "808f89116e643b0992b0b0651fb4707d94f4365e3fb3f5cfda556ddc03388340",
+      "bytes": 19545
+    },
+    "extraction": "atom lines copied verbatim from the trajectory; only a new comment line was written. No wrapping, rotation, translation or bond editing."
+  },
+  "colvar_cross_check": {
+    "path": "results/li2025_direct/interface_r1_seg2/COLVAR_interface_r1",
+    "sha256": "f83326babcf660013e36bfde681f1bb88da09be748ab57312b36af1a4e816797",
+    "time_fs": 10409.99916,
+    "d_sc_angstrom": 1.808134,
+    "matches": 1
+  },
+  "twenty_ps_event_scan": {
+    "threshold_angstrom": 2.0,
+    "trajectories": [
+      {
+        "path": "results/li2025_direct/interface_r1_fix1/interface_r1-pos-1.xyz",
+        "sha256": "244ecaf8a8a710dca6b4b6e9212471f5cf4e746c64fab75502889a28e5c9d82b",
+        "bytes": 19329310,
+        "frames": 1001,
+        "step_range": [
+          0,
+          10000
+        ]
+      },
+      {
+        "path": "results/li2025_direct/interface_r1_seg2/interface_r1-pos-1.xyz",
+        "sha256": "2706160763bd11a15fa9c93ce9beaaf8176030f21cad2bfd352e525e4a013b1e",
+        "bytes": 19310000,
+        "frames": 1000,
+        "step_range": [
+          10010,
+          20000
+        ]
+      }
+    ],
+    "box_angstrom": [
+      15.0,
+      15.0,
+      30.0
+    ],
+    "frames_scanned": 2001,
+    "time_span_fs": [
+      0.0,
+      20000.0
+    ],
+    "frames_below_threshold": 6,
+    "below_threshold_rows": [
+      {
+        "step": 10370,
+        "time_fs": 10370.0,
+        "sc": 1.955884213816827
+      },
+      {
+        "step": 10380,
+        "time_fs": 10380.0,
+        "sc": 1.9433791677042356
+      },
+      {
+        "step": 10390,
+        "time_fs": 10390.0,
+        "sc": 1.9711037371573914
+      },
+      {
+        "step": 10400,
+        "time_fs": 10400.0,
+        "sc": 1.898194096514958
+      },
+      {
+        "step": 10410,
+        "time_fs": 10410.0,
+        "sc": 1.8081340822266159
+      },
+      {
+        "step": 10420,
+        "time_fs": 10420.0,
+        "sc": 1.8804950525375224
+      }
+    ],
+    "window_steps": [
+      10370,
+      10420
+    ],
+    "window_time_fs": [
+      10370.0,
+      10420.0
+    ],
+    "window_is_contiguous": true,
+    "window_step_spacing_fs": 10,
+    "minimum": {
+      "step": 10410,
+      "time_fs": 10410.0,
+      "sc": 1.8081340822266159
+    },
+    "single_window": true
+  },
+  "box_angstrom": [
+    15.0,
+    15.0,
+    30.0
+  ],
+  "box_class": "interface",
+  "geometry": {
+    "composition": {
+      "H": 194,
+      "O": 100,
+      "C": 1,
+      "S": 1
+    },
+    "min_atom_pair_distance_including_bonds_angstrom": 0.9294469655942303,
+    "min_atom_pair_including_bonds_1based": [
+      280,
+      282,
+      "H",
+      "O"
+    ],
+    "min_intermolecular_contact_angstrom": 1.4171869274585696,
+    "min_intermolecular_contact_atoms_1based": [
+      103,
+      "H2O",
+      195,
+      "H2O",
+      "H",
+      "O"
+    ],
+    "sc_distance_angstrom": 1.8081340822266159,
+    "co_distance_angstrom": 1.342219623115764,
+    "ch_distances_angstrom": [
+      1.083538621387196,
+      1.0358935505612694
+    ],
+    "so_distances_angstrom": [
+      1.4901230818880944,
+      1.5597800709397953,
+      1.5112933210937836
+    ]
+  },
+  "atom_order": "1-288 = 96 waters in H,H,O order; 289 C, 290 O, 291 H, 292 H (HCHO); 293 S, 294-296 O (SO3)",
+  "solute_indices_1based": {
+    "C": 289,
+    "O_carbonyl": 290,
+    "H_formyl_1": 291,
+    "H_formyl_2": 292,
+    "S": 293,
+    "O_sulfonate_1": 294,
+    "O_sulfonate_2": 295,
+    "O_sulfonate_3": 296
+  },
+  "velocity_strategy": {
+    "source": "CP2K Maxwell-Boltzmann velocities at TEMPERATURE 298.15 K",
+    "reused_metad_velocities": false,
+    "how": "the event XYZ carries positions only; the input has no &EXT_RESTART and no &VELOCITY, so CP2K draws fresh velocities from &GLOBAL SEED",
+    "seeds": [
+      {
+        "case": "interface_event_unbiased_s1",
+        "seed": 20261112
+      },
+      {
+        "case": "interface_event_unbiased_s2",
+        "seed": 20261113
+      },
+      {
+        "case": "interface_event_unbiased_s3",
+        "seed": 20261114
+      }
+    ]
+  },
+  "production": {
+    "engine": "CP2K 9.1 (cp2k.psmp, PLUMED build but no PLUMED input)",
+    "binary": "/public/home/temp/cp2k-9.1/exe/Linux-x86-64-gfortran-mkl-plumed/cp2k.psmp",
+    "functional": "BLYP",
+    "dispersion": "DFTD3(BJ), REFERENCE_FUNCTIONAL BLYP",
+    "basis": "DZVP-MOLOPT-SR-GTH / GTH-BLYP-q1,q6,q4,q6",
+    "cutoff_ry": 300,
+    "rel_cutoff_ry": 40,
+    "charge": -2,
+    "multiplicity": 1,
+    "counterion": null,
+    "ensemble": "NVT",
+    "thermostat": "CSVR",
+    "temperature_k": 298.15,
+    "timecon_fs": 100,
+    "timestep_fs": 1.0,
+    "steps": 3000,
+    "steps_fs": 3000,
+    "trajectory_every_fs": 10,
+    "restart_every_fs": 100,
+    "cell": "ABC 15.0 15.0 30.0",
+    "mpi_ranks": 64,
+    "memory": "32G",
+    "max_walltime_hours": 48,
+    "partition": "compute (a gpu-partition wrapper is provided for CPU slots)",
+    "removed_from_reference": "&FREE_ENERGY / &METADYN / USE_PLUMED / PLUMED_INPUT_FILE",
+    "unchanged_from_reference": "BLYP, DFTD3(BJ)/BLYP, DZVP-MOLOPT-SR-GTH, GTH-BLYP pseudopotentials, CUTOFF 300 / REL_CUTOFF 40, EPS_SCF 1.0E-6, CHARGE -2, MULTIPLICITY 1, ABC 15.0 15.0 30.0, CSVR 298.15 K / TIMECON 100 fs, TIMESTEP 1.0, trajectory every 10 fs, restart every 100 fs",
+    "assumptions": [
+      "3 ps is a stability check, not a converged sampling window.",
+      "The replicas are independent and may be submitted as slots become available.",
+      "No counterion is present (q = -2 model), so nothing here is the project's neutral +2 K+ model."
+    ]
+  },
+  "verdict": null,
+  "cases": [
+    {
+      "name": "interface_event_unbiased_s1",
+      "seed": 20261112,
+      "unbiased": true,
+      "box_class": "interface",
+      "cp2k_project": "interface_r1_unbiased",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "sc_distance_angstrom": 1.8081340822266159,
+      "stage": [
+        {
+          "role": "new",
+          "source": "interface_r1_event10410.xyz",
+          "target": "interface_r1_event10410.xyz",
+          "sha256": "808f89116e643b0992b0b0651fb4707d94f4365e3fb3f5cfda556ddc03388340",
+          "bytes": 19545
+        },
+        {
+          "role": "new",
+          "source": "interface_event_unbiased_s1.inp",
+          "target": "interface_event_unbiased_s1.inp",
+          "sha256": "b17ee569e3dac7fdd5f2b012905bef39051cc5ef2df9a082424147fa55c639fa",
+          "bytes": 1956
+        }
+      ],
+      "outputs": {
+        "output": "interface_event_unbiased_s1.out",
+        "trajectory": "interface_r1_unbiased-pos-1.xyz",
+        "energy": "interface_r1_unbiased-1.ener",
+        "restart": "interface_r1_unbiased-1.restart"
+      },
+      "steps": 3000,
+      "expected_frames": 301,
+      "fes": {
+        "status": "not_applicable",
+        "note": "unbiased BOMD; no metadynamics, no FES, no verdict."
+      }
+    },
+    {
+      "name": "interface_event_unbiased_s2",
+      "seed": 20261113,
+      "unbiased": true,
+      "box_class": "interface",
+      "cp2k_project": "interface_r1_unbiased",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "sc_distance_angstrom": 1.8081340822266159,
+      "stage": [
+        {
+          "role": "new",
+          "source": "interface_r1_event10410.xyz",
+          "target": "interface_r1_event10410.xyz",
+          "sha256": "808f89116e643b0992b0b0651fb4707d94f4365e3fb3f5cfda556ddc03388340",
+          "bytes": 19545
+        },
+        {
+          "role": "new",
+          "source": "interface_event_unbiased_s2.inp",
+          "target": "interface_event_unbiased_s2.inp",
+          "sha256": "b008e1107be031075019ed2d105d2aef71a6622096c55f5bec1692ff1e741527",
+          "bytes": 1956
+        }
+      ],
+      "outputs": {
+        "output": "interface_event_unbiased_s2.out",
+        "trajectory": "interface_r1_unbiased-pos-1.xyz",
+        "energy": "interface_r1_unbiased-1.ener",
+        "restart": "interface_r1_unbiased-1.restart"
+      },
+      "steps": 3000,
+      "expected_frames": 301,
+      "fes": {
+        "status": "not_applicable",
+        "note": "unbiased BOMD; no metadynamics, no FES, no verdict."
+      }
+    },
+    {
+      "name": "interface_event_unbiased_s3",
+      "seed": 20261114,
+      "unbiased": true,
+      "box_class": "interface",
+      "cp2k_project": "interface_r1_unbiased",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "sc_distance_angstrom": 1.8081340822266159,
+      "stage": [
+        {
+          "role": "new",
+          "source": "interface_r1_event10410.xyz",
+          "target": "interface_r1_event10410.xyz",
+          "sha256": "808f89116e643b0992b0b0651fb4707d94f4365e3fb3f5cfda556ddc03388340",
+          "bytes": 19545
+        },
+        {
+          "role": "new",
+          "source": "interface_event_unbiased_s3.inp",
+          "target": "interface_event_unbiased_s3.inp",
+          "sha256": "dd1e6fb1375dfe4c5f8a4b877368d6ed83cedcd6490585962bc7ff8c40745ec1",
+          "bytes": 1956
+        }
+      ],
+      "outputs": {
+        "output": "interface_event_unbiased_s3.out",
+        "trajectory": "interface_r1_unbiased-pos-1.xyz",
+        "energy": "interface_r1_unbiased-1.ener",
+        "restart": "interface_r1_unbiased-1.restart"
+      },
+      "steps": 3000,
+      "expected_frames": 301,
+      "fes": {
+        "status": "not_applicable",
+        "note": "unbiased BOMD; no metadynamics, no FES, no verdict."
+      }
+    }
+  ]
+}

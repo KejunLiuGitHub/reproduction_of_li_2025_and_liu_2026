@@ -1,0 +1,66 @@
+{
+  "schema": "li2025_solvation/v1",
+  "cases": {
+    "smoke": {
+      "steps": 20,
+      "start_step": 0,
+      "expected_end_step": 20,
+      "biased": true,
+      "input_sha256": "a178f04dc6f5453e5689b2939c2f77a98412ca1050ded2b90dace62ce8fb5aea"
+    },
+    "release_smoke": {
+      "steps": 20,
+      "start_step": 20,
+      "expected_end_step": 40,
+      "biased": false,
+      "input_sha256": "1634a3818166bab4e4c7b3894b18f837a2d9c474caed42aa381a3784a875b1c1"
+    },
+    "relax": {
+      "steps": 2000,
+      "start_step": 0,
+      "expected_end_step": 2000,
+      "biased": true,
+      "input_sha256": "29da0ea82ae44c1387261c00edfc4429df641558629714d335cf816b63dd9ae7"
+    },
+    "release": {
+      "steps": 5000,
+      "start_step": 2000,
+      "expected_end_step": 7000,
+      "biased": false,
+      "input_sha256": "24688c668f967a29a855c184ea1795b48643a316e07e1acb90d36bfa4bdf47c4"
+    }
+  },
+  "seed": 20261113,
+  "source": {
+    "input": "campaign/li2025_direct/inputs/interface_event_unbiased_s2.inp",
+    "input_sha256": "b008e1107be031075019ed2d105d2aef71a6622096c55f5bec1692ff1e741527",
+    "xyz": "campaign/li2025_direct/inputs/interface_r1_event10410.xyz",
+    "xyz_sha256": "808f89116e643b0992b0b0651fb4707d94f4365e3fb3f5cfda556ddc03388340",
+    "coordinate_change": "none; no atom moved, added or removed"
+  },
+  "files": {
+    "inputs/event10410.xyz": "808f89116e643b0992b0b0651fb4707d94f4365e3fb3f5cfda556ddc03388340",
+    "inputs/hold_sc.plumed": "bac65dd578b5df3236622172fec047dcd9416004ef96c0ccc033e19d88e935b3",
+    "inputs/relax.inp": "29da0ea82ae44c1387261c00edfc4429df641558629714d335cf816b63dd9ae7",
+    "inputs/release.inp": "24688c668f967a29a855c184ea1795b48643a316e07e1acb90d36bfa4bdf47c4",
+    "inputs/release_smoke.inp": "1634a3818166bab4e4c7b3894b18f837a2d9c474caed42aa381a3784a875b1c1",
+    "inputs/smoke.inp": "a178f04dc6f5453e5689b2939c2f77a98412ca1050ded2b90dace62ce8fb5aea"
+  },
+  "dependencies": {
+    "frozen_run_cp2k.py": "c3d65060daafbe1076304f092f72c2e40e738aea9cb6f4cc63d8263298397d61",
+    "frozen_analyze_event_unbiased.py": "8529ce9c63f694fd93f86ed0fbac292aff4bf77a612b4069b2d45bb7c96c01cd"
+  },
+  "intervention": {
+    "stage_A": "2 ps S-C harmonic restraint; solute orientation and all water coordinates free",
+    "AT_A": 1.95,
+    "KAPPA_kcal_mol_A2": 100.0,
+    "definition": "V=0.5*KAPPA*(SC-AT)^2",
+    "parameter_origin": "project diagnostic choice; target near public P 3ps mean SC=1.96 A; not Li original protocol",
+    "stage_B": "5 ps fully unbiased, inheriting A positions/velocities/counters; no PLUMED or geometric constraint",
+    "thermostat": "CSVR parameters retained; random internal thermostat state not restored",
+    "interpretation": "guided preparation then unbiased retention; not spontaneous reactant-to-product formation; no FES"
+  },
+  "controls": "existing direct-release s2 has identical initial positions and seed; this intervention allows both solute and water relaxation, not a solvent-only causal isolation",
+  "smoke": "20 restrained steps +20 release steps in separate directories; production starts fresh at step0, not from smoke",
+  "plumed_reference": "https://www.plumed.org/doc-v2.9/user-doc/html/_r_e_s_t_r_a_i_n_t.html"
+}

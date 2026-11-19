@@ -1,0 +1,443 @@
+{
+  "schema": "li2025_recovery/v1",
+  "cases": [
+    {
+      "name": "p_interface",
+      "unbiased": true,
+      "cp2k_project": "p_interface",
+      "box_class": "interface",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "seed": 2026111101,
+      "steps": 3000,
+      "expected_frames": 301,
+      "sc_distance_angstrom": 2.074714787994484,
+      "source": {
+        "sheet": "Figure 6b",
+        "column": 26,
+        "rows": [
+          2,
+          297
+        ],
+        "label": "P_inter"
+      },
+      "geometry": {
+        "min_atom_pair_distance_angstrom": 0.9047976127565769,
+        "min_atom_pair_1based": [
+          82,
+          84,
+          "H",
+          "O"
+        ],
+        "min_intermolecular_contact_angstrom": 1.5127423899606964,
+        "min_intermolecular_contact_1based": [
+          272,
+          "H2O",
+          290,
+          "HCHO",
+          "H",
+          "O"
+        ],
+        "sc_distance_angstrom": 2.074714787994484,
+        "composition": {
+          "H": 194,
+          "O": 100,
+          "C": 1,
+          "S": 1
+        }
+      },
+      "stage": [
+        {
+          "role": "new",
+          "source": "p_interface.xyz",
+          "target": "p_interface.xyz",
+          "sha256": "b55dcc90758a0afe75e6e8ca49d85a01becaac105da6f7436f21c58bb7446fe2",
+          "bytes": 12489
+        },
+        {
+          "role": "new",
+          "source": "p_interface.inp",
+          "target": "p_interface.inp",
+          "sha256": "8e86960e3be1bd8f1c7fc5b1d1f4cf6f630a890c2fbcab3174edcd1912b0ae05",
+          "bytes": 1936
+        }
+      ],
+      "outputs": {
+        "output": "p_interface.out",
+        "trajectory": "p_interface-pos-1.xyz",
+        "energy": "p_interface-1.ener",
+        "restart": "p_interface-1.restart"
+      }
+    },
+    {
+      "name": "p_interface_smoke",
+      "unbiased": true,
+      "cp2k_project": "p_interface_smoke",
+      "box_class": "interface",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "seed": 2026111101,
+      "steps": 20,
+      "expected_frames": 3,
+      "sc_distance_angstrom": 2.074714787994484,
+      "source": {
+        "sheet": "Figure 6b",
+        "column": 26,
+        "rows": [
+          2,
+          297
+        ],
+        "label": "P_inter"
+      },
+      "geometry": {
+        "min_atom_pair_distance_angstrom": 0.9047976127565769,
+        "min_atom_pair_1based": [
+          82,
+          84,
+          "H",
+          "O"
+        ],
+        "min_intermolecular_contact_angstrom": 1.5127423899606964,
+        "min_intermolecular_contact_1based": [
+          272,
+          "H2O",
+          290,
+          "HCHO",
+          "H",
+          "O"
+        ],
+        "sc_distance_angstrom": 2.074714787994484,
+        "composition": {
+          "H": 194,
+          "O": 100,
+          "C": 1,
+          "S": 1
+        }
+      },
+      "stage": [
+        {
+          "role": "new",
+          "source": "p_interface.xyz",
+          "target": "p_interface.xyz",
+          "sha256": "b55dcc90758a0afe75e6e8ca49d85a01becaac105da6f7436f21c58bb7446fe2",
+          "bytes": 12489
+        },
+        {
+          "role": "new",
+          "source": "p_interface_smoke.inp",
+          "target": "p_interface_smoke.inp",
+          "sha256": "079ddde681e76e127bc2dc979a36770d274ec1801e783853c19294e9fed8aa5b",
+          "bytes": 1940
+        }
+      ],
+      "outputs": {
+        "output": "p_interface_smoke.out",
+        "trajectory": "p_interface_smoke-pos-1.xyz",
+        "energy": "p_interface_smoke-1.ener",
+        "restart": "p_interface_smoke-1.restart"
+      }
+    },
+    {
+      "name": "p_bulk",
+      "unbiased": true,
+      "cp2k_project": "p_bulk",
+      "box_class": "bulk",
+      "box_angstrom": [
+        14.2296,
+        14.2296,
+        14.2296
+      ],
+      "seed": 2026111102,
+      "steps": 3000,
+      "expected_frames": 301,
+      "sc_distance_angstrom": 1.804041679830042,
+      "source": {
+        "sheet": "Figure 6b",
+        "column": 11,
+        "rows": [
+          2,
+          297
+        ],
+        "label": "P_bulk"
+      },
+      "geometry": {
+        "min_atom_pair_distance_angstrom": 0.9379639824481533,
+        "min_atom_pair_1based": [
+          203,
+          204,
+          "H",
+          "O"
+        ],
+        "min_intermolecular_contact_angstrom": 1.5345012710600794,
+        "min_intermolecular_contact_1based": [
+          151,
+          "H2O",
+          183,
+          "H2O",
+          "H",
+          "O"
+        ],
+        "sc_distance_angstrom": 1.804041679830042,
+        "composition": {
+          "H": 194,
+          "O": 100,
+          "C": 1,
+          "S": 1
+        }
+      },
+      "stage": [
+        {
+          "role": "new",
+          "source": "p_bulk.xyz",
+          "target": "p_bulk.xyz",
+          "sha256": "f9778e01fdebc47e99296dc9f140eb469f1dd69042ea3186fdbfeda7cbb0a71d",
+          "bytes": 12488
+        },
+        {
+          "role": "new",
+          "source": "p_bulk.inp",
+          "target": "p_bulk.inp",
+          "sha256": "3d366866a917885a07d71d585b80b1272d075e3b25edb348e7af1f4e97e443ad",
+          "bytes": 1935
+        }
+      ],
+      "outputs": {
+        "output": "p_bulk.out",
+        "trajectory": "p_bulk-pos-1.xyz",
+        "energy": "p_bulk-1.ener",
+        "restart": "p_bulk-1.restart"
+      }
+    },
+    {
+      "name": "p_bulk_smoke",
+      "unbiased": true,
+      "cp2k_project": "p_bulk_smoke",
+      "box_class": "bulk",
+      "box_angstrom": [
+        14.2296,
+        14.2296,
+        14.2296
+      ],
+      "seed": 2026111102,
+      "steps": 20,
+      "expected_frames": 3,
+      "sc_distance_angstrom": 1.804041679830042,
+      "source": {
+        "sheet": "Figure 6b",
+        "column": 11,
+        "rows": [
+          2,
+          297
+        ],
+        "label": "P_bulk"
+      },
+      "geometry": {
+        "min_atom_pair_distance_angstrom": 0.9379639824481533,
+        "min_atom_pair_1based": [
+          203,
+          204,
+          "H",
+          "O"
+        ],
+        "min_intermolecular_contact_angstrom": 1.5345012710600794,
+        "min_intermolecular_contact_1based": [
+          151,
+          "H2O",
+          183,
+          "H2O",
+          "H",
+          "O"
+        ],
+        "sc_distance_angstrom": 1.804041679830042,
+        "composition": {
+          "H": 194,
+          "O": 100,
+          "C": 1,
+          "S": 1
+        }
+      },
+      "stage": [
+        {
+          "role": "new",
+          "source": "p_bulk.xyz",
+          "target": "p_bulk.xyz",
+          "sha256": "f9778e01fdebc47e99296dc9f140eb469f1dd69042ea3186fdbfeda7cbb0a71d",
+          "bytes": 12488
+        },
+        {
+          "role": "new",
+          "source": "p_bulk_smoke.inp",
+          "target": "p_bulk_smoke.inp",
+          "sha256": "76b1002e9dcb8713f513934817d7fe3d1b3e29e3ece88a22b83041a963e10765",
+          "bytes": 1939
+        }
+      ],
+      "outputs": {
+        "output": "p_bulk_smoke.out",
+        "trajectory": "p_bulk_smoke-pos-1.xyz",
+        "energy": "p_bulk_smoke-1.ener",
+        "restart": "p_bulk_smoke-1.restart"
+      }
+    },
+    {
+      "name": "r_interface_eq",
+      "unbiased": true,
+      "cp2k_project": "r_interface_eq",
+      "box_class": "interface",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "seed": 2026111103,
+      "steps": 5000,
+      "expected_frames": 501,
+      "sc_distance_angstrom": 3.931725038239195,
+      "source": {
+        "sheet": "Figure 6b",
+        "column": 16,
+        "rows": [
+          2,
+          297
+        ],
+        "label": "R_inter"
+      },
+      "geometry": {
+        "min_atom_pair_distance_angstrom": 0.9205516239978069,
+        "min_atom_pair_1based": [
+          61,
+          63,
+          "H",
+          "O"
+        ],
+        "min_intermolecular_contact_angstrom": 1.5490048645333554,
+        "min_intermolecular_contact_1based": [
+          33,
+          "H2O",
+          230,
+          "H2O",
+          "O",
+          "H"
+        ],
+        "sc_distance_angstrom": 3.931725038239195,
+        "composition": {
+          "H": 194,
+          "O": 100,
+          "C": 1,
+          "S": 1
+        }
+      },
+      "stage": [
+        {
+          "role": "new",
+          "source": "r_interface_eq.xyz",
+          "target": "r_interface_eq.xyz",
+          "sha256": "b44766d837cae154f7281df37f17a179d6ec607b47ef0cebae578759f9c580b5",
+          "bytes": 12489
+        },
+        {
+          "role": "new",
+          "source": "r_interface_eq.inp",
+          "target": "r_interface_eq.inp",
+          "sha256": "41bbc6f1d569180f1cc841da3685e392fda3bd9b5d5b0e0da985a141f1d713e9",
+          "bytes": 1942
+        }
+      ],
+      "outputs": {
+        "output": "r_interface_eq.out",
+        "trajectory": "r_interface_eq-pos-1.xyz",
+        "energy": "r_interface_eq-1.ener",
+        "restart": "r_interface_eq-1.restart"
+      }
+    },
+    {
+      "name": "r_interface_eq_smoke",
+      "unbiased": true,
+      "cp2k_project": "r_interface_eq_smoke",
+      "box_class": "interface",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "seed": 2026111103,
+      "steps": 20,
+      "expected_frames": 3,
+      "sc_distance_angstrom": 3.931725038239195,
+      "source": {
+        "sheet": "Figure 6b",
+        "column": 16,
+        "rows": [
+          2,
+          297
+        ],
+        "label": "R_inter"
+      },
+      "geometry": {
+        "min_atom_pair_distance_angstrom": 0.9205516239978069,
+        "min_atom_pair_1based": [
+          61,
+          63,
+          "H",
+          "O"
+        ],
+        "min_intermolecular_contact_angstrom": 1.5490048645333554,
+        "min_intermolecular_contact_1based": [
+          33,
+          "H2O",
+          230,
+          "H2O",
+          "O",
+          "H"
+        ],
+        "sc_distance_angstrom": 3.931725038239195,
+        "composition": {
+          "H": 194,
+          "O": 100,
+          "C": 1,
+          "S": 1
+        }
+      },
+      "stage": [
+        {
+          "role": "new",
+          "source": "r_interface_eq.xyz",
+          "target": "r_interface_eq.xyz",
+          "sha256": "b44766d837cae154f7281df37f17a179d6ec607b47ef0cebae578759f9c580b5",
+          "bytes": 12489
+        },
+        {
+          "role": "new",
+          "source": "r_interface_eq_smoke.inp",
+          "target": "r_interface_eq_smoke.inp",
+          "sha256": "821ccea362b0ef187a72d054357c2434eab0d4a3cbcd064319f09894b46a1eb8",
+          "bytes": 1946
+        }
+      ],
+      "outputs": {
+        "output": "r_interface_eq_smoke.out",
+        "trajectory": "r_interface_eq_smoke-pos-1.xyz",
+        "energy": "r_interface_eq_smoke-1.ener",
+        "restart": "r_interface_eq_smoke-1.restart"
+      }
+    }
+  ],
+  "dependencies": {
+    "frozen_run_cp2k.py": "c3d65060daafbe1076304f092f72c2e40e738aea9cb6f4cc63d8263298397d61",
+    "frozen_analyze_event_unbiased.py": "8529ce9c63f694fd93f86ed0fbac292aff4bf77a612b4069b2d45bb7c96c01cd"
+  },
+  "source": {
+    "workbook": "results/li2025_zenodo/source-data.xlsx",
+    "md5": "53a0f1915b8f15fe1cd5d56742d16820",
+    "sha256": "f4e2bedc004f0abaf180f55e95bd2aa9f7ddc2aa86ef09a683fd2d5afe0a9992",
+    "doi": "10.1038/s41467-025-59712-3",
+    "zenodo": "10.5281/zenodo.15253851"
+  },
+  "policy": "First diagnostic replicas only; not spontaneous formation, FES, or confirmed product. R equilibration requires later stationarity/interface review. Smoke never enters scientific statistics."
+}

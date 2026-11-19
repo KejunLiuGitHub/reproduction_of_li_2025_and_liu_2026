@@ -1,0 +1,1380 @@
+{
+  "source_commit": "c3693948a16bb02a85b48b6bfc8b3b0ad228896b",
+  "scope": "Tracked scientific code, inputs and machine-readable method metadata; local uncommitted files, internal session reports and remote-operation instructions excluded.",
+  "files": [
+    {
+      "path": "campaign/li2025_branches_20261112/frozen_analyze_event_unbiased.py",
+      "sha256": "8529ce9c63f694fd93f86ed0fbac292aff4bf77a612b4069b2d45bb7c96c01cd",
+      "bytes": 12993,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_branches_20261112/frozen_prepare_event_unbiased.py",
+      "sha256": "e51dd85920a001a844093490082b788a2ebe5dcb80c1c73e6e77de9c5ff9dec8",
+      "bytes": 25027,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_branches_20261112/frozen_run_cp2k.py",
+      "sha256": "c3d65060daafbe1076304f092f72c2e40e738aea9cb6f4cc63d8263298397d61",
+      "bytes": 29675,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_branches_20261112/inputs/p_iface_v2.inp",
+      "sha256": "9536573c2158025949f53c2b03d31a0c5b2ee7dca41b2a08542aed4b53766319",
+      "bytes": 1934,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_branches_20261112/inputs/p_iface_v2.xyz",
+      "sha256": "b55dcc90758a0afe75e6e8ca49d85a01becaac105da6f7436f21c58bb7446fe2",
+      "bytes": 12489,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_branches_20261112/inputs/p_iface_v2_smoke.inp",
+      "sha256": "d6312dfda4b8e41d4309a01c86f5a562ea28c324168c79d5917818ee8d814d88",
+      "bytes": 1938,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_branches_20261112/inputs/r_eq_metad.inp",
+      "sha256": "42d17c04d0574771d650640588ba72ffa4c790164dddd61e678793572a3aa94e",
+      "bytes": 2067,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_branches_20261112/inputs/r_eq_metad.plumed",
+      "sha256": "582d5fb73267f6582edff8aaa0b39f5081466693207fce57dfd137af63966340",
+      "bytes": 500,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_branches_20261112/inputs/r_eq_metad.xyz",
+      "sha256": "203ae51529db8274d44fce25972721bab2e23886f909cb26d4f4c628dbc9d52a",
+      "bytes": 19305,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_branches_20261112/inputs/r_eq_metad_smoke.inp",
+      "sha256": "28ae111d9bc856268e9370ae6e067db1dc8ce8138e14c8cf1fc5eddccbc9a014",
+      "bytes": 2076,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_branches_20261112/inputs/r_eq_metad_smoke.plumed",
+      "sha256": "195d3a77d89d6571767cc23af46e4e5cadbc3e72177914142d3d3eade75a6b6e",
+      "bytes": 518,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_branches_20261112/inputs/relax_v2.inp",
+      "sha256": "12f90b079e5de161de40dfe610a529156b3d1bce0c5aacb2d83d7a30a87fad86",
+      "bytes": 1930,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_branches_20261112/inputs/relax_v2.xyz",
+      "sha256": "dd269892c04e80299507a88a7e3857893426969a5c70931e7642804e850c2d01",
+      "bytes": 19305,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_branches_20261112/inputs/relax_v2_smoke.inp",
+      "sha256": "c28472db1efac44855da11dfd8bc7d6c7eb23a68b51e539f0a97ec69d09a7347",
+      "bytes": 1934,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_branches_20261112/manifest.json",
+      "sha256": "b184cff5906dd3f605ddb10624d1aebc8b70dbc4374031fd4ae59ec8f2cb25cd",
+      "bytes": 17834,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_branches_20261112/prepare.py",
+      "sha256": "68deeb1bd45893e361026a588d9d2aa7cf8034e923020036275a5473bd68f9b9",
+      "bytes": 6052,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_branches_20261112/run.slurm",
+      "sha256": "e7d16a85cdab7d63226ef89541012cdb86c5d6ac402bdb626d34ee01e7f1a751",
+      "bytes": 697,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_branches_20261112/run_branch.py",
+      "sha256": "6aff34c24407e03b4ac20e1dcafe97b3c219c30f83209f9ec51a408f66c5bd3c",
+      "bytes": 1789,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_branches_20261112/submit_p_iface_v2.slurm",
+      "sha256": "fb949a1b0224d476cefdc4adb2f18eaa7b7913eff02877a4de44cb8bd1f6ed9e",
+      "bytes": 550,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_branches_20261112/submit_r_eq_metad.slurm",
+      "sha256": "f9e02148b9fb814d3d67280e27e465d8350ecb6aadc0d88293f1a9defce56e49",
+      "bytes": 554,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_branches_20261112/submit_relax_v2.slurm",
+      "sha256": "87ac0f801e279d56dfefdc0047891283811a9c88a616e3bc8484a606b4f30cc0",
+      "bytes": 542,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_branches_20261112/validate_stage.py",
+      "sha256": "eaef3bd40adf5a4e3370074be65024b79b3fa0584c2b84d046fe81998c8839c0",
+      "bytes": 5030,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/analyze_event_unbiased.py",
+      "sha256": "8529ce9c63f694fd93f86ed0fbac292aff4bf77a612b4069b2d45bb7c96c01cd",
+      "bytes": 12993,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/compare_unbiased_replicas.py",
+      "sha256": "20e90d1096e3913d23374f22837af3a5451e855e3271d9b459f04b436badcdc4",
+      "bytes": 37665,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/event_unbiased_manifest.json",
+      "sha256": "69ad6c50f225939355c7c5645ebdae2487a6329b52bb0210eaa069d96c6525ea",
+      "bytes": 8976,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/inputs/bulk_r1.inp",
+      "sha256": "bd8710eeb205b27fe6ad6476da5710f72e6cf5880d7f1196b5ed5b838a2e3c22",
+      "bytes": 2049,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/inputs/bulk_r1.plumed",
+      "sha256": "586491e29aef192c564bb06691766d202a6fba517442df77db5b39d18aa1bbab",
+      "bytes": 489,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/inputs/bulk_r1.xyz",
+      "sha256": "9c6a620ca200658ae3715afbb61cbdb3104136db1016d9536471759d68009485",
+      "bytes": 12556,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/inputs/bulk_r1_event12270.xyz",
+      "sha256": "b43afadd52f4294d1918fe474c0ae0ec1255abbb2aaddfe25b4de7d77a55c2fd",
+      "bytes": 19382,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/inputs/bulk_r1_seg2.inp",
+      "sha256": "6ab6b67d63e1e39979179c3a3e96b610ba6d72370ffa7ca78783f3a1bcd93de2",
+      "bytes": 2222,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/inputs/bulk_r1_seg2.plumed",
+      "sha256": "f04c54aca07b0d80db65bf99afc7b4d72df415681d9c9b7b16091e9d3518d0cd",
+      "bytes": 497,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/inputs/event_unbiased_s1.inp",
+      "sha256": "e49e893d06cc1a76e496ee8856d0ca4e42eb557aa81ee003157982fea28e8ae4",
+      "bytes": 1955,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/inputs/event_unbiased_s2.inp",
+      "sha256": "1ae6bbe7bc9c1a8551bcf4837fc4b87f04b3234677d930096675bcb1fc7f7941",
+      "bytes": 1955,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/inputs/event_unbiased_s3.inp",
+      "sha256": "2a1f9293345a696adee8224ea9401179206a15db56d7e9727ec9036eb15f5c7b",
+      "bytes": 1955,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/inputs/interface_event_unbiased_s1.inp",
+      "sha256": "b17ee569e3dac7fdd5f2b012905bef39051cc5ef2df9a082424147fa55c639fa",
+      "bytes": 1956,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/inputs/interface_event_unbiased_s2.inp",
+      "sha256": "b008e1107be031075019ed2d105d2aef71a6622096c55f5bec1692ff1e741527",
+      "bytes": 1956,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/inputs/interface_event_unbiased_s3.inp",
+      "sha256": "dd1e6fb1375dfe4c5f8a4b877368d6ed83cedcd6490585962bc7ff8c40745ec1",
+      "bytes": 1956,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/inputs/interface_r1.inp",
+      "sha256": "85d542188c304129bb9b5f6dd5ffc4b5b8556e20c3758b7b57d443f9b6aced0e",
+      "bytes": 2055,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/inputs/interface_r1.plumed",
+      "sha256": "ed27c27d03bcc28d30081c8758cd42c35bb48fe32b9015bb85cae175eac8d8b8",
+      "bytes": 506,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/inputs/interface_r1.xyz",
+      "sha256": "d130d72b8da2d57944d542685680c9757285083bc3a1626c3f870f67d102d34e",
+      "bytes": 12557,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/inputs/interface_r1_event10410.xyz",
+      "sha256": "808f89116e643b0992b0b0651fb4707d94f4365e3fb3f5cfda556ddc03388340",
+      "bytes": 19545,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/inputs/interface_r1_seg2.inp",
+      "sha256": "96f3e5c83659132ca8bfa77261b5d2737780e24262dae2998c19a32d0c2b8493",
+      "bytes": 2233,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/inputs/interface_r1_seg2.plumed",
+      "sha256": "6f4c152b8ccee8e8d29df69d61966fc6e69aac2e0ae015829e01606d4064ec93",
+      "bytes": 514,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/interface_event_unbiased_manifest.json",
+      "sha256": "4770a119ce207d8b203e6ce299cd61297c4bfcdd379fc93c6f229243f1931b96",
+      "bytes": 11567,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/manifest.json",
+      "sha256": "62e9a64373f79ce52d0f363c4217cba4070a6b0e21c238352080c446411fd028",
+      "bytes": 11571,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/prepare_event_unbiased.py",
+      "sha256": "e51dd85920a001a844093490082b788a2ebe5dcb80c1c73e6e77de9c5ff9dec8",
+      "bytes": 25027,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/prepare_interface_event_unbiased.py",
+      "sha256": "0697ccd659fc5fe9d82299d5c9758b9529a3e1ff1ff15f7ec8b8d5ec40fb242e",
+      "bytes": 19544,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/prepare_li2025_direct.py",
+      "sha256": "9587dd79c3be2ee9b66409bd32f0f168e2147ffa0e8635b21c4f7831475aa650",
+      "bytes": 24684,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/prepare_segment2.py",
+      "sha256": "f2f307646b5f8d20050b1230d5ade14aa8b459b5735ab0d0f55438e8cdda6571",
+      "bytes": 26179,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/run_cp2k.py",
+      "sha256": "c3d65060daafbe1076304f092f72c2e40e738aea9cb6f4cc63d8263298397d61",
+      "bytes": 29675,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/seg2_manifest.json",
+      "sha256": "f72c1cd5b19ea4fda0794e1dcf1c007c310aa03a6449bb6dfef3054ec0780e62",
+      "bytes": 14945,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/selftest_compare_unbiased.py",
+      "sha256": "fdb7c9e6d226ee9dd3435a51236fc2755cb643150b6c1a9abe230bdfca6cb2b6",
+      "bytes": 23923,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/selftest_event_unbiased.py",
+      "sha256": "17c65c5df43717bfe4bd50133cca54b63750d4b206ae1315e8808a047d30e63c",
+      "bytes": 30039,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/selftest_interface_event_unbiased.py",
+      "sha256": "6e3932c2b7172e3860774c22cb427edced1a318da771bb20de4e5479322f9352",
+      "bytes": 37628,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/selftest_li2025_direct.py",
+      "sha256": "333a25d12beacaa48bd82d3c090637f8d6c12767f825c1df2a62201bc4775c1e",
+      "bytes": 19858,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/selftest_segment2.py",
+      "sha256": "ef37974bb170e51fda084c864ad337e6c52214b23fc9907915adbdbe1864b047",
+      "bytes": 27310,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/submit_bulk_r1.slurm",
+      "sha256": "317f88131c5bc1aee573e18bf06263f76c570438a13704e3e1cd40782029723e",
+      "bytes": 1419,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/submit_bulk_r1_seg2.slurm",
+      "sha256": "5ab513516d84fa13ff583bb4042f39d1896df8cb16364a65cbff30365fbe240a",
+      "bytes": 2024,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/submit_event_unbiased_s1.slurm",
+      "sha256": "6afcf42696bd84a45b6d8ee4a85a0ef9bff8915faaecd147d280ee489c74c9d2",
+      "bytes": 2038,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/submit_event_unbiased_s2.slurm",
+      "sha256": "90372a532f6cfd1a78615acb568beabfb6ac336ddeeaea32bebfd20a18ef007a",
+      "bytes": 2038,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/submit_event_unbiased_s3.slurm",
+      "sha256": "de22afaabd20bcdacf1c575143383a5404a8a917bb9df286cdc6d73641b310e6",
+      "bytes": 2038,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/submit_interface_event_unbiased_s1.slurm",
+      "sha256": "63d3250094652c43de417a80467f375642a8fdd188a9bd3b1f0a0785d86c02ec",
+      "bytes": 2225,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/submit_interface_event_unbiased_s1_gpu.slurm",
+      "sha256": "929e2e482e86e25a36b32404e375d656a14cc5c8d091254a2aa7047d8ef964f2",
+      "bytes": 2509,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/submit_interface_event_unbiased_s2.slurm",
+      "sha256": "dd6f8a7947071483dbadf1cc375a11fc90128dca86edfeb9d19f5a9bd401142b",
+      "bytes": 2225,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/submit_interface_event_unbiased_s2_gpu.slurm",
+      "sha256": "249ef34d117b872075621278d6b2425c01f4b79bbd96d7aa65bd55e2500a6a5d",
+      "bytes": 2509,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/submit_interface_event_unbiased_s3.slurm",
+      "sha256": "6902c5e1bdf444f5dc9fb0f9d610c8afad5a9c9abeb3a4249925faa6fd9d638b",
+      "bytes": 2225,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/submit_interface_event_unbiased_s3_gpu.slurm",
+      "sha256": "213e0a22d9b5a9bdf4ee34d95637a2f8e696430374ac5015e65ef36c85de955b",
+      "bytes": 2509,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/submit_interface_r1.slurm",
+      "sha256": "827ff3b770df2f0e540dd90a89c042ee13de01531e8be53d28f287e62481ad95",
+      "bytes": 1433,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_direct/submit_interface_r1_seg2.slurm",
+      "sha256": "cf2b4d8b72c2e51085a7eba5989b03e96028fd087aa13a000d524c5ccb676488",
+      "bytes": 2062,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_extend_20261111/continuation_manifest.json",
+      "sha256": "dde19c132e8427340edf62f441e6b00f176b48874773ff1188ec5b0b5c0001cc",
+      "bytes": 3475,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_extend_20261111/frozen_run_cp2k.py",
+      "sha256": "c3d65060daafbe1076304f092f72c2e40e738aea9cb6f4cc63d8263298397d61",
+      "bytes": 29675,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_extend_20261111/inputs/interface_r1.xyz",
+      "sha256": "d130d72b8da2d57944d542685680c9757285083bc3a1626c3f870f67d102d34e",
+      "bytes": 12557,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_extend_20261111/inputs/interface_r1_seg3.inp",
+      "sha256": "22121f48608ad71157b8dff5e090a75c278b4dc6232c1d8aae7c77dfe8a3ef8f",
+      "bytes": 2233,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_extend_20261111/prepare.py",
+      "sha256": "90328fb8c92031e296c65704164eef00a67108309a8724b5cb7e0beefff0bb79",
+      "bytes": 3620,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_extend_20261111/run.slurm",
+      "sha256": "f8b3ff2fb831bb0c9e4de2ace1d4dcabdd728f7442b72606ec64fb16d64660f6",
+      "bytes": 526,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_extend_20261111/run_continuation.py",
+      "sha256": "da2184f29fc2983ba109a6224daece79e479f38e6dd9157b06592d52537e5d26",
+      "bytes": 621,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_extend_20261113/continuation_manifest.json",
+      "sha256": "e85353d1d6d190236a11efc1edc7b875444ee482eff1785a70a37f55bc4dc0d9",
+      "bytes": 8244,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_extend_20261113/frozen_run_cp2k.py",
+      "sha256": "c3d65060daafbe1076304f092f72c2e40e738aea9cb6f4cc63d8263298397d61",
+      "bytes": 29675,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_extend_20261113/inputs/interface_r1.xyz",
+      "sha256": "d130d72b8da2d57944d542685680c9757285083bc3a1626c3f870f67d102d34e",
+      "bytes": 12557,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_extend_20261113/inputs/interface_r1_seg4.inp",
+      "sha256": "1cbd7771262b627699cee7065c85ced2f8b14e4ca593484901479afb5c89114d",
+      "bytes": 2233,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_extend_20261113/prepare.py",
+      "sha256": "9ae340dea196bf3568b789bc999499c9b4730931a1ef05e03cb682013c6efc7e",
+      "bytes": 22687,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_extend_20261113/run.slurm",
+      "sha256": "be888deaa6e146c9edb96bbde03342914e8a999e9d0152119ebf16828feac546",
+      "bytes": 539,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_extend_20261113/run_continuation.py",
+      "sha256": "45c0d17aa2868dcda1b691d8d53902c7c7f82db4c9dbc7ef78f9f0e3815f515c",
+      "bytes": 2789,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_extend_20261113/test_integrity.py",
+      "sha256": "03a5f14bcc2340950997f95451819338b65f4bc9f6f5a67f91ac52c67b4654a8",
+      "bytes": 4639,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_extend_20261115/continuation_manifest.json",
+      "sha256": "a981f167f3916e9eb09a37065ece43980034f6b250df4b8aa7395f2b9355d008",
+      "bytes": 8890,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_extend_20261115/frozen_run_cp2k.py",
+      "sha256": "c3d65060daafbe1076304f092f72c2e40e738aea9cb6f4cc63d8263298397d61",
+      "bytes": 29675,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_extend_20261115/inputs/interface_r1.xyz",
+      "sha256": "d130d72b8da2d57944d542685680c9757285083bc3a1626c3f870f67d102d34e",
+      "bytes": 12557,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_extend_20261115/inputs/interface_r1_seg5.inp",
+      "sha256": "80b5f4de440d9e9d1938f747e3de7063354d13b4ba403ed52308ef95726de55a",
+      "bytes": 2233,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_extend_20261115/prepare.py",
+      "sha256": "ce3023bc4cc5bceaa41ee285499302c239f7ead92672158d7aef7115b75bdb21",
+      "bytes": 26088,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_extend_20261115/run.slurm",
+      "sha256": "53ed5a6caa1db10d1008dd06ec9c653dd73666e40d4ead0730d4720f7a8af3b5",
+      "bytes": 539,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_extend_20261115/run_continuation.py",
+      "sha256": "d663c1ae8b771bbf6ea93321167d29128a6bc637117c6c40b1cee4b0344a4811",
+      "bytes": 2789,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_extend_20261115/test_configuration.py",
+      "sha256": "383b0bf19517a35be1bbbe595ab769687566d367ac0ed5f7ee7c5a1941d3e1d3",
+      "bytes": 7579,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbcontrol_20261118/build_campaign.py",
+      "sha256": "998e023b7a5c9ab9f5745eb4516a8a5601889d524a26d2c2afceca7e87978c8b",
+      "bytes": 9917,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbcontrol_20261118/extract_initial_populations.py",
+      "sha256": "2d4b1ac759e9e563cbf9329ccc6e2aaf2c28eeafa52ef435eca690184998daa5",
+      "bytes": 18396,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbcontrol_20261118/frozen_validate_stage.py",
+      "sha256": "3df8173e5b37eb2d1aba2215026710ae1e868d60de3d29090fed8f00bfcc282a",
+      "bytes": 14951,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbcontrol_20261118/production_v1/SELECTION.json",
+      "sha256": "7b22e49cfae6c5b3ef9717d2373922afb730814a1978dce09cedbe33cd287f9e",
+      "bytes": 1022,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbcontrol_20261118/production_v1/SOURCE_AUDIT.json",
+      "sha256": "c8078b39f550bc643bec50656615b5e9ffdb88fa9d0985f08cde13b19dc0ca07",
+      "bytes": 31142,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbcontrol_20261118/production_v1/build_campaign.py",
+      "sha256": "998e023b7a5c9ab9f5745eb4516a8a5601889d524a26d2c2afceca7e87978c8b",
+      "bytes": 9917,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbcontrol_20261118/production_v1/frozen_analyze_event_unbiased.py",
+      "sha256": "8529ce9c63f694fd93f86ed0fbac292aff4bf77a612b4069b2d45bb7c96c01cd",
+      "bytes": 12993,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbcontrol_20261118/production_v1/frozen_run_cp2k.py",
+      "sha256": "c3d65060daafbe1076304f092f72c2e40e738aea9cb6f4cc63d8263298397d61",
+      "bytes": 29675,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbcontrol_20261118/production_v1/frozen_validate_stage.py",
+      "sha256": "3df8173e5b37eb2d1aba2215026710ae1e868d60de3d29090fed8f00bfcc282a",
+      "bytes": 14951,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbcontrol_20261118/production_v1/inputs/r1150_original.inp",
+      "sha256": "6e8a331ff88370bf09a34ddde15a97b58fef01b834f275bdfa0fffb15e2f860c",
+      "bytes": 1942,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbcontrol_20261118/production_v1/inputs/r1150_original.xyz",
+      "sha256": "5e1b93a126e25373541c1a71f0c11c58987aeb1ef19af65d7c8ddd79c91c7b61",
+      "bytes": 19310,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbcontrol_20261118/production_v1/inputs/r1150_original_smoke.inp",
+      "sha256": "8c903a056096c766be20be9442c3c00f60f378869c0c416c9d43b785a6e3f365",
+      "bytes": 1946,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbcontrol_20261118/production_v1/inputs/r2200_original.inp",
+      "sha256": "475ab988ed8a708b4bb83ab1e4ee5a4266f70ebd2708445b2aafdc68ff6c8563",
+      "bytes": 1942,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbcontrol_20261118/production_v1/inputs/r2200_original.xyz",
+      "sha256": "d21984232c1a00e1baf2087b0cd1f61bfe87370a662e1ec18b1071b06580f26b",
+      "bytes": 19310,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbcontrol_20261118/production_v1/inputs/r2200_original_smoke.inp",
+      "sha256": "c6598d19f39a95661e25acf409b196537d531a28e3f19feb87d81283a46a6db1",
+      "bytes": 1946,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbcontrol_20261118/production_v1/inputs/reference_unbiased.inp",
+      "sha256": "9536573c2158025949f53c2b03d31a0c5b2ee7dca41b2a08542aed4b53766319",
+      "bytes": 1934,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbcontrol_20261118/production_v1/inputs/source_frame_1150.xyz",
+      "sha256": "5e1b93a126e25373541c1a71f0c11c58987aeb1ef19af65d7c8ddd79c91c7b61",
+      "bytes": 19310,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbcontrol_20261118/production_v1/inputs/source_frame_2200.xyz",
+      "sha256": "d21984232c1a00e1baf2087b0cd1f61bfe87370a662e1ec18b1071b06580f26b",
+      "bytes": 19310,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbcontrol_20261118/production_v1/launch_r1150_original.slurm",
+      "sha256": "4d6cf1ff9966c366f8ae6cf6c1d70eb7be69ed3b2697656f8189c03bcc5fcf1c",
+      "bytes": 352,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbcontrol_20261118/production_v1/launch_r2200_original.slurm",
+      "sha256": "c6cc9c5595313effc3b63f41ec0a7d3be17c11090a81b51515b3b2afe5eeaddc",
+      "bytes": 352,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbcontrol_20261118/production_v1/manifest.json",
+      "sha256": "570f7027baf899d5c1e7f53a2488c9405f5461b67bb9e8cb9cfaecbc52462d32",
+      "bytes": 13235,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbcontrol_20261118/production_v1/run.py",
+      "sha256": "bbb904a113fe562153120cd042b04a0f014a33ae47733c26088e4874a299cf1c",
+      "bytes": 3567,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbcontrol_20261118/production_v1/submit_r1150_original.slurm",
+      "sha256": "75f1d8d00f2421abdbe5f23754bc7e6f4ed367a1e579d7567ba31abff4e7930a",
+      "bytes": 388,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbcontrol_20261118/production_v1/submit_r2200_original.slurm",
+      "sha256": "91fce6f71046a98d5d103abfa96f2d4573dd01e96f60ec600ab572bd65d74297",
+      "bytes": 388,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbcontrol_20261118/production_v1/validate_stage.py",
+      "sha256": "2843eb2ede195ea48df82fd063aadcf46073e85f791e55dd8dc6438a6ebd1a71",
+      "bytes": 7283,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbcontrol_20261118/run.py",
+      "sha256": "bbb904a113fe562153120cd042b04a0f014a33ae47733c26088e4874a299cf1c",
+      "bytes": 3567,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbcontrol_20261118/test_original_controls.py",
+      "sha256": "dc9c4da93308a5eaa26edbb5626d3567fc66f35b444594cbccf401c22f2057fc",
+      "bytes": 3641,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbcontrol_20261118/validate_stage.py",
+      "sha256": "2843eb2ede195ea48df82fd063aadcf46073e85f791e55dd8dc6438a6ebd1a71",
+      "bytes": 7283,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbintervention_20261116/build_campaign.py",
+      "sha256": "433d023ae233f0ebb9938ed42eda6a787a91d3f045b5626f0c2639a7c1d5d4dd",
+      "bytes": 8195,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbintervention_20261116/frozen_validate_stage.py",
+      "sha256": "3df8173e5b37eb2d1aba2215026710ae1e868d60de3d29090fed8f00bfcc282a",
+      "bytes": 14951,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbintervention_20261116/prepare_intervention.py",
+      "sha256": "0c8cc8568353c0131a1069c3c932e4d27a7640fbd4ff5800fea60335e81df866",
+      "bytes": 9686,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbintervention_20261116/production_v1/SELECTION.json",
+      "sha256": "8c842ea832d00df96d4acb38b46702d54af443bd09c3b42dc89afbc6761dc86c",
+      "bytes": 24224,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbintervention_20261116/production_v1/SOURCE_AUDIT.json",
+      "sha256": "c8078b39f550bc643bec50656615b5e9ffdb88fa9d0985f08cde13b19dc0ca07",
+      "bytes": 31142,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbintervention_20261116/production_v1/build_campaign.py",
+      "sha256": "433d023ae233f0ebb9938ed42eda6a787a91d3f045b5626f0c2639a7c1d5d4dd",
+      "bytes": 8195,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbintervention_20261116/production_v1/frozen_analyze_event_unbiased.py",
+      "sha256": "8529ce9c63f694fd93f86ed0fbac292aff4bf77a612b4069b2d45bb7c96c01cd",
+      "bytes": 12993,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbintervention_20261116/production_v1/frozen_run_cp2k.py",
+      "sha256": "c3d65060daafbe1076304f092f72c2e40e738aea9cb6f4cc63d8263298397d61",
+      "bytes": 29675,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbintervention_20261116/production_v1/frozen_validate_stage.py",
+      "sha256": "3df8173e5b37eb2d1aba2215026710ae1e868d60de3d29090fed8f00bfcc282a",
+      "bytes": 14951,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbintervention_20261116/production_v1/inputs/r1150_oc_donor.inp",
+      "sha256": "a1f81350e5d62fca9f0561bdf7c0926cdb7b83a00e470da572674fa99fe3863f",
+      "bytes": 1942,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbintervention_20261116/production_v1/inputs/r1150_oc_donor.xyz",
+      "sha256": "4a83a8e0b66dae4fa36c587673295767a54d9a9869000672c5ec26076504c540",
+      "bytes": 19282,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbintervention_20261116/production_v1/inputs/r1150_oc_donor_smoke.inp",
+      "sha256": "917f9e6c9d2b5e5aae33bc60e9a71d68a7a8feb8b9bac47478222f2543571585",
+      "bytes": 1946,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbintervention_20261116/production_v1/inputs/r1150_reverse.inp",
+      "sha256": "cc7ce92b660c0aaf39a0c2fe0446369a808c1dc4769d00d99e13be297c79ed12",
+      "bytes": 1940,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbintervention_20261116/production_v1/inputs/r1150_reverse.xyz",
+      "sha256": "959a00351b4d496068ad86730910a506d37a3f3fc2b3821f89ecbe7778843c76",
+      "bytes": 19283,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbintervention_20261116/production_v1/inputs/r1150_reverse_smoke.inp",
+      "sha256": "ccb0694f3678a50d0cdb8d491d6b09eb9611db9be2a44790741e4318f007b02e",
+      "bytes": 1944,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbintervention_20261116/production_v1/inputs/r2200_oc_donor.inp",
+      "sha256": "f2eb05985a98c33c433a8ff00796cf320be45bb70c4141ccf58dd25b9d3f91fb",
+      "bytes": 1942,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbintervention_20261116/production_v1/inputs/r2200_oc_donor.xyz",
+      "sha256": "b374b3c0a693cfdbb702311b4c04d2a05607007d0095b8b33a949e675e6b5c41",
+      "bytes": 19282,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbintervention_20261116/production_v1/inputs/r2200_oc_donor_smoke.inp",
+      "sha256": "1bdec904158299dd5298a20b2188fc336db49d10605bf130115d0e52672ea81c",
+      "bytes": 1946,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbintervention_20261116/production_v1/inputs/r2200_reverse.inp",
+      "sha256": "d9f54c93dbe2c573b59e145d9aa2b1a9e2c4d452c34876303467302aef9244de",
+      "bytes": 1940,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbintervention_20261116/production_v1/inputs/r2200_reverse.xyz",
+      "sha256": "05edf119f368975afb93e892ec5b252e72837735ec68b46ebdd18d90cc475be3",
+      "bytes": 19282,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbintervention_20261116/production_v1/inputs/r2200_reverse_smoke.inp",
+      "sha256": "ed388a90f971829359b525541a8ce0e50c7bb05d0d4598e50e82a366012b6424",
+      "bytes": 1944,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbintervention_20261116/production_v1/inputs/reference_unbiased.inp",
+      "sha256": "9536573c2158025949f53c2b03d31a0c5b2ee7dca41b2a08542aed4b53766319",
+      "bytes": 1934,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbintervention_20261116/production_v1/inputs/source_frame_1150.xyz",
+      "sha256": "5e1b93a126e25373541c1a71f0c11c58987aeb1ef19af65d7c8ddd79c91c7b61",
+      "bytes": 19310,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbintervention_20261116/production_v1/inputs/source_frame_2200.xyz",
+      "sha256": "d21984232c1a00e1baf2087b0cd1f61bfe87370a662e1ec18b1071b06580f26b",
+      "bytes": 19310,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbintervention_20261116/production_v1/launch_r1150_oc_donor.slurm",
+      "sha256": "614cf50d9850b03f617382fe82fc31388e56acf0e3794365e30063c93f9face1",
+      "bytes": 357,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbintervention_20261116/production_v1/launch_r1150_reverse.slurm",
+      "sha256": "ad63777c407e5182e232297defd91dc0178b4cdae732590a61e82ddfd9334913",
+      "bytes": 355,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbintervention_20261116/production_v1/launch_r2200_oc_donor.slurm",
+      "sha256": "86a99c2689f7d82888d713ad15aa48eb15b76b970d5cc62db00362f38ed19a66",
+      "bytes": 357,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbintervention_20261116/production_v1/launch_r2200_reverse.slurm",
+      "sha256": "895a03968196d3e6d9ed92a5d8dd3a551516b43680452f7886098ba974e0256c",
+      "bytes": 355,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbintervention_20261116/production_v1/manifest.json",
+      "sha256": "8400a52004b69cd97899eb702467a146548f1bd005f027a4efe361fd1980eb5f",
+      "bytes": 30143,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbintervention_20261116/production_v1/prepare_intervention.py",
+      "sha256": "0c8cc8568353c0131a1069c3c932e4d27a7640fbd4ff5800fea60335e81df866",
+      "bytes": 9686,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbintervention_20261116/production_v1/run.py",
+      "sha256": "bbb904a113fe562153120cd042b04a0f014a33ae47733c26088e4874a299cf1c",
+      "bytes": 3567,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbintervention_20261116/production_v1/submit_r1150_oc_donor.slurm",
+      "sha256": "fa55f345513a58041debb1148bf800d0e01dfbad38981965ea67f9a126690994",
+      "bytes": 385,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbintervention_20261116/production_v1/submit_r1150_reverse.slurm",
+      "sha256": "816852d214cc9484ea9ef77486fb8c54fb2fece75bb32de85c773dec242d011f",
+      "bytes": 383,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbintervention_20261116/production_v1/submit_r2200_oc_donor.slurm",
+      "sha256": "9575a03a23ed04a54f8df7186d066cdc681115221b799f7052e11e15c8e21a3a",
+      "bytes": 385,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbintervention_20261116/production_v1/submit_r2200_reverse.slurm",
+      "sha256": "7d71fceca7ade9e07393bc1647f0d57bdf46ea37673513ac841b4703447ae768",
+      "bytes": 383,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbintervention_20261116/production_v1/validate_stage.py",
+      "sha256": "fce6eeb0de8b710266c738361d1016e4d1c14d271cba8b5650cb0bbeb89854b8",
+      "bytes": 6584,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbintervention_20261116/run.py",
+      "sha256": "bbb904a113fe562153120cd042b04a0f014a33ae47733c26088e4874a299cf1c",
+      "bytes": 3567,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbintervention_20261116/test_intervention.py",
+      "sha256": "6aefb0b0e4eab22524f7389397903e014631971aaee917db3592cbfed986f5bd",
+      "bytes": 26902,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbintervention_20261116/validate_stage.py",
+      "sha256": "fce6eeb0de8b710266c738361d1016e4d1c14d271cba8b5650cb0bbeb89854b8",
+      "bytes": 6584,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbnetwork_20261116/analyze_network.py",
+      "sha256": "8d4834217507c05bf1f94df79152675bc09029f1ac1e26c3700eda8fd84f0a27",
+      "bytes": 11756,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbnetwork_20261116/build_campaign.py",
+      "sha256": "8a59d0ee176658c4f2c2ef3b14cc878c718f50d936418095406592ede738d211",
+      "bytes": 17280,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbnetwork_20261116/production_v1/build_campaign.py",
+      "sha256": "8a59d0ee176658c4f2c2ef3b14cc878c718f50d936418095406592ede738d211",
+      "bytes": 17280,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbnetwork_20261116/production_v1/frozen_analyze_event_unbiased.py",
+      "sha256": "8529ce9c63f694fd93f86ed0fbac292aff4bf77a612b4069b2d45bb7c96c01cd",
+      "bytes": 12993,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbnetwork_20261116/production_v1/frozen_run_cp2k.py",
+      "sha256": "c3d65060daafbe1076304f092f72c2e40e738aea9cb6f4cc63d8263298397d61",
+      "bytes": 29675,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbnetwork_20261116/production_v1/inputs/natural_original40.inp",
+      "sha256": "d961e971732205ba69b552e438d73d71e67ca787dc9f95333840f4eb8bcb9c1b",
+      "bytes": 1950,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbnetwork_20261116/production_v1/inputs/natural_original40.xyz",
+      "sha256": "47fd9c7e032a9e925d45fe2b0ca0a939f9e93cddaa251df9f799f67bd45a06c7",
+      "bytes": 19310,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbnetwork_20261116/production_v1/inputs/natural_original40_smoke.inp",
+      "sha256": "a7ef380625bc7d353c8be3da45ec96655d4ed5f715f22896f1d8212a571e2ddb",
+      "bytes": 1954,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbnetwork_20261116/production_v1/inputs/natural_r19830.inp",
+      "sha256": "e1f982e2e19bf739fe78485be440f0a43137a0d47b7734552467f443a67321be",
+      "bytes": 1942,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbnetwork_20261116/production_v1/inputs/natural_r19830.xyz",
+      "sha256": "162f2ba4243e334d708571bb0f75d10d353e5c0d515096a64485ab11d68b152f",
+      "bytes": 19310,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbnetwork_20261116/production_v1/inputs/natural_r19830_smoke.inp",
+      "sha256": "afabe793325d75fc891c17f16dff05d28f61053d93a501bc4e50dd01bcad456a",
+      "bytes": 1946,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbnetwork_20261116/production_v1/inputs/reference_unbiased.inp",
+      "sha256": "9536573c2158025949f53c2b03d31a0c5b2ee7dca41b2a08542aed4b53766319",
+      "bytes": 1934,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbnetwork_20261116/production_v1/launch_natural_original40.slurm",
+      "sha256": "2e513dd0dda0cf5e1663522b0868884dad70d6a10a996d69e514fef7f165834f",
+      "bytes": 628,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbnetwork_20261116/production_v1/launch_natural_r19830.slurm",
+      "sha256": "474d277b9939c2d8880eb46247561931fb0c0cabec7c050801078099bd22e4e4",
+      "bytes": 620,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbnetwork_20261116/production_v1/manifest.json",
+      "sha256": "a2b4c2a30d0d202a0273ffb704de71328b5d485cdc75d789144d7c21f618fb98",
+      "bytes": 33531,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbnetwork_20261116/production_v1/run.py",
+      "sha256": "bbb904a113fe562153120cd042b04a0f014a33ae47733c26088e4874a299cf1c",
+      "bytes": 3567,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbnetwork_20261116/production_v1/selection.json",
+      "sha256": "7d03a3f2ce26f676b618717c52a76a02f14649831a8cc7aa924a09117a11fb35",
+      "bytes": 12395,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbnetwork_20261116/production_v1/submit_natural_original40.slurm",
+      "sha256": "79a66527e075c55811ab01f3ca4b3cdc9d6869b839036959e7b6bbcccecd9ecf",
+      "bytes": 410,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbnetwork_20261116/production_v1/submit_natural_r19830.slurm",
+      "sha256": "b1d15b3f1e2c4c36ace4884b00e93d22bf19c5c18ee7bacfc4defb45c6907a38",
+      "bytes": 402,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbnetwork_20261116/production_v1/validate_stage.py",
+      "sha256": "3df8173e5b37eb2d1aba2215026710ae1e868d60de3d29090fed8f00bfcc282a",
+      "bytes": 14951,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbnetwork_20261116/run.py",
+      "sha256": "bbb904a113fe562153120cd042b04a0f014a33ae47733c26088e4874a299cf1c",
+      "bytes": 3567,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbnetwork_20261116/select_candidates.py",
+      "sha256": "8094d32abdce84fdd1c1d4ca92096340c536476fe5c0633d17d7ef75c632d7de",
+      "bytes": 8001,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbnetwork_20261116/test_network.py",
+      "sha256": "e851c50ea2d00c590899bf5f32e3c791cc0f3fc6a7f912cf8ceb365b4a162696",
+      "bytes": 6461,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbnetwork_20261116/test_workflow.py",
+      "sha256": "8bd9c6a81117e6932b1b1b751f911cf3474e0b0c534ec542d0b50136ce1b7684",
+      "bytes": 22018,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbnetwork_20261116/validate_stage.py",
+      "sha256": "3df8173e5b37eb2d1aba2215026710ae1e868d60de3d29090fed8f00bfcc282a",
+      "bytes": 14951,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_r_extend_20261113/UPSTREAM_GATE_SHA256.txt",
+      "sha256": "2589d4eae70b12cb6d115e840289033fd6e87886870ed823f05e92f71dbdc591",
+      "bytes": 109,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_r_extend_20261113/continuation_manifest.json",
+      "sha256": "75c93688a71a0d378bec22d2e921a3950068bd055a3fc289911e3d6e96bfbb0a",
+      "bytes": 9953,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_r_extend_20261113/frozen_run_cp2k.py",
+      "sha256": "c3d65060daafbe1076304f092f72c2e40e738aea9cb6f4cc63d8263298397d61",
+      "bytes": 29675,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_r_extend_20261113/inputs/r_eq_metad.plumed",
+      "sha256": "91b4ae1ac6844bb04cc0dd1fbd8f0bc095cfa438719c479565bc0ee9206b7904",
+      "bytes": 508,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_r_extend_20261113/inputs/r_eq_metad.xyz",
+      "sha256": "203ae51529db8274d44fce25972721bab2e23886f909cb26d4f4c628dbc9d52a",
+      "bytes": 19305,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_r_extend_20261113/inputs/r_eq_metad_seg2.inp",
+      "sha256": "c3f5fd7ae0f7ab7d3d2b90937cad890d461df574614e8e7f5206d2c47e26629e",
+      "bytes": 2242,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_r_extend_20261113/prepare.py",
+      "sha256": "b2c218f0863fe36cf5b9a3e6da52c584a245f9eaf146cf7c4a47499021f04c89",
+      "bytes": 25853,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_r_extend_20261113/run.slurm",
+      "sha256": "3fd29e47f10badd3bf1da6c729bf7aec51c803c0460a323f4d39b2d2f594a2dd",
+      "bytes": 530,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_r_extend_20261113/run_continuation.py",
+      "sha256": "3c7872a5331a73e0ba0c090b66d2563ea3b11f7c30975d1e992d53a43812e8e7",
+      "bytes": 2787,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_r_extend_20261113/test_integrity.py",
+      "sha256": "6d3689643695cb95e010dc5ccf8ec8580735468e28817303efe34a7d46f72c1d",
+      "bytes": 5571,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_recovery_20261111/analyze_pilot.py",
+      "sha256": "be2e457f9dacda2bb2283c6e3e67693f0ff47734029a4e3a9a565438106eac1c",
+      "bytes": 2096,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_recovery_20261111/analyze_solvation.py",
+      "sha256": "2194d0b4c19c43f4cddae901e8eb71a069fb18167ddf6874fb0a2adff6c7d2f9",
+      "bytes": 6917,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_recovery_20261111/frozen_analyze_event_unbiased.py",
+      "sha256": "8529ce9c63f694fd93f86ed0fbac292aff4bf77a612b4069b2d45bb7c96c01cd",
+      "bytes": 12993,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_recovery_20261111/frozen_run_cp2k.py",
+      "sha256": "c3d65060daafbe1076304f092f72c2e40e738aea9cb6f4cc63d8263298397d61",
+      "bytes": 29675,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_recovery_20261111/inputs/p_bulk.inp",
+      "sha256": "3d366866a917885a07d71d585b80b1272d075e3b25edb348e7af1f4e97e443ad",
+      "bytes": 1935,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_recovery_20261111/inputs/p_bulk.xyz",
+      "sha256": "f9778e01fdebc47e99296dc9f140eb469f1dd69042ea3186fdbfeda7cbb0a71d",
+      "bytes": 12488,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_recovery_20261111/inputs/p_bulk_smoke.inp",
+      "sha256": "76b1002e9dcb8713f513934817d7fe3d1b3e29e3ece88a22b83041a963e10765",
+      "bytes": 1939,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_recovery_20261111/inputs/p_interface.inp",
+      "sha256": "8e86960e3be1bd8f1c7fc5b1d1f4cf6f630a890c2fbcab3174edcd1912b0ae05",
+      "bytes": 1936,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_recovery_20261111/inputs/p_interface.xyz",
+      "sha256": "b55dcc90758a0afe75e6e8ca49d85a01becaac105da6f7436f21c58bb7446fe2",
+      "bytes": 12489,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_recovery_20261111/inputs/p_interface_smoke.inp",
+      "sha256": "079ddde681e76e127bc2dc979a36770d274ec1801e783853c19294e9fed8aa5b",
+      "bytes": 1940,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_recovery_20261111/inputs/r_interface_eq.inp",
+      "sha256": "41bbc6f1d569180f1cc841da3685e392fda3bd9b5d5b0e0da985a141f1d713e9",
+      "bytes": 1942,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_recovery_20261111/inputs/r_interface_eq.xyz",
+      "sha256": "b44766d837cae154f7281df37f17a179d6ec607b47ef0cebae578759f9c580b5",
+      "bytes": 12489,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_recovery_20261111/inputs/r_interface_eq_smoke.inp",
+      "sha256": "821ccea362b0ef187a72d054357c2434eab0d4a3cbcd064319f09894b46a1eb8",
+      "bytes": 1946,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_recovery_20261111/pilot_manifest.json",
+      "sha256": "bbe73d18b49a89562e9af52249081c7e335fed558f61d60651795849cb4381a6",
+      "bytes": 11446,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_recovery_20261111/prepare.py",
+      "sha256": "1b232f03d2bd6cd6b4aafdbf89f7318395d2801882bb91218c209893afce1177",
+      "bytes": 3988,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_recovery_20261111/run.slurm",
+      "sha256": "a20ac20a6785f2d2eed4d1a3a4fff0fe36e48c448a46d34994c576a37e124db1",
+      "bytes": 794,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_recovery_20261111/run_pilot.py",
+      "sha256": "2e82ba1169f643f24af75c4b252a4ac569f3b878037840deb47bc4f80d830727",
+      "bytes": 718,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_recovery_20261111/selftest_solvation.py",
+      "sha256": "a1cc39ce16fa7ac25e7f8bd2495d89283343a480d4ff49eab7c1d6414ee5429f",
+      "bytes": 1674,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_solvation_20261111/frozen_analyze_event_unbiased.py",
+      "sha256": "8529ce9c63f694fd93f86ed0fbac292aff4bf77a612b4069b2d45bb7c96c01cd",
+      "bytes": 12993,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_solvation_20261111/frozen_run_cp2k.py",
+      "sha256": "c3d65060daafbe1076304f092f72c2e40e738aea9cb6f4cc63d8263298397d61",
+      "bytes": 29675,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_solvation_20261111/inputs/event10410.xyz",
+      "sha256": "808f89116e643b0992b0b0651fb4707d94f4365e3fb3f5cfda556ddc03388340",
+      "bytes": 19545,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_solvation_20261111/inputs/hold_sc.plumed",
+      "sha256": "bac65dd578b5df3236622172fec047dcd9416004ef96c0ccc033e19d88e935b3",
+      "bytes": 165,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_solvation_20261111/inputs/relax.inp",
+      "sha256": "29da0ea82ae44c1387261c00edfc4429df641558629714d335cf816b63dd9ae7",
+      "bytes": 2056,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_solvation_20261111/inputs/release.inp",
+      "sha256": "24688c668f967a29a855c184ea1795b48643a316e07e1acb90d36bfa4bdf47c4",
+      "bytes": 2094,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_solvation_20261111/inputs/release_smoke.inp",
+      "sha256": "1634a3818166bab4e4c7b3894b18f837a2d9c474caed42aa381a3784a875b1c1",
+      "bytes": 2098,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_solvation_20261111/inputs/smoke.inp",
+      "sha256": "a178f04dc6f5453e5689b2939c2f77a98412ca1050ded2b90dace62ce8fb5aea",
+      "bytes": 2054,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_solvation_20261111/manifest.json",
+      "sha256": "d14ead2595f79e3698ef66f17fa0d76e5aa0608b09828eaeb12636271c28e912",
+      "bytes": 3215,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_solvation_20261111/prepare.py",
+      "sha256": "50514661648723b7a54df6465a2adebf819c930c6280974c96dda5c8014516b0",
+      "bytes": 3627,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_solvation_20261111/run.py",
+      "sha256": "2c6460ecf0b572695cbe1a4b926444106abb6abbc5bcc827ddc1cf0573259755",
+      "bytes": 5332,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_solvation_20261111/run.slurm",
+      "sha256": "288b08db17fda68d014dd0444f6c589d66df53d99928aa128151e50325f2cb3a",
+      "bytes": 339,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_structural_gate_20261116/run_suite.py",
+      "sha256": "87a698b46eb3ec348dd631a0a8a7be7ad09cf03bbc2601f6929893df479f41c3",
+      "bytes": 8404,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_structural_gate_20261116/screen.py",
+      "sha256": "5afc6df3e8f8233e1111ebc2d1b70e626f3e94d601050603f56f0ce1d7015314",
+      "bytes": 25698,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_structural_gate_20261116/test_screen.py",
+      "sha256": "05b56d05e948d984b59ebdfab0a88e06d76dca4c26b6207b2a9143d2c49ab5d3",
+      "bytes": 11310,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_structural_gate_20261116/thresholds.json",
+      "sha256": "07912710b0b40b116bda1beb8364297f5d5d56139084f766dce1c0d3ae443a76",
+      "bytes": 1596,
+      "origin": "git HEAD"
+    },
+    {
+      "path": "campaign/li2025_hbnetwork_20261116/NETWORK_DESIGN.md",
+      "sha256": "845de4dde86c4039d7199f6551362a5573f56e1c0ec8f7bf78034fe60c5093e5",
+      "bytes": 3726,
+      "origin": "git HEAD; required protocol dependency of registered network analysis"
+    }
+  ]
+}

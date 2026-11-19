@@ -1,0 +1,379 @@
+{
+  "schema": "li2025_direct_seg2/v1",
+  "session": "li2025-direct-pathway3-seg2",
+  "purpose": "Second 10 ps segment of the Li 2025 pathway-3 direct C-S addition, continued from the completed first-segment checkpoints.",
+  "scope": {
+    "what_this_is": [
+      "Continuation segments 10001-20000 (10 ps) for bulk_r1 and interface_r1.",
+      "CP2K input is the parent input plus one &EXT_RESTART block; every scientific setting (functional, box, charge, thermostat, timestep, output cadence, STEPS=10000) is byte-identical.",
+      "PLUMED input is the parent input plus one RESTART action; same CV, SIGMA, PACE, HEIGHT, wall and HILLS/COLVAR file names."
+    ],
+    "what_this_is_not": [
+      "NOT a rerun of the first segment: parent files are copied, never modified.",
+      "NOT Li's three-replica statistics; still one bulk and one interface replica.",
+      "NOT a converged FES: 20 ps of single-replica metaD is not a free-energy surface.",
+      "NOT the +2 K+ neutral model: the q = -2, counterion-free periodic model is unchanged from the first segment."
+    ]
+  },
+  "continuation_policy": {
+    "cp2k": "&EXT_RESTART immediately after &END GLOBAL; RESTART_DEFAULT .FALSE.; RESTART_POS/VEL/COUNTERS .TRUE.; RESTART_FILE_NAME points at the copied checkpoint basename inside the segment workdir",
+    "steps_semantics": "STEPS=10000 is the per-segment budget. A segment starting at STEP_START_VAL=10000 runs steps 10001-20000. Verified against steered_ext_final/STEERED_EXTENSION.json (start 3000 + STEPS 1000 -> last step 4000) and metad_resume/seg1.",
+    "plumed": "RESTART is the first action after UNITS; PLUMED appends to the staged HILLS/COLVAR instead of restarting hill deposition from zero",
+    "staging": "the runner copies parent artifacts into the segment workdir under non-colliding names and verifies every SHA256 before launching CP2K",
+    "stale_outputs": "a workdir containing a CP2K output, trajectory, energy, restart or run_record.json is refused instead of overwritten"
+  },
+  "remote_root": "/public/home/temp/projects/sulfoacetic-vib/saa-vib-v1/li2025_direct",
+  "parent_root_local": "results/li2025_direct",
+  "cases": [
+    {
+      "name": "bulk_r1_seg2",
+      "parent_case": "bulk_r1",
+      "parent_job_id": "8562691",
+      "parent_workdir_name": "bulk_r1_fix1",
+      "parent_workdir_remote": "/public/home/temp/projects/sulfoacetic-vib/saa-vib-v1/li2025_direct/bulk_r1_fix1",
+      "parent_workdir_local": "results/li2025_direct/bulk_r1_fix1",
+      "cp2k_project": "bulk_r1",
+      "initial_geometry": {
+        "box_angstrom": [
+          14.2296,
+          14.2296,
+          14.2296
+        ],
+        "initial_sc_distance_angstrom": 3.3191247111402724
+      },
+      "segment": {
+        "start_step": 10000,
+        "steps": 10000,
+        "expected_first_step": 10001,
+        "expected_end_step": 20000,
+        "segment_step_range": [
+          10001,
+          20000
+        ],
+        "cumulative_step_range": [
+          1,
+          20000
+        ],
+        "segment_time_range_fs": [
+          9999.999999998916,
+          19999.999999998916
+        ],
+        "parent_md_step_last": 10000
+      },
+      "stage": [
+        {
+          "role": "new_input",
+          "source": "bulk_r1_seg2.inp",
+          "target": "bulk_r1_seg2.inp",
+          "sha256": "6ab6b67d63e1e39979179c3a3e96b610ba6d72370ffa7ca78783f3a1bcd93de2",
+          "bytes": 2222
+        },
+        {
+          "role": "new_plumed",
+          "source": "bulk_r1_seg2.plumed",
+          "target": "bulk_r1.plumed",
+          "sha256": "f04c54aca07b0d80db65bf99afc7b4d72df415681d9c9b7b16091e9d3518d0cd",
+          "bytes": 497
+        },
+        {
+          "role": "parent_restart",
+          "source": "bulk_r1-1.restart",
+          "target": "bulk_r1_seg2_parent.restart",
+          "sha256": "66fef838ac26b74ef6334493d199f1b8e125c7eff9705a4c86fcdda9b7236956",
+          "bytes": 55869
+        },
+        {
+          "role": "parent_xyz",
+          "source": "bulk_r1.xyz",
+          "target": "bulk_r1.xyz",
+          "sha256": "9c6a620ca200658ae3715afbb61cbdb3104136db1016d9536471759d68009485",
+          "bytes": 12556
+        },
+        {
+          "role": "parent_input",
+          "source": "bulk_r1.inp",
+          "target": "parent_bulk_r1.inp",
+          "sha256": "bd8710eeb205b27fe6ad6476da5710f72e6cf5880d7f1196b5ed5b838a2e3c22",
+          "bytes": 2049
+        },
+        {
+          "role": "parent_plumed",
+          "source": "bulk_r1.plumed",
+          "target": "parent_bulk_r1.plumed",
+          "sha256": "586491e29aef192c564bb06691766d202a6fba517442df77db5b39d18aa1bbab",
+          "bytes": 489
+        },
+        {
+          "role": "parent_run_record",
+          "source": "run_record.json",
+          "target": "parent_run_record.json",
+          "sha256": "c15c674a591b8f01dffe8932e5268713795ce0120e191fe6a06d6e5bbb51b9f0",
+          "bytes": 1788
+        },
+        {
+          "role": "parent_hills",
+          "source": "HILLS_bulk_r1",
+          "target": "HILLS_bulk_r1",
+          "sha256": "05fab6fca7b4ab8a1ab6c8b9e1e64733bc968ae6b6a81df2bd213936e002e011",
+          "bytes": 38725
+        },
+        {
+          "role": "parent_colvar",
+          "source": "COLVAR_bulk_r1",
+          "target": "COLVAR_bulk_r1",
+          "sha256": "c714a317e6fcfd93f5899ecd44c1a1c9ed29e053379dd677345f2036fc51d309",
+          "bytes": 30920
+        }
+      ],
+      "outputs": {
+        "output": "bulk_r1_seg2.out",
+        "trajectory": "bulk_r1-pos-1.xyz",
+        "energy": "bulk_r1-1.ener",
+        "restart": "bulk_r1-1.restart"
+      },
+      "metad_files": {
+        "hills": "HILLS_bulk_r1",
+        "colvar": "COLVAR_bulk_r1"
+      },
+      "plumed_restart_added": true,
+      "metad_baseline": {
+        "hills_rows": 333,
+        "hills_last_time_fs": 9989.999193730586,
+        "colvar_rows": 1000,
+        "colvar_last_time_fs": 9999.999193
+      },
+      "parent_evidence": {
+        "run_record": {
+          "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_direct/bulk_r1_fix1/run_record.json",
+          "sha256": "c15c674a591b8f01dffe8932e5268713795ce0120e191fe6a06d6e5bbb51b9f0",
+          "status": "COMPLETED",
+          "program_ended": true,
+          "job_id": "8562691",
+          "md_step_last": 10000,
+          "trajectory_frames": 1001,
+          "scf_not_converged_runs": 0,
+          "energy_last_hartree": -1735.1081843142567
+        },
+        "restart": {
+          "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_direct/bulk_r1_fix1/bulk_r1-1.restart",
+          "sha256": "66fef838ac26b74ef6334493d199f1b8e125c7eff9705a4c86fcdda9b7236956",
+          "bytes": 55869,
+          "md_step_start_val": 10000,
+          "md_time_start_val_fs": 9999.999999998916,
+          "md_steps_field": 10000,
+          "coord_atom_lines": 296,
+          "velocity_atom_lines": 296,
+          "all_step_start_val_values": [
+            "10000",
+            "0"
+          ],
+          "note": "the &METADYN copy STEP_START_VAL 0 is not authoritative; only the &MD block counter drives the segment"
+        },
+        "inputs": {
+          "inp_sha256": "bd8710eeb205b27fe6ad6476da5710f72e6cf5880d7f1196b5ed5b838a2e3c22",
+          "plumed_sha256": "586491e29aef192c564bb06691766d202a6fba517442df77db5b39d18aa1bbab",
+          "xyz_sha256": "9c6a620ca200658ae3715afbb61cbdb3104136db1016d9536471759d68009485"
+        },
+        "trajectory": {
+          "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_direct/bulk_r1_fix1/bulk_r1-pos-1.xyz",
+          "sha256": "78e97ee50a61f398568140009b868a8fbbfbd98b11ba2ca88902c9caea27708e",
+          "frames": 1001,
+          "first_step": 0,
+          "last_step": 10000
+        },
+        "energy": {
+          "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_direct/bulk_r1_fix1/bulk_r1-1.ener",
+          "sha256": "0de6ed67415ef8c083b2c6eef7e50433723adb335cc8acfd39c173b6fc3e2c84",
+          "last_step": 10000
+        },
+        "metad": {
+          "hills_file": "HILLS_bulk_r1",
+          "hills_rows": 333,
+          "hills_last_time_fs": 9989.999193730586,
+          "colvar_file": "COLVAR_bulk_r1",
+          "colvar_rows": 1000,
+          "colvar_last_time_fs": 9999.999193
+        }
+      },
+      "fes": {
+        "status": "not_computed",
+        "note": "HILLS/COLVAR are appended raw metaD output; 20 ps over two single replicas is still not a converged FES."
+      }
+    },
+    {
+      "name": "interface_r1_seg2",
+      "parent_case": "interface_r1",
+      "parent_job_id": "8562695",
+      "parent_workdir_name": "interface_r1_fix1",
+      "parent_workdir_remote": "/public/home/temp/projects/sulfoacetic-vib/saa-vib-v1/li2025_direct/interface_r1_fix1",
+      "parent_workdir_local": "results/li2025_direct/interface_r1_fix1",
+      "cp2k_project": "interface_r1",
+      "initial_geometry": {
+        "box_angstrom": [
+          15.0,
+          15.0,
+          30.0
+        ],
+        "initial_sc_distance_angstrom": 3.931725038239195
+      },
+      "segment": {
+        "start_step": 10000,
+        "steps": 10000,
+        "expected_first_step": 10001,
+        "expected_end_step": 20000,
+        "segment_step_range": [
+          10001,
+          20000
+        ],
+        "cumulative_step_range": [
+          1,
+          20000
+        ],
+        "segment_time_range_fs": [
+          9999.999999998916,
+          19999.999999998916
+        ],
+        "parent_md_step_last": 10000
+      },
+      "stage": [
+        {
+          "role": "new_input",
+          "source": "interface_r1_seg2.inp",
+          "target": "interface_r1_seg2.inp",
+          "sha256": "96f3e5c83659132ca8bfa77261b5d2737780e24262dae2998c19a32d0c2b8493",
+          "bytes": 2233
+        },
+        {
+          "role": "new_plumed",
+          "source": "interface_r1_seg2.plumed",
+          "target": "interface_r1.plumed",
+          "sha256": "6f4c152b8ccee8e8d29df69d61966fc6e69aac2e0ae015829e01606d4064ec93",
+          "bytes": 514
+        },
+        {
+          "role": "parent_restart",
+          "source": "interface_r1-1.restart",
+          "target": "interface_r1_seg2_parent.restart",
+          "sha256": "10e9bda4fb2c51c98b5ebca4482e392466da2f5d240859814ef62ae374867178",
+          "bytes": 55889
+        },
+        {
+          "role": "parent_xyz",
+          "source": "interface_r1.xyz",
+          "target": "interface_r1.xyz",
+          "sha256": "d130d72b8da2d57944d542685680c9757285083bc3a1626c3f870f67d102d34e",
+          "bytes": 12557
+        },
+        {
+          "role": "parent_input",
+          "source": "interface_r1.inp",
+          "target": "parent_interface_r1.inp",
+          "sha256": "85d542188c304129bb9b5f6dd5ffc4b5b8556e20c3758b7b57d443f9b6aced0e",
+          "bytes": 2055
+        },
+        {
+          "role": "parent_plumed",
+          "source": "interface_r1.plumed",
+          "target": "parent_interface_r1.plumed",
+          "sha256": "ed27c27d03bcc28d30081c8758cd42c35bb48fe32b9015bb85cae175eac8d8b8",
+          "bytes": 506
+        },
+        {
+          "role": "parent_run_record",
+          "source": "run_record.json",
+          "target": "parent_run_record.json",
+          "sha256": "c5c251b97f087fa08fb28898615d08ca17db9ad8e7ce5b6b15fa6f4d48ccc641",
+          "bytes": 1827
+        },
+        {
+          "role": "parent_hills",
+          "source": "HILLS_interface_r1",
+          "target": "HILLS_interface_r1",
+          "sha256": "dd46bcc78b47f8b080893949c172fca2431e94cc55b32b4cec77c8e8830d606d",
+          "bytes": 38725
+        },
+        {
+          "role": "parent_colvar",
+          "source": "COLVAR_interface_r1",
+          "target": "COLVAR_interface_r1",
+          "sha256": "a8a9177218eecb7db88fb536ae0fcd1aea69ddef85ea179e8ca5597e12e1bc50",
+          "bytes": 30920
+        }
+      ],
+      "outputs": {
+        "output": "interface_r1_seg2.out",
+        "trajectory": "interface_r1-pos-1.xyz",
+        "energy": "interface_r1-1.ener",
+        "restart": "interface_r1-1.restart"
+      },
+      "metad_files": {
+        "hills": "HILLS_interface_r1",
+        "colvar": "COLVAR_interface_r1"
+      },
+      "plumed_restart_added": true,
+      "metad_baseline": {
+        "hills_rows": 333,
+        "hills_last_time_fs": 9989.999193730586,
+        "colvar_rows": 1000,
+        "colvar_last_time_fs": 9999.999193
+      },
+      "parent_evidence": {
+        "run_record": {
+          "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_direct/interface_r1_fix1/run_record.json",
+          "sha256": "c5c251b97f087fa08fb28898615d08ca17db9ad8e7ce5b6b15fa6f4d48ccc641",
+          "status": "COMPLETED",
+          "program_ended": true,
+          "job_id": "8562695",
+          "md_step_last": 10000,
+          "trajectory_frames": 1001,
+          "scf_not_converged_runs": 0,
+          "energy_last_hartree": -1735.214041739015
+        },
+        "restart": {
+          "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_direct/interface_r1_fix1/interface_r1-1.restart",
+          "sha256": "10e9bda4fb2c51c98b5ebca4482e392466da2f5d240859814ef62ae374867178",
+          "bytes": 55889,
+          "md_step_start_val": 10000,
+          "md_time_start_val_fs": 9999.999999998916,
+          "md_steps_field": 10000,
+          "coord_atom_lines": 296,
+          "velocity_atom_lines": 296,
+          "all_step_start_val_values": [
+            "10000",
+            "0"
+          ],
+          "note": "the &METADYN copy STEP_START_VAL 0 is not authoritative; only the &MD block counter drives the segment"
+        },
+        "inputs": {
+          "inp_sha256": "85d542188c304129bb9b5f6dd5ffc4b5b8556e20c3758b7b57d443f9b6aced0e",
+          "plumed_sha256": "ed27c27d03bcc28d30081c8758cd42c35bb48fe32b9015bb85cae175eac8d8b8",
+          "xyz_sha256": "d130d72b8da2d57944d542685680c9757285083bc3a1626c3f870f67d102d34e"
+        },
+        "trajectory": {
+          "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_direct/interface_r1_fix1/interface_r1-pos-1.xyz",
+          "sha256": "244ecaf8a8a710dca6b4b6e9212471f5cf4e746c64fab75502889a28e5c9d82b",
+          "frames": 1001,
+          "first_step": 0,
+          "last_step": 10000
+        },
+        "energy": {
+          "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_direct/interface_r1_fix1/interface_r1-1.ener",
+          "sha256": "91fa361e98973d927735d47bb6e9bdb7259928e21190db690a4c7ce5fa9cd098",
+          "last_step": 10000
+        },
+        "metad": {
+          "hills_file": "HILLS_interface_r1",
+          "hills_rows": 333,
+          "hills_last_time_fs": 9989.999193730586,
+          "colvar_file": "COLVAR_interface_r1",
+          "colvar_rows": 1000,
+          "colvar_last_time_fs": 9999.999193
+        }
+      },
+      "fes": {
+        "status": "not_computed",
+        "note": "HILLS/COLVAR are appended raw metaD output; 20 ps over two single replicas is still not a converged FES."
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "snapshot_date": "2026-11-19",
+  "cases": {
+    "r1150_original": {
+      "frames": 294,
+      "last_step": 2930,
+      "SC_mean_A": 3.6159981957619394,
+      "SC_min_A": 2.718120904997982,
+      "SC_last_A": 3.5676037475136493,
+      "SC_below2A_frames": 0,
+      "trajectory_sha256": "7a42fca69ead6134de9238b16bb3df70e5cef614b91332acdcb1678af63766ce"
+    },
+    "r2200_original": {
+      "frames": 311,
+      "last_step": 3100,
+      "SC_mean_A": 3.4989210685088645,
+      "SC_min_A": 2.801741626572119,
+      "SC_last_A": 3.6076458643895877,
+      "SC_below2A_frames": 0,
+      "trajectory_sha256": "275a67a91e7d53dd361731c36693524657e15bb0bf371e306068174f626bcd7d"
+    }
+  },
+  "method": "Minimum-image S293-C289 over every saved frame in the selected snapshot."
+}

@@ -1,0 +1,8 @@
+/data/server/
+/data/technical_traces/
+/downloads/
+/results/
+/.venv/
+__pycache__/
+*.pyc
+.DS_Store

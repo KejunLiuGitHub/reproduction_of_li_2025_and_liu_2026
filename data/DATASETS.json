@@ -1,0 +1,1295 @@
+{
+  "schema": "li2025_selected_datasets/v1",
+  "snapshot_date": "2026-11-19",
+  "cases": {
+    "p_iface_v2": {
+      "id": "p_iface_v2",
+      "label": "p_iface_v2",
+      "job_id": "8569494",
+      "trajectory": "data/server/li2025_branches_20261112/p_iface_v2/p_iface_v2-pos-1.xyz",
+      "energy": "data/server/li2025_branches_20261112/p_iface_v2/p_iface_v2-1.ener",
+      "input": "data/server/li2025_branches_20261112/p_iface_v2/p_iface_v2.inp",
+      "coordinates": "data/server/li2025_branches_20261112/p_iface_v2/p_iface_v2.xyz",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "biased": false,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "ARCHIVED",
+      "coverage": {
+        "frames": 501,
+        "first_step": 0,
+        "last_step": 5000,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "b0279775816e48963e9fd7d722c6d852a05b10fc44da3b22a6d73b29e841b6ac",
+        "energy": "7b8636ff78525f98ad012e051a917ea11245f0648e6893d1ad4d09be90634ac7"
+      },
+      "prepared_under_bias": true
+    },
+    "p_iface_v2_smoke": {
+      "id": "p_iface_v2_smoke",
+      "label": "p_iface_v2_smoke",
+      "job_id": "8569494",
+      "trajectory": "data/server/li2025_branches_20261112/p_iface_v2_smoke/p_iface_v2_smoke-pos-1.xyz",
+      "energy": "data/server/li2025_branches_20261112/p_iface_v2_smoke/p_iface_v2_smoke-1.ener",
+      "input": "data/server/li2025_branches_20261112/p_iface_v2_smoke/p_iface_v2_smoke.inp",
+      "coordinates": "data/server/li2025_branches_20261112/p_iface_v2_smoke/p_iface_v2.xyz",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "biased": false,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "SMOKE",
+      "coverage": {
+        "frames": 3,
+        "first_step": 0,
+        "last_step": 20,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "5766d256376edfc042be2c0d87a50a177f2a83b236ea6a1a3af2c30aa4310295",
+        "energy": "90953c1d10a64e89add15c4a1435dcd2e9d447ace19e06f7ceb361a491caec56"
+      },
+      "prepared_under_bias": true
+    },
+    "r_eq_metad": {
+      "id": "r_eq_metad",
+      "label": "r_eq_metad",
+      "job_id": "8569493",
+      "trajectory": "data/server/li2025_branches_20261112/r_eq_metad/r_eq_metad-pos-1.xyz",
+      "energy": "data/server/li2025_branches_20261112/r_eq_metad/r_eq_metad-1.ener",
+      "input": "data/server/li2025_branches_20261112/r_eq_metad/r_eq_metad.inp",
+      "coordinates": "data/server/li2025_branches_20261112/r_eq_metad/r_eq_metad.xyz",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "biased": true,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "ARCHIVED",
+      "coverage": {
+        "frames": 1001,
+        "first_step": 0,
+        "last_step": 10000,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "8e72d920fba61be1a84da03de3b60e7d30b15aa2ca0cdb281fe01625e2914713",
+        "energy": "363969283686f008dfdc32aff347e2b46270963c69aa33f27a148b7fce684f63"
+      },
+      "prepared_under_bias": true
+    },
+    "r_eq_metad_smoke": {
+      "id": "r_eq_metad_smoke",
+      "label": "r_eq_metad_smoke",
+      "job_id": "8569493",
+      "trajectory": "data/server/li2025_branches_20261112/r_eq_metad_smoke/r_eq_metad_smoke-pos-1.xyz",
+      "energy": "data/server/li2025_branches_20261112/r_eq_metad_smoke/r_eq_metad_smoke-1.ener",
+      "input": "data/server/li2025_branches_20261112/r_eq_metad_smoke/r_eq_metad_smoke.inp",
+      "coordinates": "data/server/li2025_branches_20261112/r_eq_metad_smoke/r_eq_metad.xyz",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "biased": true,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "SMOKE",
+      "coverage": {
+        "frames": 3,
+        "first_step": 0,
+        "last_step": 20,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "9464543be727c4c463adea519d73361c8f53205e9b037dcec007135ad351ad56",
+        "energy": "b43d488449998c8fe82d6000ff608dc968b999394471e5460cc8cdd1efeef9b9"
+      },
+      "prepared_under_bias": true
+    },
+    "relax_v2": {
+      "id": "relax_v2",
+      "label": "relax_v2",
+      "job_id": "8569495",
+      "trajectory": "data/server/li2025_branches_20261112/relax_v2/relax_v2-pos-1.xyz",
+      "energy": "data/server/li2025_branches_20261112/relax_v2/relax_v2-1.ener",
+      "input": "data/server/li2025_branches_20261112/relax_v2/relax_v2.inp",
+      "coordinates": "data/server/li2025_branches_20261112/relax_v2/relax_v2.xyz",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "biased": false,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "ARCHIVED",
+      "coverage": {
+        "frames": 501,
+        "first_step": 0,
+        "last_step": 5000,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "ce47d892883faa1d46ab8c6549b6d6c6e834eda50700cdbb9fc0a858574b8e0f",
+        "energy": "98a3a7f50531040a797f6898d594043e784a13ee8a0768b45a776292cb0d7263"
+      },
+      "prepared_under_bias": true
+    },
+    "relax_v2_smoke": {
+      "id": "relax_v2_smoke",
+      "label": "relax_v2_smoke",
+      "job_id": "8569495",
+      "trajectory": "data/server/li2025_branches_20261112/relax_v2_smoke/relax_v2_smoke-pos-1.xyz",
+      "energy": "data/server/li2025_branches_20261112/relax_v2_smoke/relax_v2_smoke-1.ener",
+      "input": "data/server/li2025_branches_20261112/relax_v2_smoke/relax_v2_smoke.inp",
+      "coordinates": "data/server/li2025_branches_20261112/relax_v2_smoke/relax_v2.xyz",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "biased": false,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "SMOKE",
+      "coverage": {
+        "frames": 3,
+        "first_step": 0,
+        "last_step": 20,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "b5f5a41136186d87f992074f1178c80895d70855862499e41ab12aef7b411eb7",
+        "energy": "cd592eb14cf5046749c8c3f1592077bbd13e4ff72e7b50dd4af501fce164d4e0"
+      },
+      "prepared_under_bias": true
+    },
+    "bulk_r1_fix1": {
+      "id": "bulk_r1_fix1",
+      "label": "bulk_r1_fix1",
+      "job_id": null,
+      "trajectory": "data/server/li2025_direct/bulk_r1_fix1/bulk_r1-pos-1.xyz",
+      "energy": "data/server/li2025_direct/bulk_r1_fix1/bulk_r1-1.ener",
+      "input": "data/server/li2025_direct/bulk_r1_fix1/bulk_r1.inp",
+      "coordinates": "data/server/li2025_direct/bulk_r1_fix1/bulk_r1.xyz",
+      "box_angstrom": [
+        14.2296,
+        14.2296,
+        14.2296
+      ],
+      "biased": true,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "ARCHIVED",
+      "coverage": {
+        "frames": 1001,
+        "first_step": 0,
+        "last_step": 10000,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "78e97ee50a61f398568140009b868a8fbbfbd98b11ba2ca88902c9caea27708e",
+        "energy": "0de6ed67415ef8c083b2c6eef7e50433723adb335cc8acfd39c173b6fc3e2c84"
+      },
+      "prepared_under_bias": true
+    },
+    "bulk_r1_seg2": {
+      "id": "bulk_r1_seg2",
+      "label": "bulk_r1_seg2",
+      "job_id": null,
+      "trajectory": "data/server/li2025_direct/bulk_r1_seg2/bulk_r1-pos-1.xyz",
+      "energy": "data/server/li2025_direct/bulk_r1_seg2/bulk_r1-1.ener",
+      "input": "data/server/li2025_direct/bulk_r1_seg2/bulk_r1_seg2.inp",
+      "coordinates": "data/server/li2025_direct/bulk_r1_seg2/bulk_r1.xyz",
+      "box_angstrom": [
+        14.2296,
+        14.2296,
+        14.2296
+      ],
+      "biased": true,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "ARCHIVED",
+      "coverage": {
+        "frames": 1000,
+        "first_step": 10010,
+        "last_step": 20000,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "ea3a560c741f18ab20b06c4f3b08a82f101991c88ba5751e3760a8f2ca35e3ac",
+        "energy": "ea9c1cad0deb59d435835c0997ffeb73e8d28a29683c30e7b245f130a25272d2"
+      },
+      "prepared_under_bias": true
+    },
+    "event_unbiased_s1": {
+      "id": "event_unbiased_s1",
+      "label": "event_unbiased_s1",
+      "job_id": null,
+      "trajectory": "data/server/li2025_direct/event_unbiased_s1/bulk_r1_unbiased-pos-1.xyz",
+      "energy": "data/server/li2025_direct/event_unbiased_s1/bulk_r1_unbiased-1.ener",
+      "input": "data/server/li2025_direct/event_unbiased_s1/event_unbiased_s1.inp",
+      "coordinates": "data/server/li2025_direct/event_unbiased_s1/bulk_r1_event12270.xyz",
+      "box_angstrom": [
+        14.2296,
+        14.2296,
+        14.2296
+      ],
+      "biased": false,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "ARCHIVED",
+      "coverage": {
+        "frames": 301,
+        "first_step": 0,
+        "last_step": 3000,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "4a0c5e3ac4acb7d176cf5db3c3a4dd860768ef64cfba39a2aecc327dafaa008f",
+        "energy": "8561eb6cc4341844f22809baf3c4ec991ef9b796f8ffa4d66e69773e3a558fe8"
+      },
+      "prepared_under_bias": true
+    },
+    "event_unbiased_s2": {
+      "id": "event_unbiased_s2",
+      "label": "event_unbiased_s2",
+      "job_id": null,
+      "trajectory": "data/server/li2025_direct/event_unbiased_s2/bulk_r1_unbiased-pos-1.xyz",
+      "energy": "data/server/li2025_direct/event_unbiased_s2/bulk_r1_unbiased-1.ener",
+      "input": "data/server/li2025_direct/event_unbiased_s2/event_unbiased_s2.inp",
+      "coordinates": "data/server/li2025_direct/event_unbiased_s2/bulk_r1_event12270.xyz",
+      "box_angstrom": [
+        14.2296,
+        14.2296,
+        14.2296
+      ],
+      "biased": false,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "ARCHIVED",
+      "coverage": {
+        "frames": 301,
+        "first_step": 0,
+        "last_step": 3000,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "fe64fee8fa2e353354f4ac4a3bcc13d2d61052e89421dc7a47a9312ecbaef252",
+        "energy": "078135f4b0b4428b76c7c82fb49a20965e01a6a16cad101f21bdd8cd4c58a77d"
+      },
+      "prepared_under_bias": true
+    },
+    "event_unbiased_s3": {
+      "id": "event_unbiased_s3",
+      "label": "event_unbiased_s3",
+      "job_id": null,
+      "trajectory": "data/server/li2025_direct/event_unbiased_s3/bulk_r1_unbiased-pos-1.xyz",
+      "energy": "data/server/li2025_direct/event_unbiased_s3/bulk_r1_unbiased-1.ener",
+      "input": "data/server/li2025_direct/event_unbiased_s3/event_unbiased_s3.inp",
+      "coordinates": "data/server/li2025_direct/event_unbiased_s3/bulk_r1_event12270.xyz",
+      "box_angstrom": [
+        14.2296,
+        14.2296,
+        14.2296
+      ],
+      "biased": false,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "ARCHIVED",
+      "coverage": {
+        "frames": 301,
+        "first_step": 0,
+        "last_step": 3000,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "7d74b34e35561fdbb8467280c602d4bc8065118af899aa47c9b69d03df5a42b6",
+        "energy": "4cc138eb1222aac6d0eac21a819ecf8c73d4bcdda722b811140cd8a7a1a30164"
+      },
+      "prepared_under_bias": true
+    },
+    "interface_event_unbiased_s1": {
+      "id": "interface_event_unbiased_s1",
+      "label": "interface_event_unbiased_s1",
+      "job_id": "8566899",
+      "trajectory": "data/server/li2025_direct/interface_event_unbiased_s1/interface_r1_unbiased-pos-1.xyz",
+      "energy": "data/server/li2025_direct/interface_event_unbiased_s1/interface_r1_unbiased-1.ener",
+      "input": "data/server/li2025_direct/interface_event_unbiased_s1/interface_event_unbiased_s1.inp",
+      "coordinates": "data/server/li2025_direct/interface_event_unbiased_s1/interface_r1_event10410.xyz",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "biased": false,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "ARCHIVED",
+      "coverage": {
+        "frames": 301,
+        "first_step": 0,
+        "last_step": 3000,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "37592c98e7e3e9857598cc8d25139e251a8f30c1b85f97f9d3c221d6a82c84e4",
+        "energy": "1c37138a129147194c73e14c95ce1ae3332405806ab5d5aaba6057eddc0a7aca"
+      },
+      "prepared_under_bias": true
+    },
+    "interface_event_unbiased_s2": {
+      "id": "interface_event_unbiased_s2",
+      "label": "interface_event_unbiased_s2",
+      "job_id": "8568085",
+      "trajectory": "data/server/li2025_direct/interface_event_unbiased_s2/interface_r1_unbiased-pos-1.xyz",
+      "energy": "data/server/li2025_direct/interface_event_unbiased_s2/interface_r1_unbiased-1.ener",
+      "input": "data/server/li2025_direct/interface_event_unbiased_s2/interface_event_unbiased_s2.inp",
+      "coordinates": "data/server/li2025_direct/interface_event_unbiased_s2/interface_r1_event10410.xyz",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "biased": false,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "ARCHIVED",
+      "coverage": {
+        "frames": 301,
+        "first_step": 0,
+        "last_step": 3000,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "3f1d3687251fd411d728ddd61408c51b5dd4122d0bb5a9ce227e88bc16ed6a47",
+        "energy": "b298eb13f78d6137e9df0473cdc1e86849efb93e22d07f93488e3f41d07b5a33"
+      },
+      "prepared_under_bias": true
+    },
+    "interface_event_unbiased_s3": {
+      "id": "interface_event_unbiased_s3",
+      "label": "interface_event_unbiased_s3",
+      "job_id": "8568086",
+      "trajectory": "data/server/li2025_direct/interface_event_unbiased_s3/interface_r1_unbiased-pos-1.xyz",
+      "energy": "data/server/li2025_direct/interface_event_unbiased_s3/interface_r1_unbiased-1.ener",
+      "input": "data/server/li2025_direct/interface_event_unbiased_s3/interface_event_unbiased_s3.inp",
+      "coordinates": "data/server/li2025_direct/interface_event_unbiased_s3/interface_r1_event10410.xyz",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "biased": false,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "ARCHIVED",
+      "coverage": {
+        "frames": 301,
+        "first_step": 0,
+        "last_step": 3000,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "a090b406b44a99f83adfd71fd981bfc375843a4e1020ae7d84bc20c5fa7d4d51",
+        "energy": "d9e38c3a90ceaea694604a8f00ebe8faf2d5eab3e4b991f9c4240d089e2fc58e"
+      },
+      "prepared_under_bias": true
+    },
+    "interface_r1_fix1": {
+      "id": "interface_r1_fix1",
+      "label": "interface_r1_fix1",
+      "job_id": null,
+      "trajectory": "data/server/li2025_direct/interface_r1_fix1/interface_r1-pos-1.xyz",
+      "energy": "data/server/li2025_direct/interface_r1_fix1/interface_r1-1.ener",
+      "input": "data/server/li2025_direct/interface_r1_fix1/interface_r1.inp",
+      "coordinates": "data/server/li2025_direct/interface_r1_fix1/interface_r1.xyz",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "biased": true,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "ARCHIVED",
+      "coverage": {
+        "frames": 1001,
+        "first_step": 0,
+        "last_step": 10000,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "244ecaf8a8a710dca6b4b6e9212471f5cf4e746c64fab75502889a28e5c9d82b",
+        "energy": "91fa361e98973d927735d47bb6e9bdb7259928e21190db690a4c7ce5fa9cd098"
+      },
+      "prepared_under_bias": true
+    },
+    "interface_r1_seg2": {
+      "id": "interface_r1_seg2",
+      "label": "interface_r1_seg2",
+      "job_id": null,
+      "trajectory": "data/server/li2025_direct/interface_r1_seg2/interface_r1-pos-1.xyz",
+      "energy": "data/server/li2025_direct/interface_r1_seg2/interface_r1-1.ener",
+      "input": "data/server/li2025_direct/interface_r1_seg2/interface_r1_seg2.inp",
+      "coordinates": "data/server/li2025_direct/interface_r1_seg2/interface_r1.xyz",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "biased": true,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "ARCHIVED",
+      "coverage": {
+        "frames": 1000,
+        "first_step": 10010,
+        "last_step": 20000,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "2706160763bd11a15fa9c93ce9beaaf8176030f21cad2bfd352e525e4a013b1e",
+        "energy": "91136a3286e39893ca7a38484b75b6310e949fea4c9cfef28dea53451f0954cb"
+      },
+      "prepared_under_bias": true
+    },
+    "interface_r1_seg3": {
+      "id": "interface_r1_seg3",
+      "label": "interface_r1_seg3",
+      "job_id": "8568711",
+      "trajectory": "data/server/li2025_extend_20261111/interface_r1_seg3/interface_r1-pos-1.xyz",
+      "energy": "data/server/li2025_extend_20261111/interface_r1_seg3/interface_r1-1.ener",
+      "input": "data/server/li2025_extend_20261111/interface_r1_seg3/interface_r1_seg3.inp",
+      "coordinates": "data/server/li2025_extend_20261111/interface_r1_seg3/interface_r1.xyz",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "biased": true,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "ARCHIVED",
+      "coverage": {
+        "frames": 1000,
+        "first_step": 20010,
+        "last_step": 30000,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "509a2783a8fd2b49588fb16a3744c146837dc9c20bb6b87374b79666c84f7278",
+        "energy": "85524103a2a7ab6f08aa1eae7c64d4f99e78c56cdc6d1aa985c360ece5cd4d4b"
+      },
+      "prepared_under_bias": true
+    },
+    "interface_r1_seg4": {
+      "id": "interface_r1_seg4",
+      "label": "interface_r1_seg4",
+      "job_id": "8571154",
+      "trajectory": "data/server/li2025_extend_20261113/interface_r1_seg4/interface_r1-pos-1.xyz",
+      "energy": "data/server/li2025_extend_20261113/interface_r1_seg4/interface_r1-1.ener",
+      "input": "data/server/li2025_extend_20261113/interface_r1_seg4/interface_r1_seg4.inp",
+      "coordinates": "data/server/li2025_extend_20261113/interface_r1_seg4/interface_r1.xyz",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "biased": true,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "ARCHIVED",
+      "coverage": {
+        "frames": 1000,
+        "first_step": 30010,
+        "last_step": 40000,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "8dbeaf04ec31d08f3327e2ec0b1d3ccfd1b49db93ce943bbbbf0700bb2db5616",
+        "energy": "8afa9912f5e0b79083211783be285103db1a96547ca7f96a3b8697f78b719078"
+      },
+      "prepared_under_bias": true
+    },
+    "interface_r1_seg5": {
+      "id": "interface_r1_seg5",
+      "label": "interface_r1_seg5",
+      "job_id": "8572387",
+      "trajectory": "data/server/li2025_extend_20261115/interface_r1_seg5/interface_r1-pos-1.xyz",
+      "energy": "data/server/li2025_extend_20261115/interface_r1_seg5/interface_r1-1.ener",
+      "input": "data/server/li2025_extend_20261115/interface_r1_seg5/interface_r1_seg5.inp",
+      "coordinates": "data/server/li2025_extend_20261115/interface_r1_seg5/interface_r1.xyz",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "biased": true,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "ARCHIVED",
+      "coverage": {
+        "frames": 1000,
+        "first_step": 40010,
+        "last_step": 50000,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "3a28c3b4cafac07446cf77af29febc5050ee557130bd2e4324336ee078502b38",
+        "energy": "f96c8e4f7c8803dd589a177591cdffcac737a8650c45b0225440ada536b32c2e"
+      },
+      "prepared_under_bias": true
+    },
+    "r1150_original": {
+      "id": "r1150_original",
+      "label": "r1150_original",
+      "job_id": "8572577",
+      "trajectory": "data/server/li2025_hbcontrol_20261118/production_v1/runs/r1150_original/r1150_original-pos-1.xyz",
+      "energy": "data/server/li2025_hbcontrol_20261118/production_v1/runs/r1150_original/r1150_original-1.ener",
+      "input": "data/server/li2025_hbcontrol_20261118/production_v1/runs/r1150_original/r1150_original.inp",
+      "coordinates": "data/server/li2025_hbcontrol_20261118/production_v1/runs/r1150_original/r1150_original.xyz",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "biased": false,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "LIVE_SNAPSHOT",
+      "coverage": {
+        "frames": 294,
+        "first_step": 0,
+        "last_step": 2930,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "7a42fca69ead6134de9238b16bb3df70e5cef614b91332acdcb1678af63766ce",
+        "energy": "e4308163f7bb849dfafee6a92f0927b6db435f11cffa24682e92a90c858f2cf9"
+      },
+      "prepared_under_bias": true
+    },
+    "r1150_original_smoke": {
+      "id": "r1150_original_smoke",
+      "label": "r1150_original_smoke",
+      "job_id": "8572577",
+      "trajectory": "data/server/li2025_hbcontrol_20261118/production_v1/runs/r1150_original_smoke/r1150_original_smoke-pos-1.xyz",
+      "energy": "data/server/li2025_hbcontrol_20261118/production_v1/runs/r1150_original_smoke/r1150_original_smoke-1.ener",
+      "input": "data/server/li2025_hbcontrol_20261118/production_v1/runs/r1150_original_smoke/r1150_original_smoke.inp",
+      "coordinates": "data/server/li2025_hbcontrol_20261118/production_v1/runs/r1150_original_smoke/r1150_original.xyz",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "biased": false,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "SMOKE",
+      "coverage": {
+        "frames": 3,
+        "first_step": 0,
+        "last_step": 20,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "6bbcf2b0a012270812cf43191973c6a6ca00ff03e56201442dead86064e70e57",
+        "energy": "9e3c9c97430cf364f8f5b3e1bc6455c1ab0e04b0bd2856ee15845b218f0322fb"
+      },
+      "prepared_under_bias": true
+    },
+    "r2200_original": {
+      "id": "r2200_original",
+      "label": "r2200_original",
+      "job_id": "8572578",
+      "trajectory": "data/server/li2025_hbcontrol_20261118/production_v1/runs/r2200_original/r2200_original-pos-1.xyz",
+      "energy": "data/server/li2025_hbcontrol_20261118/production_v1/runs/r2200_original/r2200_original-1.ener",
+      "input": "data/server/li2025_hbcontrol_20261118/production_v1/runs/r2200_original/r2200_original.inp",
+      "coordinates": "data/server/li2025_hbcontrol_20261118/production_v1/runs/r2200_original/r2200_original.xyz",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "biased": false,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "LIVE_SNAPSHOT",
+      "coverage": {
+        "frames": 311,
+        "first_step": 0,
+        "last_step": 3100,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "275a67a91e7d53dd361731c36693524657e15bb0bf371e306068174f626bcd7d",
+        "energy": "9b7881820ce7751cbbd3c47e52dc5e019775945676a0152b3933b834c874a005"
+      },
+      "prepared_under_bias": true
+    },
+    "r2200_original_smoke": {
+      "id": "r2200_original_smoke",
+      "label": "r2200_original_smoke",
+      "job_id": "8572578",
+      "trajectory": "data/server/li2025_hbcontrol_20261118/production_v1/runs/r2200_original_smoke/r2200_original_smoke-pos-1.xyz",
+      "energy": "data/server/li2025_hbcontrol_20261118/production_v1/runs/r2200_original_smoke/r2200_original_smoke-1.ener",
+      "input": "data/server/li2025_hbcontrol_20261118/production_v1/runs/r2200_original_smoke/r2200_original_smoke.inp",
+      "coordinates": "data/server/li2025_hbcontrol_20261118/production_v1/runs/r2200_original_smoke/r2200_original.xyz",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "biased": false,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "SMOKE",
+      "coverage": {
+        "frames": 3,
+        "first_step": 0,
+        "last_step": 20,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "f5ac5339233dab859aa59b744b9947b0c8775645249128742ad352d1568269ac",
+        "energy": "d45695fd6ab54ba9036121508241cfbbf06d31046e78b546008d58f6a827f131"
+      },
+      "prepared_under_bias": true
+    },
+    "r1150_oc_donor": {
+      "id": "r1150_oc_donor",
+      "label": "r1150_oc_donor",
+      "job_id": "8572523",
+      "trajectory": "data/server/li2025_hbintervention_20261116/production_v1/runs/r1150_oc_donor/r1150_oc_donor-pos-1.xyz",
+      "energy": "data/server/li2025_hbintervention_20261116/production_v1/runs/r1150_oc_donor/r1150_oc_donor-1.ener",
+      "input": "data/server/li2025_hbintervention_20261116/production_v1/runs/r1150_oc_donor/r1150_oc_donor.inp",
+      "coordinates": "data/server/li2025_hbintervention_20261116/production_v1/runs/r1150_oc_donor/r1150_oc_donor.xyz",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "biased": false,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "ARCHIVED",
+      "coverage": {
+        "frames": 501,
+        "first_step": 0,
+        "last_step": 5000,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "e2d8f7bb85d343dfdb73797be5f8a03502927178662939093e08d64c60ef3288",
+        "energy": "d2c45c027d99a37197c1b7a75f7fea96bff1228b44bd24c45e47be7a9109751e"
+      },
+      "prepared_under_bias": true
+    },
+    "r1150_oc_donor_smoke": {
+      "id": "r1150_oc_donor_smoke",
+      "label": "r1150_oc_donor_smoke",
+      "job_id": "8572523",
+      "trajectory": "data/server/li2025_hbintervention_20261116/production_v1/runs/r1150_oc_donor_smoke/r1150_oc_donor_smoke-pos-1.xyz",
+      "energy": "data/server/li2025_hbintervention_20261116/production_v1/runs/r1150_oc_donor_smoke/r1150_oc_donor_smoke-1.ener",
+      "input": "data/server/li2025_hbintervention_20261116/production_v1/runs/r1150_oc_donor_smoke/r1150_oc_donor_smoke.inp",
+      "coordinates": "data/server/li2025_hbintervention_20261116/production_v1/runs/r1150_oc_donor_smoke/r1150_oc_donor.xyz",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "biased": false,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "SMOKE",
+      "coverage": {
+        "frames": 3,
+        "first_step": 0,
+        "last_step": 20,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "ffaa43467ad54fcb851aa3824c37ae86f7dcf189b5a2f538685ceff2bfab941f",
+        "energy": "de5805ffd8683f58f6c89b21cec35b1d859740a10ad735e281f01f7a99f358ee"
+      },
+      "prepared_under_bias": true
+    },
+    "r1150_reverse": {
+      "id": "r1150_reverse",
+      "label": "r1150_reverse",
+      "job_id": "8572524",
+      "trajectory": "data/server/li2025_hbintervention_20261116/production_v1/runs/r1150_reverse/r1150_reverse-pos-1.xyz",
+      "energy": "data/server/li2025_hbintervention_20261116/production_v1/runs/r1150_reverse/r1150_reverse-1.ener",
+      "input": "data/server/li2025_hbintervention_20261116/production_v1/runs/r1150_reverse/r1150_reverse.inp",
+      "coordinates": "data/server/li2025_hbintervention_20261116/production_v1/runs/r1150_reverse/r1150_reverse.xyz",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "biased": false,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "ARCHIVED",
+      "coverage": {
+        "frames": 501,
+        "first_step": 0,
+        "last_step": 5000,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "2a6b21d76e749b4d7d5a22dfde55625835ddd1435ae03e8675f99311c6e4b1d2",
+        "energy": "2faca85a64407f3df381747fa7ceba565d33b52f06db3c3a920541428d43cd79"
+      },
+      "prepared_under_bias": true
+    },
+    "r1150_reverse_smoke": {
+      "id": "r1150_reverse_smoke",
+      "label": "r1150_reverse_smoke",
+      "job_id": "8572524",
+      "trajectory": "data/server/li2025_hbintervention_20261116/production_v1/runs/r1150_reverse_smoke/r1150_reverse_smoke-pos-1.xyz",
+      "energy": "data/server/li2025_hbintervention_20261116/production_v1/runs/r1150_reverse_smoke/r1150_reverse_smoke-1.ener",
+      "input": "data/server/li2025_hbintervention_20261116/production_v1/runs/r1150_reverse_smoke/r1150_reverse_smoke.inp",
+      "coordinates": "data/server/li2025_hbintervention_20261116/production_v1/runs/r1150_reverse_smoke/r1150_reverse.xyz",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "biased": false,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "SMOKE",
+      "coverage": {
+        "frames": 3,
+        "first_step": 0,
+        "last_step": 20,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "96a6c1b96a211e0594d683a9fcd5b2db817396f801216a3672c6b7fec6f7835d",
+        "energy": "1122d8cf54ceab326942cb0185ed01ef76c58f7ece07696ce62b9b9437636802"
+      },
+      "prepared_under_bias": true
+    },
+    "r2200_oc_donor": {
+      "id": "r2200_oc_donor",
+      "label": "r2200_oc_donor",
+      "job_id": "8572525",
+      "trajectory": "data/server/li2025_hbintervention_20261116/production_v1/runs/r2200_oc_donor/r2200_oc_donor-pos-1.xyz",
+      "energy": "data/server/li2025_hbintervention_20261116/production_v1/runs/r2200_oc_donor/r2200_oc_donor-1.ener",
+      "input": "data/server/li2025_hbintervention_20261116/production_v1/runs/r2200_oc_donor/r2200_oc_donor.inp",
+      "coordinates": "data/server/li2025_hbintervention_20261116/production_v1/runs/r2200_oc_donor/r2200_oc_donor.xyz",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "biased": false,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "ARCHIVED",
+      "coverage": {
+        "frames": 501,
+        "first_step": 0,
+        "last_step": 5000,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "4ef1db1b675d033df81758e99ac75da2472fd2a82d10f3fcc4bfd4738af55292",
+        "energy": "253189b77a7c5ac5ce183b6b41566cd48295d107da528ddc29297668acf0aba9"
+      },
+      "prepared_under_bias": true
+    },
+    "r2200_oc_donor_smoke": {
+      "id": "r2200_oc_donor_smoke",
+      "label": "r2200_oc_donor_smoke",
+      "job_id": "8572525",
+      "trajectory": "data/server/li2025_hbintervention_20261116/production_v1/runs/r2200_oc_donor_smoke/r2200_oc_donor_smoke-pos-1.xyz",
+      "energy": "data/server/li2025_hbintervention_20261116/production_v1/runs/r2200_oc_donor_smoke/r2200_oc_donor_smoke-1.ener",
+      "input": "data/server/li2025_hbintervention_20261116/production_v1/runs/r2200_oc_donor_smoke/r2200_oc_donor_smoke.inp",
+      "coordinates": "data/server/li2025_hbintervention_20261116/production_v1/runs/r2200_oc_donor_smoke/r2200_oc_donor.xyz",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "biased": false,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "SMOKE",
+      "coverage": {
+        "frames": 3,
+        "first_step": 0,
+        "last_step": 20,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "1c92879eda0b57782daaa2b42eb5dd91b5db52c56a7688d62c18569cb42e5e86",
+        "energy": "4d6f21de14217c6ae143bd0808556d0ffc23f4b1eb40834a9305fc29ba7b1275"
+      },
+      "prepared_under_bias": true
+    },
+    "r2200_reverse": {
+      "id": "r2200_reverse",
+      "label": "r2200_reverse",
+      "job_id": "8572526",
+      "trajectory": "data/server/li2025_hbintervention_20261116/production_v1/runs/r2200_reverse/r2200_reverse-pos-1.xyz",
+      "energy": "data/server/li2025_hbintervention_20261116/production_v1/runs/r2200_reverse/r2200_reverse-1.ener",
+      "input": "data/server/li2025_hbintervention_20261116/production_v1/runs/r2200_reverse/r2200_reverse.inp",
+      "coordinates": "data/server/li2025_hbintervention_20261116/production_v1/runs/r2200_reverse/r2200_reverse.xyz",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "biased": false,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "ARCHIVED",
+      "coverage": {
+        "frames": 501,
+        "first_step": 0,
+        "last_step": 5000,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "3a0b017f1f9d596c9eb1941ef2f17c860c8a3620a1a424dcfe2cf6a740791c0d",
+        "energy": "4d334fac7e553897e2d304e9e8a422ca799a56be1f3e6efc1308ad97272ad103"
+      },
+      "prepared_under_bias": true
+    },
+    "r2200_reverse_smoke": {
+      "id": "r2200_reverse_smoke",
+      "label": "r2200_reverse_smoke",
+      "job_id": "8572526",
+      "trajectory": "data/server/li2025_hbintervention_20261116/production_v1/runs/r2200_reverse_smoke/r2200_reverse_smoke-pos-1.xyz",
+      "energy": "data/server/li2025_hbintervention_20261116/production_v1/runs/r2200_reverse_smoke/r2200_reverse_smoke-1.ener",
+      "input": "data/server/li2025_hbintervention_20261116/production_v1/runs/r2200_reverse_smoke/r2200_reverse_smoke.inp",
+      "coordinates": "data/server/li2025_hbintervention_20261116/production_v1/runs/r2200_reverse_smoke/r2200_reverse.xyz",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "biased": false,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "SMOKE",
+      "coverage": {
+        "frames": 3,
+        "first_step": 0,
+        "last_step": 20,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "f7512c526fa01d49673db4c2b487500f6848ae264fc5921754658497d31c4777",
+        "energy": "5cb7b62d5422c7a9f0be67c4ff935ceedea5e0e91167a242bb8690859415c22a"
+      },
+      "prepared_under_bias": true
+    },
+    "natural_original40": {
+      "id": "natural_original40",
+      "label": "natural_original40",
+      "job_id": "8572454",
+      "trajectory": "data/server/li2025_hbnetwork_20261116/production_v1/runs/natural_original40/natural_original40-pos-1.xyz",
+      "energy": "data/server/li2025_hbnetwork_20261116/production_v1/runs/natural_original40/natural_original40-1.ener",
+      "input": "data/server/li2025_hbnetwork_20261116/production_v1/runs/natural_original40/natural_original40.inp",
+      "coordinates": "data/server/li2025_hbnetwork_20261116/production_v1/runs/natural_original40/natural_original40.xyz",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "biased": false,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "ARCHIVED",
+      "coverage": {
+        "frames": 501,
+        "first_step": 0,
+        "last_step": 5000,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "24454e7c586839355a9ee5da0d21c2d6b45f479f1739918d48e96ad9dcd85442",
+        "energy": "66d856dd931f12e4ec4f3701052ea09bbfb3294dea3873d755b454742bbc1eb0"
+      },
+      "prepared_under_bias": true
+    },
+    "natural_original40_smoke": {
+      "id": "natural_original40_smoke",
+      "label": "natural_original40_smoke",
+      "job_id": "8572454",
+      "trajectory": "data/server/li2025_hbnetwork_20261116/production_v1/runs/natural_original40_smoke/natural_original40_smoke-pos-1.xyz",
+      "energy": "data/server/li2025_hbnetwork_20261116/production_v1/runs/natural_original40_smoke/natural_original40_smoke-1.ener",
+      "input": "data/server/li2025_hbnetwork_20261116/production_v1/runs/natural_original40_smoke/natural_original40_smoke.inp",
+      "coordinates": "data/server/li2025_hbnetwork_20261116/production_v1/runs/natural_original40_smoke/natural_original40.xyz",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "biased": false,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "SMOKE",
+      "coverage": {
+        "frames": 3,
+        "first_step": 0,
+        "last_step": 20,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "b77625899910b4ec870663f75382777efa44cc95615f34ef0ff68ad6a1b2963d",
+        "energy": "4c3424a87510000248d5ba02b5af7534d3bb4908b8840bde84f97716d29e49c7"
+      },
+      "prepared_under_bias": true
+    },
+    "natural_r19830": {
+      "id": "natural_r19830",
+      "label": "natural_r19830",
+      "job_id": "8572455",
+      "trajectory": "data/server/li2025_hbnetwork_20261116/production_v1/runs/natural_r19830/natural_r19830-pos-1.xyz",
+      "energy": "data/server/li2025_hbnetwork_20261116/production_v1/runs/natural_r19830/natural_r19830-1.ener",
+      "input": "data/server/li2025_hbnetwork_20261116/production_v1/runs/natural_r19830/natural_r19830.inp",
+      "coordinates": "data/server/li2025_hbnetwork_20261116/production_v1/runs/natural_r19830/natural_r19830.xyz",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "biased": false,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "ARCHIVED",
+      "coverage": {
+        "frames": 501,
+        "first_step": 0,
+        "last_step": 5000,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "cb612687383c726a4927030c372f0bc13472476d12157684a4431a8d684267ce",
+        "energy": "e54eaad6127e4300942faecb90e23178eda5fdbba422fead179d02ee24b57c63"
+      },
+      "prepared_under_bias": true
+    },
+    "natural_r19830_smoke": {
+      "id": "natural_r19830_smoke",
+      "label": "natural_r19830_smoke",
+      "job_id": "8572455",
+      "trajectory": "data/server/li2025_hbnetwork_20261116/production_v1/runs/natural_r19830_smoke/natural_r19830_smoke-pos-1.xyz",
+      "energy": "data/server/li2025_hbnetwork_20261116/production_v1/runs/natural_r19830_smoke/natural_r19830_smoke-1.ener",
+      "input": "data/server/li2025_hbnetwork_20261116/production_v1/runs/natural_r19830_smoke/natural_r19830_smoke.inp",
+      "coordinates": "data/server/li2025_hbnetwork_20261116/production_v1/runs/natural_r19830_smoke/natural_r19830.xyz",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "biased": false,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "SMOKE",
+      "coverage": {
+        "frames": 3,
+        "first_step": 0,
+        "last_step": 20,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "e8cb8e6993381d9800d62e083e286f3c6bfbdcbf526e59b269bbf122fd917c8f",
+        "energy": "d65058f7ab46838073facfd92ef3b248e8cab4d6efea8f6073c34995f6701ce5"
+      },
+      "prepared_under_bias": true
+    },
+    "r_eq_metad_seg2": {
+      "id": "r_eq_metad_seg2",
+      "label": "r_eq_metad_seg2",
+      "job_id": "8571156",
+      "trajectory": "data/server/li2025_r_extend_20261113/r_eq_metad_seg2/r_eq_metad-pos-1.xyz",
+      "energy": "data/server/li2025_r_extend_20261113/r_eq_metad_seg2/r_eq_metad-1.ener",
+      "input": "data/server/li2025_r_extend_20261113/r_eq_metad_seg2/r_eq_metad_seg2.inp",
+      "coordinates": "data/server/li2025_r_extend_20261113/r_eq_metad_seg2/r_eq_metad.xyz",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "biased": true,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "ARCHIVED",
+      "coverage": {
+        "frames": 1000,
+        "first_step": 10010,
+        "last_step": 20000,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "b5e7ea6b430c47dbd39e072cc0a56c00e47ffcc8ebacd2ac367858e667494c2e",
+        "energy": "0529a1970fb0d1ff7e65f42f05040a5f91a50565577f7003534262b7e1ebfa2f"
+      },
+      "prepared_under_bias": true
+    },
+    "p_bulk": {
+      "id": "p_bulk",
+      "label": "p_bulk",
+      "job_id": "8568511",
+      "trajectory": "data/server/li2025_recovery_20261111/p_bulk/p_bulk-pos-1.xyz",
+      "energy": "data/server/li2025_recovery_20261111/p_bulk/p_bulk-1.ener",
+      "input": "data/server/li2025_recovery_20261111/p_bulk/p_bulk.inp",
+      "coordinates": "data/server/li2025_recovery_20261111/p_bulk/p_bulk.xyz",
+      "box_angstrom": [
+        14.2296,
+        14.2296,
+        14.2296
+      ],
+      "biased": false,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "ARCHIVED",
+      "coverage": {
+        "frames": 301,
+        "first_step": 0,
+        "last_step": 3000,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "304d8045e5e03b6d7b6f998d2ad2b1870f9394ca7eee5f3b68813d5e1f2a9bc3",
+        "energy": "0c20dac80ce8477308a7f442a2927e577990b4ee4d056750803c5d1b881bb007"
+      },
+      "prepared_under_bias": true
+    },
+    "p_bulk_smoke": {
+      "id": "p_bulk_smoke",
+      "label": "p_bulk_smoke",
+      "job_id": "8568511",
+      "trajectory": "data/server/li2025_recovery_20261111/p_bulk_smoke/p_bulk_smoke-pos-1.xyz",
+      "energy": "data/server/li2025_recovery_20261111/p_bulk_smoke/p_bulk_smoke-1.ener",
+      "input": "data/server/li2025_recovery_20261111/p_bulk_smoke/p_bulk_smoke.inp",
+      "coordinates": "data/server/li2025_recovery_20261111/p_bulk_smoke/p_bulk.xyz",
+      "box_angstrom": [
+        14.2296,
+        14.2296,
+        14.2296
+      ],
+      "biased": false,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "SMOKE",
+      "coverage": {
+        "frames": 3,
+        "first_step": 0,
+        "last_step": 20,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "5755912238aeb16e703ed55b077e2221ebdb60bb533cc41d37444d191a56ad4a",
+        "energy": "c652370466ed302e6f5d999a900777521eeca8737f307073688fc133f9675b8b"
+      },
+      "prepared_under_bias": true
+    },
+    "p_interface": {
+      "id": "p_interface",
+      "label": "p_interface",
+      "job_id": "8568510",
+      "trajectory": "data/server/li2025_recovery_20261111/p_interface/p_interface-pos-1.xyz",
+      "energy": "data/server/li2025_recovery_20261111/p_interface/p_interface-1.ener",
+      "input": "data/server/li2025_recovery_20261111/p_interface/p_interface.inp",
+      "coordinates": "data/server/li2025_recovery_20261111/p_interface/p_interface.xyz",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "biased": false,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "ARCHIVED",
+      "coverage": {
+        "frames": 301,
+        "first_step": 0,
+        "last_step": 3000,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "9f225f73bb636989170cf6936ab37340bd14d5eb35c8c24116cae5275ff7999b",
+        "energy": "42f10f5a8b42c8b3c971fb50cfe3eb9d2c5d8d6d95ee66cdc47ca74b4a171487"
+      },
+      "prepared_under_bias": true
+    },
+    "p_interface_smoke": {
+      "id": "p_interface_smoke",
+      "label": "p_interface_smoke",
+      "job_id": "8568510",
+      "trajectory": "data/server/li2025_recovery_20261111/p_interface_smoke/p_interface_smoke-pos-1.xyz",
+      "energy": "data/server/li2025_recovery_20261111/p_interface_smoke/p_interface_smoke-1.ener",
+      "input": "data/server/li2025_recovery_20261111/p_interface_smoke/p_interface_smoke.inp",
+      "coordinates": "data/server/li2025_recovery_20261111/p_interface_smoke/p_interface.xyz",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "biased": false,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "SMOKE",
+      "coverage": {
+        "frames": 3,
+        "first_step": 0,
+        "last_step": 20,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "d690ae538f00763baed72a3ac81e6e249adbf3a0d27a0385184fb1c0a298fcb2",
+        "energy": "60ad6508af35e71a698edc980ecc1656e70b21ab378296be4be9dd2c30239145"
+      },
+      "prepared_under_bias": true
+    },
+    "r_interface_eq": {
+      "id": "r_interface_eq",
+      "label": "r_interface_eq",
+      "job_id": "8568513",
+      "trajectory": "data/server/li2025_recovery_20261111/r_interface_eq/r_interface_eq-pos-1.xyz",
+      "energy": "data/server/li2025_recovery_20261111/r_interface_eq/r_interface_eq-1.ener",
+      "input": "data/server/li2025_recovery_20261111/r_interface_eq/r_interface_eq.inp",
+      "coordinates": "data/server/li2025_recovery_20261111/r_interface_eq/r_interface_eq.xyz",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "biased": false,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "ARCHIVED",
+      "coverage": {
+        "frames": 501,
+        "first_step": 0,
+        "last_step": 5000,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "80eedcaaa7de00f6f0b04cee30162a6e0ce834d25d01f2c8fea8b507d8219d4d",
+        "energy": "65e065edd7c4bc9ca149b4be136b5a6e6624d5cdd2b0a3297d651b49fe43d8f0"
+      },
+      "prepared_under_bias": true
+    },
+    "r_interface_eq_smoke": {
+      "id": "r_interface_eq_smoke",
+      "label": "r_interface_eq_smoke",
+      "job_id": "8568513",
+      "trajectory": "data/server/li2025_recovery_20261111/r_interface_eq_smoke/r_interface_eq_smoke-pos-1.xyz",
+      "energy": "data/server/li2025_recovery_20261111/r_interface_eq_smoke/r_interface_eq_smoke-1.ener",
+      "input": "data/server/li2025_recovery_20261111/r_interface_eq_smoke/r_interface_eq_smoke.inp",
+      "coordinates": "data/server/li2025_recovery_20261111/r_interface_eq_smoke/r_interface_eq.xyz",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "biased": false,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "SMOKE",
+      "coverage": {
+        "frames": 3,
+        "first_step": 0,
+        "last_step": 20,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "2334f06b38b5692d0fa9a1ef44e72e52c8455501da556bb7998d25bfe7994351",
+        "energy": "9ebccaaa1771008b740b7479a2c494fed31f13213ab64c1b3cc7576d270f6a53"
+      },
+      "prepared_under_bias": true
+    },
+    "relax": {
+      "id": "relax",
+      "label": "relax",
+      "job_id": "8568949",
+      "trajectory": "data/server/li2025_solvation_20261111/relax/relax-pos-1.xyz",
+      "energy": "data/server/li2025_solvation_20261111/relax/relax-1.ener",
+      "input": "data/server/li2025_solvation_20261111/relax/relax.inp",
+      "coordinates": "data/server/li2025_solvation_20261111/relax/event10410.xyz",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "biased": true,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "ARCHIVED",
+      "coverage": {
+        "frames": 201,
+        "first_step": 0,
+        "last_step": 2000,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "a8af5e72ccabeb6a4d0c7969417948681a342c42c1d87c011717ccb6f38b5671",
+        "energy": "1838a470c2884212b441be856054b1cf83eb507055975057d7289790d2771148"
+      },
+      "prepared_under_bias": true
+    },
+    "release": {
+      "id": "release",
+      "label": "release",
+      "job_id": "8568949",
+      "trajectory": "data/server/li2025_solvation_20261111/release/release-pos-1.xyz",
+      "energy": "data/server/li2025_solvation_20261111/release/release-1.ener",
+      "input": "data/server/li2025_solvation_20261111/release/release.inp",
+      "coordinates": "data/server/li2025_solvation_20261111/release/event10410.xyz",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "biased": false,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "ARCHIVED",
+      "coverage": {
+        "frames": 500,
+        "first_step": 2010,
+        "last_step": 7000,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "054a3f1d25e57baf308a0c8cb670811c1608f6ca984fa07f792b6377cd5a6d71",
+        "energy": "bddb52abb6fca4ab1b05dbd27749f29eb174d55b890221dc5dd06b149b84d908"
+      },
+      "prepared_under_bias": true
+    },
+    "release_smoke": {
+      "id": "release_smoke",
+      "label": "release_smoke",
+      "job_id": "8568949",
+      "trajectory": "data/server/li2025_solvation_20261111/release_smoke/release_smoke-pos-1.xyz",
+      "energy": "data/server/li2025_solvation_20261111/release_smoke/release_smoke-1.ener",
+      "input": "data/server/li2025_solvation_20261111/release_smoke/release_smoke.inp",
+      "coordinates": "data/server/li2025_solvation_20261111/release_smoke/event10410.xyz",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "biased": false,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "SMOKE",
+      "coverage": {
+        "frames": 2,
+        "first_step": 30,
+        "last_step": 40,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "b04ca62465a82c858a4622dfd8656e6df8cb414f6d1808c3f7854a9b6b3d58cd",
+        "energy": "aa7192093ab5bcb4d5b0df5b37724499cf502f9e0c630827d191e1fe894ee885"
+      },
+      "prepared_under_bias": true
+    },
+    "smoke": {
+      "id": "smoke",
+      "label": "smoke",
+      "job_id": null,
+      "trajectory": "data/server/li2025_solvation_20261111/smoke/smoke-pos-1.xyz",
+      "energy": "data/server/li2025_solvation_20261111/smoke/smoke-1.ener",
+      "input": "data/server/li2025_solvation_20261111/smoke/smoke.inp",
+      "coordinates": "data/server/li2025_solvation_20261111/smoke/event10410.xyz",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "biased": true,
+      "history": "Selected Li Figure6b simulation; public snapshot and any metadynamics/restraint preparation history are retained. See docs/PROGRESS.md and archived manifests.",
+      "status": "SMOKE",
+      "coverage": {
+        "frames": 3,
+        "first_step": 0,
+        "last_step": 20,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "463a806b3f45abf109b651148799c12540d92ed19d7ba8e44561a0c7dcad6a83",
+        "energy": "67c859a103e08a0f75466202e48788ededd6257d000d29691c009d8d1fc62d78"
+      },
+      "prepared_under_bias": true
+    }
+  },
+  "note": "All saved frames of each selected run are retained; a live snapshot may have different XYZ/energy/log endpoints. Job IDs absent from available selected metadata are null."
+}

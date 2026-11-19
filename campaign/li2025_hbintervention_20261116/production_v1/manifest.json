@@ -1,0 +1,822 @@
+{
+  "schema": "li2025_hbnetwork_workflow/v1",
+  "campaign_type": "li296_controlled_water_hydrogen_orientation_intervention",
+  "candidate_names": [
+    "r1150_oc_donor",
+    "r1150_reverse",
+    "r2200_oc_donor",
+    "r2200_reverse"
+  ],
+  "cases": [
+    {
+      "name": "r1150_oc_donor_smoke",
+      "branch": "r1150_oc_donor",
+      "unbiased": true,
+      "prepared_under_bias": true,
+      "controlled_initial_conditions": true,
+      "condition": "oc_donor",
+      "pair_source_step": 1150,
+      "seed": 2026111603,
+      "steps": 20,
+      "expected_frames": 3,
+      "cp2k_project": "r1150_oc_donor_smoke",
+      "coordinate_file": "r1150_oc_donor.xyz",
+      "box_class": "interface",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "source": {
+        "trajectory": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq-pos-1.xyz",
+        "trajectory_sha256": "80eedcaaa7de00f6f0b04cee30162a6e0ce834d25d01f2c8fea8b507d8219d4d",
+        "source_job_id": "8568513",
+        "frame_step": 1150,
+        "source_segment_biased": false,
+        "public_snapshot_origin": "Figure6b metaD R_inter snapshot",
+        "prepared_under_bias": true,
+        "controlled_initial_conditions": true,
+        "original_frame_sha256": "5e1b93a126e25373541c1a71f0c11c58987aeb1ef19af65d7c8ddd79c91c7b61"
+      },
+      "transformation": {
+        "source_audit_sha256": "c8078b39f550bc643bec50656615b5e9ffdb88fa9d0985f08cde13b19dc0ca07",
+        "source_coordinate_file": "source_frame_1150.xyz",
+        "source_frame_sha256": "5e1b93a126e25373541c1a71f0c11c58987aeb1ef19af65d7c8ddd79c91c7b61",
+        "transformed_xyz_sha256": "4a83a8e0b66dae4fa36c587673295767a54d9a9869000672c5ec26076504c540",
+        "water_O_1based": 204,
+        "rotated_H_1based": [
+          202,
+          203
+        ],
+        "axis_unit": [
+          -0.9559315165677851,
+          0.2656959963947666,
+          -0.12490225431194814
+        ],
+        "rotation_matrix": [
+          [
+            0.9879598943225466,
+            0.028192339678896665,
+            0.15211981854318773
+          ],
+          [
+            -0.09914853743478641,
+            0.8701763391246118,
+            0.48266210370427
+          ],
+          [
+            -0.1187636928304497,
+            -0.49193325849257075,
+            0.8624945532895592
+          ]
+        ],
+        "signed_angle_deg": 30.64798629826913
+      },
+      "cp2k": {
+        "steps_initial_segment": 20,
+        "trajectory_every_fs": 10
+      },
+      "stage": [
+        {
+          "role": "new",
+          "source": "r1150_oc_donor.xyz",
+          "target": "r1150_oc_donor.xyz",
+          "sha256": "4a83a8e0b66dae4fa36c587673295767a54d9a9869000672c5ec26076504c540"
+        },
+        {
+          "role": "new",
+          "source": "r1150_oc_donor_smoke.inp",
+          "target": "r1150_oc_donor_smoke.inp",
+          "sha256": "917f9e6c9d2b5e5aae33bc60e9a71d68a7a8feb8b9bac47478222f2543571585"
+        }
+      ],
+      "outputs": {
+        "output": "r1150_oc_donor_smoke.out",
+        "trajectory": "r1150_oc_donor_smoke-pos-1.xyz",
+        "energy": "r1150_oc_donor_smoke-1.ener",
+        "restart": "r1150_oc_donor_smoke-1.restart"
+      },
+      "fes": {
+        "status": "not_applicable",
+        "note": "Controlled initial orientation, fully unbiased dynamics; no FES verdict."
+      },
+      "human_review": "PENDING",
+      "structural_verdict": null
+    },
+    {
+      "name": "r1150_oc_donor",
+      "branch": "r1150_oc_donor",
+      "unbiased": true,
+      "prepared_under_bias": true,
+      "controlled_initial_conditions": true,
+      "condition": "oc_donor",
+      "pair_source_step": 1150,
+      "seed": 2026111603,
+      "steps": 5000,
+      "expected_frames": 501,
+      "cp2k_project": "r1150_oc_donor",
+      "coordinate_file": "r1150_oc_donor.xyz",
+      "box_class": "interface",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "source": {
+        "trajectory": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq-pos-1.xyz",
+        "trajectory_sha256": "80eedcaaa7de00f6f0b04cee30162a6e0ce834d25d01f2c8fea8b507d8219d4d",
+        "source_job_id": "8568513",
+        "frame_step": 1150,
+        "source_segment_biased": false,
+        "public_snapshot_origin": "Figure6b metaD R_inter snapshot",
+        "prepared_under_bias": true,
+        "controlled_initial_conditions": true,
+        "original_frame_sha256": "5e1b93a126e25373541c1a71f0c11c58987aeb1ef19af65d7c8ddd79c91c7b61"
+      },
+      "transformation": {
+        "source_audit_sha256": "c8078b39f550bc643bec50656615b5e9ffdb88fa9d0985f08cde13b19dc0ca07",
+        "source_coordinate_file": "source_frame_1150.xyz",
+        "source_frame_sha256": "5e1b93a126e25373541c1a71f0c11c58987aeb1ef19af65d7c8ddd79c91c7b61",
+        "transformed_xyz_sha256": "4a83a8e0b66dae4fa36c587673295767a54d9a9869000672c5ec26076504c540",
+        "water_O_1based": 204,
+        "rotated_H_1based": [
+          202,
+          203
+        ],
+        "axis_unit": [
+          -0.9559315165677851,
+          0.2656959963947666,
+          -0.12490225431194814
+        ],
+        "rotation_matrix": [
+          [
+            0.9879598943225466,
+            0.028192339678896665,
+            0.15211981854318773
+          ],
+          [
+            -0.09914853743478641,
+            0.8701763391246118,
+            0.48266210370427
+          ],
+          [
+            -0.1187636928304497,
+            -0.49193325849257075,
+            0.8624945532895592
+          ]
+        ],
+        "signed_angle_deg": 30.64798629826913
+      },
+      "cp2k": {
+        "steps_initial_segment": 5000,
+        "trajectory_every_fs": 10
+      },
+      "stage": [
+        {
+          "role": "new",
+          "source": "r1150_oc_donor.xyz",
+          "target": "r1150_oc_donor.xyz",
+          "sha256": "4a83a8e0b66dae4fa36c587673295767a54d9a9869000672c5ec26076504c540"
+        },
+        {
+          "role": "new",
+          "source": "r1150_oc_donor.inp",
+          "target": "r1150_oc_donor.inp",
+          "sha256": "a1f81350e5d62fca9f0561bdf7c0926cdb7b83a00e470da572674fa99fe3863f"
+        }
+      ],
+      "outputs": {
+        "output": "r1150_oc_donor.out",
+        "trajectory": "r1150_oc_donor-pos-1.xyz",
+        "energy": "r1150_oc_donor-1.ener",
+        "restart": "r1150_oc_donor-1.restart"
+      },
+      "fes": {
+        "status": "not_applicable",
+        "note": "Controlled initial orientation, fully unbiased dynamics; no FES verdict."
+      },
+      "human_review": "PENDING",
+      "structural_verdict": null
+    },
+    {
+      "name": "r1150_reverse_smoke",
+      "branch": "r1150_reverse",
+      "unbiased": true,
+      "prepared_under_bias": true,
+      "controlled_initial_conditions": true,
+      "condition": "reverse",
+      "pair_source_step": 1150,
+      "seed": 2026111603,
+      "steps": 20,
+      "expected_frames": 3,
+      "cp2k_project": "r1150_reverse_smoke",
+      "coordinate_file": "r1150_reverse.xyz",
+      "box_class": "interface",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "source": {
+        "trajectory": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq-pos-1.xyz",
+        "trajectory_sha256": "80eedcaaa7de00f6f0b04cee30162a6e0ce834d25d01f2c8fea8b507d8219d4d",
+        "source_job_id": "8568513",
+        "frame_step": 1150,
+        "source_segment_biased": false,
+        "public_snapshot_origin": "Figure6b metaD R_inter snapshot",
+        "prepared_under_bias": true,
+        "controlled_initial_conditions": true,
+        "original_frame_sha256": "5e1b93a126e25373541c1a71f0c11c58987aeb1ef19af65d7c8ddd79c91c7b61"
+      },
+      "transformation": {
+        "source_audit_sha256": "c8078b39f550bc643bec50656615b5e9ffdb88fa9d0985f08cde13b19dc0ca07",
+        "source_coordinate_file": "source_frame_1150.xyz",
+        "source_frame_sha256": "5e1b93a126e25373541c1a71f0c11c58987aeb1ef19af65d7c8ddd79c91c7b61",
+        "transformed_xyz_sha256": "959a00351b4d496068ad86730910a506d37a3f3fc2b3821f89ecbe7778843c76",
+        "water_O_1based": 204,
+        "rotated_H_1based": [
+          202,
+          203
+        ],
+        "axis_unit": [
+          -0.9559315165677851,
+          0.2656959963947666,
+          -0.12490225431194814
+        ],
+        "rotation_matrix": [
+          [
+            0.9879598943225466,
+            -0.09914853743478641,
+            -0.1187636928304497
+          ],
+          [
+            0.028192339678896665,
+            0.8701763391246118,
+            -0.49193325849257075
+          ],
+          [
+            0.15211981854318773,
+            0.48266210370427,
+            0.8624945532895592
+          ]
+        ],
+        "signed_angle_deg": -30.64798629826913
+      },
+      "cp2k": {
+        "steps_initial_segment": 20,
+        "trajectory_every_fs": 10
+      },
+      "stage": [
+        {
+          "role": "new",
+          "source": "r1150_reverse.xyz",
+          "target": "r1150_reverse.xyz",
+          "sha256": "959a00351b4d496068ad86730910a506d37a3f3fc2b3821f89ecbe7778843c76"
+        },
+        {
+          "role": "new",
+          "source": "r1150_reverse_smoke.inp",
+          "target": "r1150_reverse_smoke.inp",
+          "sha256": "ccb0694f3678a50d0cdb8d491d6b09eb9611db9be2a44790741e4318f007b02e"
+        }
+      ],
+      "outputs": {
+        "output": "r1150_reverse_smoke.out",
+        "trajectory": "r1150_reverse_smoke-pos-1.xyz",
+        "energy": "r1150_reverse_smoke-1.ener",
+        "restart": "r1150_reverse_smoke-1.restart"
+      },
+      "fes": {
+        "status": "not_applicable",
+        "note": "Controlled initial orientation, fully unbiased dynamics; no FES verdict."
+      },
+      "human_review": "PENDING",
+      "structural_verdict": null
+    },
+    {
+      "name": "r1150_reverse",
+      "branch": "r1150_reverse",
+      "unbiased": true,
+      "prepared_under_bias": true,
+      "controlled_initial_conditions": true,
+      "condition": "reverse",
+      "pair_source_step": 1150,
+      "seed": 2026111603,
+      "steps": 5000,
+      "expected_frames": 501,
+      "cp2k_project": "r1150_reverse",
+      "coordinate_file": "r1150_reverse.xyz",
+      "box_class": "interface",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "source": {
+        "trajectory": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq-pos-1.xyz",
+        "trajectory_sha256": "80eedcaaa7de00f6f0b04cee30162a6e0ce834d25d01f2c8fea8b507d8219d4d",
+        "source_job_id": "8568513",
+        "frame_step": 1150,
+        "source_segment_biased": false,
+        "public_snapshot_origin": "Figure6b metaD R_inter snapshot",
+        "prepared_under_bias": true,
+        "controlled_initial_conditions": true,
+        "original_frame_sha256": "5e1b93a126e25373541c1a71f0c11c58987aeb1ef19af65d7c8ddd79c91c7b61"
+      },
+      "transformation": {
+        "source_audit_sha256": "c8078b39f550bc643bec50656615b5e9ffdb88fa9d0985f08cde13b19dc0ca07",
+        "source_coordinate_file": "source_frame_1150.xyz",
+        "source_frame_sha256": "5e1b93a126e25373541c1a71f0c11c58987aeb1ef19af65d7c8ddd79c91c7b61",
+        "transformed_xyz_sha256": "959a00351b4d496068ad86730910a506d37a3f3fc2b3821f89ecbe7778843c76",
+        "water_O_1based": 204,
+        "rotated_H_1based": [
+          202,
+          203
+        ],
+        "axis_unit": [
+          -0.9559315165677851,
+          0.2656959963947666,
+          -0.12490225431194814
+        ],
+        "rotation_matrix": [
+          [
+            0.9879598943225466,
+            -0.09914853743478641,
+            -0.1187636928304497
+          ],
+          [
+            0.028192339678896665,
+            0.8701763391246118,
+            -0.49193325849257075
+          ],
+          [
+            0.15211981854318773,
+            0.48266210370427,
+            0.8624945532895592
+          ]
+        ],
+        "signed_angle_deg": -30.64798629826913
+      },
+      "cp2k": {
+        "steps_initial_segment": 5000,
+        "trajectory_every_fs": 10
+      },
+      "stage": [
+        {
+          "role": "new",
+          "source": "r1150_reverse.xyz",
+          "target": "r1150_reverse.xyz",
+          "sha256": "959a00351b4d496068ad86730910a506d37a3f3fc2b3821f89ecbe7778843c76"
+        },
+        {
+          "role": "new",
+          "source": "r1150_reverse.inp",
+          "target": "r1150_reverse.inp",
+          "sha256": "cc7ce92b660c0aaf39a0c2fe0446369a808c1dc4769d00d99e13be297c79ed12"
+        }
+      ],
+      "outputs": {
+        "output": "r1150_reverse.out",
+        "trajectory": "r1150_reverse-pos-1.xyz",
+        "energy": "r1150_reverse-1.ener",
+        "restart": "r1150_reverse-1.restart"
+      },
+      "fes": {
+        "status": "not_applicable",
+        "note": "Controlled initial orientation, fully unbiased dynamics; no FES verdict."
+      },
+      "human_review": "PENDING",
+      "structural_verdict": null
+    },
+    {
+      "name": "r2200_oc_donor_smoke",
+      "branch": "r2200_oc_donor",
+      "unbiased": true,
+      "prepared_under_bias": true,
+      "controlled_initial_conditions": true,
+      "condition": "oc_donor",
+      "pair_source_step": 2200,
+      "seed": 2026111604,
+      "steps": 20,
+      "expected_frames": 3,
+      "cp2k_project": "r2200_oc_donor_smoke",
+      "coordinate_file": "r2200_oc_donor.xyz",
+      "box_class": "interface",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "source": {
+        "trajectory": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq-pos-1.xyz",
+        "trajectory_sha256": "80eedcaaa7de00f6f0b04cee30162a6e0ce834d25d01f2c8fea8b507d8219d4d",
+        "source_job_id": "8568513",
+        "frame_step": 2200,
+        "source_segment_biased": false,
+        "public_snapshot_origin": "Figure6b metaD R_inter snapshot",
+        "prepared_under_bias": true,
+        "controlled_initial_conditions": true,
+        "original_frame_sha256": "d21984232c1a00e1baf2087b0cd1f61bfe87370a662e1ec18b1071b06580f26b"
+      },
+      "transformation": {
+        "source_audit_sha256": "c8078b39f550bc643bec50656615b5e9ffdb88fa9d0985f08cde13b19dc0ca07",
+        "source_coordinate_file": "source_frame_2200.xyz",
+        "source_frame_sha256": "d21984232c1a00e1baf2087b0cd1f61bfe87370a662e1ec18b1071b06580f26b",
+        "transformed_xyz_sha256": "b374b3c0a693cfdbb702311b4c04d2a05607007d0095b8b33a949e675e6b5c41",
+        "water_O_1based": 204,
+        "rotated_H_1based": [
+          202,
+          203
+        ],
+        "axis_unit": [
+          -0.8244616631058916,
+          -0.4263330967398641,
+          0.37215998803319134
+        ],
+        "rotation_matrix": [
+          [
+            0.9632863558721185,
+            -0.13272257084507227,
+            -0.23337548238598027
+          ],
+          [
+            0.21331055323992038,
+            0.9062002832637811,
+            0.3651022521008628
+          ],
+          [
+            0.16302761872484467,
+            -0.4014794712073304,
+            0.9012414935698362
+          ]
+        ],
+        "signed_angle_deg": 27.70364322981394
+      },
+      "cp2k": {
+        "steps_initial_segment": 20,
+        "trajectory_every_fs": 10
+      },
+      "stage": [
+        {
+          "role": "new",
+          "source": "r2200_oc_donor.xyz",
+          "target": "r2200_oc_donor.xyz",
+          "sha256": "b374b3c0a693cfdbb702311b4c04d2a05607007d0095b8b33a949e675e6b5c41"
+        },
+        {
+          "role": "new",
+          "source": "r2200_oc_donor_smoke.inp",
+          "target": "r2200_oc_donor_smoke.inp",
+          "sha256": "1bdec904158299dd5298a20b2188fc336db49d10605bf130115d0e52672ea81c"
+        }
+      ],
+      "outputs": {
+        "output": "r2200_oc_donor_smoke.out",
+        "trajectory": "r2200_oc_donor_smoke-pos-1.xyz",
+        "energy": "r2200_oc_donor_smoke-1.ener",
+        "restart": "r2200_oc_donor_smoke-1.restart"
+      },
+      "fes": {
+        "status": "not_applicable",
+        "note": "Controlled initial orientation, fully unbiased dynamics; no FES verdict."
+      },
+      "human_review": "PENDING",
+      "structural_verdict": null
+    },
+    {
+      "name": "r2200_oc_donor",
+      "branch": "r2200_oc_donor",
+      "unbiased": true,
+      "prepared_under_bias": true,
+      "controlled_initial_conditions": true,
+      "condition": "oc_donor",
+      "pair_source_step": 2200,
+      "seed": 2026111604,
+      "steps": 5000,
+      "expected_frames": 501,
+      "cp2k_project": "r2200_oc_donor",
+      "coordinate_file": "r2200_oc_donor.xyz",
+      "box_class": "interface",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "source": {
+        "trajectory": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq-pos-1.xyz",
+        "trajectory_sha256": "80eedcaaa7de00f6f0b04cee30162a6e0ce834d25d01f2c8fea8b507d8219d4d",
+        "source_job_id": "8568513",
+        "frame_step": 2200,
+        "source_segment_biased": false,
+        "public_snapshot_origin": "Figure6b metaD R_inter snapshot",
+        "prepared_under_bias": true,
+        "controlled_initial_conditions": true,
+        "original_frame_sha256": "d21984232c1a00e1baf2087b0cd1f61bfe87370a662e1ec18b1071b06580f26b"
+      },
+      "transformation": {
+        "source_audit_sha256": "c8078b39f550bc643bec50656615b5e9ffdb88fa9d0985f08cde13b19dc0ca07",
+        "source_coordinate_file": "source_frame_2200.xyz",
+        "source_frame_sha256": "d21984232c1a00e1baf2087b0cd1f61bfe87370a662e1ec18b1071b06580f26b",
+        "transformed_xyz_sha256": "b374b3c0a693cfdbb702311b4c04d2a05607007d0095b8b33a949e675e6b5c41",
+        "water_O_1based": 204,
+        "rotated_H_1based": [
+          202,
+          203
+        ],
+        "axis_unit": [
+          -0.8244616631058916,
+          -0.4263330967398641,
+          0.37215998803319134
+        ],
+        "rotation_matrix": [
+          [
+            0.9632863558721185,
+            -0.13272257084507227,
+            -0.23337548238598027
+          ],
+          [
+            0.21331055323992038,
+            0.9062002832637811,
+            0.3651022521008628
+          ],
+          [
+            0.16302761872484467,
+            -0.4014794712073304,
+            0.9012414935698362
+          ]
+        ],
+        "signed_angle_deg": 27.70364322981394
+      },
+      "cp2k": {
+        "steps_initial_segment": 5000,
+        "trajectory_every_fs": 10
+      },
+      "stage": [
+        {
+          "role": "new",
+          "source": "r2200_oc_donor.xyz",
+          "target": "r2200_oc_donor.xyz",
+          "sha256": "b374b3c0a693cfdbb702311b4c04d2a05607007d0095b8b33a949e675e6b5c41"
+        },
+        {
+          "role": "new",
+          "source": "r2200_oc_donor.inp",
+          "target": "r2200_oc_donor.inp",
+          "sha256": "f2eb05985a98c33c433a8ff00796cf320be45bb70c4141ccf58dd25b9d3f91fb"
+        }
+      ],
+      "outputs": {
+        "output": "r2200_oc_donor.out",
+        "trajectory": "r2200_oc_donor-pos-1.xyz",
+        "energy": "r2200_oc_donor-1.ener",
+        "restart": "r2200_oc_donor-1.restart"
+      },
+      "fes": {
+        "status": "not_applicable",
+        "note": "Controlled initial orientation, fully unbiased dynamics; no FES verdict."
+      },
+      "human_review": "PENDING",
+      "structural_verdict": null
+    },
+    {
+      "name": "r2200_reverse_smoke",
+      "branch": "r2200_reverse",
+      "unbiased": true,
+      "prepared_under_bias": true,
+      "controlled_initial_conditions": true,
+      "condition": "reverse",
+      "pair_source_step": 2200,
+      "seed": 2026111604,
+      "steps": 20,
+      "expected_frames": 3,
+      "cp2k_project": "r2200_reverse_smoke",
+      "coordinate_file": "r2200_reverse.xyz",
+      "box_class": "interface",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "source": {
+        "trajectory": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq-pos-1.xyz",
+        "trajectory_sha256": "80eedcaaa7de00f6f0b04cee30162a6e0ce834d25d01f2c8fea8b507d8219d4d",
+        "source_job_id": "8568513",
+        "frame_step": 2200,
+        "source_segment_biased": false,
+        "public_snapshot_origin": "Figure6b metaD R_inter snapshot",
+        "prepared_under_bias": true,
+        "controlled_initial_conditions": true,
+        "original_frame_sha256": "d21984232c1a00e1baf2087b0cd1f61bfe87370a662e1ec18b1071b06580f26b"
+      },
+      "transformation": {
+        "source_audit_sha256": "c8078b39f550bc643bec50656615b5e9ffdb88fa9d0985f08cde13b19dc0ca07",
+        "source_coordinate_file": "source_frame_2200.xyz",
+        "source_frame_sha256": "d21984232c1a00e1baf2087b0cd1f61bfe87370a662e1ec18b1071b06580f26b",
+        "transformed_xyz_sha256": "05edf119f368975afb93e892ec5b252e72837735ec68b46ebdd18d90cc475be3",
+        "water_O_1based": 204,
+        "rotated_H_1based": [
+          202,
+          203
+        ],
+        "axis_unit": [
+          -0.8244616631058916,
+          -0.4263330967398641,
+          0.37215998803319134
+        ],
+        "rotation_matrix": [
+          [
+            0.9632863558721185,
+            0.21331055323992038,
+            0.16302761872484467
+          ],
+          [
+            -0.13272257084507227,
+            0.9062002832637811,
+            -0.4014794712073304
+          ],
+          [
+            -0.23337548238598027,
+            0.3651022521008628,
+            0.9012414935698362
+          ]
+        ],
+        "signed_angle_deg": -27.70364322981394
+      },
+      "cp2k": {
+        "steps_initial_segment": 20,
+        "trajectory_every_fs": 10
+      },
+      "stage": [
+        {
+          "role": "new",
+          "source": "r2200_reverse.xyz",
+          "target": "r2200_reverse.xyz",
+          "sha256": "05edf119f368975afb93e892ec5b252e72837735ec68b46ebdd18d90cc475be3"
+        },
+        {
+          "role": "new",
+          "source": "r2200_reverse_smoke.inp",
+          "target": "r2200_reverse_smoke.inp",
+          "sha256": "ed388a90f971829359b525541a8ce0e50c7bb05d0d4598e50e82a366012b6424"
+        }
+      ],
+      "outputs": {
+        "output": "r2200_reverse_smoke.out",
+        "trajectory": "r2200_reverse_smoke-pos-1.xyz",
+        "energy": "r2200_reverse_smoke-1.ener",
+        "restart": "r2200_reverse_smoke-1.restart"
+      },
+      "fes": {
+        "status": "not_applicable",
+        "note": "Controlled initial orientation, fully unbiased dynamics; no FES verdict."
+      },
+      "human_review": "PENDING",
+      "structural_verdict": null
+    },
+    {
+      "name": "r2200_reverse",
+      "branch": "r2200_reverse",
+      "unbiased": true,
+      "prepared_under_bias": true,
+      "controlled_initial_conditions": true,
+      "condition": "reverse",
+      "pair_source_step": 2200,
+      "seed": 2026111604,
+      "steps": 5000,
+      "expected_frames": 501,
+      "cp2k_project": "r2200_reverse",
+      "coordinate_file": "r2200_reverse.xyz",
+      "box_class": "interface",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "source": {
+        "trajectory": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq-pos-1.xyz",
+        "trajectory_sha256": "80eedcaaa7de00f6f0b04cee30162a6e0ce834d25d01f2c8fea8b507d8219d4d",
+        "source_job_id": "8568513",
+        "frame_step": 2200,
+        "source_segment_biased": false,
+        "public_snapshot_origin": "Figure6b metaD R_inter snapshot",
+        "prepared_under_bias": true,
+        "controlled_initial_conditions": true,
+        "original_frame_sha256": "d21984232c1a00e1baf2087b0cd1f61bfe87370a662e1ec18b1071b06580f26b"
+      },
+      "transformation": {
+        "source_audit_sha256": "c8078b39f550bc643bec50656615b5e9ffdb88fa9d0985f08cde13b19dc0ca07",
+        "source_coordinate_file": "source_frame_2200.xyz",
+        "source_frame_sha256": "d21984232c1a00e1baf2087b0cd1f61bfe87370a662e1ec18b1071b06580f26b",
+        "transformed_xyz_sha256": "05edf119f368975afb93e892ec5b252e72837735ec68b46ebdd18d90cc475be3",
+        "water_O_1based": 204,
+        "rotated_H_1based": [
+          202,
+          203
+        ],
+        "axis_unit": [
+          -0.8244616631058916,
+          -0.4263330967398641,
+          0.37215998803319134
+        ],
+        "rotation_matrix": [
+          [
+            0.9632863558721185,
+            0.21331055323992038,
+            0.16302761872484467
+          ],
+          [
+            -0.13272257084507227,
+            0.9062002832637811,
+            -0.4014794712073304
+          ],
+          [
+            -0.23337548238598027,
+            0.3651022521008628,
+            0.9012414935698362
+          ]
+        ],
+        "signed_angle_deg": -27.70364322981394
+      },
+      "cp2k": {
+        "steps_initial_segment": 5000,
+        "trajectory_every_fs": 10
+      },
+      "stage": [
+        {
+          "role": "new",
+          "source": "r2200_reverse.xyz",
+          "target": "r2200_reverse.xyz",
+          "sha256": "05edf119f368975afb93e892ec5b252e72837735ec68b46ebdd18d90cc475be3"
+        },
+        {
+          "role": "new",
+          "source": "r2200_reverse.inp",
+          "target": "r2200_reverse.inp",
+          "sha256": "d9f54c93dbe2c573b59e145d9aa2b1a9e2c4d452c34876303467302aef9244de"
+        }
+      ],
+      "outputs": {
+        "output": "r2200_reverse.out",
+        "trajectory": "r2200_reverse-pos-1.xyz",
+        "energy": "r2200_reverse-1.ener",
+        "restart": "r2200_reverse-1.restart"
+      },
+      "fes": {
+        "status": "not_applicable",
+        "note": "Controlled initial orientation, fully unbiased dynamics; no FES verdict."
+      },
+      "human_review": "PENDING",
+      "structural_verdict": null
+    }
+  ],
+  "dependencies": {
+    "run.py": "bbb904a113fe562153120cd042b04a0f014a33ae47733c26088e4874a299cf1c",
+    "SOURCE_AUDIT.json": "c8078b39f550bc643bec50656615b5e9ffdb88fa9d0985f08cde13b19dc0ca07",
+    "frozen_analyze_event_unbiased.py": "8529ce9c63f694fd93f86ed0fbac292aff4bf77a612b4069b2d45bb7c96c01cd",
+    "submit_r1150_reverse.slurm": "816852d214cc9484ea9ef77486fb8c54fb2fece75bb32de85c773dec242d011f",
+    "submit_r2200_reverse.slurm": "7d71fceca7ade9e07393bc1647f0d57bdf46ea37673513ac841b4703447ae768",
+    "prepare_intervention.py": "0c8cc8568353c0131a1069c3c932e4d27a7640fbd4ff5800fea60335e81df866",
+    "frozen_validate_stage.py": "3df8173e5b37eb2d1aba2215026710ae1e868d60de3d29090fed8f00bfcc282a",
+    "submit_r2200_oc_donor.slurm": "9575a03a23ed04a54f8df7186d066cdc681115221b799f7052e11e15c8e21a3a",
+    "build_campaign.py": "433d023ae233f0ebb9938ed42eda6a787a91d3f045b5626f0c2639a7c1d5d4dd",
+    "submit_r1150_oc_donor.slurm": "fa55f345513a58041debb1148bf800d0e01dfbad38981965ea67f9a126690994",
+    "validate_stage.py": "fce6eeb0de8b710266c738361d1016e4d1c14d271cba8b5650cb0bbeb89854b8",
+    "frozen_run_cp2k.py": "c3d65060daafbe1076304f092f72c2e40e738aea9cb6f4cc63d8263298397d61",
+    "inputs/r2200_reverse_smoke.inp": "ed388a90f971829359b525541a8ce0e50c7bb05d0d4598e50e82a366012b6424",
+    "inputs/r2200_oc_donor_smoke.inp": "1bdec904158299dd5298a20b2188fc336db49d10605bf130115d0e52672ea81c",
+    "inputs/r2200_reverse.inp": "d9f54c93dbe2c573b59e145d9aa2b1a9e2c4d452c34876303467302aef9244de",
+    "inputs/r1150_oc_donor.inp": "a1f81350e5d62fca9f0561bdf7c0926cdb7b83a00e470da572674fa99fe3863f",
+    "inputs/source_frame_1150.xyz": "5e1b93a126e25373541c1a71f0c11c58987aeb1ef19af65d7c8ddd79c91c7b61",
+    "inputs/r2200_oc_donor.inp": "f2eb05985a98c33c433a8ff00796cf320be45bb70c4141ccf58dd25b9d3f91fb",
+    "inputs/r1150_oc_donor_smoke.inp": "917f9e6c9d2b5e5aae33bc60e9a71d68a7a8feb8b9bac47478222f2543571585",
+    "inputs/source_frame_2200.xyz": "d21984232c1a00e1baf2087b0cd1f61bfe87370a662e1ec18b1071b06580f26b",
+    "inputs/r2200_reverse.xyz": "05edf119f368975afb93e892ec5b252e72837735ec68b46ebdd18d90cc475be3",
+    "inputs/r1150_oc_donor.xyz": "4a83a8e0b66dae4fa36c587673295767a54d9a9869000672c5ec26076504c540",
+    "inputs/r2200_oc_donor.xyz": "b374b3c0a693cfdbb702311b4c04d2a05607007d0095b8b33a949e675e6b5c41",
+    "inputs/r1150_reverse.inp": "cc7ce92b660c0aaf39a0c2fe0446369a808c1dc4769d00d99e13be297c79ed12",
+    "inputs/r1150_reverse_smoke.inp": "ccb0694f3678a50d0cdb8d491d6b09eb9611db9be2a44790741e4318f007b02e",
+    "inputs/reference_unbiased.inp": "9536573c2158025949f53c2b03d31a0c5b2ee7dca41b2a08542aed4b53766319",
+    "inputs/r1150_reverse.xyz": "959a00351b4d496068ad86730910a506d37a3f3fc2b3821f89ecbe7778843c76",
+    "SELECTION.json": "8c842ea832d00df96d4acb38b46702d54af443bd09c3b42dc89afbc6761dc86c"
+  },
+  "selection": "Approved deterministic first feasible frames1150/2200fs, same R history, no future trajectory outcome used.",
+  "velocity_policy": "Fresh MB sampling with identical protocol and same seed within each pair; independent smoke and fresh production from frozen transformed XYZ; no restart inheritance. Exact evolving velocity equality is not asserted.",
+  "pair_seeds": {
+    "1150": 2026111603,
+    "2200": 2026111604
+  },
+  "scope": "Two correlated source-frame pairs, n=1 per condition; water-H orientations controlled, all dynamics unbiased. Equal-angle is not equal-energy or an isolated Oc-HB intervention.",
+  "source_segment_biased": false,
+  "public_snapshot_origin": "Figure6b metaD R_inter snapshot",
+  "prepared_under_bias": true,
+  "controlled_initial_conditions": true,
+  "resource_per_case": {
+    "partition": "compute",
+    "ntasks": 64,
+    "mem": "32G",
+    "walltime": "48:00:00"
+  },
+  "submission": "None by this builder. Root registers frozen wrapper and explicit job receipts. Three64CPU jobs may run and fourth waits under200CPU quota.",
+  "human_review": "PENDING",
+  "structural_verdict": null
+}

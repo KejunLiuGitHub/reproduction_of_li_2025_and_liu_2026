@@ -1,0 +1,15 @@
+{
+  "schema": "li296_geometric_screen_thresholds/v1",
+  "retrospective": true,
+  "chemical_bond_proof": false,
+  "provenance": "SC<2.0 and long-SC>2.5 originate in the existing Li distance recorder. All other numerical cutoffs below are explicitly project screening choices, not published bond definitions; fixed before this implementation was applied, with prior trajectory distance summaries already known. No claim of blinding.",
+  "duration_fs": 5000.0,
+  "output_stride_fs": 10.0,
+  "sustained_span_fs": 100.0,
+  "initial_reactant_span_fs": 100.0,
+  "initial_reactant": {"SC_min_exclusive": 2.5, "CO_max": 1.30, "pyramidal_height_max": 0.15},
+  "default": {"SC_max_exclusive": 2.0, "CO_min": 1.28, "CO_max": 1.55, "pyramidal_height_min": 0.15, "pyramidal_height_max": 0.65, "C_angle_min": 80.0, "C_angle_max": 140.0},
+  "strict": {"SC_max_exclusive": 1.95, "CO_min": 1.30, "CO_max": 1.50, "pyramidal_height_min": 0.20, "pyramidal_height_max": 0.55, "C_angle_min": 85.0, "C_angle_max": 135.0},
+  "loose": {"SC_max_exclusive": 2.10, "CO_min": 1.25, "CO_max": 1.60, "pyramidal_height_min": 0.10, "pyramidal_height_max": 0.70, "C_angle_min": 75.0, "C_angle_max": 145.0},
+  "connectivity_guard": {"water_OH_min": 0.70, "water_OH_max": 1.30, "CH_min": 0.80, "CH_max": 1.30, "SO_min": 1.20, "SO_max": 1.85, "CO_min": 1.05, "CO_max": 1.65, "unexpected_OH_max_exclusive": 1.15, "unexpected_CO_max_exclusive": 1.60, "unexpected_SO_max_exclusive": 1.85, "unexpected_CH_max_exclusive": 1.30, "unexpected_SH_max_exclusive": 1.50, "OO_collision_max_exclusive": 1.50, "HH_collision_max_exclusive": 0.60}
+}

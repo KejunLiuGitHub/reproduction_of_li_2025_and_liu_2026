@@ -1,0 +1,184 @@
+{
+  "schema": "li2025_r_extend/v1",
+  "cases": [
+    {
+      "name": "r_eq_metad_seg2",
+      "parent_case": "r_eq_metad",
+      "parent_job_id": "8569493",
+      "parent_workdir_remote": "/public/home/temp/projects/sulfoacetic-vib/saa-vib-v1/li2025_branches_20261112/r_eq_metad",
+      "cp2k_project": "r_eq_metad",
+      "box_class": "interface",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "unbiased": false,
+      "prepared_under_bias": true,
+      "original_prepared_under_bias": false,
+      "preparation_history": "Original R starting geometry came from 5 ps unbiased R preparation without extra restraints; this continuation starts from the completed 10 ps ordinary metaD parent and inherits its biased history.",
+      "original_start": {
+        "trajectory": "results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq-pos-1.xyz",
+        "trajectory_sha256": "80eedcaaa7de00f6f0b04cee30162a6e0ce834d25d01f2c8fea8b507d8219d4d",
+        "frame_step": 5000,
+        "parent_job_id": "8568513",
+        "run_record": "results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/run_record.json",
+        "run_record_sha256": "dfaf71d41cd9e12aa28c9058f4f9a42b594ccdd0b07361a54f584966424e1695"
+      },
+      "original_seed": 2026111201,
+      "segment": {
+        "start_step": 10000,
+        "steps": 10000,
+        "expected_first_step": 10001,
+        "expected_end_step": 20000,
+        "parent_md_step_last": 10000,
+        "segment_time_range_fs": [
+          10000,
+          20000
+        ],
+        "cumulative_step_range": [
+          1,
+          20000
+        ]
+      },
+      "outputs": {
+        "output": "r_eq_metad_seg2.out",
+        "trajectory": "r_eq_metad-pos-1.xyz",
+        "energy": "r_eq_metad-1.ener",
+        "restart": "r_eq_metad-1.restart"
+      },
+      "metad_files": {
+        "hills": "HILLS_r_eq_metad",
+        "colvar": "COLVAR_r_eq_metad"
+      },
+      "metad_baseline": {
+        "hills_rows": 333,
+        "hills_last_time_fs": 9989.999193730586,
+        "colvar_rows": 1000,
+        "colvar_last_time_fs": 9999.999193
+      },
+      "parent_evidence": {
+        "local_source": "results/li2025_autofollow/20261113T213847+0800/li2025_branches_20261112/r_eq_metad",
+        "remote_sha_check_path": "results/li2025_autofollow/20261113T213847+0800/REMOTE_SHA.txt",
+        "remote_sha_check_sha256": "807686146abef8b2a29378b019ec591f48d966e0a5f3a88e5e6d43e830668e6a",
+        "technical_checks_path": "results/li2025_autofollow/20261113T213847+0800/r_continuation_validation/PARENT_CHECKS.json",
+        "technical_checks_sha256": "6ff4e7f486c5c3cc872006d88954b4777f4a118bc80f4ea4d73d8afae8268e66",
+        "source_files_sha256": {
+          "CHECKS.json": "bcb09cded114bdb6499f797853625aac685164776bccd4487592c96701908bed",
+          "COLVAR_r_eq_metad": "2616abcb35d21adf54c7ac67870608ba2d126195356b52a4c6a656d4c795e15c",
+          "DISTANCE_ANALYSIS.json": "872203e87777cd8b070d396fd821d2bd727c4778ce26856e82b2eb13220cc679",
+          "DISTANCE_ANALYSIS_FRAMES.tsv": "640254923f4abbaac16654ae35e06c65e404105f3f3351e232896fb70f13a27d",
+          "HILLS_r_eq_metad": "5176ed21e08aa3c84edcbfbe6c8713a9020c251a6a27198f0f92e8b345308de0",
+          "PLUMED.OUT": "2d84a37fa7c89f5321d497b82c8929679c78451ff0c7280e8acc464d29f59093",
+          "r_eq_metad-1.ener": "363969283686f008dfdc32aff347e2b46270963c69aa33f27a148b7fce684f63",
+          "r_eq_metad-1.restart": "6ef0caf8773113d97cf01480b3fa8483e1fc769d75e8bbd8fc77b0f2ba461651",
+          "r_eq_metad-1_1000.restart": "de84624c7c61e0468e73f0af1aa1543c7b12d02a7770a19bcd9e1cd4d866df9d",
+          "r_eq_metad-1_10000.restart": "5925632a2f15f101939df3ccba5d893cfc251da2f8513b7378df98b99629cd85",
+          "r_eq_metad-1_1500.restart": "dae94b44b4f1e5f05f7ff21c27499e7c87164cdf968bac829fcf88ce1cc3f562",
+          "r_eq_metad-1_2000.restart": "9b7ac5478af3c34fd17696b1ff7e845da3aea2fe6d781de8e37344fdde7ec722",
+          "r_eq_metad-1_2500.restart": "ebead53af9eb671196a6e04a18c679a7f8999b66ee3127c0163d352d2467aa34",
+          "r_eq_metad-1_3000.restart": "88c54de38c6d776e13303744550e40c45f1a8f70288c5696416c7f32c8534144",
+          "r_eq_metad-1_3500.restart": "99d19cdd5324e8ce0b182effcb671d73b65ebd8b5808b474df3ddfa1dd9b542b",
+          "r_eq_metad-1_4000.restart": "68592614d06863be5e06ec78ea259bd31dcf2c2637d9c52197821ec44e81714c",
+          "r_eq_metad-1_4500.restart": "81e9c284e4127994eaa153b6c862fc0f27c0e7005d10da53524289a0c8f6d87b",
+          "r_eq_metad-1_500.restart": "916aff4a7d217624530bad5579746d6ecb58e2378d2feb611b6628fa22bcf3dd",
+          "r_eq_metad-1_5000.restart": "8936097d375de334f9db8f889fb277e489ad4a92b7fd3f4c97b6bf523985818f",
+          "r_eq_metad-1_5500.restart": "6ff0888b116bb556453395db6dacd16e6593f6770a27f18ac12490c3361240d4",
+          "r_eq_metad-1_6000.restart": "0518b29a3638370b8db3525e9e530fd9dedc526209d188eff16f72a2eb7a807f",
+          "r_eq_metad-1_6500.restart": "adb914678dc11554dd84382c537efb6b35827c85612b9aff12fd7565085935d7",
+          "r_eq_metad-1_7000.restart": "3e9ba31daf5a5f0e96e237a80a79c29b9c5c4831b1d697bfa56d1359ca91107f",
+          "r_eq_metad-1_7500.restart": "472cce57170ec6186cd66345bc7ffe37b1f764cab328787876486db8cb5d86f6",
+          "r_eq_metad-1_8000.restart": "eeda81a1490de515d5d80f86eb4467bacfae878e30cf3293e0d667e7949f3b35",
+          "r_eq_metad-1_8500.restart": "c81556c838baf1c608e7a50df99fa72c9c95c00f46da3be1ec9c9d8596ea2c8f",
+          "r_eq_metad-1_9000.restart": "1f6ff9a5562179a04ebb3cc6ce9cfee3f564cd90e93f66ca528da54d169d9d05",
+          "r_eq_metad-1_9500.restart": "1ed07fde2c48ede2f5cd7cedc1de1de29f6184fe18d09c6963d0e8e358ff69c1",
+          "r_eq_metad-pos-1.xyz": "8e72d920fba61be1a84da03de3b60e7d30b15aa2ca0cdb281fe01625e2914713",
+          "r_eq_metad.inp": "42d17c04d0574771d650640588ba72ffa4c790164dddd61e678793572a3aa94e",
+          "r_eq_metad.out": "32868c552a3f28553337b1116b0449188eef026fcbc3a2ba7165a8ba4078729f",
+          "r_eq_metad.plumed": "582d5fb73267f6582edff8aaa0b39f5081466693207fce57dfd137af63966340",
+          "r_eq_metad.runner.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "r_eq_metad.xyz": "203ae51529db8274d44fce25972721bab2e23886f909cb26d4f4c628dbc9d52a",
+          "run_record.json": "ca592f90a526beabfac17d7dcba3986b376febf74f2376a34d4e43240f673356"
+        },
+        "technical_checks_status": "PASS",
+        "original_manifest_sha256": "b184cff5906dd3f605ddb10624d1aebc8b70dbc4374031fd4ae59ec8f2cb25cd",
+        "original_validator_sha256": "eaef3bd40adf5a4e3370074be65024b79b3fa0584c2b84d046fe81998c8839c0"
+      },
+      "technical_policy": {
+        "plumed_time_fs_per_step": 0.999999919292351,
+        "plumed_time_tolerance_fs": 2e-06,
+        "trajectory_first_step": 10010,
+        "trajectory_frames": 1000,
+        "md_steps": 10000,
+        "energy_rows": 10000,
+        "scf_converged": 10001,
+        "scf_failed": 0,
+        "hills_new_rows": 333,
+        "colvar_new_rows": 1000
+      },
+      "stage": [
+        {
+          "role": "new_input",
+          "source": "r_eq_metad_seg2.inp",
+          "target": "r_eq_metad_seg2.inp",
+          "sha256": "c3f5fd7ae0f7ab7d3d2b90937cad890d461df574614e8e7f5206d2c47e26629e"
+        },
+        {
+          "role": "new_xyz",
+          "source": "r_eq_metad.xyz",
+          "target": "r_eq_metad.xyz",
+          "sha256": "203ae51529db8274d44fce25972721bab2e23886f909cb26d4f4c628dbc9d52a"
+        },
+        {
+          "role": "new_plumed",
+          "source": "r_eq_metad.plumed",
+          "target": "r_eq_metad.plumed",
+          "sha256": "91b4ae1ac6844bb04cc0dd1fbd8f0bc095cfa438719c479565bc0ee9206b7904"
+        },
+        {
+          "role": "parent_restart",
+          "source": "r_eq_metad-1_10000.restart",
+          "target": "r_eq_metad_seg2_parent.restart",
+          "sha256": "5925632a2f15f101939df3ccba5d893cfc251da2f8513b7378df98b99629cd85"
+        },
+        {
+          "role": "parent_hills",
+          "source": "HILLS_r_eq_metad",
+          "target": "HILLS_r_eq_metad",
+          "sha256": "5176ed21e08aa3c84edcbfbe6c8713a9020c251a6a27198f0f92e8b345308de0"
+        },
+        {
+          "role": "parent_colvar",
+          "source": "COLVAR_r_eq_metad",
+          "target": "COLVAR_r_eq_metad",
+          "sha256": "2616abcb35d21adf54c7ac67870608ba2d126195356b52a4c6a656d4c795e15c"
+        },
+        {
+          "role": "parent_run_record",
+          "source": "run_record.json",
+          "target": "parent_run_record.json",
+          "sha256": "ca592f90a526beabfac17d7dcba3986b376febf74f2376a34d4e43240f673356"
+        }
+      ]
+    }
+  ],
+  "dependencies": {
+    "frozen_run_cp2k.py": "c3d65060daafbe1076304f092f72c2e40e738aea9cb6f4cc63d8263298397d61",
+    "prepare.py": "b2c218f0863fe36cf5b9a3e6da52c584a245f9eaf146cf7c4a47499021f04c89",
+    "run_continuation.py": "3c7872a5331a73e0ba0c090b66d2563ea3b11f7c30975d1e992d53a43812e8e7",
+    "run.slurm": "3fd29e47f10badd3bf1da6c729bf7aec51c803c0460a323f4d39b2d2f594a2dd"
+  },
+  "scope": "Ordinary biased R-metaD time coverage; unchanged science; no structural/kinetic/FES verdict.",
+  "restart_policy": "POS/VEL/COUNTERS only; CSVR parameters and original GLOBAL SEED preserved, random state not restored; SCF_GUESS ATOMIC unchanged.",
+  "bias_separation": "Only HILLS_r_eq_metad/COLVAR_r_eq_metad inherited; no interface_r1 bias data.",
+  "input_change_policy": "CP2K adds only EXT_RESTART; PLUMED adds only RESTART; parent science and atom order unchanged.",
+  "gate_lineage": {
+    "upstream": "campaign/li2025_extend_20261113/prepare.py",
+    "upstream_sha256": "9ae340dea196bf3568b789bc999499c9b4730931a1ef05e03cb682013c6efc7e",
+    "adaptation": "PROJECT and initial-segment coverage/first-frame checks; parent preparation and target range."
+  },
+  "human_review": "PENDING",
+  "structural_verdict": null,
+  "kinetic_verdict": null,
+  "fes_verdict": null
+}

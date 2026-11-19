@@ -1,0 +1,148 @@
+{
+  "status": "PASS",
+  "tests": [
+    {
+      "test": "isolated_full_replay_natural_original40",
+      "pass": true,
+      "frames": 501,
+      "SC_A": {
+        "mean": 1.9128326242586093,
+        "min": 1.7422118245208085,
+        "max": 2.1620142375780325,
+        "first": 1.8523367821029801,
+        "last": 1.8238552952030935
+      },
+      "CO_A": {
+        "mean": 1.3660768788357238,
+        "min": 1.2728951005944946,
+        "max": 1.4539749388773147,
+        "first": 1.369809669478517,
+        "last": 1.3769269296710849
+      },
+      "summary_sha256": "cb055cbad874d60f04ccda307c622f2cc236d954fa1a66992d73f5d0afa73f38"
+    },
+    {
+      "test": "archived_distance_all_frames_natural_original40",
+      "pass": true,
+      "reference_sha256": "3d2020c921be056a6692ec9392110ea1a99bea4e5aec405d8242671e5ecf0324"
+    },
+    {
+      "test": "isolated_full_replay_r1150_original",
+      "pass": true,
+      "frames": 294,
+      "SC_A": {
+        "mean": 3.6159981957619394,
+        "min": 2.718120904997982,
+        "max": 4.540598123135304,
+        "first": 3.8711023401395432,
+        "last": 3.5676037475136493
+      },
+      "CO_A": {
+        "mean": 1.2385239601098317,
+        "min": 1.1872456284691442,
+        "max": 1.2892363589320484,
+        "first": 1.2579941064110975,
+        "last": 1.2521555865481149
+      },
+      "summary_sha256": "db7410fb4aff03d2344d021bf51f121f7a9cfd8927e2d507ee4a47f7437ee148"
+    },
+    {
+      "test": "isolated_full_replay_p_bulk_smoke",
+      "pass": true,
+      "frames": 3,
+      "SC_A": {
+        "mean": 1.8211065597362281,
+        "min": 1.8040416798300412,
+        "max": 1.846999081663767,
+        "first": 1.8040416798300412,
+        "last": 1.846999081663767
+      },
+      "CO_A": {
+        "mean": 1.3769744781605713,
+        "min": 1.346558813008181,
+        "max": 1.4030384807210996,
+        "first": 1.346558813008181,
+        "last": 1.4030384807210996
+      },
+      "summary_sha256": "16631d3bc13d6f5237f6f3133d34dff9906047a6e70ddd136079021913f50fe9"
+    },
+    {
+      "test": "isolated_full_replay_r_eq_metad_smoke",
+      "pass": true,
+      "frames": 3,
+      "SC_A": {
+        "mean": 3.475096611197856,
+        "min": 3.4429548592422163,
+        "max": 3.5122189508002832,
+        "first": 3.4701160235510695,
+        "last": 3.4429548592422163
+      },
+      "CO_A": {
+        "mean": 1.2538460261284972,
+        "min": 1.2050093330040952,
+        "max": 1.280962379746805,
+        "first": 1.280962379746805,
+        "last": 1.2755663656345915
+      },
+      "summary_sha256": "d6abfcc5fe356de8ebad1f8631e8d954d0ed439d95f745ad907db035d48b007c"
+    },
+    {
+      "test": "archived_distance_all_frames_r_eq_metad_smoke",
+      "pass": true,
+      "reference_sha256": "ead0251dd603ee58b87ccc8d68579cda982ffbd39428cb04947b78968cd2f1ff"
+    },
+    {
+      "test": "original_prior_258_frame_scalar_reference",
+      "pass": true,
+      "reference": "20261119T210251+0800 analysis/SUMMARY.json SHA7491a7a170ba26841446a707834c23dbaf41246ebb75b4994132bf1d5522800b; constants carried into public test, no private file read"
+    },
+    {
+      "test": "through_step100_has11frames101energies",
+      "pass": true
+    },
+    {
+      "test": "refuse_existing_output",
+      "pass": true
+    },
+    {
+      "test": "reject_source_path_escape",
+      "pass": true
+    },
+    {
+      "test": "reject_manifest_cell_different_from_input",
+      "pass": true
+    },
+    {
+      "test": "reject_declared_SHA_mismatch",
+      "pass": true
+    },
+    {
+      "test": "partial_final_records_and_unknown_job",
+      "pass": true
+    },
+    {
+      "test": "portable_input_only_runtime_changes_r1150_original",
+      "pass": true
+    },
+    {
+      "test": "portable_input_only_runtime_changes_r2200_original",
+      "pass": true
+    },
+    {
+      "test": "reject_changed_scientific_input",
+      "pass": true
+    },
+    {
+      "test": "all_copied_sources_unchanged",
+      "pass": true,
+      "files": 20
+    }
+  ],
+  "count": 17,
+  "isolated_copy": true,
+  "outside_repository_scientific_data_reads": false,
+  "CP2K_executed": false,
+  "test_data_files_note": "CP2K parameter placeholders are used solely to test input rendering; no dynamics or engine validation is performed.",
+  "source_dataset_manifest_sha256": "55171f1e9a35c861c2047c3a4d54e3c06cba19154b3dbc93e9b86a3030e49663",
+  "python": "3.12.10 (main, Apr  8 2025, 11:35:47) [Clang 17.0.0 (clang-1700.0.13.3)]"
+}

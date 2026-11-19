@@ -1,0 +1,815 @@
+{
+  "schema": "li2025_hbnetwork_workflow/v1",
+  "candidate_names": [
+    "natural_original40",
+    "natural_r19830"
+  ],
+  "cases": [
+    {
+      "name": "natural_original40_smoke",
+      "branch": "natural_original40",
+      "unbiased": true,
+      "prepared_under_bias": true,
+      "seed": 2026111601,
+      "steps": 20,
+      "expected_frames": 3,
+      "cp2k_project": "natural_original40_smoke",
+      "coordinate_file": "natural_original40.xyz",
+      "box_class": "interface",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "source": {
+        "trajectory": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/20261115T100111+0800/li2025_extend_20261113/interface_r1_seg4/interface_r1-pos-1.xyz",
+        "trajectory_sha256": "8dbeaf04ec31d08f3327e2ec0b1d3ccfd1b49db93ce943bbbbf0700bb2db5616",
+        "source_checks": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/20261115T100111+0800/li2025_extend_20261113/interface_r1_seg4/CHECKS.json",
+        "source_checks_sha256": "946a1d2aec84322f893248a13c24aa62328d6a81ddc9fe904ab5cdd76d3e6165",
+        "source_job_id": "8571154",
+        "source_case": "interface_r1_seg4",
+        "source_range": [
+          30010,
+          40000
+        ],
+        "source_frames": 1000,
+        "source_was_biased_or_prepared_under_bias": true,
+        "independent_technical_recheck": "PASS",
+        "restart": {
+          "step": 40000,
+          "time_fs": 39999.99999999222,
+          "coordinates": 296,
+          "velocities": 296,
+          "finite_positions_and_velocities": true,
+          "max_final_frame_delta_A": 4.9904969046110637e-11
+        },
+        "verified_input_sha256": {
+          "interface_r1_seg4.inp": "1cbd7771262b627699cee7065c85ced2f8b14e4ca593484901479afb5c89114d",
+          "interface_r1.xyz": "d130d72b8da2d57944d542685680c9757285083bc3a1626c3f870f67d102d34e",
+          "interface_r1_seg4_parent.restart": "8ff72a15bb09772b7f15c3b9469d9650e224304a53a6c8a9bd169c35b8aa7c7b",
+          "interface_r1.plumed": "6f4c152b8ccee8e8d29df69d61966fc6e69aac2e0ae015829e01606d4064ec93",
+          "HILLS_interface_r1": "614324678172d3b5b83b0d0e9ac948a1a393714a11df8d491b2181dbed10cb08",
+          "COLVAR_interface_r1": "dba52069538da7a4255868392462af9b3418e782654f4aef0d036b763d128fac",
+          "parent_run_record.json": "3e92b1831527e422796eddff1eace01ee445afb745dca2397913476fbaf1f217"
+        },
+        "bias_input_prefix_bytes": {
+          "HILLS_interface_r1": 116291,
+          "COLVAR_interface_r1": 94982
+        },
+        "verified_files_sha256": {
+          "interface_r1-pos-1.xyz": "8dbeaf04ec31d08f3327e2ec0b1d3ccfd1b49db93ce943bbbbf0700bb2db5616",
+          "CHECKS.json": "946a1d2aec84322f893248a13c24aa62328d6a81ddc9fe904ab5cdd76d3e6165",
+          "run_record.json": "0322aaa114d2508e92d91d4fd2b845da7a545c5bcb1400773ed5c7a079320fb8",
+          "interface_r1_seg4.out": "89ead29e5e365afd38406265a9ec105a92e256dc62dc768617ef532efd3f09d9",
+          "interface_r1-1.ener": "8afa9912f5e0b79083211783be285103db1a96547ca7f96a3b8697f78b719078",
+          "interface_r1-1.restart": "20c18edd5f5fdb2f4e641b47466caf7f8f5f9fca46ad7f6ebaffb0eb9c497941",
+          "interface_r1_seg4.inp": "1cbd7771262b627699cee7065c85ced2f8b14e4ca593484901479afb5c89114d"
+        },
+        "frame_step": 40000,
+        "candidate_xyz_sha256": "47fd9c7e032a9e925d45fe2b0ca0a939f9e93cddaa251df9f799f67bd45a06c7",
+        "source_prepared_under_bias": true
+      },
+      "selection_metadata": {
+        "name": "natural_original40",
+        "trajectory": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/20261115T100111+0800/li2025_extend_20261113/interface_r1_seg4/interface_r1-pos-1.xyz",
+        "frame_step": 40000,
+        "frame_index_0based": 999,
+        "frame_block_sha256": "47fd9c7e032a9e925d45fe2b0ca0a939f9e93cddaa251df9f799f67bd45a06c7",
+        "seed": 2026111601,
+        "source_prepared_under_bias": true,
+        "source_biased": true,
+        "production_biased": false,
+        "production_steps": 5000,
+        "selection_rule": "Latest frame of this formal complete segment with SC<2 A and no fixed-parent OH warning. No future duration/retention/network favorable outcome is used.",
+        "bias_history": "original interface_r1 ordinary metaD inherited chain",
+        "purpose": "Independent-history natural-configuration unbiased retention pilot; unmatched, not a network causal group or spontaneous formation test.",
+        "descriptor": {
+          "step": 40000,
+          "SC": 1.8523367821029801,
+          "CO": 1.369809669478517,
+          "CO_normal_cos": -0.5120887314710257,
+          "CS_normal_cos": -0.09144085386443654,
+          "gds_C": -2.868447553383273,
+          "gds_Oc": -3.569911649383272,
+          "gds_S": -3.0378268103832724,
+          "OCS_angle": 108.89420200809224,
+          "carbon_pyramidal_height": 0.3081252554548618,
+          "temperature_K": 294.536689322,
+          "hb_Oc": 2,
+          "water_O_3p5_Oc": 3,
+          "hb_Oc_strict": 2,
+          "hb_Oc_loose": 3,
+          "max_parent_water_OH": 1.0836608902689842
+        },
+        "network_descriptor": {
+          "class": "path_le2",
+          "donor_waters_1based": {
+            "Oc": [
+              3,
+              165
+            ],
+            "Os1": [
+              42,
+              129
+            ],
+            "Os2": [
+              33,
+              132
+            ],
+            "Os3": [
+              24,
+              237
+            ]
+          },
+          "first_shell": [
+            3,
+            24,
+            33,
+            42,
+            129,
+            132,
+            165,
+            237
+          ],
+          "second_shell": [
+            30,
+            36,
+            72,
+            102,
+            105,
+            126,
+            177,
+            183,
+            192,
+            195,
+            201,
+            204,
+            207,
+            231,
+            282,
+            285
+          ],
+          "local_water_edges": 23,
+          "min_water_path_undirected": 2,
+          "family_histogram": {
+            "D1A0": 1,
+            "D1A2": 2,
+            "D2A1": 7,
+            "D2A2": 14
+          }
+        },
+        "network_result": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/20261116T064438+0800/network_analysis/original_30_40ps/NETWORK.json.gz",
+        "human_review": "PENDING",
+        "structural_verdict": null,
+        "trajectory_sha256": "8dbeaf04ec31d08f3327e2ec0b1d3ccfd1b49db93ce943bbbbf0700bb2db5616",
+        "source_checks": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/20261115T100111+0800/li2025_extend_20261113/interface_r1_seg4/CHECKS.json",
+        "source_checks_sha256": "946a1d2aec84322f893248a13c24aa62328d6a81ddc9fe904ab5cdd76d3e6165",
+        "source_job_id": "8571154"
+      },
+      "fes": {
+        "status": "not_applicable",
+        "note": "Fully unbiased conditional-retention stage; recorded prior bias history retained."
+      },
+      "cp2k": {
+        "steps_initial_segment": 20,
+        "trajectory_every_fs": 10
+      },
+      "stage": [
+        {
+          "role": "new",
+          "source": "natural_original40.xyz",
+          "target": "natural_original40.xyz",
+          "sha256": "47fd9c7e032a9e925d45fe2b0ca0a939f9e93cddaa251df9f799f67bd45a06c7"
+        },
+        {
+          "role": "new",
+          "source": "natural_original40_smoke.inp",
+          "target": "natural_original40_smoke.inp",
+          "sha256": "a7ef380625bc7d353c8be3da45ec96655d4ed5f715f22896f1d8212a571e2ddb"
+        }
+      ],
+      "outputs": {
+        "output": "natural_original40_smoke.out",
+        "trajectory": "natural_original40_smoke-pos-1.xyz",
+        "energy": "natural_original40_smoke-1.ener",
+        "restart": "natural_original40_smoke-1.restart"
+      },
+      "human_review": "PENDING",
+      "structural_verdict": null
+    },
+    {
+      "name": "natural_original40",
+      "branch": "natural_original40",
+      "unbiased": true,
+      "prepared_under_bias": true,
+      "seed": 2026111601,
+      "steps": 5000,
+      "expected_frames": 501,
+      "cp2k_project": "natural_original40",
+      "coordinate_file": "natural_original40.xyz",
+      "box_class": "interface",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "source": {
+        "trajectory": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/20261115T100111+0800/li2025_extend_20261113/interface_r1_seg4/interface_r1-pos-1.xyz",
+        "trajectory_sha256": "8dbeaf04ec31d08f3327e2ec0b1d3ccfd1b49db93ce943bbbbf0700bb2db5616",
+        "source_checks": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/20261115T100111+0800/li2025_extend_20261113/interface_r1_seg4/CHECKS.json",
+        "source_checks_sha256": "946a1d2aec84322f893248a13c24aa62328d6a81ddc9fe904ab5cdd76d3e6165",
+        "source_job_id": "8571154",
+        "source_case": "interface_r1_seg4",
+        "source_range": [
+          30010,
+          40000
+        ],
+        "source_frames": 1000,
+        "source_was_biased_or_prepared_under_bias": true,
+        "independent_technical_recheck": "PASS",
+        "restart": {
+          "step": 40000,
+          "time_fs": 39999.99999999222,
+          "coordinates": 296,
+          "velocities": 296,
+          "finite_positions_and_velocities": true,
+          "max_final_frame_delta_A": 4.9904969046110637e-11
+        },
+        "verified_input_sha256": {
+          "interface_r1_seg4.inp": "1cbd7771262b627699cee7065c85ced2f8b14e4ca593484901479afb5c89114d",
+          "interface_r1.xyz": "d130d72b8da2d57944d542685680c9757285083bc3a1626c3f870f67d102d34e",
+          "interface_r1_seg4_parent.restart": "8ff72a15bb09772b7f15c3b9469d9650e224304a53a6c8a9bd169c35b8aa7c7b",
+          "interface_r1.plumed": "6f4c152b8ccee8e8d29df69d61966fc6e69aac2e0ae015829e01606d4064ec93",
+          "HILLS_interface_r1": "614324678172d3b5b83b0d0e9ac948a1a393714a11df8d491b2181dbed10cb08",
+          "COLVAR_interface_r1": "dba52069538da7a4255868392462af9b3418e782654f4aef0d036b763d128fac",
+          "parent_run_record.json": "3e92b1831527e422796eddff1eace01ee445afb745dca2397913476fbaf1f217"
+        },
+        "bias_input_prefix_bytes": {
+          "HILLS_interface_r1": 116291,
+          "COLVAR_interface_r1": 94982
+        },
+        "verified_files_sha256": {
+          "interface_r1-pos-1.xyz": "8dbeaf04ec31d08f3327e2ec0b1d3ccfd1b49db93ce943bbbbf0700bb2db5616",
+          "CHECKS.json": "946a1d2aec84322f893248a13c24aa62328d6a81ddc9fe904ab5cdd76d3e6165",
+          "run_record.json": "0322aaa114d2508e92d91d4fd2b845da7a545c5bcb1400773ed5c7a079320fb8",
+          "interface_r1_seg4.out": "89ead29e5e365afd38406265a9ec105a92e256dc62dc768617ef532efd3f09d9",
+          "interface_r1-1.ener": "8afa9912f5e0b79083211783be285103db1a96547ca7f96a3b8697f78b719078",
+          "interface_r1-1.restart": "20c18edd5f5fdb2f4e641b47466caf7f8f5f9fca46ad7f6ebaffb0eb9c497941",
+          "interface_r1_seg4.inp": "1cbd7771262b627699cee7065c85ced2f8b14e4ca593484901479afb5c89114d"
+        },
+        "frame_step": 40000,
+        "candidate_xyz_sha256": "47fd9c7e032a9e925d45fe2b0ca0a939f9e93cddaa251df9f799f67bd45a06c7",
+        "source_prepared_under_bias": true
+      },
+      "selection_metadata": {
+        "name": "natural_original40",
+        "trajectory": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/20261115T100111+0800/li2025_extend_20261113/interface_r1_seg4/interface_r1-pos-1.xyz",
+        "frame_step": 40000,
+        "frame_index_0based": 999,
+        "frame_block_sha256": "47fd9c7e032a9e925d45fe2b0ca0a939f9e93cddaa251df9f799f67bd45a06c7",
+        "seed": 2026111601,
+        "source_prepared_under_bias": true,
+        "source_biased": true,
+        "production_biased": false,
+        "production_steps": 5000,
+        "selection_rule": "Latest frame of this formal complete segment with SC<2 A and no fixed-parent OH warning. No future duration/retention/network favorable outcome is used.",
+        "bias_history": "original interface_r1 ordinary metaD inherited chain",
+        "purpose": "Independent-history natural-configuration unbiased retention pilot; unmatched, not a network causal group or spontaneous formation test.",
+        "descriptor": {
+          "step": 40000,
+          "SC": 1.8523367821029801,
+          "CO": 1.369809669478517,
+          "CO_normal_cos": -0.5120887314710257,
+          "CS_normal_cos": -0.09144085386443654,
+          "gds_C": -2.868447553383273,
+          "gds_Oc": -3.569911649383272,
+          "gds_S": -3.0378268103832724,
+          "OCS_angle": 108.89420200809224,
+          "carbon_pyramidal_height": 0.3081252554548618,
+          "temperature_K": 294.536689322,
+          "hb_Oc": 2,
+          "water_O_3p5_Oc": 3,
+          "hb_Oc_strict": 2,
+          "hb_Oc_loose": 3,
+          "max_parent_water_OH": 1.0836608902689842
+        },
+        "network_descriptor": {
+          "class": "path_le2",
+          "donor_waters_1based": {
+            "Oc": [
+              3,
+              165
+            ],
+            "Os1": [
+              42,
+              129
+            ],
+            "Os2": [
+              33,
+              132
+            ],
+            "Os3": [
+              24,
+              237
+            ]
+          },
+          "first_shell": [
+            3,
+            24,
+            33,
+            42,
+            129,
+            132,
+            165,
+            237
+          ],
+          "second_shell": [
+            30,
+            36,
+            72,
+            102,
+            105,
+            126,
+            177,
+            183,
+            192,
+            195,
+            201,
+            204,
+            207,
+            231,
+            282,
+            285
+          ],
+          "local_water_edges": 23,
+          "min_water_path_undirected": 2,
+          "family_histogram": {
+            "D1A0": 1,
+            "D1A2": 2,
+            "D2A1": 7,
+            "D2A2": 14
+          }
+        },
+        "network_result": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/20261116T064438+0800/network_analysis/original_30_40ps/NETWORK.json.gz",
+        "human_review": "PENDING",
+        "structural_verdict": null,
+        "trajectory_sha256": "8dbeaf04ec31d08f3327e2ec0b1d3ccfd1b49db93ce943bbbbf0700bb2db5616",
+        "source_checks": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/20261115T100111+0800/li2025_extend_20261113/interface_r1_seg4/CHECKS.json",
+        "source_checks_sha256": "946a1d2aec84322f893248a13c24aa62328d6a81ddc9fe904ab5cdd76d3e6165",
+        "source_job_id": "8571154"
+      },
+      "fes": {
+        "status": "not_applicable",
+        "note": "Fully unbiased conditional-retention stage; recorded prior bias history retained."
+      },
+      "cp2k": {
+        "steps_initial_segment": 5000,
+        "trajectory_every_fs": 10
+      },
+      "stage": [
+        {
+          "role": "new",
+          "source": "natural_original40.xyz",
+          "target": "natural_original40.xyz",
+          "sha256": "47fd9c7e032a9e925d45fe2b0ca0a939f9e93cddaa251df9f799f67bd45a06c7"
+        },
+        {
+          "role": "new",
+          "source": "natural_original40.inp",
+          "target": "natural_original40.inp",
+          "sha256": "d961e971732205ba69b552e438d73d71e67ca787dc9f95333840f4eb8bcb9c1b"
+        }
+      ],
+      "outputs": {
+        "output": "natural_original40.out",
+        "trajectory": "natural_original40-pos-1.xyz",
+        "energy": "natural_original40-1.ener",
+        "restart": "natural_original40-1.restart"
+      },
+      "human_review": "PENDING",
+      "structural_verdict": null
+    },
+    {
+      "name": "natural_r19830_smoke",
+      "branch": "natural_r19830",
+      "unbiased": true,
+      "prepared_under_bias": true,
+      "seed": 2026111602,
+      "steps": 20,
+      "expected_frames": 3,
+      "cp2k_project": "natural_r19830_smoke",
+      "coordinate_file": "natural_r19830.xyz",
+      "box_class": "interface",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "source": {
+        "trajectory": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/20261115T100111+0800/li2025_r_extend_20261113/r_eq_metad_seg2/r_eq_metad-pos-1.xyz",
+        "trajectory_sha256": "b5e7ea6b430c47dbd39e072cc0a56c00e47ffcc8ebacd2ac367858e667494c2e",
+        "source_checks": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/20261115T100111+0800/li2025_r_extend_20261113/r_eq_metad_seg2/CHECKS.json",
+        "source_checks_sha256": "755ad89ecc0847bc3c1eaccacddb05e87c471b0dac4728c7f15af23b8ea8abae",
+        "source_job_id": "8571156",
+        "source_case": "r_eq_metad_seg2",
+        "source_range": [
+          10010,
+          20000
+        ],
+        "source_frames": 1000,
+        "source_was_biased_or_prepared_under_bias": true,
+        "independent_technical_recheck": "PASS",
+        "restart": {
+          "step": 20000,
+          "time_fs": 20000.00000000791,
+          "coordinates": 296,
+          "velocities": 296,
+          "finite_positions_and_velocities": true,
+          "max_final_frame_delta_A": 4.9980852789843766e-11
+        },
+        "verified_input_sha256": {
+          "r_eq_metad_seg2.inp": "c3f5fd7ae0f7ab7d3d2b90937cad890d461df574614e8e7f5206d2c47e26629e",
+          "r_eq_metad.xyz": "203ae51529db8274d44fce25972721bab2e23886f909cb26d4f4c628dbc9d52a",
+          "r_eq_metad.plumed": "91b4ae1ac6844bb04cc0dd1fbd8f0bc095cfa438719c479565bc0ee9206b7904",
+          "r_eq_metad_seg2_parent.restart": "5925632a2f15f101939df3ccba5d893cfc251da2f8513b7378df98b99629cd85",
+          "HILLS_r_eq_metad": "5176ed21e08aa3c84edcbfbe6c8713a9020c251a6a27198f0f92e8b345308de0",
+          "COLVAR_r_eq_metad": "2616abcb35d21adf54c7ac67870608ba2d126195356b52a4c6a656d4c795e15c",
+          "parent_run_record.json": "ca592f90a526beabfac17d7dcba3986b376febf74f2376a34d4e43240f673356"
+        },
+        "bias_input_prefix_bytes": {
+          "HILLS_r_eq_metad": 38725,
+          "COLVAR_r_eq_metad": 30920
+        },
+        "verified_files_sha256": {
+          "r_eq_metad-pos-1.xyz": "b5e7ea6b430c47dbd39e072cc0a56c00e47ffcc8ebacd2ac367858e667494c2e",
+          "CHECKS.json": "755ad89ecc0847bc3c1eaccacddb05e87c471b0dac4728c7f15af23b8ea8abae",
+          "run_record.json": "ed5cfc764f3ca659af04aac72b0c25e5199956baa966bd798c92dce60da5d341",
+          "r_eq_metad_seg2.out": "8ae54d7736bd5977a199b2c34b8a42d69161332d9197b613e78ebf0ff6d9f951",
+          "r_eq_metad-1.ener": "0529a1970fb0d1ff7e65f42f05040a5f91a50565577f7003534262b7e1ebfa2f",
+          "r_eq_metad-1.restart": "672fa6c6a86e104439275cf7d9a07ba13dae437480c684fee997332e79fb374b",
+          "r_eq_metad_seg2.inp": "c3f5fd7ae0f7ab7d3d2b90937cad890d461df574614e8e7f5206d2c47e26629e"
+        },
+        "frame_step": 19830,
+        "candidate_xyz_sha256": "162f2ba4243e334d708571bb0f75d10d353e5c0d515096a64485ab11d68b152f",
+        "source_prepared_under_bias": true
+      },
+      "selection_metadata": {
+        "name": "natural_r19830",
+        "trajectory": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/20261115T100111+0800/li2025_r_extend_20261113/r_eq_metad_seg2/r_eq_metad-pos-1.xyz",
+        "frame_step": 19830,
+        "frame_index_0based": 982,
+        "frame_block_sha256": "162f2ba4243e334d708571bb0f75d10d353e5c0d515096a64485ab11d68b152f",
+        "seed": 2026111602,
+        "source_prepared_under_bias": true,
+        "source_biased": true,
+        "production_biased": false,
+        "production_steps": 5000,
+        "selection_rule": "Latest frame of this formal complete segment with SC<2 A and no fixed-parent OH warning. No future duration/retention/network favorable outcome is used.",
+        "bias_history": "independent r_eq_metad ordinary metaD after R5ps unbiased preparation",
+        "purpose": "Independent-history natural-configuration unbiased retention pilot; unmatched, not a network causal group or spontaneous formation test.",
+        "descriptor": {
+          "step": 19830,
+          "SC": 1.9682615779819541,
+          "CO": 1.3499907937728681,
+          "CO_normal_cos": -0.16308925810129843,
+          "CS_normal_cos": -0.06590157596481308,
+          "gds_C": -4.5776225678188425,
+          "gds_Oc": -4.797791564818844,
+          "gds_S": -4.707334107718843,
+          "OCS_angle": 110.17545839862152,
+          "carbon_pyramidal_height": 0.3185998335411162,
+          "temperature_K": 289.874436941,
+          "hb_Oc": 3,
+          "water_O_3p5_Oc": 4,
+          "hb_Oc_strict": 3,
+          "hb_Oc_loose": 4,
+          "max_parent_water_OH": 1.073814330072667
+        },
+        "network_descriptor": {
+          "class": "path_le2",
+          "donor_waters_1based": {
+            "Oc": [
+              3,
+              102,
+              273
+            ],
+            "Os1": [
+              33,
+              129,
+              246
+            ],
+            "Os2": [
+              54,
+              132
+            ],
+            "Os3": [
+              237
+            ]
+          },
+          "first_shell": [
+            3,
+            33,
+            54,
+            102,
+            129,
+            132,
+            237,
+            246,
+            273
+          ],
+          "second_shell": [
+            21,
+            30,
+            36,
+            42,
+            114,
+            126,
+            147,
+            150,
+            165,
+            171,
+            177,
+            183,
+            195,
+            201,
+            204,
+            216,
+            234,
+            258
+          ],
+          "local_water_edges": 24,
+          "min_water_path_undirected": 1,
+          "family_histogram": {
+            "D1A1": 2,
+            "D1A2": 5,
+            "D1A3": 1,
+            "D2A1": 6,
+            "D2A2": 13
+          }
+        },
+        "network_result": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/20261116T064438+0800/network_analysis/r_10_20ps/NETWORK.json.gz",
+        "human_review": "PENDING",
+        "structural_verdict": null,
+        "trajectory_sha256": "b5e7ea6b430c47dbd39e072cc0a56c00e47ffcc8ebacd2ac367858e667494c2e",
+        "source_checks": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/20261115T100111+0800/li2025_r_extend_20261113/r_eq_metad_seg2/CHECKS.json",
+        "source_checks_sha256": "755ad89ecc0847bc3c1eaccacddb05e87c471b0dac4728c7f15af23b8ea8abae",
+        "source_job_id": "8571156"
+      },
+      "fes": {
+        "status": "not_applicable",
+        "note": "Fully unbiased conditional-retention stage; recorded prior bias history retained."
+      },
+      "cp2k": {
+        "steps_initial_segment": 20,
+        "trajectory_every_fs": 10
+      },
+      "stage": [
+        {
+          "role": "new",
+          "source": "natural_r19830.xyz",
+          "target": "natural_r19830.xyz",
+          "sha256": "162f2ba4243e334d708571bb0f75d10d353e5c0d515096a64485ab11d68b152f"
+        },
+        {
+          "role": "new",
+          "source": "natural_r19830_smoke.inp",
+          "target": "natural_r19830_smoke.inp",
+          "sha256": "afabe793325d75fc891c17f16dff05d28f61053d93a501bc4e50dd01bcad456a"
+        }
+      ],
+      "outputs": {
+        "output": "natural_r19830_smoke.out",
+        "trajectory": "natural_r19830_smoke-pos-1.xyz",
+        "energy": "natural_r19830_smoke-1.ener",
+        "restart": "natural_r19830_smoke-1.restart"
+      },
+      "human_review": "PENDING",
+      "structural_verdict": null
+    },
+    {
+      "name": "natural_r19830",
+      "branch": "natural_r19830",
+      "unbiased": true,
+      "prepared_under_bias": true,
+      "seed": 2026111602,
+      "steps": 5000,
+      "expected_frames": 501,
+      "cp2k_project": "natural_r19830",
+      "coordinate_file": "natural_r19830.xyz",
+      "box_class": "interface",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "source": {
+        "trajectory": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/20261115T100111+0800/li2025_r_extend_20261113/r_eq_metad_seg2/r_eq_metad-pos-1.xyz",
+        "trajectory_sha256": "b5e7ea6b430c47dbd39e072cc0a56c00e47ffcc8ebacd2ac367858e667494c2e",
+        "source_checks": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/20261115T100111+0800/li2025_r_extend_20261113/r_eq_metad_seg2/CHECKS.json",
+        "source_checks_sha256": "755ad89ecc0847bc3c1eaccacddb05e87c471b0dac4728c7f15af23b8ea8abae",
+        "source_job_id": "8571156",
+        "source_case": "r_eq_metad_seg2",
+        "source_range": [
+          10010,
+          20000
+        ],
+        "source_frames": 1000,
+        "source_was_biased_or_prepared_under_bias": true,
+        "independent_technical_recheck": "PASS",
+        "restart": {
+          "step": 20000,
+          "time_fs": 20000.00000000791,
+          "coordinates": 296,
+          "velocities": 296,
+          "finite_positions_and_velocities": true,
+          "max_final_frame_delta_A": 4.9980852789843766e-11
+        },
+        "verified_input_sha256": {
+          "r_eq_metad_seg2.inp": "c3f5fd7ae0f7ab7d3d2b90937cad890d461df574614e8e7f5206d2c47e26629e",
+          "r_eq_metad.xyz": "203ae51529db8274d44fce25972721bab2e23886f909cb26d4f4c628dbc9d52a",
+          "r_eq_metad.plumed": "91b4ae1ac6844bb04cc0dd1fbd8f0bc095cfa438719c479565bc0ee9206b7904",
+          "r_eq_metad_seg2_parent.restart": "5925632a2f15f101939df3ccba5d893cfc251da2f8513b7378df98b99629cd85",
+          "HILLS_r_eq_metad": "5176ed21e08aa3c84edcbfbe6c8713a9020c251a6a27198f0f92e8b345308de0",
+          "COLVAR_r_eq_metad": "2616abcb35d21adf54c7ac67870608ba2d126195356b52a4c6a656d4c795e15c",
+          "parent_run_record.json": "ca592f90a526beabfac17d7dcba3986b376febf74f2376a34d4e43240f673356"
+        },
+        "bias_input_prefix_bytes": {
+          "HILLS_r_eq_metad": 38725,
+          "COLVAR_r_eq_metad": 30920
+        },
+        "verified_files_sha256": {
+          "r_eq_metad-pos-1.xyz": "b5e7ea6b430c47dbd39e072cc0a56c00e47ffcc8ebacd2ac367858e667494c2e",
+          "CHECKS.json": "755ad89ecc0847bc3c1eaccacddb05e87c471b0dac4728c7f15af23b8ea8abae",
+          "run_record.json": "ed5cfc764f3ca659af04aac72b0c25e5199956baa966bd798c92dce60da5d341",
+          "r_eq_metad_seg2.out": "8ae54d7736bd5977a199b2c34b8a42d69161332d9197b613e78ebf0ff6d9f951",
+          "r_eq_metad-1.ener": "0529a1970fb0d1ff7e65f42f05040a5f91a50565577f7003534262b7e1ebfa2f",
+          "r_eq_metad-1.restart": "672fa6c6a86e104439275cf7d9a07ba13dae437480c684fee997332e79fb374b",
+          "r_eq_metad_seg2.inp": "c3f5fd7ae0f7ab7d3d2b90937cad890d461df574614e8e7f5206d2c47e26629e"
+        },
+        "frame_step": 19830,
+        "candidate_xyz_sha256": "162f2ba4243e334d708571bb0f75d10d353e5c0d515096a64485ab11d68b152f",
+        "source_prepared_under_bias": true
+      },
+      "selection_metadata": {
+        "name": "natural_r19830",
+        "trajectory": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/20261115T100111+0800/li2025_r_extend_20261113/r_eq_metad_seg2/r_eq_metad-pos-1.xyz",
+        "frame_step": 19830,
+        "frame_index_0based": 982,
+        "frame_block_sha256": "162f2ba4243e334d708571bb0f75d10d353e5c0d515096a64485ab11d68b152f",
+        "seed": 2026111602,
+        "source_prepared_under_bias": true,
+        "source_biased": true,
+        "production_biased": false,
+        "production_steps": 5000,
+        "selection_rule": "Latest frame of this formal complete segment with SC<2 A and no fixed-parent OH warning. No future duration/retention/network favorable outcome is used.",
+        "bias_history": "independent r_eq_metad ordinary metaD after R5ps unbiased preparation",
+        "purpose": "Independent-history natural-configuration unbiased retention pilot; unmatched, not a network causal group or spontaneous formation test.",
+        "descriptor": {
+          "step": 19830,
+          "SC": 1.9682615779819541,
+          "CO": 1.3499907937728681,
+          "CO_normal_cos": -0.16308925810129843,
+          "CS_normal_cos": -0.06590157596481308,
+          "gds_C": -4.5776225678188425,
+          "gds_Oc": -4.797791564818844,
+          "gds_S": -4.707334107718843,
+          "OCS_angle": 110.17545839862152,
+          "carbon_pyramidal_height": 0.3185998335411162,
+          "temperature_K": 289.874436941,
+          "hb_Oc": 3,
+          "water_O_3p5_Oc": 4,
+          "hb_Oc_strict": 3,
+          "hb_Oc_loose": 4,
+          "max_parent_water_OH": 1.073814330072667
+        },
+        "network_descriptor": {
+          "class": "path_le2",
+          "donor_waters_1based": {
+            "Oc": [
+              3,
+              102,
+              273
+            ],
+            "Os1": [
+              33,
+              129,
+              246
+            ],
+            "Os2": [
+              54,
+              132
+            ],
+            "Os3": [
+              237
+            ]
+          },
+          "first_shell": [
+            3,
+            33,
+            54,
+            102,
+            129,
+            132,
+            237,
+            246,
+            273
+          ],
+          "second_shell": [
+            21,
+            30,
+            36,
+            42,
+            114,
+            126,
+            147,
+            150,
+            165,
+            171,
+            177,
+            183,
+            195,
+            201,
+            204,
+            216,
+            234,
+            258
+          ],
+          "local_water_edges": 24,
+          "min_water_path_undirected": 1,
+          "family_histogram": {
+            "D1A1": 2,
+            "D1A2": 5,
+            "D1A3": 1,
+            "D2A1": 6,
+            "D2A2": 13
+          }
+        },
+        "network_result": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/20261116T064438+0800/network_analysis/r_10_20ps/NETWORK.json.gz",
+        "human_review": "PENDING",
+        "structural_verdict": null,
+        "trajectory_sha256": "b5e7ea6b430c47dbd39e072cc0a56c00e47ffcc8ebacd2ac367858e667494c2e",
+        "source_checks": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/20261115T100111+0800/li2025_r_extend_20261113/r_eq_metad_seg2/CHECKS.json",
+        "source_checks_sha256": "755ad89ecc0847bc3c1eaccacddb05e87c471b0dac4728c7f15af23b8ea8abae",
+        "source_job_id": "8571156"
+      },
+      "fes": {
+        "status": "not_applicable",
+        "note": "Fully unbiased conditional-retention stage; recorded prior bias history retained."
+      },
+      "cp2k": {
+        "steps_initial_segment": 5000,
+        "trajectory_every_fs": 10
+      },
+      "stage": [
+        {
+          "role": "new",
+          "source": "natural_r19830.xyz",
+          "target": "natural_r19830.xyz",
+          "sha256": "162f2ba4243e334d708571bb0f75d10d353e5c0d515096a64485ab11d68b152f"
+        },
+        {
+          "role": "new",
+          "source": "natural_r19830.inp",
+          "target": "natural_r19830.inp",
+          "sha256": "e1f982e2e19bf739fe78485be440f0a43137a0d47b7734552467f443a67321be"
+        }
+      ],
+      "outputs": {
+        "output": "natural_r19830.out",
+        "trajectory": "natural_r19830-pos-1.xyz",
+        "energy": "natural_r19830-1.ener",
+        "restart": "natural_r19830-1.restart"
+      },
+      "human_review": "PENDING",
+      "structural_verdict": null
+    }
+  ],
+  "dependencies": {
+    "run.py": "bbb904a113fe562153120cd042b04a0f014a33ae47733c26088e4874a299cf1c",
+    "validate_stage.py": "3df8173e5b37eb2d1aba2215026710ae1e868d60de3d29090fed8f00bfcc282a",
+    "build_campaign.py": "8a59d0ee176658c4f2c2ef3b14cc878c718f50d936418095406592ede738d211",
+    "frozen_run_cp2k.py": "c3d65060daafbe1076304f092f72c2e40e738aea9cb6f4cc63d8263298397d61",
+    "frozen_analyze_event_unbiased.py": "8529ce9c63f694fd93f86ed0fbac292aff4bf77a612b4069b2d45bb7c96c01cd",
+    "inputs/reference_unbiased.inp": "9536573c2158025949f53c2b03d31a0c5b2ee7dca41b2a08542aed4b53766319",
+    "selection.json": "7d03a3f2ce26f676b618717c52a76a02f14649831a8cc7aa924a09117a11fb35",
+    "submit_natural_original40.slurm": "79a66527e075c55811ab01f3ca4b3cdc9d6869b839036959e7b6bbcccecd9ecf",
+    "submit_natural_r19830.slurm": "b1d15b3f1e2c4c36ace4884b00e93d22bf19c5c18ee7bacfc4defb45c6907a38"
+  },
+  "selection_source": {
+    "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/20261116T064438+0800/network_analysis/CANDIDATES.json",
+    "sha256": "7d03a3f2ce26f676b618717c52a76a02f14649831a8cc7aa924a09117a11fb35"
+  },
+  "reference_input": {
+    "path": "/Users/kejunliu/projects/sulfoacetic-vib/campaign/li2025_branches_20261112/inputs/p_iface_v2.inp",
+    "sha256": "9536573c2158025949f53c2b03d31a0c5b2ee7dca41b2a08542aed4b53766319"
+  },
+  "runner_source": {
+    "path": "/Users/kejunliu/projects/sulfoacetic-vib/campaign/li2025_branches_20261112/frozen_run_cp2k.py",
+    "sha256": "c3d65060daafbe1076304f092f72c2e40e738aea9cb6f4cc63d8263298397d61"
+  },
+  "velocity_policy": "Fresh MB velocities and zero counters for both smoke and production from the same candidate XYZ/seed; no restart or inherited velocity.",
+  "submission_policy": "No automatic submissions; explicit case selection and current resource review required. Resource request per case:64CPU/32G/48h.",
+  "scope": "5 ps unbiased conditional retention of selected states after recorded history; no network causality, electronic bond, equilibrium spontaneity or FES verdict.",
+  "human_review": "PENDING",
+  "structural_verdict": null
+}

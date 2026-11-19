@@ -1,0 +1,102 @@
+{
+  "schema": "li2025_extend/v1",
+  "cases": [
+    {
+      "name": "interface_r1_seg3",
+      "parent_case": "interface_r1_seg2",
+      "parent_job_id": "8565154",
+      "parent_workdir_remote": "/public/home/temp/projects/sulfoacetic-vib/saa-vib-v1/li2025_direct/interface_r1_seg2",
+      "cp2k_project": "interface_r1",
+      "box_class": "interface",
+      "box_angstrom": [
+        15.0,
+        15.0,
+        30.0
+      ],
+      "segment": {
+        "start_step": 20000,
+        "steps": 10000,
+        "expected_first_step": 20001,
+        "expected_end_step": 30000,
+        "parent_md_step_last": 20000,
+        "segment_time_range_fs": [
+          20000,
+          30000
+        ],
+        "cumulative_step_range": [
+          1,
+          30000
+        ]
+      },
+      "outputs": {
+        "output": "interface_r1_seg3.out",
+        "trajectory": "interface_r1-pos-1.xyz",
+        "energy": "interface_r1-1.ener",
+        "restart": "interface_r1-1.restart"
+      },
+      "metad_files": {
+        "hills": "HILLS_interface_r1",
+        "colvar": "COLVAR_interface_r1"
+      },
+      "metad_baseline": {
+        "hills_rows": 666,
+        "hills_last_time_fs": 19979.99838746117,
+        "colvar_rows": 2000,
+        "colvar_last_time_fs": 19999.998386
+      },
+      "parent_evidence": {
+        "run_record_sha256": "0ed66b1518a68ab166fc30361918bba4d0a6c2fa988faa4a8aebe2205f6da9b6",
+        "local_source": "results/li2025_recovery_20261111/continuation_source"
+      },
+      "stage": [
+        {
+          "role": "new_input",
+          "source": "interface_r1_seg3.inp",
+          "target": "interface_r1_seg3.inp",
+          "sha256": "22121f48608ad71157b8dff5e090a75c278b4dc6232c1d8aae7c77dfe8a3ef8f"
+        },
+        {
+          "role": "new_xyz",
+          "source": "interface_r1.xyz",
+          "target": "interface_r1.xyz",
+          "sha256": "d130d72b8da2d57944d542685680c9757285083bc3a1626c3f870f67d102d34e"
+        },
+        {
+          "role": "parent_restart",
+          "source": "interface_r1-1_20000.restart",
+          "target": "interface_r1_seg3_parent.restart",
+          "sha256": "38e7e438f1f2d3a9a1a42b8e272b32626b8294e78f6514627f11b71f25227770"
+        },
+        {
+          "role": "parent_plumed",
+          "source": "interface_r1.plumed",
+          "target": "interface_r1.plumed",
+          "sha256": "6f4c152b8ccee8e8d29df69d61966fc6e69aac2e0ae015829e01606d4064ec93"
+        },
+        {
+          "role": "parent_hills",
+          "source": "HILLS_interface_r1",
+          "target": "HILLS_interface_r1",
+          "sha256": "2e7e0f5d176ba7f755c498c727aba89af63ab552f3bb5926a7dc9e0f3771ca73"
+        },
+        {
+          "role": "parent_colvar",
+          "source": "COLVAR_interface_r1",
+          "target": "COLVAR_interface_r1",
+          "sha256": "f83326babcf660013e36bfde681f1bb88da09be748ab57312b36af1a4e816797"
+        },
+        {
+          "role": "parent_run_record",
+          "source": "run_record.json",
+          "target": "parent_run_record.json",
+          "sha256": "0ed66b1518a68ab166fc30361918bba4d0a6c2fa988faa4a8aebe2205f6da9b6"
+        }
+      ]
+    }
+  ],
+  "dependencies": {
+    "frozen_run_cp2k.py": "c3d65060daafbe1076304f092f72c2e40e738aea9cb6f4cc63d8263298397d61"
+  },
+  "scope": "Ordinary biased metaD, same SO3^2- model and parameters; no FES claim.",
+  "restart_policy": "Same as seg2: POS/VEL/COUNTERS; CSVR parameters preserved, random state not restored; SCF_GUESS ATOMIC unchanged."
+}

@@ -1,0 +1,9 @@
+# Li 2025 Fig. 6b R_inter: SO3^2- + HCHO direct C-S addition, single d(S-C) CV.
+# First production replica (interface_r1); ordinary (non-well-tempered) metaD.
+# PACE and PRINT STRIDE are MD steps (1 fs each), so 30 steps = 30 fs, 10 steps = 10 fs.
+UNITS LENGTH=A ENERGY=kcal/mol TIME=fs
+RESTART
+d_sc: DISTANCE ATOMS=293,289
+metad: METAD ARG=d_sc SIGMA=0.1 HEIGHT=0.03137545 PACE=30 FILE=HILLS_interface_r1
+PRINT ARG=d_sc,metad.bias STRIDE=10 FILE=COLVAR_interface_r1
+uw_sc: UPPER_WALLS ARG=d_sc AT=4.0 KAPPA=200.0

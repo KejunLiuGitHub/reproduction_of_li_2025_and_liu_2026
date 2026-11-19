@@ -1,0 +1,575 @@
+{
+  "schema": "li2025_completed_R_source_audit/v1",
+  "recorded_at_utc": "2026-11-16T15:44:26.879006+00:00",
+  "status": "PASS",
+  "source_job": "8568513",
+  "case": "r_interface_eq",
+  "scope": "Independent local technical source audit; no HPC, campaign edits, geometry modification, analyzer execution, candidate selection or structural verdict.",
+  "checks": {
+    "recorded_identity_and_completion": {
+      "pass": true,
+      "details": {
+        "run_record": {
+          "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/run_record.json",
+          "sha256": "dfaf71d41cd9e12aa28c9058f4f9a42b594ccdd0b07361a54f584966424e1695",
+          "bytes": 2164
+        },
+        "case": "r_interface_eq",
+        "job_id": "8568513",
+        "status": "COMPLETED",
+        "returncode": 0
+      }
+    },
+    "input_r_interface_eq.xyz": {
+      "pass": true,
+      "details": {
+        "recovered": {
+          "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq.xyz",
+          "sha256": "b44766d837cae154f7281df37f17a179d6ec607b47ef0cebae578759f9c580b5",
+          "bytes": 12489
+        },
+        "frozen": {
+          "path": "/Users/kejunliu/projects/sulfoacetic-vib/campaign/li2025_recovery_20261111/inputs/r_interface_eq.xyz",
+          "sha256": "b44766d837cae154f7281df37f17a179d6ec607b47ef0cebae578759f9c580b5",
+          "bytes": 12489
+        },
+        "manifest_sha256": "b44766d837cae154f7281df37f17a179d6ec607b47ef0cebae578759f9c580b5"
+      }
+    },
+    "input_r_interface_eq.inp": {
+      "pass": true,
+      "details": {
+        "recovered": {
+          "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq.inp",
+          "sha256": "41bbc6f1d569180f1cc841da3685e392fda3bd9b5d5b0e0da985a141f1d713e9",
+          "bytes": 1942
+        },
+        "frozen": {
+          "path": "/Users/kejunliu/projects/sulfoacetic-vib/campaign/li2025_recovery_20261111/inputs/r_interface_eq.inp",
+          "sha256": "41bbc6f1d569180f1cc841da3685e392fda3bd9b5d5b0e0da985a141f1d713e9",
+          "bytes": 1942
+        },
+        "manifest_sha256": "41bbc6f1d569180f1cc841da3685e392fda3bd9b5d5b0e0da985a141f1d713e9"
+      }
+    },
+    "dependency_frozen_run_cp2k.py": {
+      "pass": true,
+      "details": {
+        "path": "/Users/kejunliu/projects/sulfoacetic-vib/campaign/li2025_recovery_20261111/frozen_run_cp2k.py",
+        "sha256": "c3d65060daafbe1076304f092f72c2e40e738aea9cb6f4cc63d8263298397d61",
+        "bytes": 29675
+      }
+    },
+    "dependency_frozen_analyze_event_unbiased.py": {
+      "pass": true,
+      "details": {
+        "path": "/Users/kejunliu/projects/sulfoacetic-vib/campaign/li2025_recovery_20261111/frozen_analyze_event_unbiased.py",
+        "sha256": "8529ce9c63f694fd93f86ed0fbac292aff4bf77a612b4069b2d45bb7c96c01cd",
+        "bytes": 12993
+      }
+    },
+    "unbiased_fresh_R_preparation": {
+      "pass": true,
+      "details": {
+        "seed": 2026111103,
+        "box_angstrom": [
+          15.0,
+          15.0,
+          30.0
+        ],
+        "no_restraint_metadynamics_or_inherited_velocities": true
+      }
+    },
+    "complete_XYZ": {
+      "pass": true,
+      "details": {
+        "trajectory": {
+          "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq-pos-1.xyz",
+          "sha256": "80eedcaaa7de00f6f0b04cee30162a6e0ce834d25d01f2c8fea8b507d8219d4d",
+          "bytes": 9674310
+        },
+        "atoms_each_frame": 296,
+        "atom_order": "(H,H,O)*96,C,O,H,H,S,O,O,O",
+        "frames": 501,
+        "first_step": 0,
+        "last_step": 5000,
+        "stride": 10,
+        "all_coordinates_and_comment_energies_finite": true,
+        "all_lines_and_frames_complete": true
+      }
+    },
+    "first_frame_matches_source": {
+      "pass": true,
+      "details": {
+        "max_coordinate_delta_angstrom": 0.0
+      }
+    },
+    "all_MD_SCF_and_normal_end": {
+      "pass": true,
+      "details": {
+        "log": {
+          "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq.out",
+          "sha256": "70919278d855a9627e9f526268933daf70ef216c2f90797fd2c6a1115c6a2600",
+          "bytes": 262490823
+        },
+        "MD_steps": 5000,
+        "SCF_converged": 5001,
+        "SCF_failed": 0,
+        "SCF_before_first_MD": 2,
+        "SCF_per_subsequent_MD": 1,
+        "SCF_after_last_MD": 0,
+        "program_ended_count": 1,
+        "abort_count": 0
+      }
+    },
+    "run_record_matches_raw_coverage": {
+      "pass": true,
+      "details": {
+        "SCF": {
+          "converged_runs": 5001,
+          "not_converged_runs": 0,
+          "iterations_min": 8,
+          "iterations_max": 12,
+          "iterations_mean": 8.226754649070186
+        },
+        "MD_range": [
+          1,
+          5000
+        ],
+        "trajectory": {
+          "file": "r_interface_eq-pos-1.xyz",
+          "frames": 501,
+          "first_step": 0,
+          "last_step": 5000
+        }
+      }
+    },
+    "all_energy_rows": {
+      "pass": true,
+      "details": {
+        "energy": {
+          "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq-1.ener",
+          "sha256": "65e065edd7c4bc9ca149b4be136b5a6e6624d5cdd2b0a3297d651b49fe43d8f0",
+          "bytes": 655262
+        },
+        "rows": 5001,
+        "first_step": 0.0,
+        "last_step": 5000.0,
+        "all_values_finite": true,
+        "max_XYZ_energy_delta_hartree": 4.999947122996673e-10
+      }
+    },
+    "final_restart": {
+      "pass": true,
+      "details": {
+        "latest": {
+          "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq-1.restart",
+          "sha256": "100ef239b7d93111f0fd0673cff0409324f075f25c10af51b8d7e50538352e5c",
+          "bytes": 55571
+        },
+        "numbered": {
+          "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq-1_5000.restart",
+          "sha256": "9f4ae94f2aefa9fc4bd0aa10f7d7268f457f584b5c89fe2999e4a3084cbb105c",
+          "bytes": 55571
+        },
+        "latest_details": {
+          "step": 5000,
+          "time_fs": 4999.999999999572,
+          "coordinates": 296,
+          "velocities": 296,
+          "finite_positions_and_velocities": true,
+          "max_final_frame_delta_A": 4.986766555248323e-11
+        },
+        "numbered_details": {
+          "step": 5000,
+          "time_fs": 4999.999999999572,
+          "coordinates": 296,
+          "velocities": 296,
+          "finite_positions_and_velocities": true,
+          "max_final_frame_delta_A": 4.986766555248323e-11
+        },
+        "noncomment_payload_equal": true,
+        "byte_equal": false,
+        "note": "Header comment timestamp differences are ignored only for payload comparison."
+      }
+    },
+    "existing_PILOT_ANALYSIS_association": {
+      "pass": true,
+      "details": {
+        "file": {
+          "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/PILOT_ANALYSIS.json",
+          "sha256": "30947b5bff45f1017cee83ad556f5192f559fab26f0cdb56bd46141c69055481",
+          "bytes": 247106
+        },
+        "schema": "legacy analyze_pilot.py distance-diagnostic JSON; no status/checks gate field",
+        "source": {
+          "sheet": "Figure 6b",
+          "column": 16,
+          "rows": [
+            2,
+            297
+          ],
+          "label": "R_inter"
+        },
+        "frames": {
+          "count": 501,
+          "first_step": 0,
+          "last_step": 5000,
+          "first_time_fs": 0.0,
+          "last_time_fs": 5000.0
+        }
+      }
+    },
+    "public_workbook_fingerprint": {
+      "pass": true,
+      "details": {
+        "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_zenodo/source-data.xlsx",
+        "sha256": "f4e2bedc004f0abaf180f55e95bd2aa9f7ddc2aa86ef09a683fd2d5afe0a9992",
+        "bytes": 53375254,
+        "md5": "53a0f1915b8f15fe1cd5d56742d16820",
+        "paper_doi": "10.1038/s41467-025-59712-3",
+        "data_doi": "10.5281/zenodo.15253851"
+      }
+    },
+    "public_R_RC_coordinates": {
+      "pass": true,
+      "details": {
+        "workbook_block": "Figure 6b!P2:S297",
+        "XLSX_member": "xl/worksheets/sheet18.xml",
+        "reader": "Python stdlib zipfile + xml.etree.ElementTree; no analyzer execution",
+        "header": "R_inter",
+        "max_workbook_to_frozen_coordinate_delta_angstrom": 0.0,
+        "archived_extraction": {
+          "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_zenodo/structure_compare/li2025_fig6b_RC_iface.xyz",
+          "sha256": "efb39589f7c5b743575b076919e7300138aaeff20f3ce1e847ebfd1be268401e",
+          "bytes": 14408
+        },
+        "max_archived_RC_to_R_coordinate_delta_angstrom": 0.0,
+        "label_note": "Archived RC filename refers to the same public R_inter workbook block; it is not an independent geometry or stationary-point certification."
+      }
+    },
+    "registered_distance_values_match_raw": {
+      "pass": true,
+      "details": {
+        "max_SC_CO_recalculation_delta_angstrom": 8.881784197001252e-16,
+        "SC_min_angstrom": 2.896124354822849,
+        "SC_max_angstrom": 4.661212514852066,
+        "SC_last_angstrom": 3.4701160235510695,
+        "CO_last_angstrom": 1.280962379746805,
+        "SC_below_2A_frames": 0,
+        "interpretation": "Distance/source identity check only; no bond classification."
+      }
+    },
+    "archived_remote_local_SHA": {
+      "pass": true,
+      "details": {
+        "remote_manifest": {
+          "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/REMOTE_SHA.txt",
+          "sha256": "27d6a24d753961ff5bec2aedee24ed781c615709c107ad18e99cc200c3970f96",
+          "bytes": 8846
+        },
+        "matched_files": 20,
+        "files": [
+          {
+            "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/PILOT_ANALYSIS.json",
+            "relative_path": "li2025_recovery_20261111/r_interface_eq/PILOT_ANALYSIS.json",
+            "sha256": "30947b5bff45f1017cee83ad556f5192f559fab26f0cdb56bd46141c69055481",
+            "recorded_remote_sha256": "30947b5bff45f1017cee83ad556f5192f559fab26f0cdb56bd46141c69055481",
+            "match": true
+          },
+          {
+            "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/PILOT_ANALYSIS_FRAMES.tsv",
+            "relative_path": "li2025_recovery_20261111/r_interface_eq/PILOT_ANALYSIS_FRAMES.tsv",
+            "sha256": "5972e93c4e49f906b93ad6f282ce01f3134d5ca54cb8e7b97c53aa91d5f2eb97",
+            "recorded_remote_sha256": "5972e93c4e49f906b93ad6f282ce01f3134d5ca54cb8e7b97c53aa91d5f2eb97",
+            "match": true
+          },
+          {
+            "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq-1.ener",
+            "relative_path": "li2025_recovery_20261111/r_interface_eq/r_interface_eq-1.ener",
+            "sha256": "65e065edd7c4bc9ca149b4be136b5a6e6624d5cdd2b0a3297d651b49fe43d8f0",
+            "recorded_remote_sha256": "65e065edd7c4bc9ca149b4be136b5a6e6624d5cdd2b0a3297d651b49fe43d8f0",
+            "match": true
+          },
+          {
+            "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq-1.restart",
+            "relative_path": "li2025_recovery_20261111/r_interface_eq/r_interface_eq-1.restart",
+            "sha256": "100ef239b7d93111f0fd0673cff0409324f075f25c10af51b8d7e50538352e5c",
+            "recorded_remote_sha256": "100ef239b7d93111f0fd0673cff0409324f075f25c10af51b8d7e50538352e5c",
+            "match": true
+          },
+          {
+            "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq-1_1000.restart",
+            "relative_path": "li2025_recovery_20261111/r_interface_eq/r_interface_eq-1_1000.restart",
+            "sha256": "1906770a9305e2063c8c734cb8afb83ad9e55471aa69adca75956017c0503c76",
+            "recorded_remote_sha256": "1906770a9305e2063c8c734cb8afb83ad9e55471aa69adca75956017c0503c76",
+            "match": true
+          },
+          {
+            "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq-1_1500.restart",
+            "relative_path": "li2025_recovery_20261111/r_interface_eq/r_interface_eq-1_1500.restart",
+            "sha256": "60083b0f2f74937c629f5a1951d3d23f377773966c018892cee326775f294dec",
+            "recorded_remote_sha256": "60083b0f2f74937c629f5a1951d3d23f377773966c018892cee326775f294dec",
+            "match": true
+          },
+          {
+            "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq-1_2000.restart",
+            "relative_path": "li2025_recovery_20261111/r_interface_eq/r_interface_eq-1_2000.restart",
+            "sha256": "bf5feb54601aaf55ae58ced3da8e129462e14c09d150efbfdc3136b1357ee35a",
+            "recorded_remote_sha256": "bf5feb54601aaf55ae58ced3da8e129462e14c09d150efbfdc3136b1357ee35a",
+            "match": true
+          },
+          {
+            "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq-1_2500.restart",
+            "relative_path": "li2025_recovery_20261111/r_interface_eq/r_interface_eq-1_2500.restart",
+            "sha256": "87d5bcbc3a65a2086af925c25701d56d3dc4518398bdad6443f15552c120dec2",
+            "recorded_remote_sha256": "87d5bcbc3a65a2086af925c25701d56d3dc4518398bdad6443f15552c120dec2",
+            "match": true
+          },
+          {
+            "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq-1_3000.restart",
+            "relative_path": "li2025_recovery_20261111/r_interface_eq/r_interface_eq-1_3000.restart",
+            "sha256": "568d4cbba7a46c844fb65267d43669e1332ed5faf004f03d2725dd5d46807c39",
+            "recorded_remote_sha256": "568d4cbba7a46c844fb65267d43669e1332ed5faf004f03d2725dd5d46807c39",
+            "match": true
+          },
+          {
+            "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq-1_3500.restart",
+            "relative_path": "li2025_recovery_20261111/r_interface_eq/r_interface_eq-1_3500.restart",
+            "sha256": "2c32dffef79fa28283ab1c4ac2227dc61198ef150f93056cf83623f1ac4fdc97",
+            "recorded_remote_sha256": "2c32dffef79fa28283ab1c4ac2227dc61198ef150f93056cf83623f1ac4fdc97",
+            "match": true
+          },
+          {
+            "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq-1_4000.restart",
+            "relative_path": "li2025_recovery_20261111/r_interface_eq/r_interface_eq-1_4000.restart",
+            "sha256": "4353409597e3adb0e97d952bbe9475eb56b6dede8679e8cf22c474f2b4049de0",
+            "recorded_remote_sha256": "4353409597e3adb0e97d952bbe9475eb56b6dede8679e8cf22c474f2b4049de0",
+            "match": true
+          },
+          {
+            "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq-1_4500.restart",
+            "relative_path": "li2025_recovery_20261111/r_interface_eq/r_interface_eq-1_4500.restart",
+            "sha256": "adf954cbb8e2258f4c831b8759ded4330d16e9978f2d807c2926618a0f0d03d1",
+            "recorded_remote_sha256": "adf954cbb8e2258f4c831b8759ded4330d16e9978f2d807c2926618a0f0d03d1",
+            "match": true
+          },
+          {
+            "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq-1_500.restart",
+            "relative_path": "li2025_recovery_20261111/r_interface_eq/r_interface_eq-1_500.restart",
+            "sha256": "19817d7cad274f8ea95d56a4853b26732e48b84a7c5e5049367cd9da93aebc85",
+            "recorded_remote_sha256": "19817d7cad274f8ea95d56a4853b26732e48b84a7c5e5049367cd9da93aebc85",
+            "match": true
+          },
+          {
+            "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq-1_5000.restart",
+            "relative_path": "li2025_recovery_20261111/r_interface_eq/r_interface_eq-1_5000.restart",
+            "sha256": "9f4ae94f2aefa9fc4bd0aa10f7d7268f457f584b5c89fe2999e4a3084cbb105c",
+            "recorded_remote_sha256": "9f4ae94f2aefa9fc4bd0aa10f7d7268f457f584b5c89fe2999e4a3084cbb105c",
+            "match": true
+          },
+          {
+            "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq-pos-1.xyz",
+            "relative_path": "li2025_recovery_20261111/r_interface_eq/r_interface_eq-pos-1.xyz",
+            "sha256": "80eedcaaa7de00f6f0b04cee30162a6e0ce834d25d01f2c8fea8b507d8219d4d",
+            "recorded_remote_sha256": "80eedcaaa7de00f6f0b04cee30162a6e0ce834d25d01f2c8fea8b507d8219d4d",
+            "match": true
+          },
+          {
+            "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq.inp",
+            "relative_path": "li2025_recovery_20261111/r_interface_eq/r_interface_eq.inp",
+            "sha256": "41bbc6f1d569180f1cc841da3685e392fda3bd9b5d5b0e0da985a141f1d713e9",
+            "recorded_remote_sha256": "41bbc6f1d569180f1cc841da3685e392fda3bd9b5d5b0e0da985a141f1d713e9",
+            "match": true
+          },
+          {
+            "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq.out",
+            "relative_path": "li2025_recovery_20261111/r_interface_eq/r_interface_eq.out",
+            "sha256": "70919278d855a9627e9f526268933daf70ef216c2f90797fd2c6a1115c6a2600",
+            "recorded_remote_sha256": "70919278d855a9627e9f526268933daf70ef216c2f90797fd2c6a1115c6a2600",
+            "match": true
+          },
+          {
+            "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq.runner.log",
+            "relative_path": "li2025_recovery_20261111/r_interface_eq/r_interface_eq.runner.log",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "recorded_remote_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "match": true
+          },
+          {
+            "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq.xyz",
+            "relative_path": "li2025_recovery_20261111/r_interface_eq/r_interface_eq.xyz",
+            "sha256": "b44766d837cae154f7281df37f17a179d6ec607b47ef0cebae578759f9c580b5",
+            "recorded_remote_sha256": "b44766d837cae154f7281df37f17a179d6ec607b47ef0cebae578759f9c580b5",
+            "match": true
+          },
+          {
+            "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/run_record.json",
+            "relative_path": "li2025_recovery_20261111/r_interface_eq/run_record.json",
+            "sha256": "dfaf71d41cd9e12aa28c9058f4f9a42b594ccdd0b07361a54f584966424e1695",
+            "recorded_remote_sha256": "dfaf71d41cd9e12aa28c9058f4f9a42b594ccdd0b07361a54f584966424e1695",
+            "match": true
+          }
+        ],
+        "new_HPC_observation": false
+      }
+    },
+    "existing_R_solvation_reusable": {
+      "pass": true,
+      "details": {
+        "solvation": {
+          "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/R_eq_solvation.json",
+          "sha256": "fbc05e5170b63f97e7b01e21d86f613b60769fd92ec92ba3688b1ba4b7ade834",
+          "bytes": 856609
+        },
+        "complete_XYZ_alias": {
+          "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/R_eq_complete.xyz",
+          "sha256": "80eedcaaa7de00f6f0b04cee30162a6e0ce834d25d01f2c8fea8b507d8219d4d",
+          "bytes": 9674310
+        },
+        "raw_and_complete_alias_byte_identical": true,
+        "source_in_solvation": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/R_eq_complete.xyz",
+        "frames": 501,
+        "no_analyzer_rerun": true
+      }
+    },
+    "all_source_files_unchanged_during_audit": {
+      "pass": true,
+      "details": {
+        "frozen_source_files": 23,
+        "raw_source_writes": false
+      }
+    }
+  },
+  "source_directory": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq",
+  "human_review": "PENDING",
+  "structural_verdict": null,
+  "causal_verdict": null,
+  "sources_sha256": {
+    "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/run_record.json": "dfaf71d41cd9e12aa28c9058f4f9a42b594ccdd0b07361a54f584966424e1695",
+    "/Users/kejunliu/projects/sulfoacetic-vib/campaign/li2025_recovery_20261111/pilot_manifest.json": "bbe73d18b49a89562e9af52249081c7e335fed558f61d60651795849cb4381a6",
+    "/Users/kejunliu/projects/sulfoacetic-vib/campaign/li2025_hbnetwork_20261116/validate_stage.py": "3df8173e5b37eb2d1aba2215026710ae1e868d60de3d29090fed8f00bfcc282a",
+    "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq.xyz": "b44766d837cae154f7281df37f17a179d6ec607b47ef0cebae578759f9c580b5",
+    "/Users/kejunliu/projects/sulfoacetic-vib/campaign/li2025_recovery_20261111/inputs/r_interface_eq.xyz": "b44766d837cae154f7281df37f17a179d6ec607b47ef0cebae578759f9c580b5",
+    "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq.inp": "41bbc6f1d569180f1cc841da3685e392fda3bd9b5d5b0e0da985a141f1d713e9",
+    "/Users/kejunliu/projects/sulfoacetic-vib/campaign/li2025_recovery_20261111/inputs/r_interface_eq.inp": "41bbc6f1d569180f1cc841da3685e392fda3bd9b5d5b0e0da985a141f1d713e9",
+    "/Users/kejunliu/projects/sulfoacetic-vib/campaign/li2025_recovery_20261111/frozen_run_cp2k.py": "c3d65060daafbe1076304f092f72c2e40e738aea9cb6f4cc63d8263298397d61",
+    "/Users/kejunliu/projects/sulfoacetic-vib/campaign/li2025_recovery_20261111/frozen_analyze_event_unbiased.py": "8529ce9c63f694fd93f86ed0fbac292aff4bf77a612b4069b2d45bb7c96c01cd",
+    "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq-pos-1.xyz": "80eedcaaa7de00f6f0b04cee30162a6e0ce834d25d01f2c8fea8b507d8219d4d",
+    "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq.out": "70919278d855a9627e9f526268933daf70ef216c2f90797fd2c6a1115c6a2600",
+    "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq-1.ener": "65e065edd7c4bc9ca149b4be136b5a6e6624d5cdd2b0a3297d651b49fe43d8f0",
+    "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq-1.restart": "100ef239b7d93111f0fd0673cff0409324f075f25c10af51b8d7e50538352e5c",
+    "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq-1_5000.restart": "9f4ae94f2aefa9fc4bd0aa10f7d7268f457f584b5c89fe2999e4a3084cbb105c",
+    "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/PILOT_ANALYSIS.json": "30947b5bff45f1017cee83ad556f5192f559fab26f0cdb56bd46141c69055481",
+    "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_zenodo/source-data.xlsx": "f4e2bedc004f0abaf180f55e95bd2aa9f7ddc2aa86ef09a683fd2d5afe0a9992",
+    "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_zenodo/structure_compare/li2025_fig6b_RC_iface.xyz": "efb39589f7c5b743575b076919e7300138aaeff20f3ce1e847ebfd1be268401e",
+    "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/REMOTE_SHA.txt": "27d6a24d753961ff5bec2aedee24ed781c615709c107ad18e99cc200c3970f96",
+    "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/R_eq_solvation.json": "fbc05e5170b63f97e7b01e21d86f613b60769fd92ec92ba3688b1ba4b7ade834",
+    "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/R_eq_complete.xyz": "80eedcaaa7de00f6f0b04cee30162a6e0ce834d25d01f2c8fea8b507d8219d4d",
+    "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_branches_20261112/local_validation/VALIDATION.json": "aa6273e1a73a6611228da3a684036925216c62eaa18febd6389d02e3167f896f",
+    "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_branches_20261112/local_validation/historical_r_validation/CHECKS.json": "b1e9b0709a1918f4c13c8fc02b4170797f24e62fdda008b4da74805887529043",
+    "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_branches_20261112/local_validation/historical_r_validation/run_record.json": "8a451d87c60fb1e1888e770d46129fb9bb88812b39c41e275abcc3a69dde5725"
+  },
+  "attempts": [
+    {
+      "status": "INCOMPLETE_ENVIRONMENT_DEPENDENCY",
+      "error": "ModuleNotFoundError: No module named 'openpyxl'",
+      "completed_checks": 14,
+      "completed_checks_all_pass": true,
+      "previous_audit_sha256": "3ea45bb0e96cb35df335d41ac42a36e1c0a44ca9442dcbc33c9a540557905810",
+      "resolution": "Read the pinned XLSX directly with Python standard-library zipfile and ElementTree; no package installation or source modification."
+    }
+  ],
+  "existing_validation_records": {
+    "production_PILOT_ANALYSIS": {
+      "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/PILOT_ANALYSIS.json",
+      "sha256": "30947b5bff45f1017cee83ad556f5192f559fab26f0cdb56bd46141c69055481",
+      "bytes": 247106
+    },
+    "production_CHECKS_json_exists": false,
+    "historical_test_report": {
+      "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_branches_20261112/local_validation/VALIDATION.json",
+      "sha256": "aa6273e1a73a6611228da3a684036925216c62eaa18febd6389d02e3167f896f",
+      "bytes": 324,
+      "recorded_results": {
+        "r_eq_metad_smoke_dryrun": true,
+        "r_eq_metad_dryrun": true,
+        "p_iface_v2_smoke_dryrun": true,
+        "p_iface_v2_dryrun": true,
+        "relax_v2_smoke_dryrun": true,
+        "relax_v2_dryrun": true,
+        "wrong_hash_refused": true,
+        "stale_output_refused": true,
+        "historical_R_full_stage_gate": true,
+        "scf_failure_refused": true
+      }
+    },
+    "historical_negative_fixture": {
+      "CHECKS": {
+        "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_branches_20261112/local_validation/historical_r_validation/CHECKS.json",
+        "sha256": "b1e9b0709a1918f4c13c8fc02b4170797f24e62fdda008b4da74805887529043",
+        "bytes": 874
+      },
+      "run_record": {
+        "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_branches_20261112/local_validation/historical_r_validation/run_record.json",
+        "sha256": "8a451d87c60fb1e1888e770d46129fb9bb88812b39c41e275abcc3a69dde5725",
+        "bytes": 1895
+      },
+      "checks_status": "FAIL",
+      "failed_checks": [
+        "all_scf"
+      ],
+      "fixture_SCF_failed_runs": 1,
+      "original_SCF_failed_runs": 0,
+      "trajectory_SHA_matches_original": true,
+      "log_SHA_matches_original": true,
+      "usable_as_production_validation": false,
+      "explanation": "This local test fixture retains a modified run_record with one SCF failure; VALIDATION.json records historical_R_full_stage_gate=true and scf_failure_refused=true. Its FAIL is not a failure of the original recovered source. No historical file was edited."
+    }
+  },
+  "public_origin": {
+    "manifest": {
+      "path": "/Users/kejunliu/projects/sulfoacetic-vib/campaign/li2025_recovery_20261111/pilot_manifest.json",
+      "sha256": "bbe73d18b49a89562e9af52249081c7e335fed558f61d60651795849cb4381a6",
+      "bytes": 11446
+    },
+    "source": {
+      "workbook": "results/li2025_zenodo/source-data.xlsx",
+      "md5": "53a0f1915b8f15fe1cd5d56742d16820",
+      "sha256": "f4e2bedc004f0abaf180f55e95bd2aa9f7ddc2aa86ef09a683fd2d5afe0a9992",
+      "doi": "10.1038/s41467-025-59712-3",
+      "zenodo": "10.5281/zenodo.15253851"
+    },
+    "record": {
+      "sheet": "Figure 6b",
+      "column": 16,
+      "rows": [
+        2,
+        297
+      ],
+      "label": "R_inter"
+    },
+    "mapping_1based": {
+      "C": 289,
+      "Oc": 290,
+      "S": 293,
+      "Os": [
+        294,
+        295,
+        296
+      ]
+    },
+    "scientific_input_unmodified": true
+  },
+  "reliability": {
+    "reliable_as_complete_unbiased_5ps_R_trajectory_source": true,
+    "all_501_frames_remain_long_SC_relative_to_2A_threshold": true,
+    "bias_history": "Public Figure 6b R_inter starting coordinates; this 5 ps run has no metaD or restraint and starts fresh velocities. This does not establish equilibrium.",
+    "existing_R_solvation_path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/R_eq_solvation.json",
+    "constraints_on_use": [
+      "Use original recovered trajectory, not the historical negative-test fixture.",
+      "Any later water-H rotations are new controlled initial conditions and require their own exact atom/rotation/contact/seed manifests.",
+      "No scientific structure, spontaneous-formation, equilibrium or causal approval is supplied by this technical audit."
+    ]
+  }
+}

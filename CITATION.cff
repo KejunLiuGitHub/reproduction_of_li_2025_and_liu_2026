@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "For the scientific system and source structures, cite the original paper and dataset listed below. Cite this repository separately when using its scripts or outputs."
+title: "Li 2025 interfacial C-S reproduction: selected calculations and analysis"
+type: software
+authors:
+  - family-names: Liu
+    given-names: Kejun
+version: "2026.11.19"
+date-released: 2026-11-19
+url: "https://github.com/KejunLiuGitHub/li2025-interface-cs-reproduction"
+references:
+  - type: article
+    title: "Hydroxymethanesulfonate formation accelerated at the air-water interface by synergistic enthalpy-entropy effects"
+    authors:
+      - family-names: Li
+        given-names: Jifan
+      - family-names: Tang
+        given-names: Weiqiang
+      - family-names: Zhu
+        given-names: Jiabao
+      - family-names: Yang
+        given-names: Jinrong
+      - family-names: He
+        given-names: Xiao
+    journal: Nature Communications
+    volume: 16
+    start: 5187
+    year: 2025
+    doi: "10.1038/s41467-025-59712-3"
+  - type: data
+    title: "Source data for Li et al. (2025)"
+    doi: "10.5281/zenodo.15253851"

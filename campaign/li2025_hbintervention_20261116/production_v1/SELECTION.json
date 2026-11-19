@@ -1,0 +1,873 @@
+{
+  "schema": "li296_controlled_orientation_selection/v1",
+  "selection_rules": {
+    "source_step_min": 1000,
+    "SC_min_A": 3.0,
+    "CO_interval_A": [
+      1.1,
+      1.3
+    ],
+    "C_Oc_signed_GDS_interval_A": [
+      -3.0,
+      0.5
+    ],
+    "S_signed_GDS_interval_A": [
+      -5.0,
+      0.5
+    ],
+    "parent_OH_warning_max": 0,
+    "nonbonded_min_A": 1.4,
+    "water_O_to_Oc_interval_A": [
+      2.65,
+      3.3
+    ],
+    "rotation_abs_angle_deg_interval": [
+      10.0,
+      60.0
+    ],
+    "pair_frame_separation_min_fs": 1000,
+    "frame_order": "ascending step; first feasible, then first feasible at least1000fs later",
+    "water_order": "ascending minimal absolute angle, O index, selected H index",
+    "contrast": "selected water contributes an Oc donor in strict/standard/loose for +theta and none even loose for -theta; it is not an Oc donor in the original even loose",
+    "scope": "Controlled initial-condition pilot; same source history, separated frames are correlated, not independent equilibrium samples."
+  },
+  "counts": {
+    "frames_screened": 501,
+    "frames_after_filters": 369,
+    "rotation_attempts": 92,
+    "feasible_frames": 77
+  },
+  "full_feasibility_evidence": {
+    "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/20261116T234029+0800/intervention/FEASIBILITY.json",
+    "sha256": "d7b02f76cd032ad1772c6aea3de82ed0e69620d8849ba1a265b73ef0ad82b87b"
+  },
+  "selected_pairs": [
+    {
+      "pair": 1,
+      "source_step": 1150,
+      "source_frame_sha256": "5e1b93a126e25373541c1a71f0c11c58987aeb1ef19af65d7c8ddd79c91c7b61",
+      "source_directory": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq",
+      "source_job_id": "8568513",
+      "source_segment_biased": false,
+      "public_snapshot_origin": "Figure6b metaD R_inter snapshot",
+      "prepared_under_bias": true,
+      "controlled_initial_conditions": true,
+      "water_O_1based": 204,
+      "rotated_H_1based": [
+        202,
+        203
+      ],
+      "aligned_H_1based": 203,
+      "axis_unit": [
+        -0.9559315165677851,
+        0.2656959963947666,
+        -0.12490225431194814
+      ],
+      "on_rotation_matrix": [
+        [
+          0.9879598943225466,
+          0.028192339678896665,
+          0.15211981854318773
+        ],
+        [
+          -0.09914853743478641,
+          0.8701763391246118,
+          0.48266210370427
+        ],
+        [
+          -0.1187636928304497,
+          -0.49193325849257075,
+          0.8624945532895592
+        ]
+      ],
+      "control_rotation_matrix": [
+        [
+          0.9879598943225466,
+          -0.09914853743478641,
+          -0.1187636928304497
+        ],
+        [
+          0.028192339678896665,
+          0.8701763391246118,
+          -0.49193325849257075
+        ],
+        [
+          0.15211981854318773,
+          0.48266210370427,
+          0.8624945532895592
+        ]
+      ],
+      "signed_angles_deg": [
+        30.64798629826913,
+        -30.64798629826913
+      ],
+      "translation_A": [
+        0,
+        0,
+        0
+      ],
+      "water_geometry_before": {
+        "OH_lengths_A": [
+          1.0071998229457426,
+          1.031343214964842
+        ],
+        "HOH_angle_deg": 110.43504808673458,
+        "HH_distance_A": 1.6743604082440535
+      },
+      "water_geometry_after": [
+        {
+          "OH_lengths_A": [
+            1.0071998229457428,
+            1.031343214964842
+          ],
+          "HOH_angle_deg": 110.43504808673455,
+          "HH_distance_A": 1.6743604082440535
+        },
+        {
+          "OH_lengths_A": [
+            1.0071998229457426,
+            1.031343214964843
+          ],
+          "HOH_angle_deg": 110.43504808673458,
+          "HH_distance_A": 1.6743604082440542
+        }
+      ],
+      "contact_on": {
+        "minimum_A": 1.4635562921889385,
+        "pair_1based": [
+          37,
+          38
+        ],
+        "elements": [
+          "H",
+          "H"
+        ],
+        "exclusions": "Only fixed parent water O-H, HCHO C-O/C-H and SO3 S-O covalent bonds; all other pairs including within-molecule nonbonded pairs checked, MIC."
+      },
+      "contact_control": {
+        "minimum_A": 1.4635562921889385,
+        "pair_1based": [
+          37,
+          38
+        ],
+        "elements": [
+          "H",
+          "H"
+        ],
+        "exclusions": "Only fixed parent water O-H, HCHO C-O/C-H and SO3 S-O covalent bonds; all other pairs including within-molecule nonbonded pairs checked, MIC."
+      },
+      "source_descriptors": {
+        "step": 1150,
+        "SC": 3.8711023401395432,
+        "CO": 1.2579941064110978,
+        "OCS_angle": 97.80021619618765,
+        "carbon_pyramidal_height": 0.06186270563322444,
+        "max_parent_water_OH": 1.0960610745423094,
+        "water_parent_assignment_warning": 0,
+        "hb_Oc": 1,
+        "hb_Oc_strict": 1,
+        "hb_Oc_loose": 1,
+        "nearest_H_Oc": 2.327609205099511,
+        "water_O_3p5_Oc": 2,
+        "hb_Os1": 3,
+        "hb_Os1_strict": 2,
+        "hb_Os1_loose": 3,
+        "nearest_H_Os1": 1.741597582277219,
+        "water_O_3p5_Os1": 3,
+        "hb_Os2": 3,
+        "hb_Os2_strict": 2,
+        "hb_Os2_loose": 3,
+        "nearest_H_Os2": 1.8653147378974235,
+        "water_O_3p5_Os2": 5,
+        "hb_Os3": 2,
+        "hb_Os3_strict": 2,
+        "hb_Os3_loose": 3,
+        "nearest_H_Os3": 1.563482497895887,
+        "water_O_3p5_Os3": 3,
+        "shared_donor_waters": 0,
+        "donor_H_1based": {
+          "Oc": [
+            271
+          ],
+          "Os1": [
+            31,
+            128,
+            244
+          ],
+          "Os2": [
+            53,
+            130,
+            164
+          ],
+          "Os3": [
+            1,
+            22
+          ]
+        },
+        "gds_C": -0.9712156151662228,
+        "gds_Oc": -1.3420342489662218,
+        "gds_S": -4.390245515066223,
+        "gds_Os1": -3.871242717566222,
+        "gds_Os2": -4.132677056266225,
+        "gds_Os3": -5.9982000988662225,
+        "CO_normal_cos": -0.2947697703114833,
+        "CS_normal_cos": -0.8832186802317277,
+        "surface": {
+          "lower": 8.47241157082549,
+          "upper": 20.778395731266222,
+          "origin": 21.4794821214,
+          "thickness": 12.305984160440733,
+          "peak_density": 0.03837007289913955
+        }
+      },
+      "on_descriptors": {
+        "SC": 3.8711023401395432,
+        "CO": 1.2579941064110975,
+        "OCS_angle": 97.80021619618765,
+        "carbon_pyramidal_height": 0.061862705633224435,
+        "max_parent_water_OH": 1.0960610745423094,
+        "water_parent_assignment_warning": 0,
+        "hb_Oc": 2,
+        "hb_Oc_strict": 2,
+        "hb_Oc_loose": 2,
+        "nearest_H_Oc": 2.1506172283791596,
+        "water_O_3p5_Oc": 2,
+        "hb_Os1": 3,
+        "hb_Os1_strict": 2,
+        "hb_Os1_loose": 3,
+        "nearest_H_Os1": 1.741597582277219,
+        "water_O_3p5_Os1": 3,
+        "hb_Os2": 3,
+        "hb_Os2_strict": 2,
+        "hb_Os2_loose": 3,
+        "nearest_H_Os2": 1.8653147378974235,
+        "water_O_3p5_Os2": 5,
+        "hb_Os3": 2,
+        "hb_Os3_strict": 2,
+        "hb_Os3_loose": 3,
+        "nearest_H_Os3": 1.563482497895887,
+        "water_O_3p5_Os3": 3,
+        "shared_donor_waters": 0,
+        "donor_H_1based": {
+          "Oc": [
+            203,
+            271
+          ],
+          "Os1": [
+            31,
+            128,
+            244
+          ],
+          "Os2": [
+            53,
+            130,
+            164
+          ],
+          "Os3": [
+            1,
+            22
+          ]
+        },
+        "gds_C": -0.9712156151662228,
+        "gds_Oc": -1.3420342489662218,
+        "gds_S": -4.390245515066223,
+        "gds_Os1": -3.871242717566222,
+        "gds_Os2": -4.132677056266225,
+        "gds_Os3": -5.9982000988662225,
+        "CO_normal_cos": -0.2947697703114834,
+        "CS_normal_cos": -0.8832186802317277,
+        "surface": {
+          "lower": 8.47241157082549,
+          "upper": 20.778395731266222,
+          "origin": 21.4794821214,
+          "thickness": 12.305984160440733,
+          "peak_density": 0.03837007289913955
+        }
+      },
+      "control_descriptors": {
+        "SC": 3.8711023401395432,
+        "CO": 1.2579941064110975,
+        "OCS_angle": 97.80021619618765,
+        "carbon_pyramidal_height": 0.061862705633224435,
+        "max_parent_water_OH": 1.0960610745423094,
+        "water_parent_assignment_warning": 0,
+        "hb_Oc": 1,
+        "hb_Oc_strict": 1,
+        "hb_Oc_loose": 1,
+        "nearest_H_Oc": 2.327609205099511,
+        "water_O_3p5_Oc": 2,
+        "hb_Os1": 3,
+        "hb_Os1_strict": 2,
+        "hb_Os1_loose": 3,
+        "nearest_H_Os1": 1.741597582277219,
+        "water_O_3p5_Os1": 3,
+        "hb_Os2": 3,
+        "hb_Os2_strict": 2,
+        "hb_Os2_loose": 3,
+        "nearest_H_Os2": 1.8653147378974235,
+        "water_O_3p5_Os2": 5,
+        "hb_Os3": 2,
+        "hb_Os3_strict": 2,
+        "hb_Os3_loose": 3,
+        "nearest_H_Os3": 1.563482497895887,
+        "water_O_3p5_Os3": 3,
+        "shared_donor_waters": 0,
+        "donor_H_1based": {
+          "Oc": [
+            271
+          ],
+          "Os1": [
+            31,
+            128,
+            244
+          ],
+          "Os2": [
+            53,
+            130,
+            164
+          ],
+          "Os3": [
+            1,
+            22
+          ]
+        },
+        "gds_C": -0.9712156151662228,
+        "gds_Oc": -1.3420342489662218,
+        "gds_S": -4.390245515066223,
+        "gds_Os1": -3.871242717566222,
+        "gds_Os2": -4.132677056266225,
+        "gds_Os3": -5.9982000988662225,
+        "CO_normal_cos": -0.2947697703114834,
+        "CS_normal_cos": -0.8832186802317277,
+        "surface": {
+          "lower": 8.47241157082549,
+          "upper": 20.778395731266222,
+          "origin": 21.4794821214,
+          "thickness": 12.305984160440733,
+          "peak_density": 0.03837007289913955
+        }
+      },
+      "heavyatom_and_all_other_atoms_exactly_unchanged": true,
+      "network_edges_and_differences": {
+        "strict": {
+          "on_added": [
+            [
+              204,
+              203,
+              290
+            ]
+          ],
+          "on_removed": [
+            [
+              204,
+              202,
+              102
+            ]
+          ],
+          "control_added": [],
+          "control_removed": [
+            [
+              204,
+              202,
+              102
+            ]
+          ],
+          "on_vs_control_only_on": [
+            [
+              204,
+              203,
+              290
+            ]
+          ],
+          "on_vs_control_only_control": []
+        },
+        "standard": {
+          "on_added": [
+            [
+              204,
+              203,
+              290
+            ]
+          ],
+          "on_removed": [
+            [
+              204,
+              202,
+              102
+            ]
+          ],
+          "control_added": [],
+          "control_removed": [
+            [
+              204,
+              202,
+              102
+            ]
+          ],
+          "on_vs_control_only_on": [
+            [
+              204,
+              203,
+              290
+            ]
+          ],
+          "on_vs_control_only_control": []
+        },
+        "loose": {
+          "on_added": [
+            [
+              204,
+              203,
+              290
+            ]
+          ],
+          "on_removed": [],
+          "control_added": [],
+          "control_removed": [
+            [
+              204,
+              202,
+              102
+            ]
+          ],
+          "on_vs_control_only_on": [
+            [
+              204,
+              202,
+              102
+            ],
+            [
+              204,
+              203,
+              290
+            ]
+          ],
+          "on_vs_control_only_control": []
+        }
+      },
+      "xyz": {
+        "source": {
+          "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/20261116T234029+0800/intervention/frame_01150/source.xyz",
+          "sha256": "5e1b93a126e25373541c1a71f0c11c58987aeb1ef19af65d7c8ddd79c91c7b61"
+        },
+        "on": {
+          "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/20261116T234029+0800/intervention/frame_01150/on.xyz",
+          "sha256": "4a83a8e0b66dae4fa36c587673295767a54d9a9869000672c5ec26076504c540"
+        },
+        "control": {
+          "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/20261116T234029+0800/intervention/frame_01150/control.xyz",
+          "sha256": "959a00351b4d496068ad86730910a506d37a3f3fc2b3821f89ecbe7778843c76"
+        }
+      },
+      "human_review": "PENDING",
+      "structural_verdict": null,
+      "full_directed_edge_arrays": "See full_feasibility_evidence, selected_pairs matching source_step; complete original/on/reverse edges retained there."
+    },
+    {
+      "pair": 2,
+      "source_step": 2200,
+      "source_frame_sha256": "d21984232c1a00e1baf2087b0cd1f61bfe87370a662e1ec18b1071b06580f26b",
+      "source_directory": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq",
+      "source_job_id": "8568513",
+      "source_segment_biased": false,
+      "public_snapshot_origin": "Figure6b metaD R_inter snapshot",
+      "prepared_under_bias": true,
+      "controlled_initial_conditions": true,
+      "water_O_1based": 204,
+      "rotated_H_1based": [
+        202,
+        203
+      ],
+      "aligned_H_1based": 203,
+      "axis_unit": [
+        -0.8244616631058916,
+        -0.4263330967398641,
+        0.37215998803319134
+      ],
+      "on_rotation_matrix": [
+        [
+          0.9632863558721185,
+          -0.13272257084507227,
+          -0.23337548238598027
+        ],
+        [
+          0.21331055323992038,
+          0.9062002832637811,
+          0.3651022521008628
+        ],
+        [
+          0.16302761872484467,
+          -0.4014794712073304,
+          0.9012414935698362
+        ]
+      ],
+      "control_rotation_matrix": [
+        [
+          0.9632863558721185,
+          0.21331055323992038,
+          0.16302761872484467
+        ],
+        [
+          -0.13272257084507227,
+          0.9062002832637811,
+          -0.4014794712073304
+        ],
+        [
+          -0.23337548238598027,
+          0.3651022521008628,
+          0.9012414935698362
+        ]
+      ],
+      "signed_angles_deg": [
+        27.70364322981394,
+        -27.70364322981394
+      ],
+      "translation_A": [
+        0,
+        0,
+        0
+      ],
+      "water_geometry_before": {
+        "OH_lengths_A": [
+          0.9825580299907795,
+          0.9591842813049968
+        ],
+        "HOH_angle_deg": 106.75941880080335,
+        "HH_distance_A": 1.55851693892029
+      },
+      "water_geometry_after": [
+        {
+          "OH_lengths_A": [
+            0.9825580299907796,
+            0.9591842813049966
+          ],
+          "HOH_angle_deg": 106.75941880080335,
+          "HH_distance_A": 1.5585169389202898
+        },
+        {
+          "OH_lengths_A": [
+            0.9825580299907795,
+            0.959184281304996
+          ],
+          "HOH_angle_deg": 106.75941880080335,
+          "HH_distance_A": 1.5585169389202893
+        }
+      ],
+      "contact_on": {
+        "minimum_A": 1.446921119382259,
+        "pair_1based": [
+          214,
+          215
+        ],
+        "elements": [
+          "H",
+          "H"
+        ],
+        "exclusions": "Only fixed parent water O-H, HCHO C-O/C-H and SO3 S-O covalent bonds; all other pairs including within-molecule nonbonded pairs checked, MIC."
+      },
+      "contact_control": {
+        "minimum_A": 1.446921119382259,
+        "pair_1based": [
+          214,
+          215
+        ],
+        "elements": [
+          "H",
+          "H"
+        ],
+        "exclusions": "Only fixed parent water O-H, HCHO C-O/C-H and SO3 S-O covalent bonds; all other pairs including within-molecule nonbonded pairs checked, MIC."
+      },
+      "source_descriptors": {
+        "step": 2200,
+        "SC": 4.241841593103563,
+        "CO": 1.2193739415921847,
+        "OCS_angle": 83.50196785503762,
+        "carbon_pyramidal_height": 0.04243049549937348,
+        "max_parent_water_OH": 1.0699628347598555,
+        "water_parent_assignment_warning": 0,
+        "hb_Oc": 1,
+        "hb_Oc_strict": 1,
+        "hb_Oc_loose": 1,
+        "nearest_H_Oc": 2.001052682078114,
+        "water_O_3p5_Oc": 2,
+        "hb_Os1": 2,
+        "hb_Os1_strict": 2,
+        "hb_Os1_loose": 3,
+        "nearest_H_Os1": 1.54124813031908,
+        "water_O_3p5_Os1": 3,
+        "hb_Os2": 2,
+        "hb_Os2_strict": 1,
+        "hb_Os2_loose": 2,
+        "nearest_H_Os2": 1.7854900530048876,
+        "water_O_3p5_Os2": 4,
+        "hb_Os3": 3,
+        "hb_Os3_strict": 2,
+        "hb_Os3_loose": 3,
+        "nearest_H_Os3": 1.5462275018732552,
+        "water_O_3p5_Os3": 3,
+        "shared_donor_waters": 0,
+        "donor_H_1based": {
+          "Oc": [
+            271
+          ],
+          "Os1": [
+            128,
+            244
+          ],
+          "Os2": [
+            130,
+            164
+          ],
+          "Os3": [
+            1,
+            22,
+            235
+          ]
+        },
+        "gds_C": -0.9728743574901308,
+        "gds_Oc": -1.6404054086901283,
+        "gds_S": -4.22360588069013,
+        "gds_Os1": -3.51108639479013,
+        "gds_Os2": -3.994678473490133,
+        "gds_Os3": -5.794642134790131,
+        "CO_normal_cos": -0.5474375238233955,
+        "CS_normal_cos": -0.7663491084827584,
+        "surface": {
+          "lower": 8.097420332498267,
+          "upper": 20.061691322840133,
+          "origin": 22.202056637749997,
+          "thickness": 11.964270990341866,
+          "peak_density": 0.037961320878510584
+        }
+      },
+      "on_descriptors": {
+        "SC": 4.241841593103563,
+        "CO": 1.2193739415921847,
+        "OCS_angle": 83.50196785503762,
+        "carbon_pyramidal_height": 0.042430495499373486,
+        "max_parent_water_OH": 1.0699628347598555,
+        "water_parent_assignment_warning": 0,
+        "hb_Oc": 2,
+        "hb_Oc_strict": 2,
+        "hb_Oc_loose": 2,
+        "nearest_H_Oc": 1.8407773250041801,
+        "water_O_3p5_Oc": 2,
+        "hb_Os1": 2,
+        "hb_Os1_strict": 2,
+        "hb_Os1_loose": 3,
+        "nearest_H_Os1": 1.54124813031908,
+        "water_O_3p5_Os1": 3,
+        "hb_Os2": 2,
+        "hb_Os2_strict": 1,
+        "hb_Os2_loose": 2,
+        "nearest_H_Os2": 1.7854900530048876,
+        "water_O_3p5_Os2": 4,
+        "hb_Os3": 3,
+        "hb_Os3_strict": 2,
+        "hb_Os3_loose": 3,
+        "nearest_H_Os3": 1.5462275018732552,
+        "water_O_3p5_Os3": 3,
+        "shared_donor_waters": 0,
+        "donor_H_1based": {
+          "Oc": [
+            203,
+            271
+          ],
+          "Os1": [
+            128,
+            244
+          ],
+          "Os2": [
+            130,
+            164
+          ],
+          "Os3": [
+            1,
+            22,
+            235
+          ]
+        },
+        "gds_C": -0.9728743574901308,
+        "gds_Oc": -1.6404054086901283,
+        "gds_S": -4.22360588069013,
+        "gds_Os1": -3.51108639479013,
+        "gds_Os2": -3.994678473490133,
+        "gds_Os3": -5.794642134790131,
+        "CO_normal_cos": -0.5474375238233955,
+        "CS_normal_cos": -0.7663491084827584,
+        "surface": {
+          "lower": 8.097420332498267,
+          "upper": 20.061691322840133,
+          "origin": 22.202056637749997,
+          "thickness": 11.964270990341866,
+          "peak_density": 0.037961320878510584
+        }
+      },
+      "control_descriptors": {
+        "SC": 4.241841593103563,
+        "CO": 1.2193739415921847,
+        "OCS_angle": 83.50196785503762,
+        "carbon_pyramidal_height": 0.042430495499373486,
+        "max_parent_water_OH": 1.0699628347598555,
+        "water_parent_assignment_warning": 0,
+        "hb_Oc": 1,
+        "hb_Oc_strict": 1,
+        "hb_Oc_loose": 1,
+        "nearest_H_Oc": 2.0687160563187086,
+        "water_O_3p5_Oc": 2,
+        "hb_Os1": 2,
+        "hb_Os1_strict": 2,
+        "hb_Os1_loose": 3,
+        "nearest_H_Os1": 1.54124813031908,
+        "water_O_3p5_Os1": 3,
+        "hb_Os2": 2,
+        "hb_Os2_strict": 1,
+        "hb_Os2_loose": 2,
+        "nearest_H_Os2": 1.7854900530048876,
+        "water_O_3p5_Os2": 4,
+        "hb_Os3": 3,
+        "hb_Os3_strict": 2,
+        "hb_Os3_loose": 3,
+        "nearest_H_Os3": 1.5462275018732552,
+        "water_O_3p5_Os3": 3,
+        "shared_donor_waters": 0,
+        "donor_H_1based": {
+          "Oc": [
+            271
+          ],
+          "Os1": [
+            128,
+            244
+          ],
+          "Os2": [
+            130,
+            164
+          ],
+          "Os3": [
+            1,
+            22,
+            235
+          ]
+        },
+        "gds_C": -0.9728743574901308,
+        "gds_Oc": -1.6404054086901283,
+        "gds_S": -4.22360588069013,
+        "gds_Os1": -3.51108639479013,
+        "gds_Os2": -3.994678473490133,
+        "gds_Os3": -5.794642134790131,
+        "CO_normal_cos": -0.5474375238233955,
+        "CS_normal_cos": -0.7663491084827584,
+        "surface": {
+          "lower": 8.097420332498267,
+          "upper": 20.061691322840133,
+          "origin": 22.202056637749997,
+          "thickness": 11.964270990341866,
+          "peak_density": 0.037961320878510584
+        }
+      },
+      "heavyatom_and_all_other_atoms_exactly_unchanged": true,
+      "network_edges_and_differences": {
+        "strict": {
+          "on_added": [
+            [
+              204,
+              203,
+              290
+            ]
+          ],
+          "on_removed": [
+            [
+              204,
+              202,
+              102
+            ]
+          ],
+          "control_added": [],
+          "control_removed": [
+            [
+              204,
+              202,
+              102
+            ]
+          ],
+          "on_vs_control_only_on": [
+            [
+              204,
+              203,
+              290
+            ]
+          ],
+          "on_vs_control_only_control": []
+        },
+        "standard": {
+          "on_added": [
+            [
+              204,
+              203,
+              290
+            ]
+          ],
+          "on_removed": [],
+          "control_added": [],
+          "control_removed": [
+            [
+              204,
+              202,
+              102
+            ]
+          ],
+          "on_vs_control_only_on": [
+            [
+              204,
+              202,
+              102
+            ],
+            [
+              204,
+              203,
+              290
+            ]
+          ],
+          "on_vs_control_only_control": []
+        },
+        "loose": {
+          "on_added": [
+            [
+              204,
+              203,
+              290
+            ]
+          ],
+          "on_removed": [],
+          "control_added": [],
+          "control_removed": [],
+          "on_vs_control_only_on": [
+            [
+              204,
+              203,
+              290
+            ]
+          ],
+          "on_vs_control_only_control": []
+        }
+      },
+      "xyz": {
+        "source": {
+          "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/20261116T234029+0800/intervention/frame_02200/source.xyz",
+          "sha256": "d21984232c1a00e1baf2087b0cd1f61bfe87370a662e1ec18b1071b06580f26b"
+        },
+        "on": {
+          "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/20261116T234029+0800/intervention/frame_02200/on.xyz",
+          "sha256": "b374b3c0a693cfdbb702311b4c04d2a05607007d0095b8b33a949e675e6b5c41"
+        },
+        "control": {
+          "path": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/20261116T234029+0800/intervention/frame_02200/control.xyz",
+          "sha256": "05edf119f368975afb93e892ec5b252e72837735ec68b46ebdd18d90cc475be3"
+        }
+      },
+      "human_review": "PENDING",
+      "structural_verdict": null,
+      "full_directed_edge_arrays": "See full_feasibility_evidence, selected_pairs matching source_step; complete original/on/reverse edges retained there."
+    }
+  ]
+}

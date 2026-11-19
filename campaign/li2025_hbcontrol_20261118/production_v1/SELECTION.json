@@ -1,0 +1,31 @@
+{
+  "schema": "li296_original_third_arm_selection/v1",
+  "source_job": "8568513",
+  "selected": {
+    "r1150_original": {
+      "step": 1150,
+      "seed": 2026111603,
+      "frame_sha256": "5e1b93a126e25373541c1a71f0c11c58987aeb1ef19af65d7c8ddd79c91c7b61",
+      "pair_cases": [
+        "r1150_oc_donor",
+        "r1150_reverse"
+      ]
+    },
+    "r2200_original": {
+      "step": 2200,
+      "seed": 2026111604,
+      "frame_sha256": "d21984232c1a00e1baf2087b0cd1f61bfe87370a662e1ec18b1071b06580f26b",
+      "pair_cases": [
+        "r2200_oc_donor",
+        "r2200_reverse"
+      ]
+    }
+  },
+  "coordinate_policy": "Exact original R1150/2200 frames; no rotation/translation/optimization.",
+  "selection_reason": "Fill the absent original-coordinate arm at each already-tested source frame and same seed; no search for favorable outcomes.",
+  "prepared_under_bias": true,
+  "controlled_initial_conditions": true,
+  "source_segment_biased": false,
+  "n_per_condition": 1,
+  "independent_equilibrium_replicates": false
+}

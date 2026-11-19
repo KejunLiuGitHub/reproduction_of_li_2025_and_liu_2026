@@ -1,0 +1,336 @@
+{
+  "schema": "li296_frozen_natural_candidates/v1",
+  "status": "FROZEN_CANDIDATE_SELECTION_NOT_SUBMISSION",
+  "mode": "TWO_UNMATCHED_NATURAL_RETENTION_PILOTS",
+  "reason": "The two distinct histories do not both supply a strictly matched opposite-network pair; no four-case mechanism group.",
+  "cases": [
+    {
+      "name": "natural_original40",
+      "trajectory": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/20261115T100111+0800/li2025_extend_20261113/interface_r1_seg4/interface_r1-pos-1.xyz",
+      "sha256": "8dbeaf04ec31d08f3327e2ec0b1d3ccfd1b49db93ce943bbbbf0700bb2db5616",
+      "frame_step": 40000,
+      "frame_index_0based": 999,
+      "frame_block_sha256": "47fd9c7e032a9e925d45fe2b0ca0a939f9e93cddaa251df9f799f67bd45a06c7",
+      "source_CHECKS": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/20261115T100111+0800/li2025_extend_20261113/interface_r1_seg4/CHECKS.json",
+      "source_CHECKS_sha256": "946a1d2aec84322f893248a13c24aa62328d6a81ddc9fe904ab5cdd76d3e6165",
+      "source_job": "8571154",
+      "seed": 2026111601,
+      "source_prepared_under_bias": true,
+      "source_biased": true,
+      "production_biased": false,
+      "production_steps": 5000,
+      "selection_rule": "Latest frame of this formal complete segment with SC<2 A and no fixed-parent OH warning. No future duration/retention/network favorable outcome is used.",
+      "bias_history": "original interface_r1 ordinary metaD inherited chain",
+      "purpose": "Independent-history natural-configuration unbiased retention pilot; unmatched, not a network causal group or spontaneous formation test.",
+      "descriptor": {
+        "step": 40000,
+        "SC": 1.8523367821029801,
+        "CO": 1.369809669478517,
+        "CO_normal_cos": -0.5120887314710257,
+        "CS_normal_cos": -0.09144085386443654,
+        "gds_C": -2.868447553383273,
+        "gds_Oc": -3.569911649383272,
+        "gds_S": -3.0378268103832724,
+        "OCS_angle": 108.89420200809224,
+        "carbon_pyramidal_height": 0.3081252554548618,
+        "temperature_K": 294.536689322,
+        "hb_Oc": 2,
+        "water_O_3p5_Oc": 3,
+        "hb_Oc_strict": 2,
+        "hb_Oc_loose": 3,
+        "max_parent_water_OH": 1.0836608902689842
+      },
+      "network_descriptor": {
+        "class": "path_le2",
+        "donor_waters_1based": {
+          "Oc": [
+            3,
+            165
+          ],
+          "Os1": [
+            42,
+            129
+          ],
+          "Os2": [
+            33,
+            132
+          ],
+          "Os3": [
+            24,
+            237
+          ]
+        },
+        "first_shell": [
+          3,
+          24,
+          33,
+          42,
+          129,
+          132,
+          165,
+          237
+        ],
+        "second_shell": [
+          30,
+          36,
+          72,
+          102,
+          105,
+          126,
+          177,
+          183,
+          192,
+          195,
+          201,
+          204,
+          207,
+          231,
+          282,
+          285
+        ],
+        "local_water_edges": 23,
+        "min_water_path_undirected": 2,
+        "family_histogram": {
+          "D1A0": 1,
+          "D1A2": 2,
+          "D2A1": 7,
+          "D2A2": 14
+        }
+      },
+      "network_result": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/20261116T064438+0800/network_analysis/original_30_40ps/NETWORK.json.gz",
+      "human_review": "PENDING",
+      "structural_verdict": null
+    },
+    {
+      "name": "natural_r19830",
+      "trajectory": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/20261115T100111+0800/li2025_r_extend_20261113/r_eq_metad_seg2/r_eq_metad-pos-1.xyz",
+      "sha256": "b5e7ea6b430c47dbd39e072cc0a56c00e47ffcc8ebacd2ac367858e667494c2e",
+      "frame_step": 19830,
+      "frame_index_0based": 982,
+      "frame_block_sha256": "162f2ba4243e334d708571bb0f75d10d353e5c0d515096a64485ab11d68b152f",
+      "source_CHECKS": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/20261115T100111+0800/li2025_r_extend_20261113/r_eq_metad_seg2/CHECKS.json",
+      "source_CHECKS_sha256": "755ad89ecc0847bc3c1eaccacddb05e87c471b0dac4728c7f15af23b8ea8abae",
+      "source_job": "8571156",
+      "seed": 2026111602,
+      "source_prepared_under_bias": true,
+      "source_biased": true,
+      "production_biased": false,
+      "production_steps": 5000,
+      "selection_rule": "Latest frame of this formal complete segment with SC<2 A and no fixed-parent OH warning. No future duration/retention/network favorable outcome is used.",
+      "bias_history": "independent r_eq_metad ordinary metaD after R5ps unbiased preparation",
+      "purpose": "Independent-history natural-configuration unbiased retention pilot; unmatched, not a network causal group or spontaneous formation test.",
+      "descriptor": {
+        "step": 19830,
+        "SC": 1.9682615779819541,
+        "CO": 1.3499907937728681,
+        "CO_normal_cos": -0.16308925810129843,
+        "CS_normal_cos": -0.06590157596481308,
+        "gds_C": -4.5776225678188425,
+        "gds_Oc": -4.797791564818844,
+        "gds_S": -4.707334107718843,
+        "OCS_angle": 110.17545839862152,
+        "carbon_pyramidal_height": 0.3185998335411162,
+        "temperature_K": 289.874436941,
+        "hb_Oc": 3,
+        "water_O_3p5_Oc": 4,
+        "hb_Oc_strict": 3,
+        "hb_Oc_loose": 4,
+        "max_parent_water_OH": 1.073814330072667
+      },
+      "network_descriptor": {
+        "class": "path_le2",
+        "donor_waters_1based": {
+          "Oc": [
+            3,
+            102,
+            273
+          ],
+          "Os1": [
+            33,
+            129,
+            246
+          ],
+          "Os2": [
+            54,
+            132
+          ],
+          "Os3": [
+            237
+          ]
+        },
+        "first_shell": [
+          3,
+          33,
+          54,
+          102,
+          129,
+          132,
+          237,
+          246,
+          273
+        ],
+        "second_shell": [
+          21,
+          30,
+          36,
+          42,
+          114,
+          126,
+          147,
+          150,
+          165,
+          171,
+          177,
+          183,
+          195,
+          201,
+          204,
+          216,
+          234,
+          258
+        ],
+        "local_water_edges": 24,
+        "min_water_path_undirected": 1,
+        "family_histogram": {
+          "D1A1": 2,
+          "D1A2": 5,
+          "D1A3": 1,
+          "D2A1": 6,
+          "D2A2": 13
+        }
+      },
+      "network_result": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/20261116T064438+0800/network_analysis/r_10_20ps/NETWORK.json.gz",
+      "human_review": "PENDING",
+      "structural_verdict": null
+    }
+  ],
+  "strict_group_available_before_independence_check": false,
+  "matching": {
+    "original_30_40ps": {
+      "eligible_onsets": 11,
+      "class_counts": {
+        "path_gt2_or_absent": 1,
+        "path_le2": 10
+      },
+      "tested_opposite_class_pairs_separated_ge1ps": 9,
+      "failed_field_counts_nonexclusive": {
+        "CO_normal_cos": 8,
+        "CS_normal_cos": 8,
+        "gds_C": 5,
+        "gds_Oc": 6,
+        "OCS_angle": 2,
+        "carbon_pyramidal_height": 4,
+        "CO": 4,
+        "water_O_3p5_Oc": 7,
+        "temperature_K": 7,
+        "hb_Oc": 1
+      },
+      "strict_matches": [],
+      "independence": "1 ps separation only rejects adjacent samples; it does not establish independence."
+    },
+    "r_10_20ps": {
+      "eligible_onsets": 42,
+      "class_counts": {
+        "path_gt2_or_absent": 13,
+        "path_le2": 29
+      },
+      "tested_opposite_class_pairs_separated_ge1ps": 307,
+      "failed_field_counts_nonexclusive": {
+        "CO": 163,
+        "CS_normal_cos": 171,
+        "gds_C": 146,
+        "gds_Oc": 186,
+        "carbon_pyramidal_height": 173,
+        "temperature_K": 164,
+        "hb_Oc": 191,
+        "water_O_3p5_Oc": 190,
+        "CO_normal_cos": 148,
+        "gds_S": 37,
+        "OCS_angle": 95,
+        "SC": 30
+      },
+      "strict_matches": [],
+      "independence": "1 ps separation only rejects adjacent samples; it does not establish independence."
+    }
+  },
+  "calipers": {
+    "SC": 0.05,
+    "CO": 0.03,
+    "CO_normal_cos": 0.1,
+    "CS_normal_cos": 0.1,
+    "gds_C": 0.3,
+    "gds_Oc": 0.3,
+    "gds_S": 0.5,
+    "OCS_angle": 5.0,
+    "carbon_pyramidal_height": 0.03,
+    "temperature_K": 10.0
+  },
+  "exact_matching_fields": [
+    "hb_Oc",
+    "water_O_3p5_Oc"
+  ],
+  "pilot_pair_matching": {
+    "differences": {
+      "SC": 0.11592479587897397,
+      "CO": 0.019818875705648775,
+      "CO_normal_cos": 0.3489994733697273,
+      "CS_normal_cos": 0.025539277899623458,
+      "gds_C": 1.7091750144355693,
+      "gds_Oc": 1.2278799154355724,
+      "gds_S": 1.6695072973355707,
+      "OCS_angle": 1.281256390529279,
+      "carbon_pyramidal_height": 0.010474578086254405,
+      "temperature_K": 4.662252380999973
+    },
+    "exact_pairs": {
+      "hb_Oc": [
+        2,
+        3
+      ],
+      "water_O_3p5_Oc": [
+        3,
+        4
+      ]
+    },
+    "failed_fields": [
+      "SC",
+      "CO_normal_cos",
+      "gds_C",
+      "gds_Oc",
+      "gds_S",
+      "hb_Oc",
+      "water_O_3p5_Oc"
+    ],
+    "pass": false
+  },
+  "independence": "Two distinct prepared histories, one configuration per pilot; neither n=2 per condition nor proof of equilibrium independence. Same-coordinate velocity replicas are not new ICs.",
+  "limitations": [
+    "No network causal comparison from these unmatched pilots.",
+    "Ordinary metaD preparation retained; production>=5ps unbiased tests retention only.",
+    "Negative GDS or zero vapour is not interface failure.",
+    "Original chain stops at50ps for review; no automatic further extension."
+  ],
+  "source_sha256": {
+    "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/20261116T064438+0800/network_analysis/original_30_40ps/NETWORK.json.gz": "1f494a735562c15194ba04b7503f233d513a80804642bf11676b95e95637b2e6",
+    "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/20261115T100111+0800/li2025_extend_20261113/interface_r1_seg4/interface_r1-pos-1.xyz": "8dbeaf04ec31d08f3327e2ec0b1d3ccfd1b49db93ce943bbbbf0700bb2db5616",
+    "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/20261115T100111+0800/li2025_extend_20261113/interface_r1_seg4/CHECKS.json": "946a1d2aec84322f893248a13c24aa62328d6a81ddc9fe904ab5cdd76d3e6165",
+    "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/20261115T100111+0800/li2025_extend_20261113/interface_r1_seg4/interface_r1-1.ener": "8afa9912f5e0b79083211783be285103db1a96547ca7f96a3b8697f78b719078",
+    "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/20261116T064438+0800/network_analysis/r_10_20ps/NETWORK.json.gz": "0fe3007b9c142331562df00a615bd15ac5efc343bc4bc6e67e21a59ccc8c5ac2",
+    "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/20261115T100111+0800/li2025_r_extend_20261113/r_eq_metad_seg2/r_eq_metad-pos-1.xyz": "b5e7ea6b430c47dbd39e072cc0a56c00e47ffcc8ebacd2ac367858e667494c2e",
+    "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/20261115T100111+0800/li2025_r_extend_20261113/r_eq_metad_seg2/CHECKS.json": "755ad89ecc0847bc3c1eaccacddb05e87c471b0dac4728c7f15af23b8ea8abae",
+    "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/20261115T100111+0800/li2025_r_extend_20261113/r_eq_metad_seg2/r_eq_metad-1.ener": "0529a1970fb0d1ff7e65f42f05040a5f91a50565577f7003534262b7e1ebfa2f",
+    "/Users/kejunliu/projects/sulfoacetic-vib/campaign/li2025_hbnetwork_20261116/select_candidates.py": "8094d32abdce84fdd1c1d4ca92096340c536476fe5c0633d17d7ef75c632d7de",
+    "/Users/kejunliu/projects/sulfoacetic-vib/campaign/li2025_hbnetwork_20261116/NETWORK_DESIGN.md": "845de4dde86c4039d7199f6551362a5573f56e1c0ec8f7bf78034fe60c5093e5",
+    "/Users/kejunliu/projects/sulfoacetic-vib/campaign/li2025_hbnetwork_20261116/analyze_network.py": "8d4834217507c05bf1f94df79152675bc09029f1ac1e26c3700eda8fd84f0a27"
+  },
+  "replay_argv": [
+    "/opt/homebrew/opt/python@3.12/bin/python3.12",
+    "-B",
+    "/Users/kejunliu/projects/sulfoacetic-vib/campaign/li2025_hbnetwork_20261116/select_candidates.py",
+    "--results",
+    "results/li2025_autofollow/20261116T064438+0800/network_analysis"
+  ],
+  "human_review": "PENDING",
+  "structural_verdict": null,
+  "FES_verdict": null
+}

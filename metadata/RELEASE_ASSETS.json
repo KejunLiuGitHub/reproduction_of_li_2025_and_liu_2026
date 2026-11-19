@@ -1,0 +1,13 @@
+{
+  "tag": "v2026.11.19",
+  "assets": [
+    {
+      "filename": "li2025-selected-data-2026-11-19.tar.gz",
+      "bytes": 122454360,
+      "sha256": "b61c8de50bee75d096e20dbeef4b1b155dc3e4497016a62f900aaa2691f5038d",
+      "url": "https://github.com/KejunLiuGitHub/li2025-interface-cs-reproduction/releases/download/v2026.11.19/li2025-selected-data-2026-11-19.tar.gz",
+      "uncompressed_files": 657,
+      "uncompressed_bytes": 390058457
+    }
+  ]
+}
