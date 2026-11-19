@@ -1,6 +1,6 @@
 {
   "source_commit": "c3693948a16bb02a85b48b6bfc8b3b0ad228896b",
-  "scope": "Tracked scientific code, inputs and machine-readable method metadata; local uncommitted files, internal session reports and remote-operation instructions excluded.",
+  "scope": "Scientific source code and inputs retain their original bytes. The network method note is translated into English with both source and exported hashes recorded.",
   "files": [
     {
       "path": "campaign/li2025_branches_20261112/frozen_analyze_event_unbiased.py",
@@ -1372,9 +1372,12 @@
     },
     {
       "path": "campaign/li2025_hbnetwork_20261116/NETWORK_DESIGN.md",
-      "sha256": "845de4dde86c4039d7199f6551362a5573f56e1c0ec8f7bf78034fe60c5093e5",
-      "bytes": 3726,
-      "origin": "git HEAD; required protocol dependency of registered network analysis"
+      "sha256": "70a89b0054a0d1b4d3efb4b3b158c2e629d14075d238f947273a2daee9bf0af5",
+      "bytes": 5835,
+      "origin": "English translation of the method note at the recorded source commit",
+      "source_sha256": "845de4dde86c4039d7199f6551362a5573f56e1c0ec8f7bf78034fe60c5093e5",
+      "source_bytes": 3726,
+      "transformation": "Explanatory prose translated; scientific definitions retained."
     }
   ]
 }

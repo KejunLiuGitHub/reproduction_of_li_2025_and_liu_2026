@@ -1,4 +1,4 @@
-# Model and provenance
+# Li 2025 model and provenance
 
 The calculations follow the SO₃²⁻ + HCHO pathway of [Li et al. (2025)](https://doi.org/10.1038/s41467-025-59712-3). Coordinates originate from the authors' Figure 6b source workbook, available at [Zenodo, DOI 10.5281/zenodo.15253851](https://zenodo.org/records/15253851).
 
@@ -30,4 +30,4 @@ The original controls use the actual 1150 and 2200 fs frames of the 5 ps R pre-e
 
 Download `source-data.xlsx` from the Zenodo record if you need to repeat coordinate extraction. Its recorded size is 53,375,254 bytes, MD5 is `53a0f1915b8f15fe1cd5d56742d16820`, and SHA-256 is `f4e2bedc004f0abaf180f55e95bd2aa9f7ddc2aa86ef09a683fd2d5afe0a9992`. The author requests citation of the paper and relevant literature when using the reference geometries. The workbook and article PDFs are not part of this release.
 
-The source code snapshot is commit `c3693948a16bb02a85b48b6bfc8b3b0ad228896b` of the working project. `metadata/SOURCE_FILES.json` identifies the exported files byte for byte. New portable inputs have separate hashes and a recorded path-only diff.
+The source code snapshot is commit `c3693948a16bb02a85b48b6bfc8b3b0ad228896b` of the working project. `metadata/SOURCE_FILES.json` records source and exported file hashes; the network method note has an English translation, while scientific code and inputs retain their original bytes. New portable inputs have separate hashes and a recorded path-only diff.

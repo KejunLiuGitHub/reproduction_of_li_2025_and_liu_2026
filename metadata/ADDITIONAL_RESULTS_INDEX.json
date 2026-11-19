@@ -1,0 +1,109 @@
+{
+  "Li_observed_at": "2026-11-19T21:52:08+08:00",
+  "Li_unpublished_collections": [
+    {
+      "id": "LI-01",
+      "collection": "li2025_branches_20261112",
+      "unpublished_files": 102,
+      "unpublished_bytes": 1234485855
+    },
+    {
+      "id": "LI-02",
+      "collection": "li2025_branches_20261112_dryrun",
+      "unpublished_files": 14,
+      "unpublished_bytes": 115095
+    },
+    {
+      "id": "LI-03",
+      "collection": "li2025_direct",
+      "unpublished_files": 271,
+      "unpublished_bytes": 3371894825
+    },
+    {
+      "id": "LI-04",
+      "collection": "li2025_extend_20261111",
+      "unpublished_files": 35,
+      "unpublished_bytes": 555779719
+    },
+    {
+      "id": "LI-05",
+      "collection": "li2025_extend_20261113",
+      "unpublished_files": 34,
+      "unpublished_bytes": 555868187
+    },
+    {
+      "id": "LI-06",
+      "collection": "li2025_extend_20261113_dryrun",
+      "unpublished_files": 7,
+      "unpublished_bytes": 286911
+    },
+    {
+      "id": "LI-07",
+      "collection": "li2025_extend_20261115",
+      "unpublished_files": 34,
+      "unpublished_bytes": 555872199
+    },
+    {
+      "id": "LI-08",
+      "collection": "li2025_extend_20261115_dryrun",
+      "unpublished_files": 7,
+      "unpublished_bytes": 357669
+    },
+    {
+      "id": "LI-09",
+      "collection": "li2025_hbcontrol_20261118",
+      "unpublished_files": 54,
+      "unpublished_bytes": 434447868
+    },
+    {
+      "id": "LI-10",
+      "collection": "li2025_hbintervention_20261116",
+      "unpublished_files": 127,
+      "unpublished_bytes": 1295635934
+    },
+    {
+      "id": "LI-11",
+      "collection": "li2025_hbnetwork_20261116",
+      "unpublished_files": 66,
+      "unpublished_bytes": 647756258
+    },
+    {
+      "id": "LI-12",
+      "collection": "li2025_r_extend_20261113",
+      "unpublished_files": 35,
+      "unpublished_bytes": 555818094
+    },
+    {
+      "id": "LI-13",
+      "collection": "li2025_r_extend_20261113_dryrun",
+      "unpublished_files": 7,
+      "unpublished_bytes": 149664
+    },
+    {
+      "id": "LI-14",
+      "collection": "li2025_recovery_20261111",
+      "unpublished_files": 87,
+      "unpublished_bytes": 761200086
+    },
+    {
+      "id": "LI-15",
+      "collection": "li2025_solvation_20261111",
+      "unpublished_files": 56,
+      "unpublished_bytes": 490076441
+    },
+    {
+      "id": "LI-16",
+      "collection": "li2025_static",
+      "unpublished_files": 583,
+      "unpublished_bytes": 1851512756
+    }
+  ],
+  "Liu_observed_at": "2026-11-19T22:43:49+08:00",
+  "Liu_file_level_inventory_files": 5210,
+  "Liu_file_level_inventory_bytes": 24984938167,
+  "Liu_W10_top_level_bytes": 31461567471,
+  "Liu_W10_file_level_inventory": null,
+  "Liu_MLP_inventory": null,
+  "catalogue": "docs/ADDITIONAL_RESULTS.md",
+  "request_url": "https://github.com/KejunLiuGitHub/li2025-interface-cs-reproduction/issues/new"
+}

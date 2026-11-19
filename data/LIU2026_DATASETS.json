@@ -1,0 +1,783 @@
+{
+  "schema": "liu2026_selected_data/v1",
+  "snapshot_date": "2026-11-19",
+  "experiment_count": 15,
+  "coordinate_case_views": 16,
+  "overlap_policy": "Four full A+B files also contain the phase-B-only views. They are not additional independent trajectories.",
+  "cases": {
+    "proton_r1": {
+      "id": "proton_r1",
+      "label": "proton_r1",
+      "job_ids": [
+        "8555023"
+      ],
+      "trajectory": "data/liu2026/results/repl_liu2026/d15_proton_ab/proton_r1/stageB_merged-pos-1.xyz",
+      "energy": "data/liu2026/results/repl_liu2026/d15_proton_ab/proton_r1/stageB_merged-1.ener",
+      "input": "data/liu2026/results/repl_liu2026/d15_proton_ab/proton_r1/stageB1/proton_r1_stageB.inp",
+      "coordinates": "data/liu2026/results/repl_liu2026/d15_proton_ab/proton_r1/proton_r1_start.xyz",
+      "atom_count": 394,
+      "box_angstrom": [
+        17,
+        17,
+        47
+      ],
+      "biased": false,
+      "history": "Controlled initial proton location followed by a 1 ps S-C-restrained preparation and a 5 ps unbiased phase B. The saved phase-B file begins at step 1010 and spans 4.99 ps.",
+      "status": "ARCHIVED_COMPLETE_SEGMENT",
+      "prepared_under_bias": true,
+      "controlled_initial_conditions": true,
+      "coverage": {
+        "frames": 500,
+        "first_step": 1010,
+        "last_step": 6000,
+        "first_time_fs": 1010.0,
+        "last_time_fs": 6000.0,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "d62740bd9cb50412816886d28293e27c5b9290c2956fcd12d0b165a1f56e423b",
+        "energy": "5187da6e98b5827a16ea746d6cab1f24c7868dd090183343752585e44c608ff1",
+        "input": "f34927af74dfec285d3655c70c70b9425c4028258a61b35f77f1b22941ceb187",
+        "coordinates": "396e62289392a36dee35a617cfc6303cf4d5068c1729d7edf2381064968ebe90"
+      },
+      "planned_integrated_duration_fs": 5000
+    },
+    "proton_r1_full_ab": {
+      "id": "proton_r1_full_ab",
+      "label": "proton_r1_full_ab",
+      "job_ids": [
+        "8555023"
+      ],
+      "trajectory": "data/liu2026/results/repl_liu2026/d15_proton_ab/proton_r1/iface_orientation_weighted_merged-pos-1.xyz",
+      "energy": "data/liu2026/results/repl_liu2026/d15_proton_ab/proton_r1/iface_orientation_weighted_merged-1.ener",
+      "input": "data/liu2026/results/repl_liu2026/d15_proton_ab/proton_r1/stageA/proton_r1_stageA.inp",
+      "coordinates": "data/liu2026/results/repl_liu2026/d15_proton_ab/proton_r1/proton_r1_start.xyz",
+      "atom_count": 394,
+      "box_angstrom": [
+        17,
+        17,
+        47
+      ],
+      "biased": "mixed",
+      "history": "Full controlled A+B protocol. Stage A is biased; stage B is unbiased. Its phase-B frames duplicate the corresponding stage-B-only case.",
+      "status": "ARCHIVED_COMPLETE_SEGMENT",
+      "prepared_under_bias": true,
+      "controlled_initial_conditions": true,
+      "coverage": {
+        "frames": 601,
+        "first_step": 0,
+        "last_step": 6000,
+        "first_time_fs": 0.0,
+        "last_time_fs": 6000.0,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "745d9e5bf437cd8bb792f279863c80f75d846f165a633f53246e89466197d748",
+        "energy": "8fc33af2caff4595b083f6f37835834615351c7e2351fddd163e2a7a76de8934",
+        "input": "890537910e56927d672ba09a67d07ec79ed0b277ceed95592f8ec46cf99e4ea8",
+        "coordinates": "396e62289392a36dee35a617cfc6303cf4d5068c1729d7edf2381064968ebe90"
+      },
+      "stages": [
+        {
+          "name": "A",
+          "first_step": 0,
+          "last_step": 1000,
+          "biased": true,
+          "role": "S-C restrained preparation"
+        },
+        {
+          "name": "B",
+          "first_step": 1001,
+          "last_step": 6000,
+          "biased": false,
+          "role": "unbiased observation"
+        }
+      ],
+      "overlaps_case": "proton_r1"
+    },
+    "proton_r2": {
+      "id": "proton_r2",
+      "label": "proton_r2",
+      "job_ids": [
+        "8555025"
+      ],
+      "trajectory": "data/liu2026/results/repl_liu2026/d15_proton_ab/proton_r2/stageB_merged-pos-1.xyz",
+      "energy": "data/liu2026/results/repl_liu2026/d15_proton_ab/proton_r2/stageB_merged-1.ener",
+      "input": "data/liu2026/results/repl_liu2026/d15_proton_ab/proton_r2/stageB1/proton_r2_stageB.inp",
+      "coordinates": "data/liu2026/results/repl_liu2026/d15_proton_ab/proton_r2/proton_r2_start.xyz",
+      "atom_count": 394,
+      "box_angstrom": [
+        17,
+        17,
+        47
+      ],
+      "biased": false,
+      "history": "Controlled initial proton location followed by a 1 ps S-C-restrained preparation and a 5 ps unbiased phase B. The saved phase-B file begins at step 1010 and spans 4.99 ps.",
+      "status": "ARCHIVED_COMPLETE_SEGMENT",
+      "prepared_under_bias": true,
+      "controlled_initial_conditions": true,
+      "coverage": {
+        "frames": 500,
+        "first_step": 1010,
+        "last_step": 6000,
+        "first_time_fs": 1010.0,
+        "last_time_fs": 6000.0,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "9efafeb4cf72a056023e642ca86a1289bdd67eead06293b889be63675a262dbb",
+        "energy": "03f87f711449f4a0b6cb5cb5f3aee080708e46a4d95c9cb42d8599303b807d28",
+        "input": "5af36cdd9316792c93d085b8966c744bcb5ae83e0968a2905a7d4aa9b34b43e8",
+        "coordinates": "41712042bc99166fa2fe6a3d12751ed81c7243e3da7bdc276f7fbf4645f6fe20"
+      },
+      "planned_integrated_duration_fs": 5000
+    },
+    "proton_r2_full_ab": {
+      "id": "proton_r2_full_ab",
+      "label": "proton_r2_full_ab",
+      "job_ids": [
+        "8555025"
+      ],
+      "trajectory": "data/liu2026/results/repl_liu2026/d15_proton_ab/proton_r2/iface_orientation_weighted_merged-pos-1.xyz",
+      "energy": "data/liu2026/results/repl_liu2026/d15_proton_ab/proton_r2/iface_orientation_weighted_merged-1.ener",
+      "input": "data/liu2026/results/repl_liu2026/d15_proton_ab/proton_r2/stageA/proton_r2_stageA.inp",
+      "coordinates": "data/liu2026/results/repl_liu2026/d15_proton_ab/proton_r2/proton_r2_start.xyz",
+      "atom_count": 394,
+      "box_angstrom": [
+        17,
+        17,
+        47
+      ],
+      "biased": "mixed",
+      "history": "Full controlled A+B protocol. Stage A is biased; stage B is unbiased. Its phase-B frames duplicate the corresponding stage-B-only case.",
+      "status": "ARCHIVED_COMPLETE_SEGMENT",
+      "prepared_under_bias": true,
+      "controlled_initial_conditions": true,
+      "coverage": {
+        "frames": 601,
+        "first_step": 0,
+        "last_step": 6000,
+        "first_time_fs": 0.0,
+        "last_time_fs": 6000.0,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "98e0e60c319b758795b7aa0bcd2674913c84ea579e7b465477486b3a4227e407",
+        "energy": "0ec3a6fc7bc1fbeac8e69bd3c130797c2a96d9a05371551fa30e3c6f5d8685f4",
+        "input": "9a9d676c464da7389a724683fe73a6efbb6e2ee11bd9155e81754b1b068f0950",
+        "coordinates": "41712042bc99166fa2fe6a3d12751ed81c7243e3da7bdc276f7fbf4645f6fe20"
+      },
+      "stages": [
+        {
+          "name": "A",
+          "first_step": 0,
+          "last_step": 1000,
+          "biased": true,
+          "role": "S-C restrained preparation"
+        },
+        {
+          "name": "B",
+          "first_step": 1001,
+          "last_step": 6000,
+          "biased": false,
+          "role": "unbiased observation"
+        }
+      ],
+      "overlaps_case": "proton_r2"
+    },
+    "control_r1": {
+      "id": "control_r1",
+      "label": "control_r1",
+      "job_ids": [
+        "8555022"
+      ],
+      "trajectory": "data/liu2026/results/repl_liu2026/d15_proton_ab/control_r1/stageB_merged-pos-1.xyz",
+      "energy": "data/liu2026/results/repl_liu2026/d15_proton_ab/control_r1/stageB_merged-1.ener",
+      "input": "data/liu2026/results/repl_liu2026/d15_proton_ab/control_r1/stageB1/control_r1_stageB.inp",
+      "coordinates": "data/liu2026/results/repl_liu2026/d15_proton_ab/control_r1/control_r1_start.xyz",
+      "atom_count": 394,
+      "box_angstrom": [
+        17,
+        17,
+        47
+      ],
+      "biased": false,
+      "history": "Controlled initial proton location followed by a 1 ps S-C-restrained preparation and a 5 ps unbiased phase B. The saved phase-B file begins at step 1010 and spans 4.99 ps.",
+      "status": "ARCHIVED_COMPLETE_SEGMENT",
+      "prepared_under_bias": true,
+      "controlled_initial_conditions": true,
+      "coverage": {
+        "frames": 500,
+        "first_step": 1010,
+        "last_step": 6000,
+        "first_time_fs": 1010.0,
+        "last_time_fs": 6000.0,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "dfa7dfc62e4eef943773d983a3fbb83fcd37426573d31cfa69ee66a0896eca67",
+        "energy": "35371078e471df5267513eb1656b8b4b478673330a88a0d9ba8e79b732621eeb",
+        "input": "998b1f7c3ce94f52a581dae8f40113230e432b5d59ce20464ec9e2eae98ae8e8",
+        "coordinates": "dd3e28c01733e3035eadebcc98cc1a06441ee133a416e3fa6d4bbb03974fec68"
+      },
+      "planned_integrated_duration_fs": 5000
+    },
+    "control_r1_full_ab": {
+      "id": "control_r1_full_ab",
+      "label": "control_r1_full_ab",
+      "job_ids": [
+        "8555022"
+      ],
+      "trajectory": "data/liu2026/results/repl_liu2026/d15_proton_ab/control_r1/iface_orientation_weighted_merged-pos-1.xyz",
+      "energy": "data/liu2026/results/repl_liu2026/d15_proton_ab/control_r1/iface_orientation_weighted_merged-1.ener",
+      "input": "data/liu2026/results/repl_liu2026/d15_proton_ab/control_r1/stageA/control_r1_stageA.inp",
+      "coordinates": "data/liu2026/results/repl_liu2026/d15_proton_ab/control_r1/control_r1_start.xyz",
+      "atom_count": 394,
+      "box_angstrom": [
+        17,
+        17,
+        47
+      ],
+      "biased": "mixed",
+      "history": "Full controlled A+B protocol. Stage A is biased; stage B is unbiased. Its phase-B frames duplicate the corresponding stage-B-only case.",
+      "status": "ARCHIVED_COMPLETE_SEGMENT",
+      "prepared_under_bias": true,
+      "controlled_initial_conditions": true,
+      "coverage": {
+        "frames": 601,
+        "first_step": 0,
+        "last_step": 6000,
+        "first_time_fs": 0.0,
+        "last_time_fs": 6000.0,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "30b3e7e14c362dc7579473ef94dce3c06192a0901932983f66e3b3fc241700e6",
+        "energy": "6dfeb7d8cb6034dba42513962d58a2efe5546ebbdb01ed5429c6d07626eb2873",
+        "input": "d77c84df57a8b66ac2329a86df293e376d9c3c4fdab4066e5985c63aa2c944ee",
+        "coordinates": "dd3e28c01733e3035eadebcc98cc1a06441ee133a416e3fa6d4bbb03974fec68"
+      },
+      "stages": [
+        {
+          "name": "A",
+          "first_step": 0,
+          "last_step": 1000,
+          "biased": true,
+          "role": "S-C restrained preparation"
+        },
+        {
+          "name": "B",
+          "first_step": 1001,
+          "last_step": 6000,
+          "biased": false,
+          "role": "unbiased observation"
+        }
+      ],
+      "overlaps_case": "control_r1"
+    },
+    "control_r2": {
+      "id": "control_r2",
+      "label": "control_r2",
+      "job_ids": [
+        "8555024"
+      ],
+      "trajectory": "data/liu2026/results/repl_liu2026/d15_proton_ab/control_r2/stageB_merged-pos-1.xyz",
+      "energy": "data/liu2026/results/repl_liu2026/d15_proton_ab/control_r2/stageB_merged-1.ener",
+      "input": "data/liu2026/results/repl_liu2026/d15_proton_ab/control_r2/stageB1/control_r2_stageB.inp",
+      "coordinates": "data/liu2026/results/repl_liu2026/d15_proton_ab/control_r2/control_r2_start.xyz",
+      "atom_count": 394,
+      "box_angstrom": [
+        17,
+        17,
+        47
+      ],
+      "biased": false,
+      "history": "Controlled initial proton location followed by a 1 ps S-C-restrained preparation and a 5 ps unbiased phase B. The saved phase-B file begins at step 1010 and spans 4.99 ps.",
+      "status": "ARCHIVED_COMPLETE_SEGMENT",
+      "prepared_under_bias": true,
+      "controlled_initial_conditions": true,
+      "coverage": {
+        "frames": 500,
+        "first_step": 1010,
+        "last_step": 6000,
+        "first_time_fs": 1010.0,
+        "last_time_fs": 6000.0,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "30450dda204b5e57b2bc892cc94f7afd8b7a2404d6366ac2ea90e70e6bab8975",
+        "energy": "3a68d534e8e64cf2431811db11d42dd593312a108bf0575ba86d2cec5182bb02",
+        "input": "a91549b0f404a22646a5564e1e2bdc78b0deccb046b59387d8abf87079a6e797",
+        "coordinates": "221cae3eec821c8d4548a9d8824bcdcea0fdace3cd88aac6a78666516a1d4ff4"
+      },
+      "planned_integrated_duration_fs": 5000
+    },
+    "control_r2_full_ab": {
+      "id": "control_r2_full_ab",
+      "label": "control_r2_full_ab",
+      "job_ids": [
+        "8555024"
+      ],
+      "trajectory": "data/liu2026/results/repl_liu2026/d15_proton_ab/control_r2/iface_orientation_weighted_merged-pos-1.xyz",
+      "energy": "data/liu2026/results/repl_liu2026/d15_proton_ab/control_r2/iface_orientation_weighted_merged-1.ener",
+      "input": "data/liu2026/results/repl_liu2026/d15_proton_ab/control_r2/stageA/control_r2_stageA.inp",
+      "coordinates": "data/liu2026/results/repl_liu2026/d15_proton_ab/control_r2/control_r2_start.xyz",
+      "atom_count": 394,
+      "box_angstrom": [
+        17,
+        17,
+        47
+      ],
+      "biased": "mixed",
+      "history": "Full controlled A+B protocol. Stage A is biased; stage B is unbiased. Its phase-B frames duplicate the corresponding stage-B-only case.",
+      "status": "ARCHIVED_COMPLETE_SEGMENT",
+      "prepared_under_bias": true,
+      "controlled_initial_conditions": true,
+      "coverage": {
+        "frames": 601,
+        "first_step": 0,
+        "last_step": 6000,
+        "first_time_fs": 0.0,
+        "last_time_fs": 6000.0,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "0941df013d67bbbfaa0a74530ef5b64dcad40611e149bd2fa4b82ae71296d8c3",
+        "energy": "bf3fc8d1f7fe712a9bfd86245743d2e2cffd4246430efd234bdba48548a0ba8d",
+        "input": "dfb72afb2fca256db9a0451a9a617956bcbb01aef2f816cb9eb5e03ef66f37f7",
+        "coordinates": "221cae3eec821c8d4548a9d8824bcdcea0fdace3cd88aac6a78666516a1d4ff4"
+      },
+      "stages": [
+        {
+          "name": "A",
+          "first_step": 0,
+          "last_step": 1000,
+          "biased": true,
+          "role": "S-C restrained preparation"
+        },
+        {
+          "name": "B",
+          "first_step": 1001,
+          "last_step": 6000,
+          "biased": false,
+          "role": "unbiased observation"
+        }
+      ],
+      "overlaps_case": "control_r2"
+    },
+    "frame_ic_1": {
+      "id": "frame_ic_1",
+      "label": "frame_ic_1",
+      "job_ids": [
+        "8554943"
+      ],
+      "trajectory": "data/liu2026/results/repl_liu2026/frame_ic_recovery/ic1/iface_ic_b1-pos-1.xyz",
+      "energy": "data/liu2026/results/repl_liu2026/frame_ic_recovery/ic1/iface_ic_b1-1.ener",
+      "input": "data/liu2026/results/repl_liu2026/frame_ic_recovery/ic1/base.inp",
+      "coordinates": "data/liu2026/results/repl_liu2026/frame_ic_recovery/ic1/iface_rc_seed.xyz",
+      "atom_count": 394,
+      "box_angstrom": [
+        17,
+        17,
+        47
+      ],
+      "biased": false,
+      "history": "Different 1\u20135 ps frames from the same orientation/preparation trajectory; historical source constraints retained. Distinct times do not demonstrate independent equilibrium samples.",
+      "status": "B1_3PS_COMPLETE_5PS_PROGRAM_INCOMPLETE",
+      "prepared_under_bias": null,
+      "controlled_initial_conditions": null,
+      "coverage": {
+        "frames": 301,
+        "first_step": 0,
+        "last_step": 3000,
+        "first_time_fs": 0.0,
+        "last_time_fs": 3000.0,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "8d67ea4d69b4415c11205a0fc0f9543168c203dc531c79d3edd2717e196002f0",
+        "energy": "2bfcc13fc45a8a6fc41843ea63ef03eb5778c13abe92b196740a914756f63a96",
+        "input": "38d20ab9a11317dc7da6d90fbe2c3abbd6eb4364eb2cdd331c9f526e3b541b05",
+        "coordinates": "258fd30c97d8bc0e3bd60fe30c2d0b81b79b2574153f366f8c9d65eb536d62e6"
+      },
+      "source_frame": {
+        "time_fs": 1000,
+        "step": 1000,
+        "source_trajectory_sha256": "b4c40b95f6e3a86e06450dc2231e00a302d82491ff8925f9ce536c3c6bb7ae1e",
+        "selected_start_sha256": "258fd30c97d8bc0e3bd60fe30c2d0b81b79b2574153f366f8c9d65eb536d62e6"
+      }
+    },
+    "frame_ic_2": {
+      "id": "frame_ic_2",
+      "label": "frame_ic_2",
+      "job_ids": [
+        "8554944"
+      ],
+      "trajectory": "data/liu2026/results/repl_liu2026/frame_ic_recovery/ic2/iface_ic_b1-pos-1.xyz",
+      "energy": "data/liu2026/results/repl_liu2026/frame_ic_recovery/ic2/iface_ic_b1-1.ener",
+      "input": "data/liu2026/results/repl_liu2026/frame_ic_recovery/ic2/base.inp",
+      "coordinates": "data/liu2026/results/repl_liu2026/frame_ic_recovery/ic2/iface_rc_seed.xyz",
+      "atom_count": 394,
+      "box_angstrom": [
+        17,
+        17,
+        47
+      ],
+      "biased": false,
+      "history": "Different 1\u20135 ps frames from the same orientation/preparation trajectory; historical source constraints retained. Distinct times do not demonstrate independent equilibrium samples.",
+      "status": "B1_3PS_COMPLETE_5PS_PROGRAM_INCOMPLETE",
+      "prepared_under_bias": null,
+      "controlled_initial_conditions": null,
+      "coverage": {
+        "frames": 301,
+        "first_step": 0,
+        "last_step": 3000,
+        "first_time_fs": 0.0,
+        "last_time_fs": 3000.0,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "0a774546b322765501f10e53a19cf2e00fae9a03de12076c518e9e8e0ba6f1d4",
+        "energy": "2a174c9de07cb6895bc476cd8e01f86f4a98e07cbe30b5396c73e7be4fcf5586",
+        "input": "38d20ab9a11317dc7da6d90fbe2c3abbd6eb4364eb2cdd331c9f526e3b541b05",
+        "coordinates": "d0523fd0a7d3de6ae1e6093fa7fa1014ba50d21a28df7c780518b5c9da667a0d"
+      },
+      "source_frame": {
+        "time_fs": 2000,
+        "step": 2000,
+        "source_trajectory_sha256": "b4c40b95f6e3a86e06450dc2231e00a302d82491ff8925f9ce536c3c6bb7ae1e",
+        "selected_start_sha256": "d0523fd0a7d3de6ae1e6093fa7fa1014ba50d21a28df7c780518b5c9da667a0d"
+      }
+    },
+    "frame_ic_3": {
+      "id": "frame_ic_3",
+      "label": "frame_ic_3",
+      "job_ids": [
+        "8554945"
+      ],
+      "trajectory": "data/liu2026/results/repl_liu2026/frame_ic_recovery/ic3/iface_ic_b1-pos-1.xyz",
+      "energy": "data/liu2026/results/repl_liu2026/frame_ic_recovery/ic3/iface_ic_b1-1.ener",
+      "input": "data/liu2026/results/repl_liu2026/frame_ic_recovery/ic3/base.inp",
+      "coordinates": "data/liu2026/results/repl_liu2026/frame_ic_recovery/ic3/iface_rc_seed.xyz",
+      "atom_count": 394,
+      "box_angstrom": [
+        17,
+        17,
+        47
+      ],
+      "biased": false,
+      "history": "Different 1\u20135 ps frames from the same orientation/preparation trajectory; historical source constraints retained. Distinct times do not demonstrate independent equilibrium samples.",
+      "status": "B1_3PS_COMPLETE_5PS_PROGRAM_INCOMPLETE",
+      "prepared_under_bias": null,
+      "controlled_initial_conditions": null,
+      "coverage": {
+        "frames": 301,
+        "first_step": 0,
+        "last_step": 3000,
+        "first_time_fs": 0.0,
+        "last_time_fs": 3000.0,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "74364a8e0b996e243bdcca165db4b481d9aa76dc1c0d150c9d93142c9f95cc55",
+        "energy": "23293fa581d1404a4836798f00c73be5db4680908cfd366da2d56f141cd98add",
+        "input": "38d20ab9a11317dc7da6d90fbe2c3abbd6eb4364eb2cdd331c9f526e3b541b05",
+        "coordinates": "fe1cdb11b26e7031d1bf3b9507abf4f6fa43a6769479b02db6fa47ce136b557d"
+      },
+      "source_frame": {
+        "time_fs": 3000,
+        "step": 3000,
+        "source_trajectory_sha256": "b4c40b95f6e3a86e06450dc2231e00a302d82491ff8925f9ce536c3c6bb7ae1e",
+        "selected_start_sha256": "fe1cdb11b26e7031d1bf3b9507abf4f6fa43a6769479b02db6fa47ce136b557d"
+      }
+    },
+    "frame_ic_4": {
+      "id": "frame_ic_4",
+      "label": "frame_ic_4",
+      "job_ids": [
+        "8554946"
+      ],
+      "trajectory": "data/liu2026/results/repl_liu2026/frame_ic_recovery/ic4/iface_ic_b1-pos-1.xyz",
+      "energy": "data/liu2026/results/repl_liu2026/frame_ic_recovery/ic4/iface_ic_b1-1.ener",
+      "input": "data/liu2026/results/repl_liu2026/frame_ic_recovery/ic4/base.inp",
+      "coordinates": "data/liu2026/results/repl_liu2026/frame_ic_recovery/ic4/iface_rc_seed.xyz",
+      "atom_count": 394,
+      "box_angstrom": [
+        17,
+        17,
+        47
+      ],
+      "biased": false,
+      "history": "Different 1\u20135 ps frames from the same orientation/preparation trajectory; historical source constraints retained. Distinct times do not demonstrate independent equilibrium samples.",
+      "status": "B1_3PS_COMPLETE_5PS_PROGRAM_INCOMPLETE",
+      "prepared_under_bias": null,
+      "controlled_initial_conditions": null,
+      "coverage": {
+        "frames": 301,
+        "first_step": 0,
+        "last_step": 3000,
+        "first_time_fs": 0.0,
+        "last_time_fs": 3000.0,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "e483b5a04815a59a195061868abf8315f83346d4f0f0c31c5190c61ed0b1beae",
+        "energy": "af29fbaf4fae805a6f411d7fd24fc26aeba055ab4a21b8935fa5fe8938344028",
+        "input": "38d20ab9a11317dc7da6d90fbe2c3abbd6eb4364eb2cdd331c9f526e3b541b05",
+        "coordinates": "30b9ea95b1ed104add3b08bcb3c0e90ac36b83fcd717491c9c4f6f9a6427b235"
+      },
+      "source_frame": {
+        "time_fs": 4000,
+        "step": 4000,
+        "source_trajectory_sha256": "b4c40b95f6e3a86e06450dc2231e00a302d82491ff8925f9ce536c3c6bb7ae1e",
+        "selected_start_sha256": "30b9ea95b1ed104add3b08bcb3c0e90ac36b83fcd717491c9c4f6f9a6427b235"
+      }
+    },
+    "frame_ic_5": {
+      "id": "frame_ic_5",
+      "label": "frame_ic_5",
+      "job_ids": [
+        "8554947"
+      ],
+      "trajectory": "data/liu2026/results/repl_liu2026/frame_ic_recovery/ic5/iface_ic_b1-pos-1.xyz",
+      "energy": "data/liu2026/results/repl_liu2026/frame_ic_recovery/ic5/iface_ic_b1-1.ener",
+      "input": "data/liu2026/results/repl_liu2026/frame_ic_recovery/ic5/base.inp",
+      "coordinates": "data/liu2026/results/repl_liu2026/frame_ic_recovery/ic5/iface_rc_seed.xyz",
+      "atom_count": 394,
+      "box_angstrom": [
+        17,
+        17,
+        47
+      ],
+      "biased": false,
+      "history": "Different 1\u20135 ps frames from the same orientation/preparation trajectory; historical source constraints retained. Distinct times do not demonstrate independent equilibrium samples.",
+      "status": "B1_3PS_COMPLETE_5PS_PROGRAM_INCOMPLETE",
+      "prepared_under_bias": null,
+      "controlled_initial_conditions": null,
+      "coverage": {
+        "frames": 301,
+        "first_step": 0,
+        "last_step": 3000,
+        "first_time_fs": 0.0,
+        "last_time_fs": 3000.0,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "cf618a93396159b2c4bc07c75b38ed54ceb6bbe8ff6ded8ab7f1dd1c8ac0756a",
+        "energy": "fddf3317284ce5742ad7e410ea35fb2a60fff14ed1c97480bcec6f54b2be0ff0",
+        "input": "38d20ab9a11317dc7da6d90fbe2c3abbd6eb4364eb2cdd331c9f526e3b541b05",
+        "coordinates": "4263e1d1954363c21ede659bd6fc7355de96102f72bfb908f058c699cbfffc07"
+      },
+      "source_frame": {
+        "time_fs": 5000,
+        "step": 5000,
+        "source_trajectory_sha256": "b4c40b95f6e3a86e06450dc2231e00a302d82491ff8925f9ce536c3c6bb7ae1e",
+        "selected_start_sha256": "4263e1d1954363c21ede659bd6fc7355de96102f72bfb908f058c699cbfffc07"
+      }
+    },
+    "original_seed_unbiased_5ps": {
+      "id": "original_seed_unbiased_5ps",
+      "label": "original_seed_unbiased_5ps",
+      "job_ids": [
+        "8554054",
+        "8554134"
+      ],
+      "trajectory": "data/liu2026/results/repl_liu2026/m4_5ps_final/iface_unbiased-pos-1.xyz",
+      "energy": "data/liu2026/remote_dependencies/repl_liu2026/iface/unbiased3/iface_unbiased-1.ener",
+      "input": "data/liu2026/remote_dependencies/repl_liu2026/iface/unbiased3/iface_unbiased.inp",
+      "coordinates": "data/liu2026/remote_dependencies/repl_liu2026/iface/unbiased3/iface_rc_seed.xyz",
+      "atom_count": 394,
+      "box_angstrom": [
+        17,
+        17,
+        47
+      ],
+      "biased": false,
+      "history": "Reactant complex prepared through the documented biased/controlled preparation workflow.",
+      "status": "ARCHIVED_COMPLETE_SEGMENT",
+      "prepared_under_bias": true,
+      "controlled_initial_conditions": null,
+      "coverage": {
+        "frames": 501,
+        "first_step": 0,
+        "last_step": 5000,
+        "first_time_fs": 0.0,
+        "last_time_fs": 5000.0,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "462797d9db910c3e9f8b897bcd3c1e6821619a3638cf87ec090c15eddb2fcd8b",
+        "energy": "ca6196c5d4466dc94f3159e711f04b1c00c63ba68d8f5764feee9d871e0059d9",
+        "input": "38d20ab9a11317dc7da6d90fbe2c3abbd6eb4364eb2cdd331c9f526e3b541b05",
+        "coordinates": "dd8ed28c7c62986eacfbf2b78be08cf2ec29bc9a21bb50e26563e6139ae6e8ce"
+      }
+    },
+    "weak_guided_4ps": {
+      "id": "weak_guided_4ps",
+      "label": "weak_guided_4ps",
+      "job_ids": [
+        "8554057",
+        "8554111"
+      ],
+      "trajectory": "data/liu2026/results/repl_liu2026/steered_ext_final/iface_steered_ext-pos-1.xyz",
+      "energy": "data/liu2026/remote_dependencies/repl_liu2026/iface/steered_ext/iface_steered_ext-1.ener",
+      "input": "data/liu2026/remote_dependencies/repl_liu2026/iface/steered_ext/iface_steered_ext.inp",
+      "coordinates": "data/liu2026/remote_dependencies/repl_liu2026/iface/steered_ext/iface_rc_seed.xyz",
+      "atom_count": 394,
+      "box_angstrom": [
+        17,
+        17,
+        47
+      ],
+      "biased": true,
+      "history": "Reactant complex prepared through the documented biased/controlled preparation workflow.",
+      "status": "ARCHIVED_COMPLETE_SEGMENT",
+      "prepared_under_bias": true,
+      "controlled_initial_conditions": null,
+      "coverage": {
+        "frames": 401,
+        "first_step": 0,
+        "last_step": 4000,
+        "first_time_fs": 0.0,
+        "last_time_fs": 4000.0,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "23f1f34b3295945e9876ff21502163923c6c162ad53350eb4a5a6ff5e4f3cb84",
+        "energy": "e01ada0a5bf7bb0fc43f0188ee2b94c8d515d00f71264a7e706c7c1db88600c6",
+        "input": "bc1ce142cece922ec84077779f50293b366f39e464ff315c72e6848c506ef1af",
+        "coordinates": "dd8ed28c7c62986eacfbf2b78be08cf2ec29bc9a21bb50e26563e6139ae6e8ce"
+      }
+    },
+    "strong_guided_3ps": {
+      "id": "strong_guided_3ps",
+      "label": "strong_guided_3ps",
+      "job_ids": [
+        "8554102"
+      ],
+      "trajectory": "data/liu2026/results/repl_liu2026/strong_cs_final/iface_strong_cs-pos-1.xyz",
+      "energy": "data/liu2026/results/repl_liu2026/strong_cs_final/iface_strong_cs-1.ener",
+      "input": "data/liu2026/remote_dependencies/repl_liu2026/iface/strong_cs_3ps/iface_strong_cs.inp",
+      "coordinates": "data/liu2026/remote_dependencies/repl_liu2026/iface/strong_cs_3ps/iface_rc_seed.xyz",
+      "atom_count": 394,
+      "box_angstrom": [
+        17,
+        17,
+        47
+      ],
+      "biased": true,
+      "history": "Reactant complex prepared through the documented biased/controlled preparation workflow.",
+      "status": "ARCHIVED_COMPLETE_SEGMENT",
+      "prepared_under_bias": true,
+      "controlled_initial_conditions": null,
+      "coverage": {
+        "frames": 301,
+        "first_step": 0,
+        "last_step": 3000,
+        "first_time_fs": 0.0,
+        "last_time_fs": 3000.0,
+        "incomplete_tail_lines": 0
+      },
+      "sha256": {
+        "trajectory": "ef2acd8aac11f319fee7880ee8aa7816051facfc95a3c228eb63f30538fa4112",
+        "energy": "0f5cb82df962f13ffa8e2e9261d9c94ea12b654b6b0c086c6bb46ab2bdf02c72",
+        "input": "137a04c6373217782ef035f8e1a19c78590ae4eaa081c87f5b1b00a1fb8ff5b1",
+        "coordinates": "dd8ed28c7c62986eacfbf2b78be08cf2ec29bc9a21bb50e26563e6139ae6e8ce"
+      }
+    }
+  },
+  "metadynamics": {
+    "metad_original": {
+      "id": "metad_original",
+      "job_ids": [
+        "8554932"
+      ],
+      "biased": true,
+      "prepared_under_bias": true,
+      "status": "OPERATOR_CANCELLED_SAMPLING_INEFFICIENT",
+      "observed": {
+        "colvar_rows": 6069,
+        "last_t": 60649.995105,
+        "d4_min": 2.693247,
+        "d4_below_2A": 0,
+        "d4_last": 4.982321
+      },
+      "files": [
+        "data/liu2026/results/repl_liu2026/liu_stop_20261110/hms_iface_resume_seg5/COLVAR",
+        "data/liu2026/results/repl_liu2026/liu_stop_20261110/hms_iface_resume_seg5/HILLS",
+        "data/liu2026/results/reproduction_audit_20261111/remote/repl_liu2026/iface/hms_iface_resume_seg5/METAD_RESUME_INPUTS.json",
+        "data/liu2026/results/reproduction_audit_20261111/remote/repl_liu2026/iface/hms_iface_resume_seg5/hms_iface.inp",
+        "data/liu2026/results/reproduction_audit_20261111/remote/repl_liu2026/iface/hms_iface_resume_seg5/hms_iface.plumed",
+        "data/liu2026/results/reproduction_audit_20261111/remote/repl_liu2026/iface/hms_iface_resume_seg5/hms_iface_resume_seg5.inp",
+        "data/liu2026/results/reproduction_audit_20261111/remote/repl_liu2026/iface/hms_iface_resume_seg5/hms_iface_resume_seg5.plumed"
+      ],
+      "trajectory_xyz_included": false
+    },
+    "metad_seed340": {
+      "id": "metad_seed340",
+      "job_ids": [
+        "8562431"
+      ],
+      "biased": true,
+      "prepared_under_bias": true,
+      "status": "OPERATOR_CANCELLED_SAMPLING_INEFFICIENT",
+      "observed": {
+        "colvar_rows": 1929,
+        "last_t": 19289.998443,
+        "d4_min": 3.175409,
+        "d4_below_2A": 0,
+        "d4_last": 7.516414
+      },
+      "files": [
+        "data/liu2026/results/repl_liu2026/liu_stop_20261110/metad_seed_step340/hms_iface/COLVAR",
+        "data/liu2026/results/repl_liu2026/liu_stop_20261110/metad_seed_step340/hms_iface/HILLS",
+        "data/liu2026/results/reproduction_audit_20261111/remote/repl_liu2026/iface/metad_seed_step340/IFACE_FRAME_INPUT_MANIFEST.json",
+        "data/liu2026/results/reproduction_audit_20261111/remote/repl_liu2026/iface/metad_seed_step340/IFACE_FRAME_START.json",
+        "data/liu2026/results/reproduction_audit_20261111/remote/repl_liu2026/iface/metad_seed_step340/IFACE_METAD_PREPARE_hms_iface.json",
+        "data/liu2026/results/reproduction_audit_20261111/remote/repl_liu2026/iface/metad_seed_step340/IFACE_METAD_PREPARE_hms_iface_restart.json",
+        "data/liu2026/results/reproduction_audit_20261111/remote/repl_liu2026/iface/metad_seed_step340/IFACE_RC_SEED.json",
+        "data/liu2026/results/reproduction_audit_20261111/remote/repl_liu2026/iface/metad_seed_step340/hms_iface/hms_iface_restart_8562431.inp",
+        "data/liu2026/results/reproduction_audit_20261111/remote/repl_liu2026/iface/metad_seed_step340/hms_iface.inp",
+        "data/liu2026/results/reproduction_audit_20261111/remote/repl_liu2026/iface/metad_seed_step340/hms_iface.json",
+        "data/liu2026/results/reproduction_audit_20261111/remote/repl_liu2026/iface/metad_seed_step340/hms_iface.plumed",
+        "data/liu2026/results/reproduction_audit_20261111/remote/repl_liu2026/iface/metad_seed_step340/hms_iface_restart.inp",
+        "data/liu2026/results/reproduction_audit_20261111/remote/repl_liu2026/iface/metad_seed_step340/iface_unbiased_frame.inp",
+        "data/liu2026/campaign/repl_liu2026/iface/metad_seed_step340/iface_rc_seed.xyz"
+      ],
+      "trajectory_xyz_included": false
+    },
+    "metad_seed890": {
+      "id": "metad_seed890",
+      "job_ids": [
+        "8562419"
+      ],
+      "biased": true,
+      "prepared_under_bias": true,
+      "status": "OPERATOR_CANCELLED_SAMPLING_INEFFICIENT",
+      "observed": {
+        "colvar_rows": 1363,
+        "last_t": 13609.998902,
+        "d4_min": 2.515852,
+        "d4_below_2A": 0,
+        "d4_last": 4.317656
+      },
+      "files": [
+        "data/liu2026/results/repl_liu2026/liu_stop_20261110/metad_seed_step890/hms_iface/COLVAR",
+        "data/liu2026/results/repl_liu2026/liu_stop_20261110/metad_seed_step890/hms_iface/HILLS",
+        "data/liu2026/results/reproduction_audit_20261111/remote/repl_liu2026/iface/metad_seed_step890/IFACE_FRAME_INPUT_MANIFEST.json",
+        "data/liu2026/results/reproduction_audit_20261111/remote/repl_liu2026/iface/metad_seed_step890/IFACE_FRAME_START.json",
+        "data/liu2026/results/reproduction_audit_20261111/remote/repl_liu2026/iface/metad_seed_step890/IFACE_METAD_PREPARE_hms_iface.json",
+        "data/liu2026/results/reproduction_audit_20261111/remote/repl_liu2026/iface/metad_seed_step890/IFACE_METAD_PREPARE_hms_iface_restart.json",
+        "data/liu2026/results/reproduction_audit_20261111/remote/repl_liu2026/iface/metad_seed_step890/IFACE_RC_SEED.json",
+        "data/liu2026/results/reproduction_audit_20261111/remote/repl_liu2026/iface/metad_seed_step890/hms_iface/hms_iface_restart_8562419.inp",
+        "data/liu2026/results/reproduction_audit_20261111/remote/repl_liu2026/iface/metad_seed_step890/hms_iface.inp",
+        "data/liu2026/results/reproduction_audit_20261111/remote/repl_liu2026/iface/metad_seed_step890/hms_iface.json",
+        "data/liu2026/results/reproduction_audit_20261111/remote/repl_liu2026/iface/metad_seed_step890/hms_iface.plumed",
+        "data/liu2026/results/reproduction_audit_20261111/remote/repl_liu2026/iface/metad_seed_step890/hms_iface_restart.inp",
+        "data/liu2026/results/reproduction_audit_20261111/remote/repl_liu2026/iface/metad_seed_step890/iface_unbiased_frame.inp",
+        "data/liu2026/campaign/repl_liu2026/iface/metad_seed_step890/iface_rc_seed.xyz"
+      ],
+      "trajectory_xyz_included": false
+    }
+  }
+}

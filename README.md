@@ -1,22 +1,21 @@
-# Li 2025: interfacial C–S formation
+# Interfacial C–S formation: Li 2025 and Liu 2026
 
-Simulation inputs, selected trajectories and analysis code for the SO₃²⁻ + HCHO pathway in [Li et al., *Nature Communications* **16**, 5187 (2025)](https://doi.org/10.1038/s41467-025-59712-3).
+**Neither reproduction attempt was successful.** This repository contains selected calculations from our attempts to reproduce the interfacial chemistry reported by [Li et al. (2025)](https://doi.org/10.1038/s41467-025-59712-3) and [Liu et al. (2026)](https://doi.org/10.5194/acp-26-9357-2026), together with inputs, analysis scripts and a record of what remains unresolved.
 
-We obtained short C–S states in interfacial metadynamics and followed two of them for 5 ps after removing the bias. **Unbiased interfacial C–S formation starting from separated reactants has not been reproduced.** This repository records the calculations and provides a starting point for continuing the study.
-
-## Results so far
-
-| Calculation | Coverage | Main observation |
+| Study | System examined | Outcome |
 |---|---|---|
-| Original interfacial metaD chain | 50 ps | Visits short C–S states; returns to longer distances in the final segment |
-| Separate reactant-started metaD chain | 20 ps | Samples a second set of short-distance configurations |
-| Two selected-state releases | 5 ps each | Mean S–C distances of 1.913 and 1.890 Å after bias removal |
-| Four local-water orientation tests | 5 ps each | No C–S formation geometry observed from the long-distance starts |
-| Two unrotated controls | 2.930 and 3.100 ps in this snapshot | Still running toward 5 ps |
+| Li 2025 | SO₃²⁻ + HCHO, 96 waters, BLYP-D3(BJ) | Unbiased interfacial formation from separated reactants was not reproduced; no converged reproduction of the reported barrier was established. |
+| Liu 2026 | HOSO₂⁻ + HCHO + K⁺, 128 waters, PBE-D3 | Unbiased interfacial formation and the reported interfacial barrier were not reproduced. Sampling is paused. |
 
-The selected-state releases begin with short C–S distances. The water-orientation tests begin with separated reactants. Their different starting conditions are part of the comparison. [Progress and interpretation](docs/PROGRESS.md) describes the complete results, including the solvent depth, earlier unsuccessful releases and method differences.
+Short C–S states were obtained under metadynamics or restraints, and some prepared states retained short distances after bias removal. The progress reports describe these observations separately from the unsuccessful reproduction targets:
 
-## Get the data and run an analysis
+- [Li 2025: results, model and remaining comparisons](docs/PROGRESS.md)
+- [Liu 2026: results, model and reasons the reproduction remained incomplete](docs/LIU2026_PROGRESS.md)
+- [Additional results available on request](docs/ADDITIONAL_RESULTS.md): a detailed catalogue of material left out of the downloads.
+
+## Downloads and reanalysis
+
+Install Python 3.12 and NumPy:
 
 ```bash
 git clone https://github.com/KejunLiuGitHub/li2025-interface-cs-reproduction.git
@@ -24,28 +23,32 @@ cd li2025-interface-cs-reproduction
 python3.12 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
-python tools/fetch_data.py
-python tools/reproduce_case.py --case natural_original40 --out results/natural_original40
 ```
 
-The [v2026.11.19 data release](https://github.com/KejunLiuGitHub/li2025-interface-cs-reproduction/releases/tag/v2026.11.19) is **122.5 MB compressed** (390.1 MB unpacked). It contains 46 saved trajectories, including short smoke runs, and associated scientific files. `fetch_data.py` checks the archive and every unpacked file against SHA-256 records. [Data layout and selection](docs/DATA.md) explains which files were included.
+For Li 2025:
 
-Analysis uses Python and NumPy; it does not require cluster access. [Reproduction instructions](docs/REPRODUCE.md) also show how to prepare the original-control inputs for a new CP2K run. The archived inputs retain their original settings and file paths; the preparation tool writes a separate portable copy.
+```bash
+python tools/fetch_data.py --dataset li2025
+python tools/reproduce_case.py --case natural_original40 --out results/li_natural_original40
+```
 
-## Repository layout
+For Liu 2026:
 
-- `campaign/`: original scientific scripts, inputs and parameter records, preserved from the source commit.
-- `tools/`: data download, trajectory reanalysis and portable input preparation.
-- `data/DATASETS.json`: trajectory names, boxes, bias history and snapshot coverage.
-- `metadata/`: source and data checksums, selection and release manifests.
-- `docs/`: results, model details and reproduction instructions.
+```bash
+python tools/fetch_data.py --dataset liu2026
+python tools/reproduce_liu_case.py --case frame_ic_1 --out results/liu_frame_ic_1
+```
 
-Large data files are attached to the release and are not part of Git history. The two running controls are intermediate snapshots; all other statuses should be read from their run records. The source project continues to retain full verbose logs and omitted restart material.
+The [Li data release](https://github.com/KejunLiuGitHub/li2025-interface-cs-reproduction/releases/tag/v2026.11.19) contains 46 saved trajectories, including smoke runs, in a 122.5 MB archive. The [Liu data release](https://github.com/KejunLiuGitHub/li2025-interface-cs-reproduction/releases/tag/liu2026-v2026.11.19) is 67.5 MB compressed (199.1 MB unpacked) and contains selected unbiased and guided trajectories, the four-arm proton-location comparison, and three complete archived metadynamics CV/bias histories. Full metadynamics XYZ histories and larger supporting collections are listed in the on-request catalogue.
 
-## Source data and citation
+Both download commands check archive and individual-file SHA-256 values. The two studies have separate atom mappings, data manifests and analyses. See [Li reproduction instructions](docs/REPRODUCE.md) and [Liu reproduction instructions](docs/LIU2026_REPRODUCE.md).
 
-Starting structures are derived from the authors’ [Zenodo dataset, DOI 10.5281/zenodo.15253851](https://zenodo.org/records/15253851). The original workbook and article PDFs are not redistributed here. Cite the paper and dataset when using these structures. See [model and provenance](docs/METHODS.md) and [reuse notes](REUSE.md).
+## What is included
 
-## 中文概述
+`campaign/` holds the scientific analysis code and selected input records. `data/` contains case manifests; large files are downloaded from Releases. `metadata/` records checksums and provenance. `docs/` describes the calculations, results and omitted material.
 
-目前已在界面metaD中获得短C–S态，两条撤偏轨迹随后运行5 ps，S–C均值为1.913和1.890 Å。从分离反应物出发的无偏界面成键尚未复现：四条旋水试验各完成5 ps均未出现目标几何，两条原样对照正运行至2.930和3.100 ps。接下来完成对照，结合水网络、溶质取向和界面深度比较完整轨迹。
+The Li snapshot includes two running controls through 2.930 and 3.100 ps on 19 November 2026. The Liu record includes five complete 3 ps first segments from an unfinished 5 ps protocol. These coverage limits are retained in the case descriptions. Larger historical files can be requested using the identifiers in [the catalogue](docs/ADDITIONAL_RESULTS.md).
+
+## Citation and reuse
+
+Cite the original papers when discussing their methods or conclusions, and this repository when using these calculations. Li starting coordinates derive from the authors' [Zenodo dataset](https://zenodo.org/records/15253851). Article PDFs and the author workbook are obtained from their original sources. [Reuse notes](REUSE.md) describe attribution.

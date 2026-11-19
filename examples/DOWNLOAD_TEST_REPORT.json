@@ -1,14 +1,24 @@
 {
+  "status": "PASS",
   "tests": [
     {
-      "test": "offline_extract",
+      "test": "isolated_extract_liu2026",
       "pass": true,
-      "output": "Extracted and verified 657 files from li2025-selected-data-2026-11-19.tar.gz."
+      "files": 204
     },
     {
-      "test": "verify_extracted_files",
+      "test": "isolated_extract_li2025",
       "pass": true,
-      "output": "Verified 657 files."
+      "files": 657
+    },
+    {
+      "test": "all_datasets_verify",
+      "pass": true,
+      "files": 861
+    },
+    {
+      "test": "reject_ambiguous_offline_archive",
+      "pass": true
     },
     {
       "test": "reject_parent_escape",
@@ -19,11 +29,16 @@
       "pass": true
     },
     {
-      "test": "refuse_overwrite_changed_file",
+      "test": "preserve_changed_existing_file",
+      "pass": true
+    },
+    {
+      "test": "preserve_existing_partial_file",
       "pass": true
     }
   ],
-  "status": "PASS",
+  "count": 8,
   "isolated_copy": true,
-  "CP2K_executed": false
+  "CP2K_executed": false,
+  "fetch_tool_sha256": "272540ce2b94db1f04b4c3ec979a30f60596552df0ef96b8b531c050ef784896"
 }

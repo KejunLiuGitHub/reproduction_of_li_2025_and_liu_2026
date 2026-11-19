@@ -1,4 +1,4 @@
-# Data layout and selection
+# Li 2025 data layout and selection
 
 The data release is a selected research snapshot from 19 November 2026. It is organized by computational role, with complete saved trajectories for the included runs. Selection was not based on which frames had short C–S distances.
 

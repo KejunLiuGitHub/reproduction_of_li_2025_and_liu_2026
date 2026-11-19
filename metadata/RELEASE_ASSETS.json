@@ -1,5 +1,4 @@
 {
-  "tag": "v2026.11.19",
   "assets": [
     {
       "filename": "li2025-selected-data-2026-11-19.tar.gz",
@@ -7,7 +6,23 @@
       "sha256": "b61c8de50bee75d096e20dbeef4b1b155dc3e4497016a62f900aaa2691f5038d",
       "url": "https://github.com/KejunLiuGitHub/li2025-interface-cs-reproduction/releases/download/v2026.11.19/li2025-selected-data-2026-11-19.tar.gz",
       "uncompressed_files": 657,
-      "uncompressed_bytes": 390058457
+      "uncompressed_bytes": 390058457,
+      "dataset": "li2025",
+      "manifest": "metadata/DATA_FILES.json"
+    },
+    {
+      "dataset": "liu2026",
+      "manifest": "metadata/LIU2026_DATA_FILES.json",
+      "filename": "liu2026-selected-data-2026-11-19.tar.gz",
+      "bytes": 67462189,
+      "sha256": "868b97de32c51781e74220639cdd90963b8ad59c50df40eabacbeecc1cec5fa2",
+      "url": "https://github.com/KejunLiuGitHub/li2025-interface-cs-reproduction/releases/download/liu2026-v2026.11.19/liu2026-selected-data-2026-11-19.tar.gz",
+      "uncompressed_files": 204,
+      "uncompressed_bytes": 199079695
     }
-  ]
+  ],
+  "releases": {
+    "li2025": "v2026.11.19",
+    "liu2026": "liu2026-v2026.11.19"
+  }
 }

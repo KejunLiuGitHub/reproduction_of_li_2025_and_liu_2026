@@ -1,0 +1,494 @@
+{
+  "schema": "liu2026-portable-replay-tests-v1",
+  "status": "PASS",
+  "scope": "Descriptive replay and numerical consistency checks; no reaction or reproduction verdict.",
+  "python_version": "3.12.10 (main, Apr  8 2025, 11:35:47) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "isolation": "Only the public tools, four original core files, source manifest, dataset catalog and selected case files were copied into a new directory. No original project imports or external data paths were used.",
+  "dataset_manifest": "data/LIU2026_DATASETS.json",
+  "dataset_manifest_sha256": "44cbd60d15e0f32d311c7b89b3bf843b53faea054263e9f6340c0132d9baf0ee",
+  "core_source_manifest": "metadata/LIU2026_SOURCE_FILES.json",
+  "boundary_tests": {
+    "passed": 14,
+    "failed": 0,
+    "fixture_trajectory_sha256": "8d67ea4d69b4415c11205a0fc0f9543168c203dc531c79d3edd2717e196002f0",
+    "coverage": [
+      "Full-frame independent SC/CO distances",
+      "Existing output preservation",
+      "Dataset checksum mismatch",
+      "All atom identities",
+      "Non-finite coordinates",
+      "Incomplete frame",
+      "Duplicate endpoint",
+      "Changed duplicate endpoint",
+      "Mixed bias stages",
+      "Ambiguous stages",
+      "Temperature step/time mismatch",
+      "Absent mediator map",
+      "Unresolved GDS frame retention",
+      "Unsupported cell"
+    ],
+    "replay_command": [
+      "python3",
+      "tools/test_liu_tools.py",
+      "--case",
+      "frame_ic_1",
+      "-v"
+    ],
+    "fixture_note": "The isolated test used the frame_ic_1 trajectory under a test-local case identifier, ic1_test. The replay command uses its public catalog identifier."
+  },
+  "cases": [
+    {
+      "case": "proton_r1",
+      "command": [
+        "python3",
+        "tools/reproduce_liu_case.py",
+        "--case",
+        "proton_r1",
+        "--out",
+        "results/liu_proton_r1"
+      ],
+      "returncode": 0,
+      "frames": 500,
+      "first_step": 1010,
+      "last_step": 6000,
+      "observed_span_fs": 4990.0,
+      "raw_atom_identity_and_coordinates_checked": true,
+      "duplicate_frames": 0,
+      "source_sha256": {
+        "trajectory": "d62740bd9cb50412816886d28293e27c5b9290c2956fcd12d0b165a1f56e423b",
+        "energy": "5187da6e98b5827a16ea746d6cab1f24c7868dd090183343752585e44c608ff1",
+        "input": "f34927af74dfec285d3655c70c70b9425c4028258a61b35f77f1b22941ceb187",
+        "coordinates": "396e62289392a36dee35a617cfc6303cf4d5068c1729d7edf2381064968ebe90"
+      },
+      "source_bytes_unchanged": true,
+      "independent_minimum_image_max_abs_error_A": {
+        "SC_A": 4.440892098500626e-16,
+        "CO_A": 6.661338147750939e-16
+      },
+      "temperature_matched_frames": 500,
+      "energy_unique_rows": 5000,
+      "energy_first_step": 1001,
+      "energy_last_step": 6000,
+      "energy_consecutive_steps": true,
+      "gds_resolved_frames": 500,
+      "biased": false,
+      "stages": [
+        {
+          "role": "trajectory",
+          "biased": false,
+          "frames": 500,
+          "first_step": 1010,
+          "last_step": 6000
+        }
+      ],
+      "SC_A": {
+        "n": 500,
+        "first": 1.8823993508402808,
+        "last": 1.902013746104799,
+        "min": 1.7462049473173507,
+        "max": 2.0043483434988896,
+        "mean": 1.8436486429002177,
+        "median": 1.8391232035115819
+      },
+      "CO_A": {
+        "n": 500,
+        "first": 1.375942963600736,
+        "last": 1.3794894156890087,
+        "min": 1.3241933021077739,
+        "max": 1.5214096219881155,
+        "mean": 1.4141913060107911,
+        "median": 1.413952390670592
+      },
+      "summary_sha256": "29ed613fb5f935cab191f375764654a116dd9cca3fee655d6b6cbc94696a538b",
+      "frames_tsv_sha256": "da8b6d16d7c110c9a7b76f739cb5fd9076fba1997fd7abbc9007cc89148d8db0"
+    },
+    {
+      "case": "proton_r1_full_ab",
+      "command": [
+        "python3",
+        "tools/reproduce_liu_case.py",
+        "--case",
+        "proton_r1_full_ab",
+        "--out",
+        "results/liu_proton_r1_full_ab"
+      ],
+      "returncode": 0,
+      "frames": 601,
+      "first_step": 0,
+      "last_step": 6000,
+      "observed_span_fs": 6000.0,
+      "raw_atom_identity_and_coordinates_checked": true,
+      "duplicate_frames": 0,
+      "source_sha256": {
+        "trajectory": "745d9e5bf437cd8bb792f279863c80f75d846f165a633f53246e89466197d748",
+        "energy": "8fc33af2caff4595b083f6f37835834615351c7e2351fddd163e2a7a76de8934",
+        "input": "890537910e56927d672ba09a67d07ec79ed0b277ceed95592f8ec46cf99e4ea8",
+        "coordinates": "396e62289392a36dee35a617cfc6303cf4d5068c1729d7edf2381064968ebe90"
+      },
+      "source_bytes_unchanged": true,
+      "independent_minimum_image_max_abs_error_A": {
+        "SC_A": 4.440892098500626e-16,
+        "CO_A": 6.661338147750939e-16
+      },
+      "temperature_matched_frames": 601,
+      "energy_unique_rows": 6001,
+      "energy_first_step": 0,
+      "energy_last_step": 6000,
+      "energy_consecutive_steps": true,
+      "gds_resolved_frames": 601,
+      "biased": "mixed",
+      "stages": [
+        {
+          "role": "S-C restrained preparation",
+          "biased": true,
+          "frames": 101,
+          "first_step": 0,
+          "last_step": 1000
+        },
+        {
+          "role": "unbiased observation",
+          "biased": false,
+          "frames": 500,
+          "first_step": 1010,
+          "last_step": 6000
+        }
+      ],
+      "SC_A": {
+        "n": 601,
+        "first": 2.082431906715288,
+        "last": 1.902013746104799,
+        "min": 1.6665037295747123,
+        "max": 2.1236249325444883,
+        "mean": 1.8483785474782686,
+        "median": 1.8434128781302268
+      },
+      "CO_A": {
+        "n": 601,
+        "first": 1.2922380571801024,
+        "last": 1.3794894156890087,
+        "min": 1.2922380571801024,
+        "max": 1.7325718159565466,
+        "mean": 1.4188951742545257,
+        "median": 1.4157480096745418
+      },
+      "summary_sha256": "c7d965d996f8c4a4a33c632ba7cfc0a09006b9972d19b878958dad7ca7f79b53",
+      "frames_tsv_sha256": "1ab803a29e8a53ed56f9fa5aa94ac461e84c5633efadc05dfdf467ca745d3977"
+    },
+    {
+      "case": "frame_ic_1",
+      "command": [
+        "python3",
+        "tools/reproduce_liu_case.py",
+        "--case",
+        "frame_ic_1",
+        "--out",
+        "results/liu_frame_ic_1"
+      ],
+      "returncode": 0,
+      "frames": 301,
+      "first_step": 0,
+      "last_step": 3000,
+      "observed_span_fs": 3000.0,
+      "raw_atom_identity_and_coordinates_checked": true,
+      "duplicate_frames": 0,
+      "source_sha256": {
+        "trajectory": "8d67ea4d69b4415c11205a0fc0f9543168c203dc531c79d3edd2717e196002f0",
+        "energy": "2bfcc13fc45a8a6fc41843ea63ef03eb5778c13abe92b196740a914756f63a96",
+        "input": "38d20ab9a11317dc7da6d90fbe2c3abbd6eb4364eb2cdd331c9f526e3b541b05",
+        "coordinates": "258fd30c97d8bc0e3bd60fe30c2d0b81b79b2574153f366f8c9d65eb536d62e6"
+      },
+      "source_bytes_unchanged": true,
+      "independent_minimum_image_max_abs_error_A": {
+        "SC_A": 1.7763568394002505e-15,
+        "CO_A": 1.3322676295501878e-15
+      },
+      "temperature_matched_frames": 301,
+      "energy_unique_rows": 3001,
+      "energy_first_step": 0,
+      "energy_last_step": 3000,
+      "energy_consecutive_steps": true,
+      "gds_resolved_frames": 301,
+      "biased": false,
+      "stages": [
+        {
+          "role": "trajectory",
+          "biased": false,
+          "frames": 301,
+          "first_step": 0,
+          "last_step": 3000
+        }
+      ],
+      "SC_A": {
+        "n": 301,
+        "first": 3.528335328826507,
+        "last": 5.3059900070865655,
+        "min": 3.281797272129134,
+        "max": 5.837475420579958,
+        "mean": 4.443764800537347,
+        "median": 4.338586430590376
+      },
+      "CO_A": {
+        "n": 301,
+        "first": 1.2171663183488437,
+        "last": 1.22861713688822,
+        "min": 1.18919381838543,
+        "max": 1.2640384464465098,
+        "mean": 1.2253186821025381,
+        "median": 1.2254256309920242
+      },
+      "summary_sha256": "5e7bfd53b3faa83dc8b2225148c42caabbec3680e398b8a77cc68428e1afd71c",
+      "frames_tsv_sha256": "d48e8550addbb8f7710456c23434cb083e5efcc9931312ec944e55a1195cd27a"
+    },
+    {
+      "case": "original_seed_unbiased_5ps",
+      "command": [
+        "python3",
+        "tools/reproduce_liu_case.py",
+        "--case",
+        "original_seed_unbiased_5ps",
+        "--out",
+        "results/liu_original_seed_unbiased_5ps"
+      ],
+      "returncode": 0,
+      "frames": 501,
+      "first_step": 0,
+      "last_step": 5000,
+      "observed_span_fs": 5000.0,
+      "raw_atom_identity_and_coordinates_checked": true,
+      "duplicate_frames": 0,
+      "source_sha256": {
+        "trajectory": "462797d9db910c3e9f8b897bcd3c1e6821619a3638cf87ec090c15eddb2fcd8b",
+        "energy": "ca6196c5d4466dc94f3159e711f04b1c00c63ba68d8f5764feee9d871e0059d9",
+        "input": "38d20ab9a11317dc7da6d90fbe2c3abbd6eb4364eb2cdd331c9f526e3b541b05",
+        "coordinates": "dd8ed28c7c62986eacfbf2b78be08cf2ec29bc9a21bb50e26563e6139ae6e8ce"
+      },
+      "source_bytes_unchanged": true,
+      "independent_minimum_image_max_abs_error_A": {
+        "SC_A": 1.7763568394002505e-15,
+        "CO_A": 6.661338147750939e-16
+      },
+      "temperature_matched_frames": 501,
+      "energy_unique_rows": 5001,
+      "energy_first_step": 0,
+      "energy_last_step": 5000,
+      "energy_consecutive_steps": true,
+      "gds_resolved_frames": 501,
+      "biased": false,
+      "stages": [
+        {
+          "role": "trajectory",
+          "biased": false,
+          "frames": 501,
+          "first_step": 0,
+          "last_step": 5000
+        }
+      ],
+      "SC_A": {
+        "n": 501,
+        "first": 3.5632116920605648,
+        "last": 5.426844988999017,
+        "min": 3.5632116920605648,
+        "max": 8.796476038743041,
+        "mean": 6.7290057330025626,
+        "median": 6.797665509558154
+      },
+      "CO_A": {
+        "n": 501,
+        "first": 1.218764593400617,
+        "last": 1.2336977663023287,
+        "min": 1.189476372906165,
+        "max": 1.263149825209574,
+        "mean": 1.225421730660697,
+        "median": 1.2246006345023455
+      },
+      "summary_sha256": "9c1a443b26b31b3b7da5683cd5e428e9f98a1a693c84951927f58e2ff1b7127a",
+      "frames_tsv_sha256": "ed4ed1cd2222279ce7916e6d13c40ab1d9c97a08e391302b2020ffa22f1c3271"
+    },
+    {
+      "case": "weak_guided_4ps",
+      "command": [
+        "python3",
+        "tools/reproduce_liu_case.py",
+        "--case",
+        "weak_guided_4ps",
+        "--out",
+        "results/liu_weak_guided_4ps"
+      ],
+      "returncode": 0,
+      "frames": 401,
+      "first_step": 0,
+      "last_step": 4000,
+      "observed_span_fs": 4000.0,
+      "raw_atom_identity_and_coordinates_checked": true,
+      "duplicate_frames": 0,
+      "source_sha256": {
+        "trajectory": "23f1f34b3295945e9876ff21502163923c6c162ad53350eb4a5a6ff5e4f3cb84",
+        "energy": "e01ada0a5bf7bb0fc43f0188ee2b94c8d515d00f71264a7e706c7c1db88600c6",
+        "input": "bc1ce142cece922ec84077779f50293b366f39e464ff315c72e6848c506ef1af",
+        "coordinates": "dd8ed28c7c62986eacfbf2b78be08cf2ec29bc9a21bb50e26563e6139ae6e8ce"
+      },
+      "source_bytes_unchanged": true,
+      "independent_minimum_image_max_abs_error_A": {
+        "SC_A": 8.881784197001252e-16,
+        "CO_A": 6.661338147750939e-16
+      },
+      "temperature_matched_frames": 401,
+      "energy_unique_rows": 4001,
+      "energy_first_step": 0,
+      "energy_last_step": 4000,
+      "energy_consecutive_steps": true,
+      "gds_resolved_frames": 401,
+      "biased": true,
+      "stages": [
+        {
+          "role": "trajectory",
+          "biased": true,
+          "frames": 401,
+          "first_step": 0,
+          "last_step": 4000
+        }
+      ],
+      "SC_A": {
+        "n": 401,
+        "first": 3.5632116920605648,
+        "last": 1.8801999391597986,
+        "min": 1.759114358907082,
+        "max": 3.6471789314766903,
+        "mean": 2.461622812678752,
+        "median": 2.5132350877742877
+      },
+      "CO_A": {
+        "n": 401,
+        "first": 1.218764593400617,
+        "last": 1.4286829814752373,
+        "min": 1.194847237320312,
+        "max": 1.4811430603207572,
+        "mean": 1.284838654051094,
+        "median": 1.2511719484313701
+      },
+      "summary_sha256": "2ed7dfe73a2f0422ac08b4ffeabdaed6ab929d707c9c69ad69019cbe03ccd83d",
+      "frames_tsv_sha256": "690ed4151da742d61eafb00f1833896e12637403baf075e6cbd46b0fe221252c"
+    }
+  ],
+  "overlap_check": {
+    "cases": [
+      "proton_r1",
+      "proton_r1_full_ab"
+    ],
+    "shared_frames": 500,
+    "all_descriptive_values_identical": true,
+    "note": "Stage labels differ by view; these are the same observations, not independent experiments."
+  },
+  "archive_comparisons": [
+    {
+      "case": "proton_r1",
+      "source": "data/liu2026/results/repl_liu2026/reanalysis_relative/d15_proton_ab_proton_r1_CS.json",
+      "sha256": "7e261ecedf860d3e18d0dce8a4847e31285a5f7f58f5ec7d3ec041b77fe2c0ee",
+      "comparisons": [
+        {
+          "archive_field": "primary.s_c_min_A",
+          "replay_field": "metrics.SC_A.min",
+          "value": 1.7462049473173507,
+          "absolute_difference": 0.0
+        },
+        {
+          "archive_field": "primary.s_c_final_A",
+          "replay_field": "metrics.SC_A.last",
+          "value": 1.902013746104799,
+          "absolute_difference": 0.0
+        },
+        {
+          "archive_field": "secondary.o_h_final_A",
+          "replay_field": "metrics.O390_H393_A.last",
+          "value": 3.091200444968585,
+          "absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "original_seed_unbiased_5ps",
+      "source": "data/liu2026/results/repl_liu2026/m4_5ps_final/UNBIASED_HMS.json",
+      "sha256": "46cf38d34b1c756d8030f675122775ced5ab8d2beb97ee2158dc43aa109a7ddb",
+      "comparisons": [
+        {
+          "archive_field": "observation.first_frame.s_c_A",
+          "replay_field": "metrics.SC_A.first",
+          "value": 3.5632116920605648,
+          "absolute_difference": 0.0
+        },
+        {
+          "archive_field": "observation.final_frame.s_c_A",
+          "replay_field": "metrics.SC_A.last",
+          "value": 5.426844988999017,
+          "absolute_difference": 0.0
+        },
+        {
+          "archive_field": "observation.final_frame.o_h_A",
+          "replay_field": "metrics.O390_H393_A.last",
+          "value": 0.9914027408310996,
+          "absolute_difference": 0.0
+        }
+      ]
+    },
+    {
+      "case": "weak_guided_4ps",
+      "source": "data/liu2026/results/repl_liu2026/steered_ext_final/CS_COUPLING_EXT.json",
+      "sha256": "b9a2dfcb410d027127eb5f12a321faa3c506f00b2121df5ba81307d568a9bd70",
+      "comparisons": [
+        {
+          "archive_field": "primary.s_c_min_A",
+          "replay_field": "metrics.SC_A.min",
+          "value": 1.759114358907082,
+          "absolute_difference": 0.0
+        },
+        {
+          "archive_field": "primary.s_c_final_A",
+          "replay_field": "metrics.SC_A.last",
+          "value": 1.8801999391597986,
+          "absolute_difference": 0.0
+        },
+        {
+          "archive_field": "secondary.o_h_final_A",
+          "replay_field": "metrics.O390_H393_A.last",
+          "value": 1.9671847555371635,
+          "absolute_difference": 0.0
+        }
+      ]
+    }
+  ],
+  "CO_reference": "No archived CO summary was available in the selected comparison JSONs. Every replayed CO value was instead checked by an independent minimum-image calculation directly from the released coordinates. Frame_ic_1 and the full A+B view were also checked directly, without attributing new values to historical reports.",
+  "public_source_files": [
+    {
+      "path": "tools/reproduce_liu_case.py",
+      "sha256": "533d5f6bfa413233cf5b71698e62b00de4eae415b0dfe03a7243299af4ea3dc3"
+    },
+    {
+      "path": "tools/test_liu_tools.py",
+      "sha256": "dca3669cd83f595311b77e90e39ef58190fac94f656ff5eb98283d28b1579961"
+    },
+    {
+      "path": "docs/LIU2026_REPRODUCE.md",
+      "sha256": "7815311b382d1d8bdc4e2a76e17f1ee555b38e91a2ac0332ecd57996e282a6d4"
+    },
+    {
+      "path": "metadata/LIU2026_SOURCE_FILES.json",
+      "sha256": "6bf6184eada615a00b21be001be0591808e16d8b6eb1571e1b682961e173bfad"
+    },
+    {
+      "path": "campaign/repl_liu2026/iface/analyze_cs_coupling.py",
+      "sha256": "a0725a9f0d6ba6a7701d19a7d18c7b7029f2f8e2c734d0557135876656e6b828"
+    },
+    {
+      "path": "campaign/repl_liu2026/iface/analyze_unbiased.py",
+      "sha256": "077c3526e23e7ec584b7918f9b08b76033e953c6a215f8be2fc037f2e101fc7e"
+    },
+    {
+      "path": "campaign/repl_liu2026/iface/analyze_iface.py",
+      "sha256": "69877f24a9a447ae7d300028acebb0d8a12132395083d6ad662cf606c5fbde9b"
+    },
+    {
+      "path": "campaign/repl_liu2026/iface/iface_rc_common.py",
+      "sha256": "84d5b0f0b42cf785a0979e756fc6a18640df4788621c0088a32364af6fa94330"
+    }
+  ]
+}

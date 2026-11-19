@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "For the scientific system and source structures, cite the original paper and dataset listed below. Cite this repository separately when using its scripts or outputs."
-title: "Li 2025 interfacial C-S reproduction: selected calculations and analysis"
+title: "Unsuccessful reproduction attempts for interfacial C-S formation: Li 2025 and Liu 2026"
 type: software
 authors:
   - family-names: Liu
@@ -30,3 +30,24 @@ references:
   - type: data
     title: "Source data for Li et al. (2025)"
     doi: "10.5281/zenodo.15253851"
+  - type: article
+    title: "Interface-dominated hydroxymethanesulfonate and its isomer formation provides key mechanisms for reconciling the atmospheric sulfur budget gap in polluted and cold environments"
+    authors:
+      - family-names: Liu
+        given-names: Yang
+      - family-names: Ning
+        given-names: An
+      - family-names: Yang
+        given-names: Xiaohua
+      - family-names: Zhang
+        given-names: Yuchen
+      - family-names: Liu
+        given-names: Ling
+      - family-names: Zhang
+        given-names: Xiuhui
+    journal: Atmospheric Chemistry and Physics
+    volume: 26
+    start: 9357
+    end: 9371
+    year: 2026
+    doi: "10.5194/acp-26-9357-2026"

@@ -1,0 +1,36 @@
+{
+  "schema": "liu2026-source-files-v1",
+  "original_commit": "48c550e6c750c68808df5e6eac2e51aa82f1f42a",
+  "files": [
+    {
+      "path": "campaign/repl_liu2026/iface/analyze_cs_coupling.py",
+      "original_commit": "48c550e6c750c68808df5e6eac2e51aa82f1f42a",
+      "sha256": "a0725a9f0d6ba6a7701d19a7d18c7b7029f2f8e2c734d0557135876656e6b828",
+      "bytes": 34644,
+      "modification": "None; original bytes."
+    },
+    {
+      "path": "campaign/repl_liu2026/iface/analyze_unbiased.py",
+      "original_commit": "48c550e6c750c68808df5e6eac2e51aa82f1f42a",
+      "sha256": "077c3526e23e7ec584b7918f9b08b76033e953c6a215f8be2fc037f2e101fc7e",
+      "bytes": 45670,
+      "modification": "None; original bytes."
+    },
+    {
+      "path": "campaign/repl_liu2026/iface/analyze_iface.py",
+      "original_commit": "48c550e6c750c68808df5e6eac2e51aa82f1f42a",
+      "sha256": "69877f24a9a447ae7d300028acebb0d8a12132395083d6ad662cf606c5fbde9b",
+      "bytes": 23074,
+      "modification": "None; original bytes."
+    },
+    {
+      "path": "campaign/repl_liu2026/iface/iface_rc_common.py",
+      "original_commit": "48c550e6c750c68808df5e6eac2e51aa82f1f42a",
+      "sha256": "84d5b0f0b42cf785a0979e756fc6a18640df4788621c0088a32364af6fa94330",
+      "bytes": 30718,
+      "modification": "None; original bytes."
+    }
+  ],
+  "replay_entrypoint": "tools/reproduce_liu_case.py",
+  "scope": "The descriptive replay uses read-only trajectory, minimum-image distance and smoothed-density functions. The archived criteria routines remain available as source but are not run by this replay."
+}

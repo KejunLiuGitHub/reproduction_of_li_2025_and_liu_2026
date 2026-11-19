@@ -1,17 +1,103 @@
-Li296 局部氢键网络诊断与自然候选选择，2026-11-16。
+# Local hydrogen-bond networks and natural-candidate selection
 
-本文件先于新网络结果冻结方法。只用于 Li Figure 6b SO3²⁻ + HCHO / 96 H2O，296 原子固定顺序；复用已登记 `analyze_solvation.py` 的映射、周期最小镜像和既有全帧几何结果。没有结构、质子转移、动力学、FES或界面促进 verdict；human_review=PENDING。用户已过目40 ps图不自动批准新候选结构。
+Method recorded on 16 November 2026 for the Li Figure 6b system: SO₃²⁻, HCHO and
+96 H₂O molecules, with the fixed 296-atom order. The analysis reuses the atom mapping,
+periodic minimum-image convention and full-frame geometrical descriptors in
+`analyze_solvation.py`.
 
-有向边是 `(供体水O, H, 受体O)` 的一基原子身份，受体包括全部水O及Oc/Os1–3；排除供体本身的O。标准 H···O≤2.5 Å、O–H···O≥150°，strict 2.4/160、loose 2.6/140，不把阈值当成键gate。父水OH>1.3 Å照原分析器标记，保留全部边和帧，并报告剔除异常帧的敏感性；不静默换H归属。
+## Directed edges and local shells
 
-每个阈值独立构图：直接给Oc/Os供氢的水是图一壳；与这些水有任一方向水–水HB的邻水为图二壳。局部水图取两壳诱导子图，加全部水→溶质边。该“壳”是HB图壳，不等同3.5 Å几何配位壳。D/A家族按完整图中HB边数计数，允许分叉H；仅对局部水汇总。Oc供水与Os供水之间同时报告最短有向和无向水路径，0代表共享同一供水。路径不表示质子接力。
+Each edge is the one-based identity tuple `(donor water O, H, acceptor O)`. Acceptors
+include all water oxygens and the solute oxygens Oc and Os1–Os3; the donor's own oxygen
+is excluded. The standard definition is H···O ≤ 2.5 Å and O–H···O ≥ 150°.
+The strict and loose definitions are 2.4 Å/160° and 2.6 Å/140°, respectively.
+These are project definitions for geometrical hydrogen-bond observations.
 
-边连续段按逐帧身份统计；首末跨度是 `(末步−首步)×1 fs`，单帧为0。间断段允许至多1个缺边采样帧（10 fs）后重现，是显式gap规则，不是拟合寿命。所有段记录两端截尾。此处边状态同时依赖HB存在和局部图成员资格：离开局部范围也结束观察，不能称真实HB断裂。偏置数据中的持续描述不能当无偏物理寿命/反应速率。完整均匀10步采样、源SHA和旧溶质HB逐帧逐阈值一致是运行前提。
+A parent-water O–H distance above 1.3 Å is flagged using the existing assignment.
+All edges and frames are retained, alongside a sensitivity summary excluding flagged
+frames. Hydrogen ownership is never silently reassigned.
 
-全帧分析对象为公开P新速度5 ps、原30–40 ps、独立R10–20 ps、两条5 ps约束后释放。主要比较所有帧及短SC访问起点：只取当前SC<2且紧邻上一帧SC≥2的首次阈值进入帧；段首已短距者记为左截尾，不冒充新访问。选择不用未来保持时长。
+A separate graph is constructed for each threshold. Waters donating directly to Oc
+or Os form the first graph shell. Waters connected to those donors by a water–water
+hydrogen bond in either direction form the second shell. The local graph is the
+subgraph induced by these two shells, together with water-to-solute edges. These graph
+shells differ from the geometrical coordination shell defined by a 3.5 Å cutoff.
 
-候选机制组的两类网络预定义为Oc与Os供水之间无向最短水路径≤2条边（包括共享水），以及>2/局部不连通；不是有利/不利或反应判据。只有无OH异常的访问起点可入池。匹配须同标准HbOc整数和同Oc几何配位整数；SC差≤0.05 Å，CO≤0.03 Å，CO/CS cos各≤0.10，C/Oc signed-GDS各≤0.30 Å、S≤0.50 Å，OCS角≤5°，碳非平面高度≤0.03 Å，温度≤10 K。原链与独立R链分别寻找异类匹配对；同一历史的两帧至少隔1 ps仅作排除紧邻帧规则，**不宣称因此独立**。只有两个不同准备历史都能提供一对时才提出四条的分层探索组；仍须检查网络去相关和历史混杂，不能宣称独立平衡复本。
+Donor/acceptor degree families are counted in the full graph, including bifurcated
+hydrogens, and summarized for local waters. Both directed and undirected shortest
+water paths are reported between the Oc-donating and Os-donating waters. A path length
+of zero denotes a shared donor water. Connectivity is a geometrical description;
+a path alone does not establish proton transfer.
 
-若缺乏四个严格匹配候选，不放宽阈值，也不从释放旧末态复制任务。退回两个保持pilot：每条从原链30–40 ps与独立R10–20 ps正式完整轨迹各取**最新**SC<2且无OH异常的天然帧；记录所有匹配变量及差异，明确不匹配、不同有偏历史。两条各5 ps无偏、各一初态，只回答这些新近自然构型的撤偏置后几何保持，不作为网络机制因果组或重复统计。随机种子预定原链2026111601、R2026111602；保留来源与prepared_under_bias=true，不复用event10410。
+## Sampled edge observations
 
-原始XYZ按稳定正式源路径引用，帧step与SHA冻结到候选JSON；从正式CHECKS验证trajectory SHA、job和技术PASS。新候选不得继承父科学PASS。网络候选结构仍待注册验收/视觉/人眼；不更改在飞原链40–50 ps，累计50 ps后停review，R20不续metaD，Liu暂停。
+Continuous segments follow each edge's identity across frames. Their endpoint span is
+`(last step − first step) × 1 fs`; a single-frame observation therefore has zero span.
+Intermittent segments allow at most one intervening sampled frame without that edge
+(10 fs). This explicit gap rule is used without fitting a lifetime distribution.
+Left and right censoring are recorded for every segment.
+
+An edge is observed only while it satisfies the hydrogen-bond definition and belongs
+to the local graph. Leaving the local region ends its observation even if the same
+hydrogen bond persists elsewhere. Spans from biased trajectories are reported as
+sampled geometrical observations rather than physical lifetimes or reaction rates.
+Inputs must have complete, uniformly spaced 10-step frames, recorded source hashes,
+and agreement with the prior solute hydrogen-bond counts at every frame and threshold.
+
+## Analysis set and threshold-entry frames
+
+The analysis set contains the public-P fresh-velocity 5 ps run, the original-chain
+30–40 ps segment, the independent-R 10–20 ps segment, and the two 5 ps releases after
+restrained relaxation. Summaries use all frames and, separately, short-SC entry frames.
+An entry is the first frame with SC < 2 Å immediately following a frame with SC ≥ 2 Å.
+A trajectory segment beginning at short distance is marked as left-censored.
+Candidate selection does not use future retention duration.
+
+## Network groups and matching
+
+The two predefined network groups have an undirected shortest path between Oc- and
+Os-donating waters of either at most two edges, including a shared donor, or more than
+two edges/no local connection. The labels describe connectivity rather than favorable
+or unfavorable reaction conditions. Only entry frames without parent-OH flags enter
+the candidate pool.
+
+Matched candidates must have identical standard Oc hydrogen-bond counts and identical
+integer Oc water-coordination counts. Additional absolute-difference limits are:
+
+| Descriptor | Maximum difference |
+|---|---:|
+| SC distance | 0.05 Å |
+| CO distance | 0.03 Å |
+| CO and CS normal cosines, each | 0.10 |
+| C and Oc signed-GDS distances, each | 0.30 Å |
+| S signed-GDS distance | 0.50 Å |
+| OCS angle | 5° |
+| Carbon out-of-plane height | 0.03 Å |
+| Temperature | 10 K |
+
+Cross-group matches are sought separately within the original and independent-R
+histories. Frames from the same history must be at least 1 ps apart; this removes
+nearby frames but does not establish statistical independence. A four-run stratified
+exploratory set is proposed only if both preparation histories supply one matched
+pair. Network decorrelation and preparation-history effects remain relevant to its
+interpretation.
+
+## Fallback retention pilots
+
+If four strictly matched candidates are unavailable, the thresholds stay fixed.
+Instead, one latest natural frame with SC < 2 Å and no parent-OH flag is selected from
+each complete original-chain 30–40 ps and independent-R 10–20 ps trajectory. All
+matching descriptors and their differences are recorded. These two candidates are
+explicitly unmatched and have different biased preparation histories.
+
+Each pilot starts a fresh 5 ps unbiased trajectory from one selected configuration.
+The comparison concerns geometrical retention after removing the bias. With one
+initial condition per history, it is not a matched network-causality experiment or
+a replicated equilibrium sample. The predefined seeds are 2026111601 for the original
+chain and 2026111602 for the R chain. Provenance retains `prepared_under_bias=true`;
+the event10410 configuration is not reused.
+
+Source XYZ files are identified by stable paths and hashes. Candidate records bind
+the selected frame step, source job and trajectory SHA to the source run's numerical
+checks. This selection is independent of the ongoing original-chain continuation:
+that chain ends at a cumulative 50 ps, while the independent R-metaD chain ends at 20 ps.
