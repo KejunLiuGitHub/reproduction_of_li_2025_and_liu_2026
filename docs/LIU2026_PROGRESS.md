@@ -1,6 +1,8 @@
 # Liu 2026 reproduction: results and remaining questions
 
-**Reproduction was not successful.** The calculations did not reproduce unbiased interfacial C–S formation from the intended reactant complex or the reported interfacial free-energy barrier. They did produce short C–S distances under applied restraints and retention of short distances after controlled proton placement. These are useful observations about the prepared configurations, and do not complete the reproduction target.
+Our calculations have not yet reproduced unbiased interfacial C–S formation from the intended reactant complex or the reported interfacial free-energy barrier. This does not demonstrate that the published results are incorrect: the authors’ reactant preparation has not been matched, some implementation details remain unresolved, and the planned sampling and converged free-energy comparison were not completed.
+
+The calculations did produce short C–S distances under applied restraints and retention of short distances after controlled proton placement. These are useful observations about the prepared configurations, and do not complete the reproduction target.
 
 The final sampling record is the stop on 10 November 2026, reviewed on 11 November. The selected archive combines complete saved trajectories for the chosen dynamical tests with the archived collective-variable and bias histories of three stopped metadynamics chains. It contains retained short-distance states, controls without retention, and unfinished experiments. Full metadynamics coordinate trajectories and other unselected collections are described in the additional-results catalogue.
 
@@ -69,7 +71,7 @@ The largest comparison gap is the initial reactant complex: the paper's optimize
 
 A useful continuation would first obtain or reconstruct those inputs and resolve the walls, dispersion damping, thermostat and free-energy reconstruction details. Component-coordinate sampling should then be checked before committing to long metadynamics. A modified coordinate or confinement scheme would be a separate methodological experiment with a fresh bias history. Further unbiased tests should use clearly documented RCs and complete their stated observation windows.
 
-The reproduction remains unsuccessful. The retained trajectories document the tested initial conditions and the gaps a continuation would need to resolve. Separate bulk, static and machine-learned-potential collections are listed in the on-request catalogue.
+The target results have not been reproduced in these calculations. The retained trajectories document the tested initial conditions and the gaps a continuation would need to resolve. Separate bulk, static and machine-learned-potential collections are listed in the on-request catalogue.
 
 ## Data and source files
 

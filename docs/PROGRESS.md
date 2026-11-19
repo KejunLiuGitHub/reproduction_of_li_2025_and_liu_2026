@@ -1,6 +1,8 @@
-# Li 2025 reproduction: unsuccessful attempt
+# Li 2025 reproduction: results and remaining comparisons
 
-**Reproduction was not successful.** We have obtained short-C–S states in interfacial metadynamics and followed two of these states for 5 ps after removing the bias. We have **not yet reproduced unbiased interfacial C–S formation starting from separated reactants**. The next step is to finish the two running reactant controls and compare them with the completed water-orientation experiments.
+Our calculations have not yet established a reproduction of the reported interfacial reaction and free-energy results. This does not show that the published results are incorrect: equivalence of the biasing implementation and other numerical settings remains unresolved, and a converged free-energy comparison has not been completed.
+
+We have obtained short-C–S states in interfacial metadynamics and followed two of these states for 5 ps after removing the bias. We have **not yet reproduced unbiased interfacial C–S formation starting from separated reactants**. The next step is to finish the two running reactant controls and compare them with the completed water-orientation experiments.
 
 Completed-run results and the matched-window comparison below were compiled on **19 November 2026 at 21:06:23 UTC+08:00**. The release includes later running-control snapshots, described in the coverage table. It accompanies a selected reproducibility archive containing complete chosen trajectories and their associated inputs and analysis, including runs that did not produce the sought geometry. The archive selection manifest records its contents and omissions; `metadata/DATA_FILES.json` records the released files and their hashes.
 

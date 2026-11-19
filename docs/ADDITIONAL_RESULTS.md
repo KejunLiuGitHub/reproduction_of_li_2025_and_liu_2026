@@ -1,6 +1,6 @@
 # Additional results available on request
 
-This catalogue describes calculations and supporting files not included in full in the public downloads. To request a subset, [open a repository issue](https://github.com/KejunLiuGitHub/li2025-interface-cs-reproduction/issues/new) and give the collection ID, case/job or segment, file types, and the comparison you want to make. For a trajectory request, specify the complete run or time interval together with its inputs and preparation history.
+This catalogue describes calculations and supporting files not included in full in the public downloads. To request a subset, [open a repository issue](https://github.com/KejunLiuGitHub/reproduction_of_li_2025_and_liu_2026/issues/new) and give the collection ID, case/job or segment, file types, and the comparison you want to make. For a trajectory request, specify the complete run or time interval together with its inputs and preparation history.
 
 Sizes are decimal MB/GB at the stated inventory time. They include large logs and intermediate files where indicated. Collection paths are identifiers within the research archive, not paths expected in a public checkout. Selected analyses and trajectories already available in Releases do not need to be requested again.
 
