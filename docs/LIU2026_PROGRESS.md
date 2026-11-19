@@ -1,6 +1,6 @@
 # Liu 2026 reproduction: results and remaining questions
 
-Our calculations have not yet reproduced unbiased interfacial C–S formation from the intended reactant complex or the reported interfacial free-energy barrier. This does not demonstrate that the published results are incorrect: the authors’ reactant preparation has not been matched, some implementation details remain unresolved, and the planned sampling and converged free-energy comparison were not completed.
+Our calculations have not yet reproduced unbiased interfacial C–S formation from the intended reactant complex or the reported interfacial free-energy barrier. This does not demonstrate that the published results are incorrect. The paper makes the original data [available on request](https://acp.copernicus.org/articles/26/9357/2026/); the public article and supplement do not include complete input/restart files or numerical starting coordinates for the reported trajectories. The [supplement](https://acp.copernicus.org/articles/26/9357/2026/acp-26-9357-2026-supplement.pdf) describes quadratic metadynamics walls without specifying their positions or force constants. These original records are needed to resolve the run-specific setup choices.
 
 The calculations did produce short C–S distances under applied restraints and retention of short distances after controlled proton placement. These are useful observations about the prepared configurations, and do not complete the reproduction target.
 
@@ -67,7 +67,7 @@ The public reanalysis uses periodic distances and the retained core interface ca
 
 ## What would make a continuation informative
 
-The largest comparison gap is the initial reactant complex: the paper's optimized starting coordinates, velocities and complete interface embedding/pre-equilibration procedure have not been matched. Our preparation used selected explicit-solvent frames, restrained solvent contacts, small-cluster optimization and embedding adjustments. The unbiased paper trajectory and its metadynamics trajectory should have their starting conditions matched separately.
+The original reactant-complex coordinates and associated input/restart files are not included in the public article or supplement; the stated route to these data is a request to the authors. Those records would resolve the exact initial states of the unbiased and metadynamics trajectories. The preparation documented here instead used selected explicit-solvent frames, restrained solvent contacts, small-cluster optimization and embedding adjustments.
 
 A useful continuation would first obtain or reconstruct those inputs and resolve the walls, dispersion damping, thermostat and free-energy reconstruction details. Component-coordinate sampling should then be checked before committing to long metadynamics. A modified coordinate or confinement scheme would be a separate methodological experiment with a fresh bias history. Further unbiased tests should use clearly documented RCs and complete their stated observation windows.
 

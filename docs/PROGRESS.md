@@ -1,6 +1,6 @@
 # Li 2025 reproduction: results and remaining comparisons
 
-Our calculations have not yet established a reproduction of the reported interfacial reaction and free-energy results. This does not show that the published results are incorrect: equivalence of the biasing implementation and other numerical settings remains unresolved, and a converged free-energy comparison has not been completed.
+Our calculations have not yet established a reproduction of the reported interfacial reaction and free-energy results. This does not show that the published results are incorrect. The authors' [public Zenodo workbook](https://zenodo.org/records/15253851) provides selected molecular coordinates and figure data, but not the complete original CP2K/PLUMED production inputs, restart states or HILLS histories. The calculations here use the published methods and coordinates, with run-specific choices reconstructed where those original files are unavailable.
 
 We have obtained short-C–S states in interfacial metadynamics and followed two of these states for 5 ps after removing the bias. We have **not yet reproduced unbiased interfacial C–S formation starting from separated reactants**. The next step is to finish the two running reactant controls and compare them with the completed water-orientation experiments.
 
