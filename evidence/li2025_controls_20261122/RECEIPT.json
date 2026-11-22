@@ -1,0 +1,29 @@
+{
+  "connection": "SUCCESS",
+  "attempts": [
+    {
+      "local_start": "2026-11-22T19:26:32.937751+08:00",
+      "local_end": "2026-11-22T19:26:33.664903+08:00",
+      "elapsed_seconds": 0.727200958004687
+    }
+  ],
+  "jobs": {
+    "8572577": {
+      "state": "COMPLETED",
+      "exit": "0:0",
+      "end": "2026-11-20T03:52:44+08:00",
+      "CHECKS": "PASS",
+      "distance_summary": {}
+    },
+    "8572578": {
+      "state": "COMPLETED",
+      "exit": "0:0",
+      "end": "2026-11-20T02:27:27+08:00",
+      "CHECKS": "PASS",
+      "distance_summary": {}
+    }
+  },
+  "remote_mutations": "none",
+  "automation": "remains stopped",
+  "server_observed_at": "2026-11-22T19:29:27+08:00"
+}

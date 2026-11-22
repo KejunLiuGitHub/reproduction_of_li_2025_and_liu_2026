@@ -1,6 +1,6 @@
 # Li 2025 data layout and selection
 
-The data release is a selected research snapshot from 19 November 2026. It is organized by computational role, with complete saved trajectories for the included runs. Selection was not based on which frames had short C–S distances.
+The data release is a selected research snapshot from 19 November 2026. It is organized by computational role, with complete saved trajectories for the included runs. Selection was not based on which frames had short C–S distances. A later control-status verification is recorded in [HANDOFF.md](../HANDOFF.md); it does not change this Release's historical files or hashes.
 
 The archive contains 583 as-run files and 74 technical-trace/index files, 657 files in total. After extraction:
 
@@ -21,7 +21,7 @@ data/technical_traces/                         compact records extracted from CP
 
 `data/DATASETS.json` lists 46 XYZ trajectories, including short smoke runs. Each entry gives the matching energy and input files, box, bias flag and saved-frame coverage. Continuation segments retain their original step numbers; the original and R-started metadynamics chains have separate bias histories.
 
-The original controls are live snapshots captured on 19 November 2026, with retrieval recorded at 21:58:59 UTC+08:00: R1150 contains 294 complete frames through 2930 fs; R2200 contains 311 through 3100 fs. Their energy, restart and stdout records may end at different steps. They are not 5 ps results. Completed-file hashes were compared before and after retrieval; active files are identified separately in `metadata/TRANSFER_MANIFEST.json`.
+The original controls in this Release are live snapshots captured on 19 November 2026, with retrieval recorded at 21:58:59 UTC+08:00: R1150 contains 294 complete frames through 2930 fs; R2200 contains 311 through 3100 fs. Their energy, restart and stdout records may end at different steps. They are not 5 ps results. Completed-file hashes were compared before and after retrieval; active files are identified separately in `metadata/TRANSFER_MANIFEST.json`. Both runs were later verified complete at 5 ps, but those different assets belong to the future Release described in [HANDOFF.md](../HANDOFF.md), not to this historical snapshot.
 
 ## Included
 

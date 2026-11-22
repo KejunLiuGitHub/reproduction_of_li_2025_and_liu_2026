@@ -9,8 +9,10 @@ python -m pip install -r requirements.txt
 ```
 
 Download and verify the selected data with `tools/fetch_data.py`. Cases and their paths are
-listed in `data/DATASETS.json`. A case's `status` describes the captured data: some runs are
-complete, while the original-coordinate controls may still be live prefixes at the stated time.
+listed in `data/DATASETS.json`. A case's `status` describes the captured data. In Release
+`v2026.11.19`, the original-coordinate controls are live prefixes at the stated time. Their later
+completion is recorded in [HANDOFF.md](../HANDOFF.md), but the complete assets require the new
+Release described there as WP1.
 
 ## Replay a case
 

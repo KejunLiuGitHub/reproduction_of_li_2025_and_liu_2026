@@ -1,21 +1,25 @@
 # Reproduction of Li 2025 & Liu 2026
 
-This repository documents my attempts to reproduce the interfacial chemistry reported by [Li et al. (2025)](https://doi.org/10.1038/s41467-025-59712-3) and [Liu et al. (2026)](https://doi.org/10.5194/acp-26-9357-2026). I have not yet reproduced the target interfacial reaction behavior or established converged reproductions of the reported free-energy barriers. **This outcome does not demonstrate that either paper is incorrect.**
+This repository contains our attempts to reproduce selected interfacial-chemistry results from [Li et al. (2025)](https://doi.org/10.1038/s41467-025-59712-3) and [Liu et al. (2026)](https://doi.org/10.5194/acp-26-9357-2026). We have not reproduced the reported reaction behaviour or obtained converged free-energy barriers. **Our lack of reproduction does not show that either paper is incorrect.**
 
-The publicly released materials do not contain complete simulation input and restart packages for replaying the reported trajectories. Li et al. provide selected coordinates and figure data in their [Zenodo workbook](https://zenodo.org/records/15253851). Liu et al. state that their data are [available on request](https://acp.copernicus.org/articles/26/9357/2026/), and their [supplement](https://acp.copernicus.org/articles/26/9357/2026/acp-26-9357-2026-supplement.pdf) does not specify the positions or force constants of the metadynamics walls. Some run-specific settings therefore have to be reconstructed rather than read from the authors' original files. This repository documents those choices and the results obtained.
+**Collaborators taking over the project should start with [HANDOFF.md](HANDOFF.md).** It gives the current evidence state, data-transfer checklist, verification commands and scoped work packages.
+
+The public materials do not include all files needed to replay the reported trajectories. Li et al. provide selected coordinates and figure data in their [Zenodo workbook](https://zenodo.org/records/15253851). Liu et al. make their data [available on request](https://acp.copernicus.org/articles/26/9357/2026/), but their [supplement](https://acp.copernicus.org/articles/26/9357/2026/acp-26-9357-2026-supplement.pdf) does not specify the positions or force constants of the metadynamics walls. Where files were unavailable, we reconstructed the setup and recorded the differences.
 
 | Study | System examined | Outcome of these calculations |
 |---|---|---|
-| Li 2025 | SO₃²⁻ + HCHO, 96 waters, BLYP-D3(BJ) | Unbiased interfacial formation from separated reactants was not reproduced; no converged reproduction of the reported barrier was established. |
-| Liu 2026 | HOSO₂⁻ + HCHO + K⁺, 128 waters, PBE-D3 | Unbiased interfacial formation and the reported interfacial barrier were not reproduced. Sampling is paused. |
+| Li 2025 | SO₃²⁻ + HCHO, 96 waters, BLYP-D3(BJ) | We did not reproduce unbiased interfacial formation from separated reactants or obtain a converged free-energy barrier. |
+| Liu 2026 | HOSO₂⁻ + HCHO + K⁺, 128 waters, PBE-D3 | We did not reproduce unbiased interfacial formation or the reported interfacial barrier. Sampling is paused. |
 
-Short C–S states were obtained under metadynamics or restraints, and some prepared states retained short distances after bias removal. The progress reports distinguish these observations from formation under unbiased conditions and describe the remaining comparisons:
+We obtained states with short C–S distances under metadynamics or restraints, and some prepared states retained short distances after bias removal. The progress reports separate these observations from unbiased formation and describe the remaining comparisons:
 
 - [Li 2025: results, model and remaining comparisons](docs/PROGRESS.md)
 - [Liu 2026: results, model and reasons the reproduction remained incomplete](docs/LIU2026_PROGRESS.md)
 - [Additional results available on request](docs/ADDITIONAL_RESULTS.md): a detailed catalogue of material left out of the downloads.
 
 ## Downloads and reanalysis
+
+The Python commands below recalculate descriptors from released trajectories; they do not rerun CP2K or reconstruct a free-energy surface.
 
 Install Python 3.12 and NumPy:
 
@@ -49,7 +53,7 @@ Both download commands check archive and individual-file SHA-256 values. The two
 
 `campaign/` holds the scientific analysis code and selected input records. `data/` contains case manifests; large files are downloaded from Releases. `metadata/` records checksums and provenance. `docs/` describes the calculations, results and omitted material.
 
-The Li snapshot includes two running controls through 2.930 and 3.100 ps on 19 November 2026. The Liu record includes five complete 3 ps first segments from an unfinished 5 ps protocol. These coverage limits are retained in the case descriptions. Larger historical files can be requested using the identifiers in [the catalogue](docs/ADDITIONAL_RESULTS.md).
+Release `v2026.11.19` includes two Li running-control snapshots through 2.930 and 3.100 ps on 19 November 2026. A later read-only verification found both controls complete at 5 ps; their new files await the Release update described in [HANDOFF.md](HANDOFF.md). The Liu record includes five complete 3 ps first segments from an unfinished 5 ps protocol. These coverage limits are retained in the case descriptions. Larger historical files can be requested using the identifiers in [the catalogue](docs/ADDITIONAL_RESULTS.md).
 
 ## Citation and reuse
 

@@ -1,0 +1,95 @@
+{
+  "scope": "Manual read-only status check; no research or automation resumed",
+  "server_observed_at": "2026-11-22T19:29:27+08:00",
+  "files_hash_verified": 8,
+  "jobs": {
+    "8572577": {
+      "case": "r1150_original",
+      "state": "COMPLETED",
+      "exit": "0:0",
+      "end": "2026-11-20T03:52:44+08:00",
+      "CHECKS": "PASS",
+      "distance_summary": {},
+      "frames": {
+        "count": 501,
+        "first_step": 0,
+        "last_step": 5000,
+        "first_time_fs": 0.0,
+        "last_time_fs": 5000.0
+      },
+      "sc_A": {
+        "first": 3.8711023401395432,
+        "last": 3.7814909437519177,
+        "min": 2.718120904997982,
+        "max": 4.540598123135304,
+        "mean": 3.5548315817109084,
+        "frames_below_threshold": 0,
+        "bond_threshold_angstrom": 2.0,
+        "longest_below_threshold_frames": 0,
+        "longest_below_threshold_window": null,
+        "first_sustained_SC_gt_2p5_A_10_frames_descriptive_only": {
+          "criterion": "d(S-C) > 2.50 A for 10 consecutive frames",
+          "index": 0,
+          "step": 0,
+          "time_fs": 0.0,
+          "window_end_step": 90,
+          "window_end_time_fs": 90.0
+        }
+      },
+      "CO_mean_A": 1.2391234600873833,
+      "SCF": {
+        "converged_runs": 5001,
+        "not_converged_runs": 0,
+        "iterations_min": 8,
+        "iterations_max": 16,
+        "iterations_mean": 8.150969806038793
+      },
+      "program_ended": true,
+      "structural_verdict": null
+    },
+    "8572578": {
+      "case": "r2200_original",
+      "state": "COMPLETED",
+      "exit": "0:0",
+      "end": "2026-11-20T02:27:27+08:00",
+      "CHECKS": "PASS",
+      "distance_summary": {},
+      "frames": {
+        "count": 501,
+        "first_step": 0,
+        "last_step": 5000,
+        "first_time_fs": 0.0,
+        "last_time_fs": 5000.0
+      },
+      "sc_A": {
+        "first": 4.241841593103563,
+        "last": 3.0436085347068076,
+        "min": 2.518222717150344,
+        "max": 4.839071594058709,
+        "mean": 3.373291701945973,
+        "frames_below_threshold": 0,
+        "bond_threshold_angstrom": 2.0,
+        "longest_below_threshold_frames": 0,
+        "longest_below_threshold_window": null,
+        "first_sustained_SC_gt_2p5_A_10_frames_descriptive_only": {
+          "criterion": "d(S-C) > 2.50 A for 10 consecutive frames",
+          "index": 0,
+          "step": 0,
+          "time_fs": 0.0,
+          "window_end_step": 90,
+          "window_end_time_fs": 90.0
+        }
+      },
+      "CO_mean_A": 1.2391214010909108,
+      "SCF": {
+        "converged_runs": 5001,
+        "not_converged_runs": 0,
+        "iterations_min": 8,
+        "iterations_max": 14,
+        "iterations_mean": 8.229354129174165
+      },
+      "program_ended": true,
+      "structural_verdict": null
+    }
+  }
+}

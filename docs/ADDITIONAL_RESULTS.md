@@ -69,7 +69,7 @@ Input staging, dry-run validation and duplicate preparation records. They docume
 - **Collection:** `li2025_hbcontrol_20261118/`
 - **Not uploaded:** 54 files, 434,447,868 bytes (434.45 MB).
 
-Additional output/restart material for 8572577/8572578. The public snapshot stops at 2.930/3.100 ps; later output, if requested, must be identified by its own retrieval time and coverage.
+Additional output/restart material for 8572577/8572578. The `v2026.11.19` public snapshot stops at 2.930/3.100 ps. A later read-only verification found both runs complete at 5 ps, as recorded in [HANDOFF.md](../HANDOFF.md) and `metadata/HANDOFF_STATUS.json`. Until those complete assets appear in a new Release, request this collection with its own retrieval time and coverage and verify the handoff hashes.
 
 ### LI-10 — Four local-water orientation tests
 

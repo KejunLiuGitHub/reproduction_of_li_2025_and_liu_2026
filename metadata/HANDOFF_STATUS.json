@@ -1,0 +1,122 @@
+{
+  "schema": "collaboration_handoff_status/v1",
+  "recorded_at": "2026-11-22T19:29:27+08:00",
+  "purpose": "Collaborator handoff; later status is separate from the 2026-11-19 downloadable Release snapshots.",
+  "automation": {
+    "state": "STOPPED",
+    "stopped_at": "2026-11-20T00:55:43.417215+08:00",
+    "handoff_authorizes_new_simulations": false
+  },
+  "release_scope": {
+    "li2025": {
+      "tag": "v2026.11.19",
+      "control_assets": "Older live prefixes: r1150_original 294 frames through step 2930; r2200_original 311 frames through step 3100.",
+      "manifest_policy": "Do not rewrite the historical Release manifest to reference different bytes."
+    },
+    "liu2026": {
+      "tag": "liu2026-v2026.11.19",
+      "state": "Sampling paused; no later completed result asserted by this handoff."
+    }
+  },
+  "li2025_control_update": {
+    "observation": "Manual read-only status check; no research or automation resumed; no remote mutations.",
+    "server_observed_at": "2026-11-22T19:29:27+08:00",
+    "collection_id": "li2025_hbcontrol_20261118/",
+    "evidence_directory": "evidence/li2025_controls_20261122/",
+    "jobs": {
+      "8572577": {
+        "case": "r1150_original",
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "end": "2026-11-20T03:52:44+08:00",
+        "technical_checks": "PASS",
+        "frames": 501,
+        "first_step": 0,
+        "last_step": 5000,
+        "md_steps": 5000,
+        "energy_rows": 5001,
+        "scf_converged": 5001,
+        "scf_failed": 0,
+        "program_ended": true,
+        "sc_A": {
+          "first": 3.8711023401395432,
+          "last": 3.7814909437519177,
+          "min": 2.718120904997982,
+          "max": 4.540598123135304,
+          "mean": 3.5548315817109084,
+          "frames_below_2_A": 0
+        },
+        "co_mean_A": 1.2391234600873833,
+        "biased": false,
+        "prepared_under_bias": true,
+        "controlled_initial_conditions": true,
+        "structural_verdict": null,
+        "human_review": "PENDING",
+        "files_sha256": {
+          "run_record.json": "fb13ea69ec93be39e6a27e30dbda7f62cf4b9d08eefa4a6ab58ec527ea520daa",
+          "r1150_original.out": "0e03d384219c4119b26c9ee6047c79425a588efcf2cc65849979801b61d3e958",
+          "r1150_original-pos-1.xyz": "27b998e5d2dc0c771d97d796be0b612df1c47bbac9118406511b871857018d9d",
+          "r1150_original-1.ener": "bf6a41e1a3d7f2a98543955b6ba502866d7fe01e10a5dca9d6583563e98e8faa",
+          "r1150_original-1.restart": "d67806692b0c9842d623fc41d7013f6be32cf6d695b65a8ba1c0786edc2a5100",
+          "r1150_original.xyz": "5e1b93a126e25373541c1a71f0c11c58987aeb1ef19af65d7c8ddd79c91c7b61",
+          "r1150_original.inp": "6e8a331ff88370bf09a34ddde15a97b58fef01b834f275bdfa0fffb15e2f860c",
+          "DISTANCE_ANALYSIS.json": "fc758ca786372fea1196f1572bcaac14decb991c35757bba118f33ae926ed9bf",
+          "DISTANCE_ANALYSIS_RAW.json": "6d68e078fdb84f25b442a7e34a939d9a7c6c9dace164c28a422a4791ba6d2b99",
+          "CHECKS.json": "a93a5d7bf472aafd7d950bb7d840de3ca4ed48cb7482e4e4106ab76580d6abf1"
+        }
+      },
+      "8572578": {
+        "case": "r2200_original",
+        "state": "COMPLETED",
+        "exit": "0:0",
+        "end": "2026-11-20T02:27:27+08:00",
+        "technical_checks": "PASS",
+        "frames": 501,
+        "first_step": 0,
+        "last_step": 5000,
+        "md_steps": 5000,
+        "energy_rows": 5001,
+        "scf_converged": 5001,
+        "scf_failed": 0,
+        "program_ended": true,
+        "sc_A": {
+          "first": 4.241841593103563,
+          "last": 3.0436085347068076,
+          "min": 2.518222717150344,
+          "max": 4.839071594058709,
+          "mean": 3.373291701945973,
+          "frames_below_2_A": 0
+        },
+        "co_mean_A": 1.2391214010909108,
+        "biased": false,
+        "prepared_under_bias": true,
+        "controlled_initial_conditions": true,
+        "structural_verdict": null,
+        "human_review": "PENDING",
+        "files_sha256": {
+          "run_record.json": "86de47511a22c325d3756fd8989473a0e2f4a0f5c72ba7ef7e77d50d0bc9d004",
+          "r2200_original.out": "6922684ff28348878745dff3e79db54c272f5f78227268bf474473163c94c6dc",
+          "r2200_original-pos-1.xyz": "3a9b744b3cfbbf61b23ddd3a5678a81b7b485306df15ac12c3c7d2a3ca8f2985",
+          "r2200_original-1.ener": "e463429e1a55b9518a46c9d5e7ca5907eb7d9482187ab337dba4f8321a8a36b6",
+          "r2200_original-1.restart": "0b9a2ca35916468bb95cfae2a1475a90cfe9c0a50960e38e1b79529a0d4b32a2",
+          "r2200_original.xyz": "d21984232c1a00e1baf2087b0cd1f61bfe87370a662e1ec18b1071b06580f26b",
+          "r2200_original.inp": "475ab988ed8a708b4bb83ab1e4ee5a4266f70ebd2708445b2aafdc68ff6c8563",
+          "DISTANCE_ANALYSIS.json": "5ffc5544fe2658dffdd34fff718a28282a72144d07eb84569d001e892e3ce942",
+          "DISTANCE_ANALYSIS_RAW.json": "658bbad1c9d4195956a913e0cfd22b5a81c567dd80ffeeb39e9d5f724526590e",
+          "CHECKS.json": "e1b8225f905cac10289becb0a0d1b2911652c96e2917e17b76e109fd7ed8d176"
+        }
+      }
+    }
+  },
+  "pending_work": [
+    "WP1: package and publish the complete Li controls as a new dated Release.",
+    "WP2: run complete and fixed-window original/donor/reverse comparisons.",
+    "WP3: complete structural review before stronger structural claims.",
+    "WP4: assess, without automatically resuming, whether Liu continuation is justified."
+  ],
+  "interpretation_limits": [
+    "Distance threshold counts and technical PASS are not an approved structural verdict.",
+    "Unbiased dynamics can retain a biased or controlled preparation history.",
+    "The 2026-11-19 Release assets and their original hashes remain unchanged."
+  ]
+}

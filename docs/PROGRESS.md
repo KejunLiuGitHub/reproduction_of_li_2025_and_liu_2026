@@ -2,9 +2,9 @@
 
 Our calculations have not yet established a reproduction of the reported interfacial reaction and free-energy results. This does not show that the published results are incorrect. The authors' [public Zenodo workbook](https://zenodo.org/records/15253851) provides selected molecular coordinates and figure data, but not the complete original CP2K/PLUMED production inputs, restart states or HILLS histories. The calculations here use the published methods and coordinates, with run-specific choices reconstructed where those original files are unavailable.
 
-We have obtained short-C–S states in interfacial metadynamics and followed two of these states for 5 ps after removing the bias. We have **not yet reproduced unbiased interfacial C–S formation starting from separated reactants**. The next step is to finish the two running reactant controls and compare them with the completed water-orientation experiments.
+We have obtained short-C–S states in interfacial metadynamics and followed two of these states for 5 ps after removing the bias. We have **not yet reproduced unbiased interfacial C–S formation starting from separated reactants**. The two original-coordinate controls have since completed 5 ps; the next steps are to publish their complete files and compare all three arms over full and fixed windows.
 
-Completed-run results and the matched-window comparison below were compiled on **19 November 2026 at 21:06:23 UTC+08:00**. The release includes later running-control snapshots, described in the coverage table. It accompanies a selected reproducibility archive containing complete chosen trajectories and their associated inputs and analysis, including runs that did not produce the sought geometry. The archive selection manifest records its contents and omissions; `metadata/DATA_FILES.json` records the released files and their hashes.
+Completed-run results and the matched-window comparison below were compiled on **19 November 2026 at 21:06:23 UTC+08:00**. Release `v2026.11.19` includes later running-control snapshots. A read-only verification on 22 November found both controls complete; [HANDOFF.md](../HANDOFF.md) records that later status and the pending data-release work. The matched-window comparison below remains the 19 November analysis until the full three-arm comparison is published. The archive selection manifest records its contents and omissions; `metadata/DATA_FILES.json` records the files and hashes in the current Release.
 
 ## System and calculation
 
@@ -56,7 +56,7 @@ The public-P 5 ps trajectory contains five frames where the fixed parent-water c
 
 The differences between public-P, early-event releases and later retained states point to the surrounding configuration as a useful variable. They do not identify water coordination alone as the cause: solute orientation, depth, carbon geometry and solvent organization change together.
 
-## Long-distance reactant tests and the two running controls
+## Long-distance reactant tests and the original controls
 
 To examine water orientation without starting from a short-C–S state, two actual frames were selected from the 5 ps reactant trajectory: 1150 and 2200 fs. Their initial S–C distances are **3.8711 and 4.2418 Å**. For each frame, H202/H203 of water O204 were rotated in opposite directions while the other 294 atoms remained unchanged. All four runs then evolved for 5 ps without bias or restraints.
 
@@ -69,14 +69,16 @@ To examine water orientation without starting from a short-C–S state, two actu
 
 None produced a predefined C–S formation geometry in its 501 saved frames, under any of the three geometric definitions. Thus these four particular water-orientation preparations did not produce the sought event within 5 ps. The original reactant pre-equilibration likewise had no such event.
 
-Two unrotated controls now complete the original/donor/reverse comparison. They use the same source frames and pair-specific velocity seeds, with all source coordinates unchanged:
+Two unrotated controls complete the original/donor/reverse comparison. They use the same source frames and pair-specific velocity seeds, with all source coordinates unchanged. A later read-only verification found both complete:
 
-| Job / condition | Coverage in the 21:58 snapshot (UTC+08:00) | Mean / minimum / final S–C, Å |
-|---|---|---|
-| 8572577, R1150 original | 294 frames, 0–2.930 ps | 3.6160 / 2.7181 / 3.5676 |
-| 8572578, R2200 original | 311 frames, 0–3.100 ps | 3.4989 / 2.8017 / 3.6076 |
+| Job / condition | Verified coverage | Mean / minimum / final S–C, Å | Saved frames with S–C <2 Å |
+|---|---|---|---:|
+| 8572577, R1150 original | 501 frames, 0–5 ps | 3.5548 / 2.7181 / 3.7815 | 0/501 |
+| 8572578, R2200 original | 501 frames, 0–5 ps | 3.3733 / 2.5182 / 3.0436 | 0/501 |
 
-Both are still running toward 5 ps. Neither prefix contains a saved S–C distance below 2 Å. The earlier matched-window comparison uses the first 2570/2720 fs of the released original-control trajectories:
+Both jobs ended normally with technical checks PASS, 5001 converged SCFs and complete energy and restart records. These are numerical-completeness and distance observations; structural verdict and human structure review remain pending. The complete assets are in the working archive and await the new Release described in [HANDOFF.md](../HANDOFF.md). Release `v2026.11.19` retains the older prefixes.
+
+The earlier matched-window comparison uses the first 2570/2720 fs of the released original-control trajectories:
 
 | Source / common window | Original / donor / reverse mean S–C, Å | H203→Oc contact frames |
 |---|---|---|
@@ -85,13 +87,13 @@ Both are still running toward 5 ps. Neither prefix contains a saved S–C distan
 
 For R1150, original and donor have almost the same mean S–C despite different target-contact counts. For R2200, donor and reverse have similar target-contact counts but different mean S–C. Both rotations also raise the initial potential energy relative to the corresponding original coordinates. The complete comparison therefore needs the actual water contacts, solute depth and orientation together, rather than treating the initial donor/reverse labels as permanent network states.
 
-These are selected frames from one R history, involving the same local water and one trajectory per condition. Adjacent saved frames are correlated. The current prefixes describe their evolution so far; the final comparison awaits the remaining 5 ps coverage.
+These are selected frames from one R history, involving the same local water and one trajectory per condition. Adjacent saved frames are correlated. The full 5 ps trajectories are now verified in the working archive, but the full three-arm analysis has not yet been published.
 
 ## Continuing the study
 
-1. **Complete the two existing original controls.** Compare all three arms over the full 5 ps and the fixed 0–0.1, 0.1–1 and 1–5 ps windows, retaining every observed outcome. The first two windows are already covered; the last is still partial.
+1. **Publish the complete original controls and finish the three-arm comparison.** Compare all three arms over the full 5 ps and the fixed 0–0.1, 0.1–1 and 1–5 ps windows, retaining every observed outcome. The earlier matched-window table does not cover the full final window.
 2. **Compare retained and non-retained configurations.** Use S–C/C–O, carbon geometry, water identities, orientation and signed-GDS depth together. A focused electronic-structure characterization of representative retained states would clarify the nature of the short-C–S interaction. Existing Mulliken/Hirshfeld populations are population-scheme descriptors, not bond orders.
 3. **Resolve method differences before extending the free-energy claim.** The charged-slab treatment, finite-size and force convergence, publication-unspecified input choices and bias convergence remain the relevant checks for reproducing the published barrier. More elapsed metadynamics time alone would not settle these questions.
 4. **Keep future comparisons interpretable.** Any further trajectories should address a specific difference revealed by the completed controls, with independently prepared starting conditions where replication is needed. The present results give no reason to strengthen the distance restraint or continue a broad rotation search.
 
-The archive preserves full selected trajectories, including the returns to long S–C distances and the four unsuccessful formation trials. It also keeps the incomplete status of the two running controls. This makes the distinction between the results already obtained—biased short-distance states and subsequent unbiased retention—and the remaining objective—formation from separated reactants under unbiased interfacial dynamics—explicit.
+The archive preserves full selected trajectories, including the returns to long S–C distances and the four unsuccessful formation trials. It distinguishes the results already obtained—biased short-distance states and subsequent unbiased retention—from the remaining objective: formation from separated reactants under unbiased interfacial dynamics. The later control verification and Release boundary are explicit so that collaborators do not mistake the 19 November prefixes for the latest run status.

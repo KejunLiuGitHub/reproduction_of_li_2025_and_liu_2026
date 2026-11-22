@@ -1,0 +1,128 @@
+{
+  "schema": "li2025_hbnetwork_technical_checks/v1",
+  "recorded_at": "2026-11-19T18:27:16.451344+00:00",
+  "case": "r2200_original",
+  "status": "PASS",
+  "checks": {
+    "unbiased_frozen_input": {
+      "pass": true,
+      "details": {
+        "frozen_reference_sha256": "9536573c2158025949f53c2b03d31a0c5b2ee7dca41b2a08542aed4b53766319",
+        "bias_and_constraints_absent": true,
+        "restart_and_inherited_velocities_absent": true,
+        "seed": 2026111604
+      }
+    },
+    "input_hashes": {
+      "pass": true,
+      "details": {
+        "r2200_original.xyz": "d21984232c1a00e1baf2087b0cd1f61bfe87370a662e1ec18b1071b06580f26b",
+        "r2200_original.inp": "475ab988ed8a708b4bb83ab1e4ee5a4266f70ebd2708445b2aafdc68ff6c8563"
+      }
+    },
+    "all_MD_SCF": {
+      "pass": true,
+      "details": {
+        "MD_steps": 5000,
+        "SCF_converged": 5001,
+        "SCF_failed": 0
+      }
+    },
+    "complete_XYZ_and_source": {
+      "pass": true,
+      "details": {
+        "frames": 501,
+        "first_step": 0,
+        "last_step": 5000,
+        "atoms": 296,
+        "max_initial_delta_A": 0.0
+      }
+    },
+    "complete_finite_energy": {
+      "pass": true,
+      "details": {
+        "rows": 5001,
+        "first_step": 0,
+        "last_step": 5000
+      }
+    },
+    "complete_restart": {
+      "pass": true,
+      "details": {
+        "step": 5000,
+        "time_fs": 4999.999999999572,
+        "coordinates": 296,
+        "velocities": 296,
+        "finite_positions_and_velocities": true,
+        "max_final_frame_delta_A": 4.9884096853247684e-11
+      }
+    },
+    "original_source_coordinates_and_pair_seed": {
+      "pass": true,
+      "details": {
+        "source_audit_sha256": "c8078b39f550bc643bec50656615b5e9ffdb88fa9d0985f08cde13b19dc0ca07",
+        "source_trajectory_sha256": "80eedcaaa7de00f6f0b04cee30162a6e0ce834d25d01f2c8fea8b507d8219d4d",
+        "source_frame_sha256": "d21984232c1a00e1baf2087b0cd1f61bfe87370a662e1ec18b1071b06580f26b",
+        "source_job_id": "8568513",
+        "source_frame_step": 2200,
+        "unchanged_atoms": 296,
+        "coordinate_change": "none; byte-identical original source frame",
+        "seed_matches_existing_orientation_pair": 2026111604,
+        "minimum_nonbonded_contact_A": 1.446921119382259,
+        "minimum_contact_pair": [
+          214,
+          215
+        ],
+        "SC_A": 4.241841593103563,
+        "CO_A": 1.2193739415921847,
+        "source_segment_biased": false,
+        "prepared_under_bias": true,
+        "controlled_initial_conditions": true
+      }
+    }
+  },
+  "source": {
+    "trajectory": "/Users/kejunliu/projects/sulfoacetic-vib/results/li2025_autofollow/decision_20261112/li2025_recovery_20261111/r_interface_eq/r_interface_eq-pos-1.xyz",
+    "trajectory_sha256": "80eedcaaa7de00f6f0b04cee30162a6e0ce834d25d01f2c8fea8b507d8219d4d",
+    "source_job_id": "8568513",
+    "frame_step": 2200,
+    "source_segment_biased": false,
+    "public_snapshot_origin": "Figure6b metaD R_inter snapshot",
+    "prepared_under_bias": true,
+    "controlled_initial_conditions": true,
+    "original_frame_sha256": "d21984232c1a00e1baf2087b0cd1f61bfe87370a662e1ec18b1071b06580f26b",
+    "source_audit_sha256": "c8078b39f550bc643bec50656615b5e9ffdb88fa9d0985f08cde13b19dc0ca07",
+    "coordinate_change": "none; all 296 coordinates byte-identical to audited frame"
+  },
+  "biased": false,
+  "prepared_under_bias": true,
+  "smoke": false,
+  "structural_verdict": null,
+  "network_causal_verdict": null,
+  "FES_verdict": null,
+  "human_review": "PENDING",
+  "interpretation": "Fully unbiased long-SC original-coordinate control after public metaD preparation history; technical completeness only.",
+  "job_id": "8572578",
+  "trajectory_sha256": "3a9b744b3cfbbf61b23ddd3a5678a81b7b485306df15ac12c3c7d2a3ca8f2985",
+  "frames": 501,
+  "first_step": 0,
+  "last_step": 5000,
+  "files_sha256": {
+    "run_record.json": "86de47511a22c325d3756fd8989473a0e2f4a0f5c72ba7ef7e77d50d0bc9d004",
+    "r2200_original.out": "6922684ff28348878745dff3e79db54c272f5f78227268bf474473163c94c6dc",
+    "r2200_original-pos-1.xyz": "3a9b744b3cfbbf61b23ddd3a5678a81b7b485306df15ac12c3c7d2a3ca8f2985",
+    "r2200_original-1.ener": "e463429e1a55b9518a46c9d5e7ca5907eb7d9482187ab337dba4f8321a8a36b6",
+    "r2200_original-1.restart": "0b9a2ca35916468bb95cfae2a1475a90cfe9c0a50960e38e1b79529a0d4b32a2",
+    "r2200_original.xyz": "d21984232c1a00e1baf2087b0cd1f61bfe87370a662e1ec18b1071b06580f26b",
+    "r2200_original.inp": "475ab988ed8a708b4bb83ab1e4ee5a4266f70ebd2708445b2aafdc68ff6c8563",
+    "DISTANCE_ANALYSIS.json": "5ffc5544fe2658dffdd34fff718a28282a72144d07eb84569d001e892e3ce942",
+    "DISTANCE_ANALYSIS_RAW.json": "658bbad1c9d4195956a913e0cfd22b5a81c567dd80ffeeb39e9d5f724526590e"
+  },
+  "distance_analysis": {
+    "path": "DISTANCE_ANALYSIS.json",
+    "sha256": "5ffc5544fe2658dffdd34fff718a28282a72144d07eb84569d001e892e3ce942",
+    "analyzer_sha256": "8529ce9c63f694fd93f86ed0fbac292aff4bf77a612b4069b2d45bb7c96c01cd"
+  },
+  "controlled_initial_conditions": true,
+  "source_segment_biased": false
+}
